@@ -10,7 +10,7 @@
     --sr-title-left: 3%;
     --sr-title-font-size:16px;
     --price-btn-width: 200px;
-    --common-title-height: 20vh;
+    --common-title-height: 33vh;
     /* color */
     --inputBox-span-border-color: rgba(4, 116, 0, 0.2);
     --main-bg-color: #00a138;
@@ -18,6 +18,15 @@
     --button-yellow: rgb(240, 240, 89);
     --slideBtn-bg-color: rgba(0,0,0,0.05);
     --reservation-bg-color:rgba(255,255,255,0.8);
+    /* common colors */
+    --color-blue2: #0046b6;
+    --color-blue3: #00aaff;
+    --color-light-yellow: #fefbf2;
+    --color-orange: #ff6f00;
+    --color-black: #000000;
+    --color-green: #00a138;
+    --color-yellow: #f9cf13;
+    --color-dark-yellow: #ffc400;
 }
 body {padding: 0px;margin: 0px; font-family: 'Noto Sans KR', sans-serif; font-size: 0.8vw;}
 a {text-decoration: none; color: initial;}
@@ -34,4 +43,52 @@ input[type='number'] {
 }
 header {
     z-index: 4000;
+}
+/* loadingWrap ------------------------------------------------------------ */
+.loadingWrap {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+}
+.blockWrap {
+    display: flex;
+}
+.loading_block {
+    width: 5vw;
+    aspect-ratio: 2 / 1;
+    background-color: white;
+    position: relative;
+    box-shadow: 1px 2px 4px 0px #666;
+}
+.loading_block::before {
+    content: "";
+    display: block;
+    height: 20%;
+    aspect-ratio: 2/1;
+    background-color: inherit;
+    position: absolute;
+    top: -20%;
+    left: 15%;
+    box-shadow: inherit;
+    z-index: -1;
+}
+.loading_block::after {
+    box-shadow: inherit;
+    z-index: -1;
+    content: "";
+    display: block;
+    height: 20%;
+    aspect-ratio: 2/1;
+    background-color: inherit;
+    position: absolute;
+    top: -20%;
+    right: 15%;
 }

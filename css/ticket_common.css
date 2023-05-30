@@ -13,6 +13,15 @@
     --inputbox-bg-color: white;
     --main-bg-color: #ffcf00;
     --main-yellow-color: #ffcf00;
+    /* common colors */
+    --color-blue2: #0046b6;
+    --color-blue3: #00aaff;
+    --color-light-yellow: #fefbf2;
+    --color-orange: #ff6f00;
+    --color-black: #000000;
+    --color-green: #00a138;
+    --color-yellow: #f9cf13;
+    --color-dark-yellow: #ffc400;
 }
 /* number input 버튼 숨기기 */
 input::-webkit-outer-spin-button,
@@ -26,7 +35,7 @@ input[type='number'] { appearance: textfield; }
     width: 10%;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background: var(--main-yellow-color) url("/image/arrow_back.png") no-repeat left 40% center/25px;
+    background: var(--main-yellow-color) url("/image/t_use_reser01_0/arrow_back.png") no-repeat left 40% center/25px;
     position:absolute;
     left: 40px;
 }
@@ -36,7 +45,7 @@ input[type='number'] { appearance: textfield; }
     width: 10%;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background: var(--main-yellow-color) url("/image/arrow_forward.png") no-repeat right 40% center/25px;
+    background: var(--main-yellow-color) url("/image/t_use_reser01_0/arrow_forward.png") no-repeat right 40% center/25px;
     position: absolute;
     right: 40px;
 }
@@ -263,7 +272,7 @@ fieldset legend {
   border: 2px solid rgba(100,100,100,0.5);
   margin: 1rem;
   box-sizing: border-box;
-  background: url("/image/background4.webp") no-repeat center/ cover;
+  background: url("/image/t_use_reser01_0background4.webp") no-repeat center/ cover;
 }
 .form_title > div {
   padding-bottom: 1rem;
@@ -281,7 +290,7 @@ fieldset legend {
   margin-right: 0.5em;
   width: 1em;
   height: 1em;
-  background: url("/image/sunny.png") no-repeat center / 1em;
+  background: url("/image/t_use_reser01_0/sunny.png") no-repeat center / 1em;
 }
 /* 2. 인원 선택 디자인 */
 .df02_wrap,
@@ -356,7 +365,7 @@ fieldset legend {
     font-size: 0px;
     width: 15px;
     height: 15px;
-    background: #eee url("/image/close_button.png") no-repeat center/90%;
+    background: #eee url("/image/t_use_reser01_0/close_button.png") no-repeat center/90%;
     border: 2px solid #666;
     position: absolute;
     left: 20px;
@@ -458,7 +467,7 @@ fieldset legend {
   }
   .user_nationality_select input {
     
-    background: url("/image/arrow_drop_down.png") no-repeat center right 8px / 20px 30px;
+    background: url("/image/t_use_reser01_0/arrow_drop_down.png") no-repeat center right 8px / 20px 30px;
     width: 200px;
     
   }
@@ -596,7 +605,7 @@ fieldset legend {
   .d_l_listopen {
     display: block;
     width: 50%;
-    background: url("img/arrow_drop_down.png") no-repeat center left/30px;
+    background: url("/image/t_use_reser01_0/arrow_drop_down.png") no-repeat center left/30px;
     padding-left: 30px;
     line-height: 2;
     text-decoration: none;

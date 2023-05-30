@@ -12,6 +12,7 @@ main {
     margin: 0px auto;
     background-color: var(--main-bg-color);
 }
+
 /* ==================================== shortReservation ============ */
 .shortReservation {
     width: 70%;

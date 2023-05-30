@@ -1,8 +1,21 @@
 $(function(){
     //load==================================
-   $("header").hide()
+    function colors(i) {
+        const arr = ["red", "blue", "green", "yellow", "pink"]
+        $(".loading_block").eq(i).css("background-color", arr[i]);
+    }
+    $(".loading_block").each(function(i){
+        const set = setTimeout(function(){
+            colors(i);
+        }, 500*i)
+    })
+    $(window).on("load",function(){
+        $(".mainWrap").show();
+        $(".loadingWrap").remove();
+    })
+   $("header")
         .load("/header/header.html")
-        .ready(function(){ $("header").show() });
+        .show()
     $("footer").load("/footer/footer.html")
     
     localStorage.removeItem("load");

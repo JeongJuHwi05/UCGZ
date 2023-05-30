@@ -1,10 +1,22 @@
 $(function(){
-
-    $("header")
-        .hide()
-        .load("/header/header.html")
-        .ready(function(){$("header").show()})
-    $("footer").load("/footer/footer.html");
+//load==================================
+function colors(i) {
+    const arr = ["red", "blue", "green", "yellow", "pink"]
+    $(".loading_block").eq(i).css("background-color", arr[i]);
+}
+$(".loading_block").each(function(i){
+    const set = setTimeout(function(){
+        colors(i);
+    }, 500*i)
+})
+$(window).on("load",function(){
+    $(".mainWrap").css("display","flex");
+    $(".loadingWrap").remove();
+})
+$("header")
+    .load("/header/header.html")
+    .show()
+$("footer").load("/footer/footer.html")
 
 const oneday = 86400000;
 const todayDate = new Date();
