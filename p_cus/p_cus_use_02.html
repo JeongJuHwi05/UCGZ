@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="/css/p_cus_use_02.css">
+    <title>파크 티켓환불, 호텔 예약 취소 | LEGOLAND Korea Resort</title>
+    <script src="/js/jquery-3.6.4.min.js"></script>
+    <script src="/js/p_cus_use_02.js"></script>
+
+    <script>
+        $(document).ready( function() {
+            $("#header").load("/header/header.html");
+            $("#footer").load("/footer/footer.html");
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div id="header"></div>
+    </header>
+
+      <div class="main_title">
+        <div class="main_title_img">
+            <div class="main_title_txt">
+                <h3>파크 티켓환불, 호텔 예약 취소</h3>
+            </div>
+          </div>
+    </div>
+    <main class="main" id="main" name="main">
+        <div class="refund_cancel_nav">
+            <ul>
+                <div class="refund_cancel_nav1_wrap">
+                <li class="refund_cancel_nav1"><a href="#none">파크 티켓환불</a></li>
+                </div>
+                <div class="refund_cancel_nav2_wrap">
+                <li class="refund_cancel_nav2"><a href="#none">호텔 예약 취소</a></li>
+                </div>
+            </ul>
+        </div>
+        <section class="ask_refund_page">
+            <section class="tic_ref">
+        <p>LEGOLAND® Korea Resort 를 통해 이용권을 구매한 이용객은 아래의 이용 규정으로 본 서비스를 이용하실 수 있습니다.</p>
+        <br>
+        <p>이용객이 환불 규정 내 환불을 신청하는 경우라도,
+        이용권의 이용 기간(방문일 경과, 이용권의 사용) 또는 이용 조건(회사 외 판매처로 구매, 사은품, 초대권 등)에 따라 효력을 상실한 경우 환불이 불가합니다.</p>
+        <br>
+        <p>요청하신 구매 철회는 순차적으로 처리 후 환불 주문서를 구매 시 등록하신 이메일로 발송해 드립니다.</p>
+        <br>
+        <p>카드 승인 취소는 이용하신 카드사의 정책에 따라 시일이 소요 될 수 있습니다.<br>
+        <span class="tic_ref_text_hi">연간 이용권, 시즌 이용권의 환불 규정</span></p>
+        <br>
+        <p>이용권(연간 이용권, 시즌 이용권)을 구매한 손님은 “가입일(구매일) 다음 날부터 7일 이내에” 구매 철회를 요청 시 이용권을 환불하실 수 있습니다.</p>
+        <br>
+        <p class="tic_ref_text_hi"><img src="/image/p_cus_use_02/check.svg">2023년 3월 9일까지 구매한, 1일 이용권의 환불 규정</p>
+        <br>
+        <p>이용권(1일 예매권, 1일 이용권, 오후 이용권 등)을 <span class="tic_ref_text_hi">2023년 3월 9일까지</span> 구매한 이용객은 “구매일을 포함하여 7일 이내” 구매 철회를 요청 시 이용권을 환불하실 수 있습니다.</p>
+        <br>
+        <p>예시) 1일 이용권 구매일 2023년 3월 9일 일시, 구매 철회 요청은 2023년 3월 16일 자정까지 가능</p>
+        <br>
+        <p class="tic_ref_text_hi"><img src="/image/p_cus_use_02/check.svg">2023년 3월 10일부터 구매한, 1일 이용권의 환불 규정</p>
+        <br>
+        <p>이용권(1일 예매권, 1일 이용권, 오후 이용권 등)을 2023년 3월 10일부터 구매한 이용객은 “방문일 1일 전까지” 구매 철회를 요청 시 이용권을 환불하실 수 있습니다.</p>
+        <br>
+        <p>예시) 1일 이용권 구매일 2023년 6월 10일, 방문 예약일 2023년 7월 2일 일시, 구매 철회 요청은 2023년 7월 1일 자정까지 가능</p>
+        <br>
+        <p class="tic_ref_text_hi"><img src="/image/p_cus_use_02/check.svg">방문일 당일 구매한, 미사용 1일 이용권의 환불 규정</p>
+        <br>
+        <p>이용권(1일 예매권, 1일 이용권, 오후 이용권 등)을 방문일 당일 구매한 이용객은 “방문일 당일 파크 폐장시간 전까지” 구매 철회를 요청 시 이용권을 환불하실 수 있습니다.</p>
+        <br>
+        </section>
+
+        <section class="form_wrapping">
+        <form name="" action="" method="" onsubmit="return validateForm(event);" id="park_ticket_cancel">
+        <div class="ask_form_text">
+            <fieldset class="ask_com_bor">
+                <legend>온라인 티켓 구매자 정보</legend>
+                <p><label>구매자명 *<br><input type="text" id="buy_name"></label></p>
+                <p><label>휴대전화번호 *<br>
+                <span class="ask_form_agree_text_small">구매 시 입력한 휴대전화번호를 기입해주세요</span><br><input type="text" id="buy_tel"></label></p>
+                <p><label>이메일 주소 *<br>
+                <span class="ask_form_agree_text_small">구매 시 입력한 이메일 주소를 기입해주세요</span><br><input type="text" id="buy_email"></label></p>
+                <p><label>구매일자<br>
+                <span class="ask_form_agree_text_small">이용객은 사전 고지된 환불 규정에 의한 이용권 환불을 신청할 수 있습니다.</span><br><input type="text" id="buy_day"></label></p>
+            </fieldset>
+        </div>
+        <div class="ask_form_text">
+            <fieldset class="ask_com_bor">
+                <legend>Ticket Information</legend>
+                <div class="ask_radio">
+                    <p class="ask_radio_title">접수 유형 *</p>
+                    <div class="ask_radio_in_wrap">
+                    <label class="ask_radio_label">
+                        <input type="radio" class="ask_radio_input" name="1" value="티켓 환불" id="myradiobox1">
+                        <span class="ask_radio_out">
+                          <span class="ask_radio_in"></span>
+                        </span><span class="ask_radio_text">티켓 환불</span>
+                      </label></div>
+                    
+                      <div class="ask_radio_in_wrap">
+                        <label class="ask_radio_label">
+                            <input type="radio" class="ask_radio_input" name="1" value="티켓 재발송" id="myradiobox2">
+                            <span class="ask_radio_out">
+                              <span class="ask_radio_in"></span>
+                            </span><span class="ask_radio_text">티켓 재발송</span>
+                          </label></div>
+                </div>
+                <p>티켓 유형 *<br>
+                <span class="ask_form_agree_text_small">환불 또는 재발행을 희망하시는 이용권을 선택해주세요. (복수 선택 가능)</span></p>
+
+                <div class="ask_form_agree3">
+                    <div class="ask_form_agree3_wrap">
+                    <div class="ask_form_agree2_check">
+                        <input type="checkbox" name="" id="mycheckbox3">
+                        <label for="mycheckbox3">
+                        <svg id="unchecked3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        </svg>
+                        <svg id="checked3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                            <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                        </svg>
+                        </label>
+                        </div>
+                        <div class="ask_form_agree2_text">
+                    <p>1일 이용권- 티켓 구매와 동시에 방문일 지정형</p>
+                </div>
+                </div>
+                </div>
+                <div class="ask_form_agree3">
+                    <div class="ask_form_agree3_wrap">
+                    <div class="ask_form_agree2_check">
+                        <input type="checkbox" name="" id="mycheckbox4">
+                        <label for="mycheckbox4">
+                        <svg id="unchecked4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        </svg>
+                        <svg id="checked4"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                            <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                        </svg>
+                        </label>
+                        </div>
+                        <div class="ask_form_agree2_text">
+                    <p>1일 이용권 - 티켓 구매와 동시에 방문일 미지정형</p>
+                </div>
+                </div>
+                </div>
+                <div class="ask_form_agree3">
+                    <div class="ask_form_agree3_wrap">
+                    <div class="ask_form_agree2_check">
+                        <input type="checkbox" name="" id="mycheckbox5">
+                        <label for="mycheckbox5">
+                        <svg id="unchecked5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        </svg>
+                        <svg id="checked5"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                            <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                        </svg>
+                        </label>
+                        </div>
+                        <div class="ask_form_agree2_text">
+                    <p>오후 이용권 - 티켓 구매와 동시에 방문일 지정형</p>
+                </div>
+                </div>
+                </div>
+                <div class="ask_form_agree3">
+                    <div class="ask_form_agree3_wrap">
+                    <div class="ask_form_agree2_check">
+                        <input type="checkbox" name="" id="mycheckbox6">
+                        <label for="mycheckbox6">
+                        <svg id="unchecked6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        </svg>
+                        <svg id="checked6"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                            <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                        </svg>
+                        </label>
+                        </div>
+                        <div class="ask_form_agree2_text">
+                    <p>연간이용권 - 스탠다스 패스</p>
+                </div>
+                </div>
+                </div>
+                <div class="ask_form_agree3">
+                    <div class="ask_form_agree3_wrap">
+                    <div class="ask_form_agree2_check">
+                        <input type="checkbox" name="" id="mycheckbox7">
+                        <label for="mycheckbox7">
+                        <svg id="unchecked7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        </svg>
+                        <svg id="checked7"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                            <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                        </svg>
+                        </label>
+                        </div>
+                        <div class="ask_form_agree2_text">
+                    <p>연간이용권 - 골드 패스</p>
+                </div>
+                </div>
+                </div>
+                <div class="ask_form_agree3">
+                    <div class="ask_form_agree3_wrap">
+                    <div class="ask_form_agree2_check">
+                        <input type="checkbox" name="" id="mycheckbox8">
+                        <label for="mycheckbox8">
+                        <svg id="unchecked8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        </svg>
+                        <svg id="checked8"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                            <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                        </svg>
+                        </label>
+                        </div>
+                        <div class="ask_form_agree2_text">
+                    <p>연간이용권 - 플래티넘 패스</p>
+                </div>
+                </div>
+                </div>
+                <div class="ask_form_agree3">
+                    <div class="ask_form_agree3_wrap">
+                    <div class="ask_form_agree2_check">
+                        <input type="checkbox" name="" id="mycheckbox9">
+                        <label for="mycheckbox9">
+                        <svg id="unchecked9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        </svg>
+                        <svg id="checked9"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                            <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                        </svg>
+                        </label>
+                        </div>
+                        <div class="ask_form_agree2_text">
+                    <p>시즌 이용권 - 전체 시즌</p>
+                </div>
+                </div>
+                </div>
+                <div class="ask_form_agree3">
+                    <div class="ask_form_agree3_wrap">
+                    <div class="ask_form_agree2_check">
+                        <input type="checkbox" name="" id="mycheckbox10">
+                        <label for="mycheckbox10">
+                        <svg id="unchecked10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        </svg>
+                        <svg id="checked10"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                            <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                        </svg>
+                        </label>
+                        </div>
+                        <div class="ask_form_agree2_text">
+                    <p>패스트트랙</p>
+                </div>
+                </div>
+                </div>
+                <div class="ask_form_agree3">
+                    <div class="ask_form_agree3_wrap">
+                    <div class="ask_form_agree2_check">
+                        <input type="checkbox" name="" id="mycheckbox11">
+                        <label for="mycheckbox11">
+                        <svg id="unchecked11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        </svg>
+                        <svg id="checked11"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                            <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                        </svg>
+                        </label>
+                        </div>
+                        <div class="ask_form_agree2_text">
+                    <p>VIP 프로그램 (LEGOLAND® 마스터 빌더, VIP Experience)</p>
+                </div>
+                </div>
+                </div>
+                <p><label>주문번호 *<br>
+                <span class="ask_form_agree_text_small">상품 구매시 등록한 이메일로 수신 된 주문번호 (숫자 9자리) 또는 바코드 (숫자 18자리)를 기입해주세요.</span><br><input type="text" id="order_num"></label></p>
+                <p><label>티켓 수량 *<br><input type="text" id="tic_num"></label></p>
+                <div class="ask_radio" style="padding-bottom: 10px;">
+                    <p class="ask_radio_title">취소 사유</p>
+                    <div class="ask_radio_in_wrap">
+                        <label class="ask_radio_label">
+                            <input type="radio" class="ask_radio_input" name="취소 사유" value="티켓 환불" id="myradiobox3">
+                            <span class="ask_radio_out">
+                              <span class="ask_radio_in"></span>
+                            </span><span class="ask_radio_text">시스템 상의 결제 오류</span>
+                          </label></div>
+                    <div class="ask_radio_in_wrap">
+                        <label class="ask_radio_label">
+                            <input type="radio" class="ask_radio_input" name="취소 사유" value="티켓 환불" id="myradiobox4">
+                            <span class="ask_radio_out">
+                              <span class="ask_radio_in"></span>
+                            </span><span class="ask_radio_text">가격 및 혜택 불만족</span>
+                          </label></div>
+                    <div class="ask_radio_in_wrap">
+                        <label class="ask_radio_label">
+                            <input type="radio" class="ask_radio_input" name="취소 사유" value="티켓 환불" id="myradiobox5">
+                            <span class="ask_radio_out">
+                              <span class="ask_radio_in"></span>
+                            </span><span class="ask_radio_text">구매 수량 및 방문일 변경</span>
+                          </label></div>
+                    <div class="ask_radio_in_wrap">
+                        <label class="ask_radio_label">
+                            <input type="radio" class="ask_radio_input" name="취소 사유" value="티켓 환불" id="myradiobox6">
+                            <span class="ask_radio_out">
+                              <span class="ask_radio_in"></span>
+                            </span><span class="ask_radio_text">결제 수단 변경</span>
+                          </label></div>
+                    <div class="ask_radio_in_wrap">
+                        <label class="ask_radio_label">
+                            <input type="radio" class="ask_radio_input" name="취소 사유" value="티켓 환불" id="myradiobox7">
+                            <span class="ask_radio_out">
+                              <span class="ask_radio_in"></span>
+                            </span><span class="ask_radio_text">단순 변심</span>
+                          </label></div>
+                </div>
+            </fieldset>
+            </div>
+    <div class="ask_form_text">
+        <fieldset class="ask_com_bor">
+            <legend>개인정보 수집 동의</legend>
+            <div class="ask_form_agree1">
+            <div class="ask_form_agree_text">
+                <p>수집 항목: [필수] 구매자명, 휴대전화번호, 이메일주소, 구매일자, 주문번호 [선택] 메모, 티켓 유형, 티켓 수량 [보유기간] 이용 완료 시 *</p>
+            </div>
+            <div class="ask_form_agree1_check">
+                <input type="checkbox" name="" id="mycheckbox1">
+                <label for="mycheckbox1">
+                <svg id="unchecked1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                    <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                </svg>
+                <svg id="checked1"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                    <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                    <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                </svg>
+                </label>확인하였습니다.</span>
+                </div>
+            </div>
+            <div class="ask_form_agree2">
+            <p>개인정보 수집 동의 *</p>
+            <div class="ask_form_agree2_wrap">
+            <div class="ask_form_agree2_check">
+                <input type="checkbox" name="" id="mycheckbox2">
+                <label for="mycheckbox2">
+                <svg id="unchecked2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                    <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                </svg>
+                <svg id="checked2"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                    <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                    <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                </svg>
+                </label>
+                </div>
+                <div class="ask_form_agree2_text">
+            <p>동의합니다.* 위 레고랜드 코리아 리조트 서비스 이용에 필요한 최소한의 개인정보 수집, 이용에 동의하지 않을 권리가 있으며, 필수 동의 거부 시 거부한 내용에 대해 서비스가 제한될 수 있습니다.</p>
+        </div>
+        </div>
+        </div>
+        </fieldset>
+        </div>
+        <div class="ask_form_sub">
+            <input type="submit" value="submit"> 
+        </div>
+    </form>        
+    </section>
+</section>
+<section class="ask_hotel_cancel_page">
+    <section class="hotel_res_cancel">
+        <h4>LEGOLAND® Hotel 예약 취소가 필요하신가요?</h4>
+        <p class="tic_ref_text_hi">✔ 호텔 객실 예약 취소는 홈페이지 ‘온라인 객실 예약 취소 요청’ 또는 ‘게스트 익스피리언스’로 요청 하실 수 있습니다.</p><br>
+        <p class="tic_ref_text_hi">✔ 이용 약관에 고지된 내용에 따라, 예약 취소는 입실 3일 전 오후 4시까지 취소 요청하는 경우는 결제하신 수단으로 환불됩니다.</p><br>
+        <p class="tic_ref_text_hi">✔ 온라인으로(‘온라인 객실 예약 취소 요청’ 및 ‘게스트 익스피리언스 이메일 접수(<a href="mailto:LLKR.Reservations@legoland.com">LLKR.Reservations@legoland.com</a>)’) 취소 요청 접수시, 접수일로부터 24시간 내 순차적으로 처리됩니다.</p><br>
+        <p class="tic_ref_text_hi">✔ 예약 취소가 완료되면 취소 확인서를 예약 시 등록하신 이메일로 발송 드립니다. 카드사에 따라 환불 일자에 차이가 있을 수 있으며 정확한 취소일은 카드사를 통해 확인하시기 바랍니다.</p><br>
+    </section>
+
+    <section class="form_wrapping">
+    <form name="" action="" method="" onsubmit="return hotelForm(event);" id="hotel_cancel">
+        <div class="ask_form_text">
+            <fieldset class="ask_com_bor">
+                <legend>객실 예약자 정보</legend>
+                <p><label>예약자명 *<br><input type="text" id="hotel_name"></label></p>
+                <p><label>휴대전화번호 *<br><input type="text" id="hotel_tel"></label></p>
+                <p><label>이메일 주소 *<br><input type="text" id="hotel_email"></label></p>
+            </fieldset>
+        </div>
+        
+        <div class="ask_form_text">
+            <fieldset class="ask_com_bor">
+                <legend>객실 예약자 정보</legend>
+                <p>상품 유형 *</p>
+                    <div class="ask_form_agree3">
+                        <div class="ask_form_agree3_wrap">
+                        <div class="ask_form_agree2_check">
+                            <input type="checkbox" name="상품 유형" id="mycheckbox12">
+                            <label for="mycheckbox12">
+                            <svg id="unchecked12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                                <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                            </svg>
+                            <svg id="checked12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                                <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                                <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                            </svg>
+                            </label>
+                            </div>
+                            <div class="ask_form_agree2_text">
+                        <p>조식패키지</p>
+                    </div>
+                    </div>
+                    </div>
+                <div class="ask_form_agree3">
+                    <div class="ask_form_agree3_wrap">
+                    <div class="ask_form_agree2_check">
+                        <input type="checkbox" name="상품 유형" id="mycheckbox13">
+                        <label for="mycheckbox13">
+                        <svg id="unchecked13" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        </svg>
+                        <svg id="checked13" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                            <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                        </svg>
+                        </label>
+                        </div>
+                        <div class="ask_form_agree2_text">
+                    <p>[연간이용권 소지자 전용] 조식 패키지</p>
+                </div>
+                </div>
+                </div>
+                <div class="ask_form_agree3">
+                    <div class="ask_form_agree3_wrap">
+                    <div class="ask_form_agree2_check">
+                        <input type="checkbox" name="상품 유형" id="mycheckbox14">
+                        <label for="mycheckbox14">
+                        <svg id="unchecked14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        </svg>
+                        <svg id="checked14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                            <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                        </svg>
+                        </label>
+                        </div>
+                        <div class="ask_form_agree2_text">
+                    <p>조식 및 LEGOLAND® 파크 2일 이용권</p>
+                </div>
+                </div>
+                </div>
+                <div class="ask_form_agree3">
+                    <div class="ask_form_agree3_wrap">
+                    <div class="ask_form_agree2_check">
+                        <input type="checkbox" name="상품 유형" id="mycheckbox15">
+                        <label for="mycheckbox15">
+                        <svg id="unchecked15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        </svg>
+                        <svg id="checked15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                            <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                        </svg>
+                        </label>
+                        </div>
+                        <div class="ask_form_agree2_text">
+                    <p>그 외 패키지</p>
+                </div>
+                </div>
+                </div>
+                
+
+                <p>객실 테마 *</p>
+                    <div class="ask_form_agree3">
+                        <div class="ask_form_agree3_wrap">
+                        <div class="ask_form_agree2_check">
+                            <input type="checkbox" name="상품 유형" id="mycheckbox16">
+                            <label for="mycheckbox16">
+                            <svg id="unchecked16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                                <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                            </svg>
+                            <svg id="checked16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                                <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                                <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                            </svg>
+                            </label>
+                            </div>
+                            <div class="ask_form_agree2_text">
+                        <p>파이러츠 테마</p>
+                    </div>
+                    </div>
+                    </div>
+                <div class="ask_form_agree3">
+                    <div class="ask_form_agree3_wrap">
+                    <div class="ask_form_agree2_check">
+                        <input type="checkbox" name="상품 유형" id="mycheckbox17">
+                        <label for="mycheckbox17">
+                        <svg id="unchecked17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        </svg>
+                        <svg id="checked17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                            <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                        </svg>
+                        </label>
+                        </div>
+                        <div class="ask_form_agree2_text">
+                    <p>LEGO® 프렌즈 테마</p>
+                </div>
+                </div>
+                </div>
+                <div class="ask_form_agree3">
+                    <div class="ask_form_agree3_wrap">
+                    <div class="ask_form_agree2_check">
+                        <input type="checkbox" name="상품 유형" id="mycheckbox18">
+                        <label for="mycheckbox18">
+                        <svg id="unchecked18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        </svg>
+                        <svg id="checked18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                            <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                        </svg>
+                        </label>
+                        </div>
+                        <div class="ask_form_agree2_text">
+                    <p>킹덤 테마</p>
+                </div>
+                </div>
+                </div>
+                <div class="ask_form_agree3">
+                    <div class="ask_form_agree3_wrap">
+                    <div class="ask_form_agree2_check">
+                        <input type="checkbox" name="상품 유형" id="mycheckbox19">
+                        <label for="mycheckbox19">
+                        <svg id="unchecked19" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        </svg>
+                        <svg id="checked19" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                            <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                        </svg>
+                        </label>
+                        </div>
+                        <div class="ask_form_agree2_text">
+                    <p>LEGO® NINJAGO® 테마</p>
+                </div>
+                </div>
+                </div>
+
+
+                <p>객실 유형 *</p>
+                <div class="ask_form_agree3">
+                    <div class="ask_form_agree3_wrap">
+                    <div class="ask_form_agree2_check">
+                        <input type="checkbox" name="상품 유형" id="mycheckbox20">
+                        <label for="mycheckbox20">
+                        <svg id="unchecked20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        </svg>
+                        <svg id="checked20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                            <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                        </svg>
+                        </label>
+                        </div>
+                        <div class="ask_form_agree2_text">
+                    <p>프리미엄</p>
+                </div>
+                </div>
+                </div>
+                <div class="ask_form_agree3">
+                    <div class="ask_form_agree3_wrap">
+                    <div class="ask_form_agree2_check">
+                        <input type="checkbox" name="상품 유형" id="mycheckbox21">
+                        <label for="mycheckbox21">
+                        <svg id="unchecked21" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        </svg>
+                        <svg id="checked21" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                            <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                        </svg>
+                        </label>
+                        </div>
+                        <div class="ask_form_agree2_text">
+                    <p>프리미엄 파크뷰</p>
+                </div>
+                </div>
+                </div>
+                <div class="ask_form_agree3">
+                    <div class="ask_form_agree3_wrap">
+                    <div class="ask_form_agree2_check">
+                        <input type="checkbox" name="상품 유형" id="mycheckbox22">
+                        <label for="mycheckbox22">
+                        <svg id="unchecked22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        </svg>
+                        <svg id="checked22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                            <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                        </svg>
+                        </label>
+                        </div>
+                        <div class="ask_form_agree2_text">
+                    <p>프리미엄 코너</p>
+                </div>
+                </div>
+                </div>
+            <div class="ask_form_agree3">
+                <div class="ask_form_agree3_wrap">
+                <div class="ask_form_agree2_check">
+                    <input type="checkbox" name="상품 유형" id="mycheckbox23">
+                    <label for="mycheckbox23">
+                    <svg id="unchecked23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                        <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                    </svg>
+                    <svg id="checked23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                        <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                    </svg>
+                    </label>
+                    </div>
+                    <div class="ask_form_agree2_text">
+                <p>스위트</p>
+            </div>
+            </div>
+            </div>
+            <div class="ask_form_agree3">
+                <div class="ask_form_agree3_wrap">
+                <div class="ask_form_agree2_check">
+                    <input type="checkbox" name="상품 유형" id="mycheckbox24">
+                    <label for="mycheckbox24">
+                    <svg id="unchecked24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                        <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                    </svg>
+                    <svg id="checked24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                        <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                    </svg>
+                    </label>
+                    </div>
+                    <div class="ask_form_agree2_text">
+                <p>디럭스 스위트</p>
+            </div>
+            </div>
+            </div>
+            <div class="ask_form_agree3">
+                <div class="ask_form_agree3_wrap">
+                <div class="ask_form_agree2_check">
+                    <input type="checkbox" name="상품 유형" id="mycheckbox25">
+                    <label for="mycheckbox25">
+                    <svg id="unchecked25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                        <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                    </svg>
+                    <svg id="checked25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                        <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                    </svg>
+                    </label>
+                    </div>
+                    <div class="ask_form_agree2_text">
+                <p>장애인 친화 객실</p>
+            </div>
+            </div>
+            </div>
+
+            <p><label>예약 번호 *<br>
+                <span class="ask_form_agree_text_small">예약시 등록된 이메일로 발송된 예약번호를 기입해 주세요. (예: BB1234567890123)</span><br><input type="text" id="hotel_number"></label></p>
+            
+                <div class="ask_radio">
+                    <p class="ask_radio_title">취소 사유 *</p>
+                    <div class="ask_radio_in_wrap">
+                    <label class="ask_radio_label">
+                        <input type="radio" class="ask_radio_input" name="1" value="티켓 환불" id="myradiobox8">
+                        <span class="ask_radio_out">
+                          <span class="ask_radio_in"></span>
+                        </span><span class="ask_radio_text">가격 및 혜택 불만족</span>
+                      </label></div>
+                    
+                    <div class="ask_radio_in_wrap">
+                        <label class="ask_radio_label">
+                            <input type="radio" class="ask_radio_input" name="1" value="티켓 재발송" id="myradiobox9">
+                            <span class="ask_radio_out">
+                              <span class="ask_radio_in"></span>
+                            </span><span class="ask_radio_text">예약 변경</span>
+                          </label></div>
+
+                    <div class="ask_radio_in_wrap">
+                        <label class="ask_radio_label">
+                            <input type="radio" class="ask_radio_input" name="1" value="티켓 환불" id="myradiobox10">
+                            <span class="ask_radio_out">
+                            <span class="ask_radio_in"></span>
+                            </span><span class="ask_radio_text">단순 변심</span>
+                        </label></div>
+                </div>
+            </fieldset>
+            </div>
+            <div class="ask_form_text">
+                <fieldset class="ask_com_bor">
+                    <legend>개인정보 수집 동의</legend>
+                    <div class="ask_form_agree1">
+                    <div class="ask_form_agree_text">
+                        <p>수집 항목: [필수] 구매자명, 휴대전화번호, 이메일주소, 구매일자, 주문번호 [선택] 메모, 티켓 유형, 티켓 수량 [보유기간] 이용 완료 시 *</p>
+                    </div>
+                    <div class="ask_form_agree1_check">
+                        <input type="checkbox" name="호텔취소개인정보수집동의" id="mycheckbox26">
+                        <label for="mycheckbox26">
+                        <svg id="unchecked26" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        </svg>
+                        <svg id="checked26"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                            <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                        </svg>
+                        </label>확인하였습니다.</span>
+                        </div>
+                    </div>
+                    <div class="ask_form_agree2">
+                    <p>개인정보 수집 동의 *</p>
+                    <div class="ask_form_agree2_wrap">
+                    <div class="ask_form_agree2_check">
+                        <input type="checkbox" name="호텔취소개인정보수집동의" id="mycheckbox27">
+                        <label for="mycheckbox27">
+                        <svg id="unchecked27" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                        </svg>
+                        <svg id="checked27"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                            <path d="M2 2v20h20V9.712h2V24H0V0h18v2H2z"></path>
+                            <path d="M22.285 1.8l1.43 1.4-12.45 12.73-4.98-5.093 1.43-1.398 3.55 3.63z"></path>
+                        </svg>
+                        </label>
+                        </div>
+                        <div class="ask_form_agree2_text">
+                    <p>동의합니다.* 위 레고랜드 코리아 리조트 서비스 이용에 필요한 최소한의 개인정보 수집, 이용에 동의하지 않을 권리가 있으며, 필수 동의 거부 시 거부한 내용에 대해 서비스가 제한될 수 있습니다.</p>
+                </div>
+                </div>
+                </div>
+                </fieldset>
+                </div>
+            <div class="ask_form_sub">
+                <input type="submit" value="submit"> 
+            </div>
+            </form>
+            </section>
+        </div>
+
+
+        <section class="hotel_res_cancel" style="margin-top: 5%;">
+            <h4>[ 예약 취소 규정 ]</h4>
+            <div class="hotel_res_cancel_wrap">
+            <div class="hotel_res_cancel_rule_img"><img src="/image/p_cus_use_02/check.svg"></div>
+            <div class="hotel_res_cancel_rule_text"><p>입실 3일 전 오후 4시까지 취소하는 경우는 결제하신 수단으로 환불됩니다. 입실일 기준 3일 (3일 전 오후 4시) 경과 시 예약 취소, 변경 및 환불이 불가하며 총 숙박료가 위약금으로 부과됩니다.</p>
+                <p>예약하신 프로모션에 따라 취소, 환불이 불가할 수 있으며, 이 경우 해당 프로모션의 이용 규정이 적용됩니다.</p></div>
+            </div>
+            <h4>[ 노쇼 규정 ]</h4>
+            <div class="hotel_res_cancel_wrap">
+            <div class="hotel_res_cancel_rule_img"><img src="/image/p_cus_use_02/check.svg"></div>
+            <div class="hotel_res_cancel_rule_text"><p>예약 사항에 명시되어 있는 입실 날짜에 입실하지 않을 경우 전체 투숙일의 100% 요금이 부과됩니다. 예약하신 프로모션에 따라 취소, 환불이 불가할 수 있으며, 이 경우 해당 프로모션의 이용 규정이 적용됩니다.</p>
+                </div>
+            </div>
+            <h4>[ 예약 변경 안내 ]</h4>
+            <div class="hotel_res_cancel_wrap">
+            <div class="hotel_res_cancel_rule_img"><img src="/image/p_cus_use_02/check.svg"></div>
+            <div class="hotel_res_cancel_rule_text"><p>모든 예약은 요금 결제 완료 시 확정되며, 확정된 예약의 조건(투숙 일정, 투숙 인원 증가, 객실 타입 변경 등) 변경은 기존 예약을 취소 후 재예약 진행이 요청됩니다. </p>
+                <p>모든 객실 상품은 예약 확약 시점을 기준으로 안내된 요금을 적용하며, 동일한 조건이라도 예약 및 확인 시점에 따라 요금이 변동될 수 있습니다. 호텔 예약 관련 문의는 ‘게스트 익스피리언스’로 부탁드립니다.</p>
+            </div>
+            </div>
+            <h4>[ 불가항력조항]</h4>
+            <div class="hotel_res_cancel_wrap">
+            <div class="hotel_res_cancel_rule_img"><img src="/image/p_cus_use_02/check.svg"></div>
+            <div class="hotel_res_cancel_rule_text"><p>레고랜드 코리아 호텔은 불가항력에 기인한 계약의 불이행 또는 지연에 대해 면책됩니다.</p>
+                <p>폭풍우, 낙뢰, 지진, 태풍, 홍수 등과 같은 자연적인 불가항력 외에 기계 고장, 동맹파업, 공장폐쇄, 원자재 부족, 화재, 선박의 징발, 운송 기관의 우발사고나 내란, 전쟁, 정부의 간섭 등에 따른 비상 위험 등에 기인한 지연이나 계약 불이행 또한 불가항력 조항에 의해 면책됩니다.</p>
+            </div>
+            </div>
+        </section>
+
+</section>
+</main>
+
+<footer>
+    <div id="footer"></div>
+</footer>
+</body>
+</html>

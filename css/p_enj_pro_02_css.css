@@ -1,0 +1,176 @@
+/* 메인전체class */
+.main_title {
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* 메인 이미지 */
+  /* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
+  .main_title_img {
+    background: url(/image/p_enj_pro_02/p_enj_pro_02_00.jpg)
+      center/cover no-repeat;
+    margin-top: 90px;
+    width: 100vw;
+  }
+  .main_title_img img {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+  /* 메인 타이틀 */
+  .main_title_txt {
+    margin-top: 6.5rem;
+    margin-bottom: 5.5rem;
+    background: #00a138;
+    width: fit-content;
+    height: 110px;
+    opacity: 0.95;
+    padding: 0 30px;
+  }
+  /* 메인 타이틀 텍스트 */
+  .main_title_txt > h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffff;
+    text-align: center;
+    line-height: 110px;
+  }
+  
+.main{
+    width:1350px;
+    font-size: 16px;
+    font-style: normal;
+    margin: 0 auto;
+}
+
+/* 페이지 설명 부분 */
+.page_subTitle{
+    width: 650px;
+    height: 112px;
+    border-width: 1.5px 0px;
+    border-style: solid;
+    border-color: rgb(229, 229, 229);
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page_subTitle p{
+    font-size: 150%;
+    font-weight: 600;
+}
+.page_notice{
+    width: 650px;
+    height: 90px;
+    margin: 0 auto;
+}
+
+/* 구매하기 버튼 */
+.btn{
+    width: 310px;
+    height: 60px;
+    font-size: 150%;
+    background: #d01012;
+    color: white;
+    border: 0px;
+}
+.btn:hover{
+    background: #8C0008;
+    cursor: pointer;
+}
+
+/* 본문의 내용 flex 공통 */
+.cont{
+    display: flex;
+    margin: 50px auto;
+    margin-bottom: 5%;
+}
+
+/* 본문 이미지 */
+.cont01_img{
+    width: 720px;
+    height: 720px;
+    margin: 0 auto;
+}
+.cont01_img img{
+    width: 720px;
+    height: 720px;
+}
+
+/* 본문 첫번째 내용 */
+.cont01{
+    width: 600px;
+    margin-left: 20px;
+    line-height: 1.5;
+}
+.cont01 > h3{
+    width: 600px;
+    height: 104px;
+    margin: 0 auto;
+    font-size: 200%;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont01_title{
+    font-weight: 600;
+}
+.cont01_subtitle{
+    width: 600px;
+    height: 60px;
+    border-width: 1.5px 0px;
+    border-style: solid;
+    border-color: rgb(229, 229, 229);
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont01_subtitle p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 150%;
+}
+
+.cont01 p{
+    word-break: keep-all;
+}
+
+/* 본문내용 노티스 */
+.cont01_notice{
+    width: 575px;
+    height: 60px;
+    background: rgb(255, 213, 0);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+    box-shadow: 2px 3px 5px 0px black;
+    margin: 30px auto;
+    margin-bottom: 40px;
+}
+.cont01_notice span{
+    margin-left: 10px;
+    vertical-align:middle;
+}
+.cont01_notice svg{
+    width: 25px;
+    vertical-align:middle;
+  }
+
+/* 본문 두번째 내용 이미지*/
+.cont01_img02{
+    width: fit-content;
+    margin: auto;
+}
+.cont01_img02 img{
+    margin: auto;
+    width: 330px;
+    height: 300px;
+}

@@ -1,0 +1,428 @@
+a{
+    text-decoration: none;
+}
+/* 메인전체class */
+.main_title {
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* 메인 이미지 */
+  /* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
+  .main_title_img {
+    background: url("../image/p_cus_info_03/p_cus_info_03_sub_bg.jpg")
+      center/cover no-repeat;
+    margin-top: 90px;
+    width: 100vw;
+  }
+  .main_title_img img {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+  /* 메인 타이틀 */
+  .main_title_txt {
+    margin-top: 6.5rem;
+    margin-bottom: 5.5rem;
+    background: #00a138;
+    width: fit-content;
+    height: 110px;
+    opacity: 0.95;
+    padding: 0 30px;
+  }
+  /* 메인 타이틀 텍스트 */
+  .main_title_txt > h3 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffff;
+    text-align: center;
+    line-height: 110px;
+  }
+.main{
+    max-width:1350px;
+    margin:auto;
+    font-size:16px;
+    margin-top:100px;
+    margin-bottom:300px;
+}
+@media screen and (min-width : 901px){
+.ask_nav{
+    max-width:1350px;
+    max-height:115px;
+    margin:auto;
+    margin-bottom:100px;
+}
+.ask_nav>ul{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    height:115px;
+}
+.ask_nav a{
+    font-size: 36px;
+    color:#fff;
+    font-weight: 700;
+}
+
+.ask_nav1>a{
+    display: flex;
+    background-image: url("../image/p_cus_info_03/rectangle_yell-removebg-preview.png");
+    background-repeat: no-repeat;
+    width:400px;
+    height:156px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right:37.5px;
+}
+
+.ask_nav2>a{
+    display: flex;
+    background-image: url("../image/p_cus_info_03/rectangle_green-removebg-preview.png");
+    background-repeat: no-repeat;
+    width:400px;
+    height:156px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left:37.5px;
+    margin-right:37.5px;
+}
+.ask_nav3>a{
+    display: flex;
+    background-image: url("../image/p_cus_info_03/rectangle_blue-removebg-preview.png");
+    background-repeat: no-repeat;
+    width:400px;
+    height:156px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left:37.5px;
+}
+}
+form legend{
+    font-weight: 700;
+}
+.ask_com>form{
+    display: flex;
+    justify-content: center;
+}
+.ask_form_title>h4{
+    font-size:36px;
+    padding-bottom: 20px;
+}
+.ask_com_bor{
+    border:1px solid black;
+    max-width:600px;
+}
+.ask_com_bor>p{
+    padding:20px 30px 20px 30px;
+    line-height: 1.5rem;
+}
+.ask_com_bor input{
+    width:98%;
+    height:35px;
+    font-size:16px;
+}
+.ask_com_bor select{
+    width:98%;;
+    height:35px;
+    font-size:24px
+}
+.ask_com_bor textarea{
+    width:98%;
+    height:200px
+}
+.ask_form_agree{
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    padding:20px 30px;
+}
+.ask_form_agree_check>input{
+    width:24px;
+    height:24px;
+    margin-right:10px
+}
+#mycheckbox {
+    display: none;
+}
+#unchecked, #checked {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked {
+    display: inline;
+}
+#checked {
+    display: none;
+}
+#mycheckbox:checked + label #unchecked {
+    display: none;
+}
+#mycheckbox:checked + label #checked {
+    display: inline;
+}
+.ask_form_agree_text{
+    margin-left: 10px;
+}
+.ask_form_agree_text_small{
+    font-size:14px;
+    color:#757575
+}
+.ask_form_sub{
+    margin-top:40px;
+}
+.ask_form_sub>input{
+    border:none;
+    background:#004f84;
+    width:250px;
+    height:60px;
+    font-size:36px;
+    color:#fff;
+    cursor: pointer;
+}
+.ask_img_tag_wrap{
+    display:flex;
+    justify-content: center;
+    background:#e7e7e7;
+    margin-top: 10%;
+    margin-bottom:10%
+}
+.ask_img_tag1{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.ask_img_tag1_img{
+    max-width:204px;
+    max-height:368px;
+}
+.ask_img_tag1_img>img{
+    width:100%;
+    height:100%
+}
+.ask_img_tag1_text{
+    line-height:2rem;
+    padding:20px;
+    margin:10px;
+}
+.ask_img_tag1_text>h4{
+    font-weight:700;
+    font-size:24px;
+    color:#006db7;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.ask_img_tag2{
+    display: flex;
+    justify-content: center;
+}
+.ask_img_tag2_img{
+    max-width:204px;
+    max-height:368px;
+}
+.ask_img_tag2_img>img{
+    width:100%;
+    height:100%
+}
+.ask_img_tag2_text{
+    line-height:2rem;
+    padding:20px;
+    margin:40px;
+}
+.ask_img_tag2_text>h4{
+    font-weight:700;
+    font-size:24px;
+    color:#006db7;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.ask_stu_character{
+    display: flex;
+    justify-content: center;
+    background:#e7e7e7;
+    margin-top: 10%;
+    margin-bottom:10%
+}
+.ask_stu_character_img{
+    max-width:204px;
+    max-height:368px;
+}
+.ask_stu_character_img>img{
+    width:100%;
+    height:100%
+}
+.ask_stu_character_text{
+    line-height:2rem;
+    padding:20px;
+    margin:40px;
+}
+.ask_stu_character_text>h4{
+    font-weight:700;
+    font-size:24px;
+    color:#006db7;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.ask_loc_table{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    color: #006db7
+}
+.ask_loc_table_title{
+    font-weight:700;
+}
+.ask_loc_table a{
+    color:#d01012;
+    text-decoration: underline;
+}
+.ask_loc_table td{
+    padding:30px;
+}
+.ask_loc_table_1{
+    background:#f2f7fc;
+}
+.ask_loc_table_2{
+    background:#ffffff
+}
+.ask_stu_gui{
+    width:100%;
+    display: flex;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom:10%
+}
+.ask_stu_gui_book{
+    border:1px solid #e7e7e7;
+    max-width:450px;
+}
+.ask_stu_gui_book_img{
+    max-width:450px;
+    max-height:260px
+}
+.ask_stu_gui_book_img>img{
+    width:100%;
+    height:100%
+}
+.ask_stu_gui_book_text{
+    font-size:24px;
+    font-weight:700;
+    padding:20px;
+}
+.ask_stu_gui_book_a{
+    display: flex;
+    justify-content: right;
+}
+.ask_stu_gui_book_a>a{
+    display: block;
+    color:#fff;
+    background: #d01012;
+    font-size:16px;
+    padding:20px;
+    text-align: center;
+    max-width: 200px;
+    font-weight: 700;
+}
+.ask_pac{
+    max-width:800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom:10%
+}
+.ask_pac_img{
+    max-width:230px;
+    max-height:230px
+}
+.ask_pac_img>img{
+    width:100%;
+    height:100%
+}
+.ask_pac_text{
+    margin-left:40px;
+    line-height: 2rem;
+}
+.ask_pac_text>h4{
+    font-size:24px;
+    padding-bottom:20px;
+    color:#006db7;
+    font-weight:700;
+}
+.ask_pac_text svg{
+    fill:#d01012;
+}
+.ask_pac_text a{
+    color:#d01012;
+}
+.ask_fori>p{
+    display: flex;
+    justify-content: center;
+    margin:50px;
+}
+.ask_com{
+    display: none;
+}
+.ask_fori{
+    display: none;
+}
+@media screen and (max-width : 900px){
+    .ask_nav{
+        max-width:400px;
+        margin:auto;
+        margin-bottom:100px;
+        margin-top:100px
+    }
+    .ask_nav>ul{
+        flex-direction: column;
+        display:flex;
+        justify-content: center;
+        width:100%;
+    }
+    .ask_nav a{
+        font-size: 36px;
+        color:#fff;
+        font-weight: 700;
+    }
+    
+    .ask_nav1>a{
+        display: flex;
+        background-image: url("../image/p_cus_info_03/rectangle_yell-removebg-preview.png");
+        background-repeat: no-repeat;
+        width:400px;
+        height:156px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom:15px;
+    }
+    
+    .ask_nav2>a{
+        display: flex;
+        background-image: url("../image/p_cus_info_03/rectangle_green-removebg-preview.png");
+        background-repeat: no-repeat;
+        width:400px;
+        height:156px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom:15px;
+    }
+    .ask_nav3>a{
+        display: flex;
+        background-image: url("../image/p_cus_info_03/rectangle_blue-removebg-preview.png");
+        background-repeat: no-repeat;
+        width:400px;
+        height:156px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}

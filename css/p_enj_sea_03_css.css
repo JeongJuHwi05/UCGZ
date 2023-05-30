@@ -1,0 +1,183 @@
+/* 메인전체class */
+.main_title {
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* 메인 이미지 */
+  /* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
+  .main_title_img {
+    background: url(/image/p_enj_sea_03/p_enj_sea_03_00.jpg)
+      center/cover no-repeat;
+    margin-top: 90px;
+    width: 100vw;
+  }
+  .main_title_img img {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+  /* 메인 타이틀 */
+  .main_title_txt {
+    margin-top: 6.5rem;
+    margin-bottom: 5.5rem;
+    background: #00a138;
+    width: fit-content;
+    height: 110px;
+    opacity: 0.95;
+    padding: 0 30px;
+  }
+  /* 메인 타이틀 텍스트 */
+  .main_title_txt > h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffff;
+    text-align: center;
+    line-height: 110px;
+  }
+
+.main{
+    width:1350px;
+    font-size: 16px;
+    font-style: normal;
+    margin: 0 auto;
+}
+
+/* 본문의 내용 flex 공통 */
+.cont{
+    display: flex;
+    margin-top: 110px;
+    margin-bottom: 5%;
+    line-height: 1.5;
+}
+
+/* 구매하기 버튼 */
+.btn{
+    width: 255px;
+    height: 60px;
+    font-size: 150%;
+    background: #d01012;
+    color: white;
+    border: 0px;
+}
+.btn:hover{
+    background: #8C0008;
+    cursor: pointer;
+}
+
+/* 본문 이미지 */
+.cont01_img{
+    width: 720px;
+    height: 720px;
+    margin: 0 auto;
+}
+.cont01_img img{
+    width: 720px;
+    height: 720px;
+}
+
+/* 본문 내용*/
+.cont01{
+    margin: 0 auto;
+    padding-left: 2%;
+}
+.cont01 > h3{
+    width: 600px;
+    height: 140px;
+    font-size: 200%;
+    margin-top: 0px;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 본문내용 노티스 */
+.cont01_notice{
+    width: 575px;
+    height: 100px;
+    background: rgb(255, 213, 0);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+    box-shadow: 2px 3px 5px 0px black;
+    margin-bottom: 50px;
+}
+
+/* 본문 내용 p 설정 통일*/
+.cont01 p{
+    font-weight: 550;
+    line-height: 35px;
+}
+
+/* 본문 두번째 제목 <map>*/
+.cont02_title{
+    width: 100%;
+    height: 570px;
+}
+.cont02_title img{
+    margin: auto;
+    width: 100%;
+    height: 570px;
+}
+.page_title2{
+    position:relative;
+    margin: auto;
+    top: -140px;
+    left: 450px;
+    width: 630px;
+    height: 110px;
+    transform: translate(-20%, -50%);
+    background: #00a138;
+    opacity: 0.95;
+    display: flex;
+    align-items: center;
+}
+.page_title2 h1{
+    font-size: 250%;
+    font-weight: 900;
+    color: white;
+}
+.page_title2_align{
+    position: absolute;
+    width: 800px;
+    transform:translateX(7%);
+}
+
+/* 본문 두번째 내용 설명 부분 */
+.cont02_subTitle{
+    width: 650px;
+    height: 112px;
+    border-width: 1.5px 0px;
+    border-style: solid;
+    border-color: rgb(229, 229, 229);
+    margin: 100px auto;
+}
+.cont02_subTitle p{
+    height: 30px;
+    text-align: center;
+    font-size: 150%;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* 본문 두번째 내용 이미지*/
+.cont02_img01{
+    width: 100%;
+    height: 100%;
+    margin: 30px auto;
+}
+.cont02_img02{
+    width: fit-content;
+    margin: auto;
+}
+.cont02_img02 img{
+    margin-top: 3%;
+    width: 330px;
+    height: 330px;
+}

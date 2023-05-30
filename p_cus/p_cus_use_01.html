@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="/css/p_cus_use_01.css">
+    <title>파크 주문조회 | LEGOLAND Korea Resort</title>
+    <script src="/js/jquery-3.6.4.min.js"></script>
+    <script src="/js/p_cus_use_01.js"></script>
+
+    <script>
+        $(document).ready( function() {
+            $("#header").load("/header/header.html");
+            $("#footer").load("/footer/footer.html");
+        });
+    </script>
+</head>
+<body>
+    <script>
+//     function displayOrderInfo(orderInfo) {
+//     const tableBody = document.getElementById('order_table_body');
+//     tableBody.innerHTML = ''; // 기존의 내용 초기화
+
+//     if (orderInfo.length === 0) {
+//         // 주문 정보가 없는 경우 메시지를 표시합니다.
+//         const row = document.createElement('tr');
+//         const cell = document.createElement('td');
+//         cell.setAttribute('colspan', '6');
+//         cell.textContent = '확인된 주문이 없습니다.';
+//         row.appendChild(cell);
+//         tableBody.appendChild(row);
+//     } else {
+//     // 주문 정보가 있는 경우 테이블에 주문 정보를 추가합니다.
+//     for (let i = 0; i < orderInfo.length; i++) {
+//       const order = orderInfo[i];
+//       const row = document.createElement('tr');
+
+//       // 주문 번호
+//       const orderNumberCell = document.createElement('td');
+//       orderNumberCell.textContent = order.orderNumber;
+//       row.appendChild(orderNumberCell);
+
+//       // 주문일
+//       const orderDateCell = document.createElement('td');
+//       orderDateCell.textContent = order.orderDate;
+//       row.appendChild(orderDateCell);
+
+//       // 주문 종류
+//       const orderTypeCell = document.createElement('td');
+//       orderTypeCell.textContent = order.orderType;
+//       row.appendChild(orderTypeCell);
+
+//       // 매수
+//       const quantityCell = document.createElement('td');
+//       quantityCell.textContent = order.quantity;
+//       row.appendChild(quantityCell);
+
+//       // 금액
+//       const amountCell = document.createElement('td');
+//       amountCell.textContent = order.amount;
+//       row.appendChild(amountCell);
+
+//       // 주문 상태
+//       const orderStatusCell = document.createElement('td');
+//       orderStatusCell.textContent = order.orderStatus;
+//       row.appendChild(orderStatusCell);
+
+//       tableBody.appendChild(row);
+//     }
+//   }
+// }
+
+  // 페이지 로드 시, 저장된 주문 조회 결과 표시
+// 폼 제출 시 호출되는 함수
+// function validateForm(event) {
+//   event.preventDefault(); // 기본 폼 제출 동작 막기
+
+//   // 저장된 이메일 주소와 전화번호 가져오기
+//   const email = localStorage.getItem('order_email_text');
+//   const phone = localStorage.getItem('order_tel_text');
+
+//   // 조회 결과를 가져온다고 가정
+//   const orders = getOrders(email, phone);
+
+//   // 결과를 표시할 요소 선택
+//   const orderResultRow = document.getElementById('order_result_row');
+//   const noOrderRow = document.getElementById('no_order_row');
+
+//   if (orders.length > 0) {
+//     // 주문 결과가 있을 경우
+//     orderResultRow.innerHTML = ''; // 기존 내용 초기화
+
+//     // 주문 정보를 동적으로 생성하여 표시
+//     for (const order of orders) {
+//       const newRow = document.createElement('tr');
+//       newRow.classList.add('ask_loc_table_1');
+
+//       const orderNumberCell = document.createElement('td');
+//       orderNumberCell.textContent = order.orderNumber;
+//       newRow.appendChild(orderNumberCell);
+
+//       const orderDateCell = document.createElement('td');
+//       orderDateCell.textContent = order.orderDate;
+//       newRow.appendChild(orderDateCell);
+
+//       const orderTypeCell = document.createElement('td');
+//       orderTypeCell.textContent = order.orderType;
+//       newRow.appendChild(orderTypeCell);
+
+//       const quantityCell = document.createElement('td');
+//       quantityCell.textContent = order.quantity;
+//       newRow.appendChild(quantityCell);
+
+//       const amountCell = document.createElement('td');
+//       amountCell.textContent = order.amount;
+//       newRow.appendChild(amountCell);
+
+//       orderResultRow.appendChild(newRow);
+//     }
+
+//     noOrderRow.style.display = 'none'; // 주문 결과가 없는 경우 표시되지 않도록 설정
+//   } else {
+//     // 주문 결과가 없을 경우
+//     orderResultRow.innerHTML = ''; // 기존 내용 초기화
+//     noOrderRow.style.display = 'table-row'; // 결과 없음 표시
+//   }
+// }
+
+// // 이메일 주소와 전화번호를 기반으로 주문 정보를 가져온다고 가정하는 함수
+// function getOrders(email, phone) {
+//   // 여기에서 서버로 실제 주문 조회 요청을 보내고 결과를 받아오는 로직을 구현해야 합니다.
+//   // 이 예시에서는 임의의 데이터를 반환하는 대신 더미 데이터를 사용하겠습니다.
+//   const dummyData = [
+//     {
+//       orderNumber: '20230525-11001000',
+//       orderDate: '20230525',
+//       orderType: '1일 이용권 성인/청소년',
+//       quantity: '3',
+//       amount: '150,000',
+//     },
+//   ];
+
+//   return dummyData;
+// }
+
+// 폼 제출 시 호출되는 함수
+// function validateForm(event) {
+//   event.preventDefault(); // 기본 폼 제출 동작 막기
+
+//   // 저장된 이메일 주소와 전화번호 가져오기
+//   const email = localStorage.getItem('order_email_text');
+//   const phone = localStorage.getItem('order_tel_text');
+
+//   // 조회 결과를 가져온다고 가정
+//   const orders = getOrders(email, phone);
+
+//   // 결과를 표시할 요소 선택
+//   const orderResultRow = document.getElementById('order_result_row');
+//   const noOrderRow = document.getElementById('no_order_row');
+
+//   if (orders.length > 0) {
+//     // 주문 결과가 있을 경우
+//     orderResultRow.innerHTML = ''; // 기존 내용 초기화
+
+//     // 주문 정보를 동적으로 생성하여 표시
+//     for (const order of orders) {
+//       const newRow = document.createElement('tr');
+//       newRow.classList.add('ask_loc_table_1');
+
+//       const orderNumberCell = document.createElement('td');
+//       orderNumberCell.textContent = order.orderNumber;
+//       newRow.appendChild(orderNumberCell);
+
+//       const orderDateCell = document.createElement('td');
+//       orderDateCell.textContent = order.orderDate;
+//       newRow.appendChild(orderDateCell);
+
+//       const orderTypeCell = document.createElement('td');
+//       orderTypeCell.textContent = order.orderType;
+//       newRow.appendChild(orderTypeCell);
+
+//       const quantityCell = document.createElement('td');
+//       quantityCell.textContent = order.quantity;
+//       newRow.appendChild(quantityCell);
+
+//       const amountCell = document.createElement('td');
+//       amountCell.textContent = order.amount;
+//       newRow.appendChild(amountCell);
+
+//       orderResultRow.appendChild(newRow);
+//     }
+
+//     noOrderRow.style.display = 'none'; // 주문 결과가 없는 경우 표시되지 않도록 설정
+//   } else {
+//     // 주문 결과가 없을 경우
+//     orderResultRow.innerHTML = ''; // 기존 내용 초기화
+//     noOrderRow.style.display = 'table-row'; // 결과 없음 표시
+//   }
+// }
+
+// // 이메일 주소와 전화번호를 기반으로 주문 정보를 가져온다고 가정하는 함수
+// function getOrders(email, phone) {
+//   // 여기에서 서버로 실제 주문 조회 요청을 보내고 결과를 받아오는 로직을 구현해야 합니다.
+//   // 이 예시에서는 임의의 데이터를 반환하는 대신 더미 데이터를 사용하겠습니다.
+//   const dummyData = [
+//     {
+//       orderNumber: '20230525-11001000',
+//       orderDate: '20230525',
+//       orderType: '1일 이용권 성인/청소년',
+//       quantity: '3',
+//       amount: '150,000',
+//     },
+//   ];
+
+//   return dummyData;
+// }
+// 함수: 폼 데이터 저장
+// $(function(){
+// function saveFormData(element) {
+//     localStorage.setItem(element.id, element.value);
+// }
+
+// // 함수: 폼 유효성 검사 및 주문 조회
+// function validateForm(event) {
+//     event.preventDefault(); // 폼 전송 막기
+
+//     // 이메일과 전화번호 가져오기
+//     var email = document.getElementById('order_email_text').value;
+//     var tel = document.getElementById('order_tel_text').value;
+
+//     // 저장된 이메일과 전화번호 가져오기
+//     var savedEmail = localStorage.getItem('order_email_text');
+//     var savedTel = localStorage.getItem('order_tel_text');
+
+//     // 이메일과 전화번호 검증
+//     if (email === savedEmail && tel === savedTel) {
+//         displayOrderInfo(); // 주문 정보 표시
+//     } else {
+//         displayNoOrder(); // 주문 없음 표시
+//     }
+// }
+
+// // 함수: 주문 정보 표시
+// function displayOrderInfo() {
+//     var orderResultRow = document.getElementById('order_result_row');
+//     var noOrderRow = document.getElementById('no_order_row');
+
+//     // 기존 테이블 데이터 초기화
+//     orderResultRow.innerHTML = '';
+
+//     // 주문 정보 가져오기 (예시 데이터)
+//     var orders = [
+//         { orderNumber: '001', orderDate: '2023-05-29', orderType: 'Type A', quantity: 2, amount: 100 },
+//         { orderNumber: '002', orderDate: '2023-05-30', orderType: 'Type B', quantity: 1, amount: 50 }
+//     ];
+
+//     if (orders.length > 0) {
+//         // 주문 정보 테이블에 추가
+//         for (var i = 0; i < orders.length; i++) {
+//             var order = orders[i];
+//             var newRow = document.createElement('tr');
+//             newRow.className = 'ask_loc_table_1';
+//             newRow.innerHTML = 
+//                 '<td>' + order.orderNumber + '</td>' +
+//                 '<td>' + order.orderDate + '</td>' +
+//                 '<td>' + order.orderType + '</td>' +
+//                 '<td>' + order.quantity + '</td>' +
+//                 '<td>' + order.amount + '</td>';
+//             orderResultRow.appendChild(newRow);
+//         }
+
+//         // 테이블 표시
+//         orderResultRow.style.display = 'table-row';
+//         noOrderRow.style.display = 'none';
+//     } else {
+//         displayNoOrder(); // 주문 없음 표시
+//     }
+// }
+
+// // 함수: 주문 없음 표시
+// function displayNoOrder() {
+//     var orderResultRow = document.getElementById('order_result_row');
+//     var noOrderRow = document.getElementById('no_order_row');
+
+//     // 주문 결과 테이블 숨기기
+//     orderResultRow.style.display = 'none';
+//     noOrderRow.style.display = 'table-row';
+// }
+// })
+  </script>
+    <header>
+        <div id="header"></div>
+    </header>
+
+      <div class="main_title">
+        <div class="main_title_img">
+            <div class="main_title_txt">
+                <h3>주문조회</h3>
+            </div>
+          </div>
+    </div>
+    <main class="main" id="main" name="main">
+    <section class="form_wrapping">
+        <div class="lost_pro_form">
+    <h4 class="order_check_title">주문조회 할 수 있습니다 !!</h4>
+    <form name="check" action="" method="" id="order_check_form"onsubmit="return validateForm(event);">
+        <div class="ask_form_text">
+            <fieldset class="ask_com_bor">
+                <legend>주문조회</legend>
+                    <div class="order_ic_wrap">
+                        <div class="order_check_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                            </svg>
+                        </div>
+                        <div class="order_check_form_text">
+                            <p><span class="check_blue_text">과거의 주문에 액세스하려면 다음을 수행하십시오.</span><br>
+                            <span class="ask_form_agree_text_small">구매 과정 동안 사용한 이메일 주소 및 전화번호를 입력하십시오.</span></p>
+                        </div>
+                    </div>
+                    <p><input type="text" placeholder="이메일 주소" id="order_email_text" name="order_email_text" onchange="saveFormData(this)"></p>
+                    <p><input type="text" placeholder="전화번호" id="order_tel_text" name="order_tel_text" onchange="saveFormData(this)"></p>
+                </fieldset>
+            </div>
+            <div class="ask_form_sub">
+                <input type="submit" value="조회하기"> 
+            </div>
+        </form>
+        </div>
+    </section>
+    <section class="order_check_table">
+        <div class="order_check_wrap">
+            <div class="order_check_text">
+                <table>
+                    <tr class="ask_loc_table_3">
+                     <th colspan="5" class="order_check_title">주문조회를 확인할 수 있습니다 !!</th>
+                    </tr>
+                    <tr class="ask_loc_table_2">
+                        <th>주문 번호</th>
+                        <th>주문일</th> 
+                        <th>주문 종류</th>
+                        <th>매수</th>
+                        <th>금액</th>
+                    </tr>
+                    <tr class="ask_loc_table_1" id="order_result_row">
+                        <!-- 조회 결과를 여기에 동적으로 추가할 예정 -->
+                      </tr>
+                    <tr class="ask_loc_table_1" id="no_order_row" style="display: none;">
+                        <!-- 주문한 결과가 없을 경우 -->
+                        <td colspan="5">확인된 주문이 없습니다.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+      
+    </main>
+
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <script>
+        // 로컬 스토리지에서 데이터를 가져와서 화면에 출력
+        const locArr = JSON.parse(localStorage.getItem("customer_info"));
+        function loadFormData() {
+            const emailInput = document.getElementById('order_email_text');
+            const telInput = document.getElementById('order_tel_text');
+            const orderEmail = localStorage.getItem('orderEmail');
+            const orderTel = localStorage.getItem('orderTel');
+
+
+            if (orderEmail) {
+                emailInput.value = orderEmail;
+            }
+
+            if (orderTel) {
+                telInput.value = orderTel;
+            }
+        }
+
+        // 폼 데이터를 로컬 스토리지에 저장
+        function saveFormData(element) {
+            const inputName = element.name;
+            const inputValue = element.value;
+            localStorage.setItem(inputName, inputValue);
+        }
+
+       // 폼 검증을 위한 함수 (임시로 작성)
+       function validateForm(event) {
+    event.preventDefault();
+
+    // 예시: 폼 데이터를 가져와서 조회 결과를 보여줍니다.
+    const emailInput = document.getElementById('order_email_text');
+    const telInput = document.getElementById('order_tel_text');
+    const emailValue = emailInput.value;
+    const telValue = telInput.value;
+
+    const orderResultRow = document.getElementById('order_result_row');
+    const noOrderRow = document.getElementById('no_order_row');
+
+    locArr.forEach((v,i) => {
+        if ( v.email == emailInput.value && v.phone == telInput.value ) {
+        // 예시로 하드코딩된 조회 결과를 추가합니다.
+        // const orderTable = document.createElement('table');
+        const orderRow = document.createElement('tr');
+        orderRow.classList.add("ask_loc_table_1");
+        const orderNumberCell = document.createElement('td');
+        const orderDateCell = document.createElement('td');
+        const orderTypeCell = document.createElement('td');
+        const orderQuantityCell = document.createElement('td');
+        const orderAmountCell = document.createElement('td');
+
+        orderNumberCell.textContent = '주문번호';
+        orderDateCell.textContent = '2023-05-30';
+        orderTypeCell.textContent = '주문종류';
+        orderQuantityCell.textContent = '매수';
+        orderAmountCell.textContent = '금액';
+
+        orderRow.appendChild(orderNumberCell);
+        orderRow.appendChild(orderDateCell);
+        orderRow.appendChild(orderTypeCell);
+        orderRow.appendChild(orderQuantityCell);
+        orderRow.appendChild(orderAmountCell);
+        // orderTable.appendChild(orderRow);
+
+         // 이전 결과 초기화
+      const elements = orderResultRow.querySelectorAll('.ask_loc_table_1');
+      elements.forEach(element => {
+        element.classList.remove('ask_loc_table_1');
+      });
+
+
+        const q = document.querySelector(".order_check_text table");
+        orderResultRow.innerHTML = '';
+        q.append(orderRow);
+        noOrderRow.style.display = 'none';
+    } else {
+        orderResultRow.innerHTML = '';
+        noOrderRow.style.display = 'table-row';
+    }
+    })
+    
+    // if (emailValue === '575alswo75@naver.com' && telValue === '01032517475') {
+    //     // 예시로 하드코딩된 조회 결과를 추가합니다.
+    //     // const orderTable = document.createElement('table');
+    //     const orderRow = document.createElement('tr');
+    //     orderRow.classList.add("ask_loc_table_1");
+    //     const orderNumberCell = document.createElement('td');
+    //     const orderDateCell = document.createElement('td');
+    //     const orderTypeCell = document.createElement('td');
+    //     const orderQuantityCell = document.createElement('td');
+    //     const orderAmountCell = document.createElement('td');
+
+    //     orderNumberCell.textContent = '주문번호';
+    //     orderDateCell.textContent = '2023-05-30';
+    //     orderTypeCell.textContent = '주문종류';
+    //     orderQuantityCell.textContent = '매수';
+    //     orderAmountCell.textContent = '금액';
+
+    //     orderRow.appendChild(orderNumberCell);
+    //     orderRow.appendChild(orderDateCell);
+    //     orderRow.appendChild(orderTypeCell);
+    //     orderRow.appendChild(orderQuantityCell);
+    //     orderRow.appendChild(orderAmountCell);
+    //     // orderTable.appendChild(orderRow);
+
+    //     const q = document.querySelector(".order_check_text table");
+    //     orderResultRow.innerHTML = '';
+    //     q.append(orderRow);
+    //     noOrderRow.style.display = 'none';
+    // } else {
+    //     orderResultRow.innerHTML = '';
+    //     noOrderRow.style.display = 'table-row';
+    // }
+
+    return false;
+}
+        // 페이지 로드 시 폼 데이터를 로컬 스토리지에서 가져옴
+        window.addEventListener('load', loadFormData);
+
+
+
+
+
+
+
+//         const locArr = JSON.parse(localStorage.getItem("customer_info"));
+// function loadFormData() {
+//     const emailInput = document.getElementById('order_email_text');
+//     const telInput = document.getElementById('order_tel_text');
+//     const orderEmail = localStorage.getItem('orderEmail');
+//     const orderTel = localStorage.getItem('orderTel');
+
+//     if (orderEmail) {
+//         emailInput.value = orderEmail;
+//     }
+
+//     if (orderTel) {
+//         telInput.value = orderTel;
+//     }
+// }
+
+// // 폼 데이터를 로컬 스토리지에 저장
+// function saveFormData(element) {
+//     const inputName = element.name;
+//     const inputValue = element.value;
+//     localStorage.setItem(inputName, inputValue);
+// }
+
+// // 폼 검증을 위한 함수
+// function validateForm(event) {
+//     event.preventDefault();
+
+//     const emailInput = document.getElementById('order_email_text');
+//     const telInput = document.getElementById('order_tel_text');
+//     const emailValue = emailInput.value;
+//     const telValue = telInput.value;
+
+//     const orderResultRow = document.getElementById('order_result_row');
+//     const noOrderRow = document.getElementById('no_order_row');
+
+//     let foundResult = false; // 조회 결과가 있는지 여부를 저장하는 변수
+
+//     locArr.forEach((v, i) => {
+//         if (v.email === emailValue && v.phone === telValue) {
+//             foundResult = true;
+
+//             // 조회 결과를 생성하고 추가합니다.
+//             const orderTable = document.createElement('table');
+//             const orderRow = document.createElement('tr');
+//             orderRow.classList.add("ask_loc_table_1");
+//             const orderNumberCell = document.createElement('td');
+//             const orderDateCell = document.createElement('td');
+//             const orderTypeCell = document.createElement('td');
+//             const orderQuantityCell = document.createElement('td');
+//             const orderAmountCell = document.createElement('td');
+
+//             orderNumberCell.textContent = '주문번호';
+//             orderDateCell.textContent = '2023-05-30';
+//             orderTypeCell.textContent = '주문종류';
+//             orderQuantityCell.textContent = '매수';
+//             orderAmountCell.textContent = '금액';
+
+//             orderRow.appendChild(orderNumberCell);
+//             orderRow.appendChild(orderDateCell);
+//             orderRow.appendChild(orderTypeCell);
+//             orderRow.appendChild(orderQuantityCell);
+//             orderRow.appendChild(orderAmountCell);
+//             orderTable.appendChild(orderRow);
+
+//             // 이전 결과를 제거하고 새 결과를 추가합니다.
+//             orderResultRow.innerHTML = '';
+//             orderResultRow.appendChild(orderTable);
+//             noOrderRow.style.display = 'none';
+//         }
+//     });
+
+//     // 조회 결과가 없을 경우
+//     if (!foundResult) {
+//         orderResultRow.innerHTML = '';
+//         noOrderRow.style.display = 'table-row';
+//     }
+
+//     return false;
+// }
+
+// // 페이지 로드 시 폼 데이터를 로컬 스토리지에서 가져옴
+// window.addEventListener('load', loadFormData);
+
+
+
+//폼 검증을 위한 함수 (임시로 작성)
+// function validateForm(event) {
+//     event.preventDefault();
+
+//     // 예시: 폼 데이터를 가져와서 조회 결과를 보여줍니다.
+//     const emailInput = document.getElementById('order_email_text');
+//     const telInput = document.getElementById('order_tel_text');
+//     const emailValue = emailInput.value;
+//     const telValue = telInput.value;
+
+//     const orderResultRow = document.getElementById('order_result_row');
+//     const noOrderRow = document.getElementById('no_order_row');
+
+//     // 이전 결과 초기화
+//     orderResultRow.innerHTML = '';
+
+//     if (emailValue === 'example@example.com' && telValue === '1234567890') {
+//         // 예시로 하드코딩된 조회 결과를 추가합니다.
+//         const orderRow = document.getElementById('order_result_row');
+//         const orderNumberCell = document.createElement('td');
+//         const orderDateCell = document.createElement('td');
+//         const orderTypeCell = document.createElement('td');
+//         const orderQuantityCell = document.createElement('td');
+//         const orderAmountCell = document.createElement('td');
+
+//         orderNumberCell.textContent = '주문번호';
+//         orderDateCell.textContent = '2023-05-30';
+//         orderTypeCell.textContent = '주문종류';
+//         orderQuantityCell.textContent = '매수';
+//         orderAmountCell.textContent = '금액';
+
+//         orderRow.appendChild(orderNumberCell);
+//         orderRow.appendChild(orderDateCell);
+//         orderRow.appendChild(orderTypeCell);
+//         orderRow.appendChild(orderQuantityCell);
+//         orderRow.appendChild(orderAmountCell);
+
+//         orderResultRow.appendChild(orderRow);
+//         noOrderRow.style.display = 'none';
+//     } else {
+//         orderResultRow.innerHTML = ''; // orderRow가 없을 때 결과 초기화
+//         noOrderRow.style.display = 'table-row';
+//     }
+
+//     return false;
+// }
+    </script>
+</body>
+</html>

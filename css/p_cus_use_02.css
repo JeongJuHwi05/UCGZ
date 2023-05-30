@@ -1,0 +1,917 @@
+a{
+    text-decoration: underline;
+    color:#d01012;
+}
+/* 메인전체class */
+.main_title {
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* 메인 이미지 */
+  /* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
+  .main_title_img {
+    background: url("../image/p_cus_use_02/cancel_bg.jpg")
+      center/cover no-repeat;
+    margin-top: 90px;
+    width: 100vw;
+  }
+  .main_title_img img {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+
+  /* 메인 타이틀 */
+  .main_title_txt {
+    margin-top: 6.5rem;
+    margin-bottom: 5.5rem;
+    background: #00a138;
+    width: fit-content;
+    height: 110px;
+    opacity: 0.95;
+    padding: 0 30px;
+  }
+  /* 메인 타이틀 텍스트 */
+  .main_title_txt > h3 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffff;
+    text-align: center;
+    line-height: 110px;
+  }
+.main{
+    max-width:1350px;
+    margin:auto;
+    margin-top:100px;
+    font-size:16px;
+    margin-bottom:300px;
+}
+@media screen and (min-width : 901px){
+.refund_cancel_nav{
+    max-width:650px;
+    max-height:117px;
+    margin:auto;
+    margin-bottom:100px;
+}
+.refund_cancel_nav>ul{
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+.refund_cancel_nav a{
+    font-size: 36px;
+    color:#fff;
+    font-weight: 700;
+}
+
+.refund_cancel_nav1>a{
+    display: flex;
+    background-image: url("../image/p_cus_use_02/rectangle_yell-removebg-preview.png");
+    background-repeat: no-repeat;
+    width:300px;
+    height:117px;
+    align-items: center;
+    justify-content: center;
+    margin-right:25px;
+    text-decoration: none;
+}
+
+.refund_cancel_nav2>a{
+    display: flex;
+    background-image: url("../image/p_cus_use_02/rectangle_green-removebg-preview.png");
+    background-repeat: no-repeat;
+    width:300px;
+    height:117px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left:25px;
+    text-decoration: none;
+}
+}
+form legend{
+    font-weight: 700;
+}
+.tic_ref{
+    max-width:650px;
+    margin: auto;
+    line-height: 1.5rem;
+}
+.tic_ref_text_hi{
+    font-weight:700
+}
+.form_wrapping{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.ask_form_text{
+    margin-top:5%;
+    margin-bottom:5%
+}
+.ask_form_title>h4{
+    font-size:36px;
+    padding-bottom: 20px;
+}
+.ask_com_bor{
+    border:1px solid black;
+    max-width:600px;
+}
+.ask_com_bor>p{
+    padding:20px 30px 20px 30px;
+    line-height: 1.5rem;
+}
+.ask_com_bor input{
+    width:98%;
+    height:35px;
+    font-size:16px;
+    display: flex;
+    justify-content: center;
+}
+.ask_com_bor select{
+    width:98%;
+    height:35px;
+    font-size:24px
+}
+.ask_com_bor textarea{
+    width:98%;
+    height:200px
+}
+.ask_radio{
+    padding-left:30px
+}
+.ask_radio_title{
+    padding-top:10px;
+    padding-bottom:10px
+}
+.ask_radio_text{
+    line-height:22px
+}
+.ask_radio_in_wrap{
+    padding-top:5px;
+    padding-bottom:5px;
+}
+/* 라디오 버튼을 감싸는 라벨 스타일 */
+.ask_radio_label {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+/* 라디오 버튼의 실제 input 스타일 */
+.ask_radio_input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+/* 라디오 버튼의 외부 모양 스타일 */
+.ask_radio_out {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+/* 라디오 버튼이 선택되었을 때의 외부 모양 스타일 */
+.ask_radio_input:checked + .ask_radio_out {
+    background-color: black;
+}
+/* 라디오 버튼의 내부 선택 표시 스타일 */
+.ask_radio_in {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0; /* 초기에는 선택 표시를 숨깁니다. */
+}
+/* 라디오 버튼이 선택되었을 때의 내부 선택 표시 스타일 */
+.ask_radio_input:checked + .ask_radio_out .ask_radio_in {
+    opacity: 1; /* 선택 표시를 보여줍니다. */
+}
+.ask_form_agree1{
+    width:90%;
+    padding:10px 10px;
+    margin-bottom:10px
+}
+.ask_form_agree1_check{
+    padding-left: 10px;
+}
+.ask_form_agree1_check>input{
+    width:24px;
+    height:24px;
+    margin-right:10px
+}
+.ask_form_agree2{
+    width:90%;
+    padding:10px 10px;
+    margin-bottom:10px;
+}
+.ask_form_agree2>p{
+    padding-left:10px
+}
+.ask_form_agree2_wrap{
+    display: flex;
+    justify-content: center;
+}
+.ask_form_agree2_check{
+    padding-left: 10px;
+    margin-right: 5px;
+}
+.ask_form_agree2_check>input{
+    width:24px;
+    height:24px;
+    margin-right:10px
+}
+.ask_form_agree3{
+    width:90%;
+    padding:0 10px;
+    margin-left:10px
+}
+.ask_form_agree3_wrap{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+#mycheckbox {
+    display: none;
+}
+#unchecked, #checked {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked {
+    display: inline;
+}
+#checked {
+    display: none;
+}
+#mycheckbox:checked + label #unchecked {
+    display: none;
+}
+#mycheckbox:checked + label #checked {
+    display: inline;
+}
+
+#mycheckbox1 {
+    display: none;
+}
+#unchecked1, #checked1 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked1 {
+    display: inline;
+}
+#checked1 {
+    display: none;
+}
+#mycheckbox1:checked + label #unchecked1 {
+    display: none;
+}
+#mycheckbox1:checked + label #checked1 {
+    display: inline;
+}
+
+#mycheckbox2 {
+    display: none;
+}
+#unchecked2, #checked2 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked2 {
+    display: inline;
+}
+#checked2 {
+    display: none;
+}
+#mycheckbox2:checked + label #unchecked2 {
+    display: none;
+}
+#mycheckbox2:checked + label #checked2 {
+    display: inline;
+}
+
+#mycheckbox3 {
+    display: none;
+}
+#unchecked3, #checked3 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked3 {
+    display: inline;
+}
+#checked3 {
+    display: none;
+}
+#mycheckbox3:checked + label #unchecked3 {
+    display: none;
+}
+#mycheckbox3:checked + label #checked3 {
+    display: inline;
+}
+
+#mycheckbox4 {
+    display: none;
+}
+#unchecked4, #checked4 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked4 {
+    display: inline;
+}
+#checked4 {
+    display: none;
+}
+#mycheckbox4:checked + label #unchecked4 {
+    display: none;
+}
+#mycheckbox4:checked + label #checked4 {
+    display: inline;
+}
+
+#mycheckbox5 {
+    display: none;
+}
+#unchecked5, #checked5 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked5 {
+    display: inline;
+}
+#checked5 {
+    display: none;
+}
+#mycheckbox5:checked + label #unchecked5 {
+    display: none;
+}
+#mycheckbox5:checked + label #checked5 {
+    display: inline;
+}
+
+#mycheckbox6 {
+    display: none;
+}
+#unchecked6, #checked6 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked6 {
+    display: inline;
+}
+#checked6 {
+    display: none;
+}
+#mycheckbox6:checked + label #unchecked6 {
+    display: none;
+}
+#mycheckbox6:checked + label #checked6 {
+    display: inline;
+}
+
+#mycheckbox7 {
+    display: none;
+}
+#unchecked7, #checked7 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked7 {
+    display: inline;
+}
+#checked7 {
+    display: none;
+}
+#mycheckbox7:checked + label #unchecked7 {
+    display: none;
+}
+#mycheckbox7:checked + label #checked7 {
+    display: inline;
+}
+
+#mycheckbox8 {
+    display: none;
+}
+#unchecked8, #checked8 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked8 {
+    display: inline;
+}
+#checked8 {
+    display: none;
+}
+#mycheckbox8:checked + label #unchecked8 {
+    display: none;
+}
+#mycheckbox8:checked + label #checked8 {
+    display: inline;
+}
+
+#mycheckbox9 {
+    display: none;
+}
+#unchecked9, #checked9 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked9 {
+    display: inline;
+}
+#checked9 {
+    display: none;
+}
+#mycheckbox9:checked + label #unchecked9 {
+    display: none;
+}
+#mycheckbox9:checked + label #checked9 {
+    display: inline;
+}
+
+#mycheckbox10 {
+    display: none;
+}
+#unchecked10, #checked10 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked10 {
+    display: inline;
+}
+#checked10 {
+    display: none;
+}
+#mycheckbox10:checked + label #unchecked10 {
+    display: none;
+}
+#mycheckbox10:checked + label #checked10 {
+    display: inline;
+}
+
+#mycheckbox11 {
+    display: none;
+}
+#unchecked11, #checked11 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked11 {
+    display: inline;
+}
+#checked11 {
+    display: none;
+}
+#mycheckbox11:checked + label #unchecked11 {
+    display: none;
+}
+#mycheckbox11:checked + label #checked11 {
+    display: inline;
+}
+
+#mycheckbox12 {
+    display: none;
+}
+#unchecked12, #checked12 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked12 {
+    display: inline;
+}
+#checked12 {
+    display: none;
+}
+#mycheckbox12:checked + label #unchecked12 {
+    display: none;
+}
+#mycheckbox12:checked + label #checked12 {
+    display: inline;
+}
+
+#mycheckbox13 {
+    display: none;
+}
+#unchecked13, #checked13 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked13 {
+    display: inline;
+}
+#checked13 {
+    display: none;
+}
+#mycheckbox13:checked + label #unchecked13 {
+    display: none;
+}
+#mycheckbox13:checked + label #checked13 {
+    display: inline;
+}
+
+#mycheckbox14 {
+    display: none;
+}
+#unchecked14, #checked14 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked14 {
+    display: inline;
+}
+#checked14 {
+    display: none;
+}
+#mycheckbox14:checked + label #unchecked14 {
+    display: none;
+}
+#mycheckbox14:checked + label #checked14 {
+    display: inline;
+}
+
+#mycheckbox15 {
+    display: none;
+}
+#unchecked15, #checked15 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked15 {
+    display: inline;
+}
+#checked15 {
+    display: none;
+}
+#mycheckbox15:checked + label #unchecked15 {
+    display: none;
+}
+#mycheckbox15:checked + label #checked15 {
+    display: inline;
+}
+
+#mycheckbox16 {
+    display: none;
+}
+#unchecked16, #checked16 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked16 {
+    display: inline;
+}
+#checked16 {
+    display: none;
+}
+#mycheckbox16:checked + label #unchecked16 {
+    display: none;
+}
+#mycheckbox16:checked + label #checked16 {
+    display: inline;
+}
+
+#mycheckbox17 {
+    display: none;
+}
+#unchecked17, #checked17 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked17 {
+    display: inline;
+}
+#checked17 {
+    display: none;
+}
+#mycheckbox17:checked + label #unchecked17 {
+    display: none;
+}
+#mycheckbox17:checked + label #checked17 {
+    display: inline;
+}
+
+#mycheckbox18 {
+    display: none;
+}
+#unchecked18, #checked18 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked18 {
+    display: inline;
+}
+#checked18 {
+    display: none;
+}
+#mycheckbox18:checked + label #unchecked18 {
+    display: none;
+}
+#mycheckbox18:checked + label #checked18 {
+    display: inline;
+}
+
+#mycheckbox19 {
+    display: none;
+}
+#unchecked19, #checked19 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked19 {
+    display: inline;
+}
+#checked19 {
+    display: none;
+}
+#mycheckbox19:checked + label #unchecked19 {
+    display: none;
+}
+#mycheckbox19:checked + label #checked19 {
+    display: inline;
+}
+
+#mycheckbox20 {
+    display: none;
+}
+#unchecked20, #checked20 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked20 {
+    display: inline;
+}
+#checked20 {
+    display: none;
+}
+#mycheckbox20:checked + label #unchecked20 {
+    display: none;
+}
+#mycheckbox20:checked + label #checked20 {
+    display: inline;
+}
+
+#mycheckbox21 {
+    display: none;
+}
+#unchecked21, #checked21 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked21 {
+    display: inline;
+}
+#checked21 {
+    display: none;
+}
+#mycheckbox21:checked + label #unchecked21 {
+    display: none;
+}
+#mycheckbox21:checked + label #checked21 {
+    display: inline;
+}
+
+#mycheckbox22 {
+    display: none;
+}
+#unchecked22, #checked22 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked22 {
+    display: inline;
+}
+#checked22 {
+    display: none;
+}
+#mycheckbox22:checked + label #unchecked22 {
+    display: none;
+}
+#mycheckbox22:checked + label #checked22 {
+    display: inline;
+}
+
+#mycheckbox23 {
+    display: none;
+}
+#unchecked23, #checked23 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked23 {
+    display: inline;
+}
+#checked23 {
+    display: none;
+}
+#mycheckbox23:checked + label #unchecked23 {
+    display: none;
+}
+#mycheckbox23:checked + label #checked23 {
+    display: inline;
+}
+
+#mycheckbox24 {
+    display: none;
+}
+#unchecked24, #checked24 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked24 {
+    display: inline;
+}
+#checked24 {
+    display: none;
+}
+#mycheckbox24:checked + label #unchecked24 {
+    display: none;
+}
+#mycheckbox24:checked + label #checked24 {
+    display: inline;
+}
+
+#mycheckbox25 {
+    display: none;
+}
+#unchecked25, #checked25 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked25 {
+    display: inline;
+}
+#checked25 {
+    display: none;
+}
+#mycheckbox25:checked + label #unchecked25 {
+    display: none;
+}
+#mycheckbox25:checked + label #checked25 {
+    display: inline;
+}
+
+#mycheckbox26 {
+    display: none;
+}
+#unchecked26, #checked26 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked26 {
+    display: inline;
+}
+#checked26 {
+    display: none;
+}
+#mycheckbox26:checked + label #unchecked26 {
+    display: none;
+}
+#mycheckbox26:checked + label #checked26 {
+    display: inline;
+}
+
+#mycheckbox27 {
+    display: none;
+}
+#unchecked27, #checked27 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked27 {
+    display: inline;
+}
+#checked27 {
+    display: none;
+}
+#mycheckbox27:checked + label #unchecked27 {
+    display: none;
+}
+#mycheckbox27:checked + label #checked27 {
+    display: inline;
+}
+.ask_form_agree_text{
+    margin-left: 10px;
+}
+.ask_form_agree_text_small{
+    font-size:14px;
+    color:#757575
+}
+.ask_form_sub{
+    margin-top:40px;
+}
+.ask_form_sub>input{
+    border:none;
+    background:#004f84;
+    width:250px;
+    height:60px;
+    font-size:36px;
+    color:#fff;
+    cursor: pointer;
+}
+.hotel_res_cancel{
+    max-width:650px;
+    margin: auto;
+    line-height: 1.5rem;
+}
+.hotel_res_cancel>h4{
+    font-size:24px;
+    color:#006db7;
+    padding-bottom:20px;
+    font-weight:700
+}
+.hotel_res_cancel_wrap{
+    display: flex;
+    justify-content: center;
+    margin-bottom:20px;
+}
+.hotel_res_cancel_rule_text{
+    margin-left: 10px;
+}
+.ask_hotel_cancel_page{
+    display: none;
+}
+@media screen and (max-width : 900px){
+    .refund_cancel_nav{
+        max-width:300px;
+        max-height:117px;
+        margin:auto;
+        margin-bottom:170px;
+        margin-top:200px
+    }
+    .refund_cancel_nav>ul{
+        flex-direction: column;
+        display:flex;
+        justify-content: center;
+        width:100%;
+    }
+    .refund_cancel_nav a{
+        font-size: 36px;
+        color:#fff;
+        font-weight: 700;
+    }
+    
+    .refund_cancel_nav1>a{
+        display: flex;
+        background-image: url("../image/p_cus_use_02/rectangle_yell-removebg-preview.png");
+        background-repeat: no-repeat;
+        width:300px;
+        height:117px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        margin-bottom:25px
+    }
+    
+    .refund_cancel_nav2>a{
+        display: flex;
+        background-image: url("../image/p_cus_use_02/rectangle_green-removebg-preview.png");
+        background-repeat: no-repeat;
+        width:300px;
+        height:117px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+    }

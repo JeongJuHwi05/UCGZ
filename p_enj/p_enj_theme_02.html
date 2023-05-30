@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon/favicon-16x16.png">
+    <title>쇼핑/다이닝</title>
+
+    <script src="http://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="/js/p_enj_theme_02_jq.js"></script>
+
+    <link rel="stylesheet" href="/css/p_enj_theme_02_css.css"/>
+
+    <script type="text/javascript">   
+        $(document).ready( function() {
+            $("#header").load("/header/header.html");
+            $("#footer").load("/footer/footer.html");
+        });
+        
+        $(function(){
+            //팝업 열기
+            $(".card_menu_y").click(function() {
+                // 클릭된 요소를 찾습니다.
+                var clickedElement = $(this);
+
+                // 해당 .card_menu_y 요소의 인덱스를 가져옵니다.
+                var cardIndex = $(".card_menu_y").index(clickedElement);
+                
+                console.log(cardIndex);
+                // 인덱스를 사용하여 해당하는 .pop_up 요소를 보여줍니다.
+                $(".pop_up").eq(cardIndex).show();
+
+                $(window).scroll(function() {
+                    // 스크롤된 거리를 가져옵니다.
+                    var scrollDistance = $(window).scrollTop();
+
+                    // 이미지를 원하는 위치에 따라 이동시킵니다.
+                    $('.pop_up').css('top', scrollDistance + 'px');
+                    $('.pop_up').css('margin-top', '130px');
+                });
+            });
+
+            //버튼으로 팝업 닫기
+            $(".pop_up_can>a").click(function(){
+                $(".pop_up").hide()
+            })
+    
+            //외부 레이아웃눌러서 팝업 닫기
+            $(document).mouseup(function (e) {
+                var container = $(".pop_up");
+                if (!container.is(e.target) && container.has(e.target).length === 0){
+                    container.css("display","none");
+                }	
+            });
+        })
+    </script>
+</head>
+<body>
+    
+    <header>
+        <div id="header"></div>
+    </header>
+
+    <div class="main_title">
+        <div class="main_title_img">
+            <div class="main_title_txt">
+                <h1>LEGOLAND® 쇼핑 & 다이닝</h1>
+            </div>
+        </div>
+    </div>
+    
+    <section class="main">
+
+        <div class="tab_page_shopping" id="tab01">
+
+            <div class="tab">
+                <div class="tab_sp">
+                    <div class="sp_a">
+                        <a href="#none" id="tab_01">쇼핑</a>
+                    </div>
+                </div>
+                
+                <div class="di_a">
+                    <a href="#none" id="tab_02">다이닝</a>
+                </div>
+            </div>
+            
+            <div class="page_subTitle">
+                <p>LEGOLAND®의 경험을 기억할 멋진 기념품을 골라보세요!<br>
+                    LEGOLAND®만 판매되는 스페셜 LEGO® 상품, LEGOLAND® 굿즈<br>
+                    그리고 최애 LEGO® 시리즈까지! 잊지 못할 하루를 장식할 기념품이<br>
+                    여러분들을 기다리고 있습니다!
+                </p>
+            </div>
+
+            <div class="all_att">
+                <div class="card">
+                    <div class="card_img">
+                        <img src="/image/p_enj_theme_02/p_enj_theme_02_01.jpg" alt="빅 샵">
+                    </div>
+
+                    <h3>빅 샵</h3>
+                    <p>LEGO®의 모든 것이 있는 상점! 최대 규모의 'Big Shop'에 오신걸 환영합니다! 다른 곳에서는 찾을 수 없는 LEGO® 상품을 포함하여 다양한 종류의 장난감도 구경해보세요! 가장 마음에 드는 LEGOLAND® Korea 티셔츠나 기념품을 골라 여러분의 멋진 하루를 기억해볼까요?</p>
+                </div>
+
+                <div class="card">
+                    <div class="card_img">
+                        <img src="/image/p_enj_theme_02/p_enj_theme_02_02.jpg" alt="픽 어 브릭">
+                    </div>
+                    <h3>픽 어 브릭</h3>
+                    <p>100가지가 넘는 LEGO® 브릭과 부품이 준비되어 있어요! 나만의 브릭 키체인도 만들 수 있답니다! LEGO®덕후로서 그냥 지나칠 수 없겠죠?</p>
+                </div>
+
+                <div class="card">
+                    <div class="card_img">
+                        <img src="/image/p_enj_theme_02/p_enj_theme_02_03.jpg" alt="미니피규어 마켓">
+                    </div>
+                    <h3>미니피규어 마켓</h3>
+                    <p>여러분과 똑같은 모습의 미니피규어를 만들어보세요! 각인 서비스까지 준비되어 있답니다! 머리부터 발끝까지 내 마음대로 미니피규어를 만들 수 있는 재밌는 경험! 지금 바로 Come Come!</p>
+                </div>
+
+                <div class="card">
+                    <div class="card_img">
+                        <img src="/image/p_enj_theme_02/p_enj_theme_02_04.jpg" alt="로얄 마켓">
+                    </div>
+                    <h3>로얄 마켓</h3>
+                    <p>중세 의상, 악세사리, 장난감들을 찾아 기사와 공주들로 변신하세요! (동절기 미운영)</p>
+                </div>
+
+                <div class="card">
+                    <div class="card_img">
+                        <img src="/image/p_enj_theme_02/p_enj_theme_02_05.jpg" alt="마스터 우 웨어하우스">
+                    </div>
+                    <h3>마스터 우 웨어하우스</h3>
+                    <p>LEGO® NINJAGO® 더 라이드에서 스핀짓주를 마스터하셨나요? 자, 이제 NINJAGO의 세계로 모험하는 데 필요한 모든 장비를 갖출 차례에요! 떠나기 전에 Wu 사부님의 멋진 그림도 구경해보세요! (동절기 미운영)</p>
+                </div>
+
+                <div class="card">
+                    <div class="card_img">
+                        <img src="/image/p_enj_theme_02/p_enj_theme_02_06.jpg" alt="테이스티 트릿">
+                    </div>
+                    <h3>테이스티 트릿</h3>
+                    <p>테마파크에 왔다면 맛있는 캔디는 필수죠!</p>
+                </div>
+
+                <div class="card">
+                    <div class="card_img">
+                        <img src="/image/p_enj_theme_02/p_enj_theme_02_07.jpg" alt="시티 샵">
+                    </div>
+                    <h3>시티 샵</h3>
+                    <p>LEGOLAND®에서 생에 첫 운전을 해보셨나요? 그럼 이제 LEGOLAND® 운전면허증을 발급받아 랜야드에 넣고 자랑 해보세요!</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card_img">
+                        <img src="/image/p_enj_theme_02/p_enj_theme_02_08.jpg" alt="스튜디오 스토어">
+                    </div>
+                    <h3>스튜디오 스토어</h3>
+                    <p>인기 있는 영화에서 영감을 받은 기프트 샵! 다양한 영화 시리즈의 LEGO® 제품들을 만나볼 수 있습니다! 주기적으로 새로운 컨셉의 제품들로 바뀌는 스튜디오 스토어에 지금 방문해보세요!</p>
+                </div>
+                <div class="ex_card"></div>
+            </div>
+        </div>
+
+
+        <div class="tab_page_dining" id="tab02">
+            
+            <div class="tab">
+                <div class="sp_a">
+                    <a href="#none" id="tab_03">쇼핑</a>
+                </div>
+                
+                <div class="di_a">
+                    <a href="#none" id="tab_04">다이닝</a>
+                </div>
+            </div>
+
+            <div class="page_subTitle">
+                <p>아침부터 일찍 LEGOLAND®를 즐기느라 배에서는 꼬르륵~소리가 나신다구요?<br>
+                    어린이부터 어른까지 모두의 입맛에 맞는 패밀리 레스토랑과<br>
+                    음식점들이 준비되어 있습니다! 한번 맛 보면 잊을 수 없을꺼에요!!!
+                </p>
+            </div>
+
+            <div class="all_att">
+                <!-- 빅 브릭스 바이츠 -->
+                <div class="card_di card_menu_y">
+                    <div class="card_img">
+                        <img src="/image/p_enj_theme_02/p_enj_theme_02_09.jpg" alt="빅 브릭스 바이츠">
+                    </div>
+
+                    <h3>빅 브릭스 바이츠</h3>
+                    <p>육즙이 팡팡! 100% 소고기 버거, 감자튀김, 그리고 놀라운 콤보를 확인해보세요!</p>
+
+                    <button type="button" class="btn">메뉴보기</button>
+                </div>
+                <!--팝업-->
+                <div class="pop_up">
+                    <div class="pop_up_wrap">
+                        <div class="pop_up_img">
+                            <img src="/image/p_enj_theme_02/p_enj_theme_02_09_menu.jpg"alt="빅 브릭스 바이츠 메뉴">
+                        </div>
+                        <div class="pop_up_can">
+                            .<a href="#none"><img src="/image/p_enj_theme_02/popup_close.png" alt="닫기"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 브릭 비어드 스낵스 -->
+                <div class="card_di  card_menu_y">
+                    <div class="card_img">
+                        <img src="/image/p_enj_theme_02/p_enj_theme_02_10.jpg" alt="브릭 비어드 스낵스">
+                    </div>
+
+                    <h3>브릭 비어드 스낵스</h3>
+                    <p>해적들의 바다를 탐험하다 배가 고파졌다구요? 지금 당장 브릭비어드 선장이 준비한 핫도그와 음료수를 맛보러 오시죠! 배가 든든해야 모험도 할 수 있는거 아니겠습니까? 하하하</p>
+
+                    <button type="button" class="btn">메뉴보기</button>
+                </div>
+                <!--팝업-->
+                <div class="pop_up">
+                    <div class="pop_up_wrap">
+                        <div class="pop_up_img">
+                            <img src="/image/p_enj_theme_02/p_enj_theme_02_10_menu.jpg"alt="브릭 비어드 스낵스">
+                        </div>
+                        <div class="pop_up_can">
+                            .<a href="#none"><img src="/image/p_enj_theme_02/popup_close.png" alt="닫기"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 브릭 토피아 다이너 -->
+                <div class="card_di" style="cursor: auto;">
+                    <div class="card_img">
+                        <img src="/image/p_enj_theme_02/p_enj_theme_02_11.jpg" alt="브릭 토피아 다이너">
+                    </div>
+
+                    <h3>브릭 토피아 다이너</h3>
+                    <p>피자, 파스타, 샐러드를 무제한으로 먹을 수 있는 뷔페! 우리 모두 피.최.몇? 파.최.몇? 해볼까요?</p>
+                </div>
+
+                <!-- 시티 레스토랑 -->
+                <div class="card_di card_menu_y">
+                    <div class="card_img">
+                        <img src="/image/p_enj_theme_02/p_enj_theme_02_12.jpg" alt="시티 레스토랑">
+                    </div>
+
+                    <h3>시티 레스토랑</h3>
+                    <p>온 가족이 식사하기에 그야말로 완벽한 장소! 미니피규어들과 함께 신나는 Rock 음악을 들으며 신선한 샐러드, 수프, 그릴과 오븐 요리, 디저트까지! 모두 즐겨보세요!</p>
+
+                    <button type="button" class="btn">메뉴보기</button>
+                </div>
+                <!--팝업-->
+                <div class="pop_up">
+                    <div class="pop_up_wrap">
+                        <div class="pop_up_img">
+                            <img src="/image/p_enj_theme_02/p_enj_theme_02_12_menu.jpg"alt="시티 레스토랑 메뉴">
+                        </div>
+                        <div class="pop_up_can">
+                            .<a href="#none"><img src="/image/p_enj_theme_02/popup_close.png" alt="닫기"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 시티 스낵스 -->
+                <div class="card_di card_menu_y">
+                    <div class="card_img">
+                        <img src="/image/p_enj_theme_02/p_enj_theme_02_13.jpg" alt="시티 스낵스">
+                    </div>
+
+                    <h3>시티 스낵스</h3>
+                    <p>LEGO® 시티에서의 여행 중에 당충전이 필요하시다구요? 시티 스테이션 스낵에 들러서 츄러스와 음료수를 꿀꺽!</p>
+
+                    <button type="button" class="btn">메뉴보기</button>
+                </div>
+                <!--팝업-->
+                <div class="pop_up">
+                    <div class="pop_up_wrap">
+                        <div class="pop_up_img">
+                            <img src="/image/p_enj_theme_02/p_enj_theme_02_13_menu.jpg"alt="시티 스낵스 메뉴">
+                        </div>
+                        <div class="pop_up_can">
+                            .<a href="#none"><img src="/image/p_enj_theme_02/popup_close.png" alt="닫기"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 마리나 스낵 -->
+                <div class="card_di card_menu_y">
+                    <div class="card_img">
+                        <img src="/image/p_enj_theme_02/p_enj_theme_02_14.jpg" alt="마리나 스낵">
+                    </div>
+
+                    <h3>마리나 스낵</h3>
+                    <p>따뜻한 어묵, 어묵 우동, 오다리 튀김, 회오리 감자와 쥐포 튀김! 맥주까지 있어요! 지금 당장 마리나 스낵으로 오세요!</p>
+
+                    <button type="button" class="btn">메뉴보기</button>
+                </div>
+                <!--팝업-->
+                <div class="pop_up">
+                    <div class="pop_up_wrap">
+                        <div class="pop_up_img">
+                            <img src="/image/p_enj_theme_02/p_enj_theme_02_14_menu.jpg"alt="마리나 스낵 메뉴">
+                        </div>
+                        <div class="pop_up_can">
+                            .<a href="#none"><img src="/image/p_enj_theme_02/popup_close.png" alt="닫기"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 스낵 쉑 -->
+                <div class="card_di card_menu_y">
+                    <div class="card_img">
+                        <img src="/image/p_enj_theme_02/p_enj_theme_02_15.jpg" alt="스낵 쉑">
+                    </div>
+
+                    <h3>스낵 쉑</h3>
+                    <p>건강을 생각해서 랩 & 샐러드를 준비했어요. 샐러드 드레싱과 마요네즈까지 전부 비건!</p>
+
+                    <button type="button" class="btn">메뉴보기</button>
+                </div>
+                <!--팝업-->
+                <div class="pop_up">
+                    <div class="pop_up_wrap">
+                        <div class="pop_up_img">
+                            <img src="/image/p_enj_theme_02/p_enj_theme_02_15_menu.jpg"alt="스낵 쉑 메뉴">
+                        </div>
+                        <div class="pop_up_can">
+                            .<a href="#none"><img src="/image/p_enj_theme_02/popup_close.png" alt="닫기"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 나이츠 피스트 -->
+                <div class="card_di card_menu_y">
+                    <div class="card_img">
+                        <img src="/image/p_enj_theme_02/p_enj_theme_02_16.jpg" alt="나이츠 피스트">
+                    </div>
+
+                    <h3>나이츠 피스트</h3>
+                    <p>바삭바삭한 프라이드 치킨부터 달콤한 아이스크림 디저트까지! K-치킨은 절대 지나칠 수가 없죠!</p>
+
+                    <button type="button" class="btn">메뉴보기</button>
+                </div>
+                <!--팝업-->
+                <div class="pop_up">
+                    <div class="pop_up_wrap">
+                        <div class="pop_up_img">
+                            <img src="/image/p_enj_theme_02/p_enj_theme_02_16_menu.jpg"alt="나이츠 피스트 메뉴">
+                        </div>
+                        <div class="pop_up_can">
+                            .<a href="#none"><img src="/image/p_enj_theme_02/popup_close.png" alt="닫기"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 위자드 프로즌 원더즈 -->
+                <div class="card_di card_menu_y">
+                    <div class="card_img">
+                        <img src="/image/p_enj_theme_02/p_enj_theme_02_17.jpg" alt="위자드 프로즌 원더즈">
+                    </div>
+
+                    <h3>위자드 프로즌 원더즈</h3>
+                    <p>마법사의 얼음 마법으로 만들어진 달콤 시원한 아이스크림을 놓치지 마세요!</p>
+
+                    <button type="button" class="btn">메뉴보기</button>
+                </div>
+                <!--팝업-->
+                <div class="pop_up">
+                    <div class="pop_up_wrap">
+                        <div class="pop_up_img">
+                            <img src="/image/p_enj_theme_02/p_enj_theme_02_17_menu.jpg"alt="위자드 프로즌 원더즈 메뉴">
+                        </div>
+                        <div class="pop_up_can">
+                            .<a href="#none"><img src="/image/p_enj_theme_02/popup_close.png" alt="닫기"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 카이즈 애플 프라이즈 -->
+                <div class="card_di card_menu_y">
+                    <div class="card_img">
+                        <img src="/image/p_enj_theme_02/p_enj_theme_02_18.jpg" alt="카이즈 애플 프라이즈">
+                    </div>
+
+                    <h3>카이즈 애플 프라이즈</h3>
+                    <p>LEGOLAND®의 시그니처 디저트 등장! 계피로 코팅된 청사과 튀김을 휘핑 크림에 듬뿍 찍어서 입으로 직행! 냠냠!</p>
+
+                    <button type="button" class="btn">메뉴보기</button>
+                </div>
+                <!--팝업-->
+                <div class="pop_up">
+                    <div class="pop_up_wrap">
+                        <div class="pop_up_img">
+                            <img src="/image/p_enj_theme_02/p_enj_theme_02_18_menu.jpg"alt="카이즈 애플 프라이즈 메뉴">
+                        </div>
+                        <div class="pop_up_can">
+                            .<a href="#none"><img src="/image/p_enj_theme_02/popup_close.png" alt="닫기"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 웍 엔 볼 -->
+                <div class="card_di card_menu_y">
+                    <div class="card_img">
+                        <img src="/image/p_enj_theme_02/p_enj_theme_02_19.jpg" alt="웍 엔 볼">
+                    </div>
+
+                    <h3>웍 엔 볼</h3>
+                    <p>덮밥류가 무려 3가지 종류가! 꿔바로우랑 튀김만두도 있어요!</p>
+
+                    <button type="button" class="btn">메뉴보기</button>
+                </div>
+                <!--팝업-->
+                <div class="pop_up">
+                    <div class="pop_up_wrap">
+                        <div class="pop_up_img">
+                            <img src="/image/p_enj_theme_02/p_enj_theme_02_19_menu.jpg"alt="웍 엔 볼 메뉴">
+                        </div>
+                        <div class="pop_up_can">
+                            .<a href="#none"><img src="/image/p_enj_theme_02/popup_close.png" alt="닫기"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 브릭스트릿 카페 -->
+                <div class="card_di card_menu_y">
+                    <div class="card_img">
+                        <img src="/image/p_enj_theme_02/p_enj_theme_02_20.jpg" alt="브릭스트릿 카페">
+                    </div>
+
+                    <h3>브릭스트릿 카페</h3>
+                    <p>커피, 베이커리, 아이스크림 등 다양한 메뉴가 준비되어 있어요!</p>
+
+                    <button type="button" class="btn">메뉴보기</button>
+                </div>
+                <!--팝업-->
+                <div class="pop_up">
+                    <div class="pop_up_wrap">
+                        <div class="pop_up_img">
+                            <img src="/image/p_enj_theme_02/p_enj_theme_02_20_menu.jpg"alt="브릭스트릿 카페 메뉴">
+                        </div>
+                        <div class="pop_up_can">
+                            .<a href="#none"><img src="/image/p_enj_theme_02/popup_close.png" alt="닫기"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 브릭테리아 -->
+                <div class="card_di card_menu_y">
+                    <div class="card_img">
+                        <img src="/image/p_enj_theme_02/p_enj_theme_02_21.jpg" alt="브릭테리아">
+                    </div>
+
+                    <h3>브릭테리아</h3>
+                    <p>테이크아웃 전용 매장! 커피와 음료! 아이스크림까지!</p>
+                    <button type="button" class="btn">메뉴보기</button>
+                </div>
+                <!--팝업-->
+                <div class="pop_up">
+                    <div class="pop_up_wrap">
+                        <div class="pop_up_img">
+                            <img src="/image/p_enj_theme_02/p_enj_theme_02_21_menu.jpg"alt="브릭테리아 메뉴">
+                        </div>
+                        <div class="pop_up_can">
+                            .<a href="#none"><img src="/image/p_enj_theme_02/popup_close.png" alt="닫기"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+</html>

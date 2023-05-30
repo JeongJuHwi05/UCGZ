@@ -1,0 +1,195 @@
+/* Global */
+
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-pink: #fe918d;
+  --color-dark-pink: #ff6863;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-blue1: #3f63bf;
+  --color-blue2: #0046b6;
+  --color-blue3: #31a1e0;
+  --color-light-yellow: #fefbf2;
+  --color-orange: #ff6f00;
+  --color-black: #000000;
+  --color-green: #00a138;
+  --color-yellow: #f9cf13;
+  --color-dark-yellow: #ffc400;
+  --color-red: #ff0000;
+
+  /* Font size */
+  --font-xllarge: 60px;
+  --font-large: 48px;
+  --font-medium: 32px;
+  --font-regular: 20px;
+  --font-small: 14px;
+  --font-micro: 16px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 4px;
+
+  /* Annmation */
+
+  --anmation-duration: 300ms;
+
+  --main-width: 1035px;
+}
+/* Universal tags  */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: "Open Sans", sans-serif; */
+  margin: 0;
+  cursor: default;
+  min-width: 1350px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+/* Typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0;
+}
+
+h2 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 4px 0;
+}
+#content {
+  margin-bottom: 200px;
+}
+/* Main */
+.main_title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main_title_img {
+  background: url(/image/h_ho_room_03/dsc03850.webp) center/cover no-repeat;
+  margin-top: 90px;
+  width: 100vw;
+  display: flex;
+}
+
+.main_title_img img {
+  width: 100vw;
+  height: auto;
+  display: block;
+}
+
+.main_title_txt {
+  margin-top: 6.5rem;
+  margin-bottom: 5.5rem;
+  background: var(--color-green);
+  width: 650px;
+  height: 110px;
+  opacity: 0.95;
+}
+
+.main_title_txt > h1 {
+  margin: 0;
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-white);
+  text-align: center;
+  line-height: 110px;
+}
+
+#textarea {
+  width: 1350px;
+  margin: auto;
+}
+
+.textarea_box {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+}
+
+/* 본문 타이틀 */
+.textarea_title1 {
+  margin-top: 100px;
+  display: flex;
+}
+.textarea_title1 h2 {
+  color: #e02027;
+  font-weight: var(--weight-bold);
+  font-size: var(--font-large);
+}
+
+.reservation_btn {
+  width: 255px;
+  height: 60px;
+  font-size: var(--font-regular);
+  background: #e02027;
+  color: white;
+  margin-left: 30px;
+}
+.textarea_title2 {
+  margin-top: 20px;
+  text-align: left;
+  font-weight: var(--weight-bold);
+  font-size: var(--font-large);
+}
+.textarea_title2 h3 {
+  margin-top: 50px;
+  text-align: center;
+
+  color: #ffbb00;
+  font-weight: var(--weight-bold);
+  font-size: var(--font-large);
+}
+
+.restaurant_menu1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.restaurant_menu1 img {
+  width: 800px;
+  margin-top: 60px;
+}

@@ -1,0 +1,187 @@
+a{
+    text-decoration: none;
+}
+/* 메인전체class */
+.main_title {
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* 메인 이미지 */
+  /* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
+  .main_title_img {
+    background: url("../image/legoland_employment/emp_bg.jpg")
+      center/cover no-repeat;
+    margin-top: 90px;
+    width: 100vw;
+  }
+  .main_title_img img {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+  /* 메인 타이틀 */
+  .main_title_txt {
+    margin-top: 6.5rem;
+    margin-bottom: 5.5rem;
+    background: #00a138;
+    width: fit-content;
+    height: 110px;
+    opacity: 0.95;
+    padding: 0 30px;
+  }
+  /* 메인 타이틀 텍스트 */
+  .main_title_txt > h3 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffff;
+    text-align: center;
+    line-height: 110px;
+  }
+.main{
+    max-width:1350px;
+    margin:auto;
+    font-size:16px;
+    margin-top: 100px;
+    margin-bottom:300px;
+}
+.emp_text_wrap{
+    margin:10% 60px 60px 60px;
+}
+.emp_text{
+    background: #170B3B;
+    max-width:600px;
+    color:#fff;
+    text-align: center;
+    padding:40px;
+    font-size:36px;
+    font-weight:700;
+    margin:20px auto;
+}
+.emp_exp{
+    display:flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top:10%;
+    margin-bottom:10%;
+}
+.emp_exp_img{
+    max-width:560px;
+}
+.emp_exp_img>img{
+    width:100%;
+}
+.emp_exp_text_wrap{
+    display:flex;
+    flex-direction: column;
+    max-width:600px;
+}
+.emp_exp_text{
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    padding:30px 20px;
+    line-height: 1.5rem;
+}
+.emp_exp_text>h4{
+    font-size:24px;
+    font-weight:700
+}
+.emp_hi{
+    font-weight: 700;
+}
+.emp_exp_text_wrap>a{
+    display: block;
+    background: #d01012;
+    max-width:300px;
+    padding:20px;
+    text-align: center;
+    margin-top: 30px;
+    color:#fff;
+    font-size:24px;
+    font-weight:700
+}
+.emp_ex_img_wrap{
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    margin-top:100px;
+    margin-bottom:50px;
+    max-width:1300px;
+    margin-top:10%;
+    margin-bottom:10%
+}
+.emp_ex_img>img{
+    margin:10px;
+    max-width:300px;
+    width:100%
+}
+.popupModalVideo>h4{
+    margin:50px;
+    padding-left:50px;
+    color:#006db7;
+    font-size:36px;
+    font-weight:700
+}
+.emp_media_wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:auto;
+    max-width:1300px;
+}
+.emp_media{
+    margin:40px;
+    position:relative
+}
+.emp_media>a>img{
+    max-width:550px;
+    cursor: pointer;
+}
+.emp_media svg{
+    fill:#d01012;
+    position:absolute;
+    top:30%;
+    left:45%;
+    cursor:pointer;
+}
+.emp_media>p{
+    color:#006db7;
+    font-size:24px;
+    font-weight:700;
+    padding-top:20px;
+}
+.video_modal_popup.reveal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999
+}
+.video_modal_popup .video-wrapper {
+    position: relative;
+    width: 70%;
+    padding-bottom: 45%;
+    z-index: 10
+}
+.video_modal_popup .video-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.video_modal_popup.reveal .video_modal_popup-closer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 9
+}

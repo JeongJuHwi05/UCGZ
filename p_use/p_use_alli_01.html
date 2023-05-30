@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEGOLAND® 파크 & 티켓 - 제휴 / 혜택</title>
+    <link href="/css/p_use_alli_01.css" rel="stylesheet" />
+    <link href="/css/reset.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="/js/p_use_alli_01.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#header").load("/header/header.html");
+        $("#footer").load("/footer/footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div id="header"></div>
+    </header>
+    <main id="content" class="page-content" tabindex="-1">
+      <div class="main_title">
+        <div class="main_title_img">
+          <div class="main_title_txt">
+            <h1>제휴 / 혜택</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- 카드 시작 -->
+      <section class="all_att">
+        <!--강원도민-->
+        <div class="card" href="#none" target="_self">
+          <div class="card_img">
+            <img
+              src="/image/p_use_alli_01/microsoftteams-image-28.webp"
+              alt=""
+            />
+          </div>
+          <div class="card_textbox">
+            <div class="card_body">
+              <div class="card_title">
+                <h4>강원도민</h4>
+                <h5>평일 30%, 주말 및 공휴일 10% 할인</h5>
+              </div>
+              <!-- 강원도민 예약하기 버튼 -->
+              <div class="redbtn_box">
+                <div class="redbtn">
+                  <a
+                    href="#"
+                    class="button button--primary"
+                    onclick="window.openWindow1('/p_use/p_use_alli_02.html', '_blank')"
+                    >자세히 보기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- KB국민카드 -->
+        <div class="card" href="#none" target="_self">
+          <div class="card_img">
+            <img src="/image/p_use_alli_01/kbcard.webp" alt="" />
+          </div>
+          <div class="card_textbox">
+            <div class="card_body">
+              <div class="card_title">
+                <h4>KB국민카드</h4>
+                <h5>
+                  혜택 1. 1일 이용권 10 ~ 20% 할인 제공<br />
+                  혜택 2. 연간이용권 (Gold Pass) 4장 이상 구매 시 10% 할인
+                </h5>
+              </div>
+              <!-- Kb국민카드 예약하기 버튼 -->
+              <div class="redbtn_box">
+                <div class="redbtn">
+                  <a
+                    onclick="window.openWindow2('/p_use/p_use_alli_03.html', '_blank')"
+                    class="button button--primary"
+                    >자세히 보기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LG U+ -->
+        <div class="card" href="#none" target="_self">
+          <div class="card_img">
+            <img src="/image/p_use_alli_01/lg.webp" alt="" />
+          </div>
+          <div class="card_textbox">
+            <div class="card_body">
+              <div class="card_title">
+                <h4>LG U+</h4>
+                <h5>통신사 단독 &quot;최대&quot; 20% 상시 할인</h5>
+              </div>
+              <!-- LG U+  예약하기 버튼 -->
+              <div class="redbtn_box">
+                <div class="redbtn">
+                  <a
+                    onclick="window.openWindow3('/p_use/p_use_alli_04.html', '_blank')"
+                    class="button button--primary"
+                    >자세히 보기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="footer"></div>
+    </footer>
+  </body>
+</html>

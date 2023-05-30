@@ -1,0 +1,148 @@
+/* 메인전체class */
+.main_title {
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* 메인 이미지 */
+/* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
+.main_title_img {
+  background: url(/image/p_enj_pro_00/p_enj_pro_00_00.jpg)
+    center/cover no-repeat;
+  margin-top: 90px;
+  width: 100vw;
+}
+.main_title_img img {
+  width: 100vw;
+  height: auto;
+  display: block;
+}
+/* 메인 타이틀 */
+.main_title_txt {
+  margin-top: 6.5rem;
+  margin-bottom: 5.5rem;
+  background: #00a138;
+  width: fit-content;
+  height: 110px;
+  opacity: 0.95;
+  padding: 0 30px;
+}
+/* 메인 타이틀 텍스트 */
+.main_title_txt > h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffff;
+  text-align: center;
+  line-height: 110px;
+}
+
+/* 카드 전체 배열 */
+.all_att{   /* 전체 카드랑 팝업 수평으로 배치할 때 사용 */
+  width:1350px;
+  display:flex;
+  flex-wrap:wrap;
+  margin: 110px auto;
+  font-size: 16px;
+  font-style: normal;
+}
+
+/* 카드 */
+.card{
+  border:1.5px solid rgb(229, 229, 229);
+  background:#fff;
+  width: 400px;
+  height: 650px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+/* 카드 마우스 오버 시 */
+.card:hover{
+  background: rgb(247, 247, 247);
+}
+
+/* 카드 이미지 */
+.card_img {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+.card img{
+  width: 400px;
+  height: 400px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+/* 카드 이미지 마우스 오버 */
+.card:hover img{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* 카드 전체 내용 묶음 */
+.card_body{
+  position:relative;
+  height: 150px;
+}
+
+/* 카드 카테고리_Season Event */
+.card_body > .card_title > h4{
+  margin-top: 18px;
+  margin-left: 20px;
+  margin-bottom: -5px;
+  font-weight: 900;
+  font-size: 150%;
+  color: red;
+}
+
+/* 카드 제목_이벤트 제목 */
+.card_body > .card_title > h5{
+  margin-top: 30px;
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 150%;
+  word-break: keep-all;
+}
+.card_title{
+  height: 80px;
+}
+
+/* 카드 기간 */
+.card_date{
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.card_date svg{
+  width: 25px;
+  vertical-align:middle;
+}
+.card_date span{
+  vertical-align:middle;
+}
+
+/* 카드 Read more 버튼 */
+.moerBtn{
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 25px;
+}
+.moerBtn svg{
+  fill: red;
+}
+.moerBtn a{
+  text-decoration: none;
+  color: red;
+}
+.moerBtn a:hover{
+  text-decoration: underline;
+}

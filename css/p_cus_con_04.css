@@ -1,0 +1,146 @@
+a {
+    text-decoration: none;
+}
+/* 메인전체class */
+.main_title {
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* 메인 이미지 */
+  /* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
+  .main_title_img {
+    background: url("../image/p_cus_con_04/p_cus_con_04_01.jpg")
+      center/cover no-repeat;
+    margin-top: 90px;
+    width: 100vw;
+  }
+  .main_title_img img {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+  /* 메인 타이틀 */
+  .main_title_txt {
+    margin-top: 6.5rem;
+    margin-bottom: 5.5rem;
+    background: #00a138;
+    width: fit-content;
+    height: 110px;
+    opacity: 0.95;
+    padding: 0 30px;
+  }
+  /* 메인 타이틀 텍스트 */
+  .main_title_txt > h3 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffff;
+    text-align: center;
+    line-height: 110px;
+  }
+.main{
+    max-width:1350px;
+    position: relative;
+    margin:auto;
+    font-size:16px;
+    margin-top:100px;
+    margin-bottom:300px;
+}
+/*.secu_noti_2_bg{
+    background: #eee8aa;
+    max-height :420px;
+    height:100%;
+    width:100%;
+    position: absolute;
+    box-sizing: border-box;
+    z-index: -10;
+    margin:auto;
+    top:500px;
+}*/
+.secu_wrap{
+    max-width: 1000px;
+    margin:auto;
+}
+.secu_noti_1{
+    display: flex;
+    justify-content: center;
+    margin-top:200px;
+    margin-bottom:200px;
+    background: #f2f7fc
+}
+.secu_noti_1_img{
+    max-width: 260px;
+    max-height: 526px
+}
+.secu_noti_1_img>img{
+    width:100%;
+    height:100%
+}
+.secu_noti_1_text{
+    padding:120px 40px 40px 40px;
+    font-size:16px;
+    line-height: 1.5rem;
+    max-width:600px;
+}
+.secu_noti_1_text>h4{
+    font-size:24px;
+    padding-bottom:24px;
+    color:#006db7;
+    font-weight:700
+}
+.secu_noti_2{
+    display: flex;
+    justify-content: center;
+    margin-top:200px;
+    margin-bottom:200px;
+    background: #f2f7fc
+}
+.secu_noti_2_img{
+    max-width: 561px;
+    max-height: 374px
+}
+.secu_noti_2_img>img{
+    width:100%;
+    height:100%
+}
+.secu_noti_2_text{
+    padding:40px;
+    font-size:16px;
+    line-height: 1.5rem;
+}
+.secu_noti_2_text>h4{
+    font-size:24px;
+    padding-bottom:24px;
+    color:#006db7;
+    font-weight:700
+}
+.secu_noti_3{
+    display: flex;
+    justify-content: center;
+    margin-top:200px;
+    margin-bottom:200px;
+    background: #f2f7fc
+}
+.secu_noti_3_img{
+    max-width:550px;
+    max-height: 275px;
+}
+.secu_noti_3_img>img{
+    width:100%;
+    height:100%;
+}
+.secu_noti_3_text{
+    max-width: 360px;
+    padding:40px;
+    font-size:16px;
+    line-height: 1.5rem;
+}
+.secu_noti_3_text>h4{
+    font-size:24px;
+    padding-bottom:24px;
+    color:#006db7;
+    font-weight:700
+}

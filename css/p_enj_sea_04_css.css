@@ -1,0 +1,112 @@
+/* 메인전체class */
+.main_title {
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* 메인 이미지 */
+  /* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
+  .main_title_img {
+    background: url(/image/p_enj_sea_04/p_enj_sea_04_00.jpeg)
+      center/cover no-repeat;
+    margin-top: 90px;
+    width: 100vw;
+  }
+  .main_title_img img {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+  /* 메인 타이틀 */
+  .main_title_txt {
+    margin-top: 6.5rem;
+    margin-bottom: 5.5rem;
+    background: #00a138;
+    width: fit-content;
+    height: 110px;
+    opacity: 0.95;
+    padding: 0 30px;
+  }
+  /* 메인 타이틀 텍스트 */
+  .main_title_txt > h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffff;
+    text-align: center;
+    line-height: 110px;
+  }
+
+.main{
+    width:1350px;
+    font-size: 16px;
+    font-style: normal;
+    margin: 0 auto;
+}
+
+/* 구매하기 버튼 */
+.btn{
+    width: 255px;
+    height: 60px;
+    font-size: 150%;
+    background: #d01012;
+    color: white;
+    border: 0px;
+}
+.btn:hover{
+    background: #8C0008;
+    cursor: pointer;
+}
+
+/* 본문의 내용 flex 공통 */
+.cont{
+    display: flex;
+    margin-bottom: 5%;
+    line-height: 1.5;
+    margin-top: 100px;
+}
+
+/* 본문 이미지 */
+.cont01_img{
+    width: 720px;
+    height: 720px;
+    margin: 0 auto;
+}
+.cont01_img img{
+    width: 720px;
+    height: 720px;
+}
+
+/* 본문 첫번째 내용 */
+.cont01{
+    margin: 0 auto;
+    padding-left: 2%;
+}
+.cont01 > h3{
+    width: 600px;
+    height: 104px;
+    font-size: 200%;
+    margin-top: 0px;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont01 p{
+    font-weight: 550;
+    line-height: 35px;
+}
+
+/* 본문 두번째 내용 이미지*/
+.cont01_img02{
+    width: fit-content;
+    margin: auto;
+}
+.cont01_img02 img{
+    margin: auto;
+    width: 330px;
+    height: 250px;
+}

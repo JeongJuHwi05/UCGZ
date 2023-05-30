@@ -1,0 +1,394 @@
+/* Global */
+
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-pink: #fe918d;
+  --color-dark-pink: #ff6863;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-blue1: #3f63bf;
+  --color-blue2: #0046b6;
+  --color-blue3: #00aaff;
+  --color-light-yellow: #fefbf2;
+  --color-orange: #ff6f00;
+  --color-black: #000000;
+  --color-green: #00a138;
+  --color-yellow: #f9cf13;
+  --color-dark-yellow: #ffc400;
+  --color-red: #ff0000;
+
+  /* Font size */
+  --font-xllarge: 60px;
+  --font-large: 48px;
+  --font-medium: 32px;
+  --font-regular: 20px;
+  --font-small: 14px;
+  --font-micro: 16px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 4px;
+
+  /* Annmation */
+
+  --anmation-duration: 300ms;
+
+  --main-width: 1035px;
+}
+/* Universal tags  */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: CeraPro, Noto Sans JP, Nanum Gothic, Helvetica-Light, Helvetica,
+    Arial, sans-serif;
+  margin: 0;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+/* Typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0;
+}
+
+h2 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 4px 0;
+}
+/* COMMON */
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #777;
+  text-decoration: dashed;
+}
+.inner {
+  width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+}
+/* COMMON */
+
+/* ANIMATION */
+@keyframes dropDown {
+  0% {
+    opacity: 0;
+  }
+  12% {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    /* transform: translate(0); */
+  }
+}
+
+#content {
+  margin-bottom: 100px;
+}
+
+.main_title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main_title_img {
+  background: url(/image/p_use_alli_03/brick-street.webp) center/cover no-repeat;
+  margin-top: 90px;
+  width: 100vw;
+  display: flex;
+}
+
+.main_title_img img {
+  width: 100vw;
+  height: auto;
+  display: block;
+}
+
+.main_title_txt {
+  margin-top: 6.5rem;
+  margin-bottom: 5.5rem;
+  background: var(--color-green);
+  width: 520px;
+  height: 110px;
+  opacity: 0.95;
+}
+
+.main_title_txt > h1 {
+  margin: 0;
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-white);
+  text-align: center;
+  line-height: 110px;
+}
+#gallerybox1 {
+  width: 1350px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 400px;
+  margin-bottom: 100px;
+}
+
+#gallerybox2 {
+  width: 1350px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 400px;
+  margin-bottom: 100px;
+}
+
+.gallery__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.galleryborder_title {
+  width: 600px;
+  margin-left: 6%;
+}
+
+.galleryborder_title h2 {
+  color: #000;
+  font-weight: var(--weight-bold);
+  font-size: var(--font-medium);
+  line-height: 160%;
+  margin-bottom: 30px;
+}
+.galleryborder_title p {
+  line-height: 160%;
+  font-size: var(--font-micro);
+  word-break: break-word;
+}
+.text_bold {
+  font-weight: var(--weight-bold);
+}
+.red__button {
+  margin-top: 8%;
+  margin-left: 6%;
+  width: 255px;
+  height: 60px;
+  font-size: var(--font-regular);
+  background: #d01012;
+  color: white;
+  flex-wrap: wrap;
+}
+
+/* 탭 */
+.tab {
+  width: 800px;
+  height: 200px;
+  display: flex;
+  margin: auto;
+  margin-top: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tab a {
+  width: 400px;
+  height: 150px;
+  margin: 0 auto;
+  color: black;
+  text-decoration: none;
+  font-size: 250%;
+  font-weight: 700;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tab a:hover {
+  color: white;
+  cursor: pointer;
+}
+#tab_01.active,
+#tab_02.active,
+#tab_03.active,
+#tab_04.active {
+  color: white;
+}
+/* 쇼핑탭 */
+.sp_a {
+  width: 400px;
+  height: 150px;
+  background-image: url(/image/p_use_alli_03/tab_red.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  border: 0;
+}
+/* 다이닝탭 */
+.di_a {
+  width: 400px;
+  height: 150px;
+  background-image: url(/image/p_use_alli_03/tab_blue.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  border: 0;
+}
+
+/* * 카드시작*/
+.all_att {
+  /* 전체 카드랑 팝업 수평으로 배치할 때 사용 */
+  width: 1350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  font-size: 16px;
+  font-style: normal;
+  margin: 100px auto;
+}
+
+.card {
+  border: 1.5px solid rgb(229, 229, 229);
+  background: #fff;
+  width: 400px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+/* 카드 마우스 오버 시 */
+.card:hover {
+  background: rgb(247, 247, 247);
+}
+
+/* 카드 이미지 */
+.card_img {
+  width: 400px;
+  height: 200px;
+  overflow: hidden;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.card_img img {
+  width: 100%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+/* 카드 이미지 마우스 오버 */
+.card:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* 카드 전체 내용 묶음 */
+
+.card_textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_body {
+}
+/* 카드 제목_ */
+.card_body > .card_title > h4 {
+  font-size: 150%;
+  margin-top: 25px;
+  padding: 0px 20px;
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+}
+
+/* 카드 설명 */
+.card_body > .card_title > h5 {
+  padding: 20px 20px;
+  font-size: 100%;
+  font-weight: var(--weight-regular);
+  line-height: 25px;
+}
+
+.redbtn_box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.redbtn {
+  position: absolute;
+  bottom: 0;
+  width: 300px;
+  height: 60px;
+  font-size: var(--font-regular);
+  background: #d01012;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.redbtn:hover {
+  background-color: #b20b0d;
+}
+.redbtn a {
+  color: var(--color-white);
+}
+
+.redbtn a:hover {
+  text-decoration: none;
+}

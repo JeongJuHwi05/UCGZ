@@ -1,0 +1,255 @@
+/* 메인전체class */
+.main_title {
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* 메인 이미지 */
+  /* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
+  .main_title_img {
+    background: url(/image/p_enj_theme_02/p_enj_theme_02_00.png)
+      center/cover no-repeat;
+    margin-top: 90px;
+    width: 100vw;
+  }
+  .main_title_img img {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+  /* 메인 타이틀 */
+  .main_title_txt {
+    margin-top: 6.5rem;
+    margin-bottom: 5.5rem;
+    background: #00a138;
+    width: fit-content;
+    height: 110px;
+    opacity: 0.95;
+    padding: 0 30px;
+  }
+  /* 메인 타이틀 텍스트 */
+  .main_title_txt > h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffff;
+    text-align: center;
+    line-height: 110px;
+  }
+
+.main{
+    width:1350px;
+    font-size: 16px;
+    font-style: normal;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* 탭 */
+.tab{
+    width: 800px;
+    height: 200px;
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+}
+.tab a{
+    width: 400px;
+    height: 150px;
+    margin: 0 auto;
+    color: black;
+    text-decoration: none;
+    font-size: 250%;
+    font-weight: 700;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab a:hover{
+    color: white;
+    cursor: pointer;
+}
+#tab_01.active, #tab_02.active,#tab_03.active,#tab_04.active{
+    color: white;
+}
+/* 쇼핑탭 */
+.sp_a{
+    width: 400px;
+    height: 150px;
+    background-image: url(/image/etc/tab_red.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    border: 0;
+}
+/* 다이닝탭 */
+.di_a{
+    width: 400px;
+    height: 150px;
+    background-image: url(/image/etc/tab_blue.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    border: 0;
+}
+
+/* 페이지 설명 부분 */
+.page_subTitle{
+    width: 900px;
+    height: 180px;
+    border-width: 1.5px 0px;
+    border-style: solid;
+    border-color: rgb(229, 229, 229);
+    margin: auto;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page_subTitle p{
+    text-align: center;
+    font-size: 150%;
+    font-weight: 530;
+    line-height: 140%;
+}
+
+/* 카드 전체 배열 */
+.all_att{   /* 전체 카드랑 팝업 수평으로 배치할 때 사용 */
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+/* 카드 안에 content 설정값 */
+.all_att h3{
+    font-size: 200%;
+    color: rgb(0, 88, 146);
+    font-weight: 550;
+    margin: 15px auto;
+}
+.all_att p{
+    margin: 7px auto;
+    width: 380px;
+    word-break: keep-all;
+}
+
+/* 쇼핑 카드 */
+.card{
+    border:1.5px solid rgb(229, 229, 229);
+    background:#fff;
+    width: 400px;
+    height: 620px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  /* 카드 마우스 오버 시 */
+.card:hover, .card_di:hover{
+    background: rgb(247, 247, 247);
+  }
+ /* 마지막 줄 공갈 카드 */
+ .ex_card{
+    width: 400px;
+    height: 620px;
+  }
+
+/* 다이닝 카드 */
+.card_di{
+    border:1.5px solid rgb(229, 229, 229);
+    background:#fff;
+    width: 400px;
+    height: 650px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  
+  /* 메뉴보기 버튼 */
+.btn{
+    width: 100%;
+    height: 70px;
+    font-size: 150%;
+    background: #d01012;
+    color: white;
+    border: 0px;
+    position: absolute;
+    bottom: 0%;
+}
+.btn:hover{
+    background: #8C0008;
+    cursor: pointer;
+}
+
+/* 카드 이미지 */
+.card_img {
+    width: 400px;
+    height: 350px;
+    overflow: hidden;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+.card_img img{
+    width: 400px;
+    height: 350px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    object-fit: cover;
+ }
+/* 카드 이미지 마우스 오버 */
+ .card:hover img, .card_di:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+
+
+/* 세로 팝업 */
+.pop_up{
+    width: 850px;
+    height: 100px;
+    box-sizing: border-box;
+    position: absolute;
+    display: none;
+    z-index:1;
+    margin-left: 16%;
+}
+.pop_up_wrap {
+    width:50%;
+    height:50%;
+    position: relative;
+    display: flex;
+}
+/* 팝업 이미지 */
+.pop_up_img{
+    width:100%;
+    height:790px;
+}
+.pop_up_img img{
+    width: 170%;
+    height: 98%;
+    border: 3px solid #ffcf00;
+}
+/* 닫기 버튼 */
+.pop_up_can{
+    position:absolute;
+    margin-top:5%;
+    margin-left:150%;
+}
+.pop_up_can img{
+    width:64px;
+    width:64px;
+}
+.pop_up_can:hover{
+    transform: rotate(30deg);
+}

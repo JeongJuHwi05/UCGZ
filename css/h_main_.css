@@ -1,0 +1,790 @@
+@font-face {
+  font-family: CeraPro;
+  src: url(/dist/assets/fonts/CeraPro-thin-webfont.woff2) format("woff2"),
+    url(/dist/assets/fonts/CeraPro-thin-webfont.woff) format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: CeraPro;
+  src: url(/dist/assets/fonts/CeraPro-thinitalic-webfont.woff2) format("woff2"),
+    url(/dist/assets/fonts/CeraPro-thinitalic-webfont.woff) format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: CeraPro;
+  src: url(/dist/assets/fonts/CeraPro-light-webfont.woff2) format("woff2"),
+    url(/dist/assets/fonts/CeraPro-light-webfont.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: CeraPro;
+  src: url(/dist/assets/fonts/cerapro-lightitalic-webfont.woff2) format("woff2"),
+    url(/dist/assets/fonts/cerapro-lightitalic-webfont.woff) format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: CeraPro;
+  src: url(/dist/assets/fonts/CeraPro-regular-webfont.woff2) format("woff2"),
+    url(/dist/assets/fonts/CeraPro-regular-webfont.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: CeraPro;
+  src: url(/dist/assets/fonts/CeraPro-regularitalic-webfont.woff2)
+      format("woff2"),
+    url(/dist/assets/fonts/CeraPro-regularitalic-webfont.woff) format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: CeraPro;
+  src: url(/dist/assets/fonts/CeraPro-medium-webfont.woff2) format("woff2"),
+    url(/dist/assets/fonts/CeraPro-medium-webfont.woff) format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: CeraPro;
+  src: url(/dist/assets/fonts/CeraPro-mediumitalic-webfont.woff2)
+      format("woff2"),
+    url(/dist/assets/fonts/CeraPro-mediumitalic-webfont.woff) format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: CeraPro;
+  src: url(/dist/assets/fonts/CeraPro-bold-webfont.woff2) format("woff2"),
+    url(/dist/assets/fonts/CeraPro-bold-webfont.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: CeraPro;
+  src: url(/dist/assets/fonts/CeraPro-bolditalic-webfont.woff2) format("woff2"),
+    url(/dist/assets/fonts/CeraPro-bolditalic-webfont.woff) format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: CeraPro;
+  src: url(/dist/assets/fonts/CeraPro-black-webfont.woff2) format("woff2"),
+    url(/dist/assets/fonts/CeraPro-black-webfont.woff) format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: CeraPro;
+  src: url(/dist/assets/fonts/CeraPro-blackitalic-webfont.woff2) format("woff2"),
+    url(/dist/assets/fonts/CeraPro-blackitalic-webfont.woff) format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Global */
+
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-pink: #fe918d;
+  --color-dark-pink: #ff6863;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-blue1: #3f63bf;
+  --color-blue2: #0046b6;
+  --color-blue3: #00aaff;
+  --color-light-yellow: #fefbf2;
+  --color-orange: #ff6f00;
+  --color-black: #000000;
+  --color-green: #00a138;
+  --color-yellow: #f9cf13;
+  --color-dark-yellow: #ffc400;
+  --color-red: #ff0000;
+
+  /* Font size */
+  --font-xllarge: 60px;
+  --font-large: 48px;
+  --font-medium: 32px;
+  --font-regular: 20px;
+  --font-small: 14px;
+  --font-micro: 16px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 4px;
+
+  /* Annmation */
+
+  --anmation-duration: 300ms;
+
+  --main-width: 1035px;
+}
+/* Universal tags  */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: CeraPro, Noto Sans JP, Nanum Gothic, Helvetica-Light, Helvetica,
+    Arial, sans-serif;
+  margin: 0;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+/* Typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0;
+}
+
+h2 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 4px 0;
+}
+/* COMMON */
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #777;
+  text-decoration: dashed;
+}
+.inner {
+  width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+}
+/* COMMON */
+
+/* ANIMATION */
+@keyframes dropDown {
+  0% {
+    opacity: 0;
+  }
+  12% {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    /* transform: translate(0); */
+  }
+}
+/* ANIMATION */
+
+/* HEADER */
+header {
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+header.open {
+  animation: dropDown 0.6s;
+  background-color: #ffcf00;
+  z-index: 2;
+}
+header .top {
+  width: 100%;
+  height: 100%;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffcf00;
+}
+header .top .menu_icon {
+  font-size: 60px;
+  color: #fff;
+  margin-left: -300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+header .top .menu_icon:hover {
+  background-color: #333;
+  opacity: 0.5;
+}
+header .top .logo {
+  width: 9%;
+  height: 100%;
+  padding-left: 188px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0 30%;
+}
+header .top .logo img {
+  width: 163px;
+  height: 70px;
+}
+.bottom {
+  width: 100%;
+  height: 90%;
+  display: none;
+  position: fixed;
+  top: 10%;
+  transition-duration: 1s;
+}
+.bottom.open {
+  display: block;
+  animation: dropDown 0.6s;
+  background-color: #fefbf2;
+  z-index: 3;
+}
+.bottom .inner {
+}
+.bottom .inner .category {
+  display: flex;
+}
+.bottom .inner .category .select {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 20px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.bottom .inner .category .select_1 {
+  background-color: #ffcf00;
+}
+.bottom .buy {
+  width: 30%;
+  margin: auto;
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+  padding: 20px 0;
+  text-align: center;
+  background-color: red;
+}
+.bottom .buy:hover {
+  background-color: #d01012;
+}
+.bottom .inner .menu {
+  position: relative;
+  box-sizing: border-box;
+}
+.bottom .inner .menu .park_menu {
+  display: flex;
+  width: 1440px;
+  padding: 50px 0;
+  background-color: #fefbf2;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+}
+.bottom .inner .menu .park_menu.active {
+  display: flex;
+}
+.bottom .inner .menu .park_menu > li {
+  width: 500px;
+  height: 550px;
+  margin: 0 10px;
+}
+.bottom .inner .menu .park_menu li .park_1_title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.bottom .inner .menu .park_menu li .park_2 .park_2_title {
+  font-size: 21px;
+  font-weight: 900;
+  margin: 30px 0 30px 0;
+}
+.bottom .inner .menu .park_menu li .park_2 .park_3 {
+}
+.bottom .inner .menu .park_menu li .park_2 .park_3 li {
+  margin: 10px 0;
+}
+.bottom .inner .menu .park_menu li .park_2 .park_3 li a {
+  font-size: 16px;
+}
+.bottom .inner .menu .hotel_menu {
+  display: none;
+  width: 1440px;
+  padding: 50px 0;
+  background-color: #fefbf2;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+}
+.bottom .inner .menu .hotel_menu.active {
+  display: flex;
+}
+.bottom .inner .menu .hotel_menu > li {
+  width: 500px;
+  height: 550px;
+  margin: 0 10px;
+}
+.bottom .inner .menu .hotel_menu li .hotel_1_title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.bottom .inner .menu .hotel_menu li .hotel_2 > li > .hotel_2_title {
+  display: block;
+  font-size: 21px;
+  font-weight: 900;
+  margin: 30px 0 30px 0;
+}
+.bottom .inner .menu .hotel_menu li .hotel_2 .hotel_3 {
+}
+.bottom .inner .menu .hotel_menu li .hotel_2 .hotel_3 li {
+  margin: 10px 0;
+}
+.bottom .inner .menu .hotel_menu li .hotel_2 .hotel_3 li a {
+  font-size: 16px;
+}
+
+/* HEADER */
+
+.all_att {
+  /* 전체 카드랑 팝업 수평으로 배치할 때 사용 */
+  width: 1350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  font-size: 16px;
+  font-style: normal;
+  margin-bottom: 200px;
+}
+
+.hotel_main {
+}
+
+.hotelmain_img {
+  background: url(/레고랜드_LEGOLAND호텔_메인/image/main_img.png) center/cover
+    no-repeat;
+  margin-top: 90px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hotelmain_img img {
+  width: 100vw;
+  height: auto;
+  display: block;
+}
+
+.hotel_title {
+  margin-top: 6.5rem;
+  margin-bottom: 5.5rem;
+  background: var(--color-blue3);
+  width: 900px;
+  height: 200px;
+  margin-left: -700px;
+}
+
+.hotel_title > h1 {
+  margin: 0;
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-white);
+  text-align: start;
+  margin-left: 40px;
+  line-height: 200px; /* Set the same value as the height of the parent container */
+}
+
+/* 
+.specialoffer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sp_list_page_items {
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sp_list_item1 {
+  position: relative;
+  width: 500px;
+  height: 800px;
+}
+.icon_with_text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+  padding-left: 5%;
+  font-size: var(--font-micro);
+}
+
+.icon_with_text svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 2%;
+  display: flex;
+}
+
+.header__h1 {
+  margin-left: 5%;
+  color: var(--color-red);
+  font-size: var(--font-regular);
+}
+
+.header__h2 {
+  margin-left: 5%;
+  color: var(--color-black);
+  font-size: var(--font-medium);
+  font-weight: var(--weight-bold);
+} */
+
+#gallerybox {
+  width: 1350px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.slide {
+  width: 700px;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+}
+.slide ul {
+  width: 5000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0;
+}
+.slide ul li {
+  display: inline-block;
+}
+#back {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+#next {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+.red__button {
+  /* position: absolute; */
+  margin-top: 8%;
+  margin-left: 6%;
+  width: 255px;
+  height: 60px;
+  font-size: var(--font-regular);
+  background: #d01012;
+  color: white;
+}
+
+.galleryborder_title {
+  width: 700px;
+  margin-left: 6%;
+}
+
+.galleryborder_title h2 {
+  color: var(--color-blue3);
+  font-weight: var(--weight-bold);
+  font-size: var(--font-large);
+  margin-bottom: 30px;
+}
+.textarea_title h3 {
+  color: var(--color-orange);
+  font-weight: var(--weight-bold);
+  font-size: var(--font-large);
+  padding-top: 3%;
+  text-align: center;
+}
+
+hr {
+  background: var(--color-orange);
+  width: 800px;
+  height: 1px;
+  border: 0;
+}
+.textarea_description_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
+}
+
+.galleryborder__description,
+.textarea_description p {
+  line-height: 160%;
+  font-size: var(--font-micro);
+  word-break: break-word;
+}
+
+/* * 카드 */
+.all_att {
+  /* 전체 카드랑 팝업 수평으로 배치할 때 사용 */
+  width: 1350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  font-size: 16px;
+  font-style: normal;
+  margin-bottom: 200px;
+}
+
+.card {
+  border: 1.5px solid rgb(229, 229, 229);
+  background: #fff;
+  width: 400px;
+  height: 550px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+/* 카드 마우스 오버 시 */
+.card:hover {
+  background: rgb(247, 247, 247);
+}
+
+/* 카드 이미지 */
+.card_img {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.card img {
+  width: 100%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+/* 카드 이미지 마우스 오버 */
+.card:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* 카드 전체 내용 묶음 */
+
+.card_textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_body {
+}
+/* 카드 제목_ */
+.card_body > .card_title > h4 {
+  font-size: 150%;
+  margin-top: 25px;
+  padding: 0px 20px;
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+}
+
+/* 카드 설명 */
+.card_body > .card_title > h5 {
+  padding: 20px 20px;
+  font-size: 100%;
+  font-weight: var(--weight-regular);
+}
+
+.redbtn_box,
+.orgbtn_box,
+.greenbtn_box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.redbtn {
+  position: absolute;
+  bottom: 0;
+  width: 300px;
+  height: 60px;
+  font-size: var(--font-regular);
+  background: #d01012;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.redbtn:hover {
+  background-color: #b20b0d;
+}
+.redbtn a,
+.orgbtn a,
+.greenbtn a {
+  color: var(--color-white);
+}
+
+.redbtn a:hover {
+  text-decoration: none;
+}
+
+.orgbtn {
+  position: absolute;
+  bottom: 0;
+  width: 300px;
+  height: 60px;
+  font-size: var(--font-regular);
+  background: var(--color-orange);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.orgbtn:hover {
+  background-color: #ca5f18;
+}
+
+.greenbtn {
+  position: absolute;
+  bottom: 0;
+  width: 300px;
+  height: 60px;
+  font-size: var(--font-regular);
+  background: var(--color-green);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.greenbtn:hover {
+  background-color: #10882a;
+}
+
+/* # {
+  background: url(image/Neutral\ Simple\ Minimalist\ Lifestyle\ Blogger\ YouTube\ Channel\ Art\ .png)
+    center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+} */
+
+/* .legosub__main {
+} */
+
+.legosubmain__box {
+  background: url(../image/themeroommain.png) center/cover no-repeat;
+  padding: 100px;
+}
+
+.submain__title {
+  background: var(--color-blue3);
+  width: 900px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  line-height: 150px;
+  color: var(--color-light-white);
+  padding-left: 15px;
+}
+
+.submain__subtitle {
+  background: var(--color-red);
+  width: 210px;
+  height: 35px;
+  color: var(--color-white);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -18px;
+}
+
+.textarea_description > h3 {
+  color: var(--color-orange);
+  text-align: center;
+  font-weight: var(--weight-bold);
+  margin: 60px 0;
+}

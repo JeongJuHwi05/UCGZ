@@ -1,0 +1,91 @@
+a{
+    color: #000;
+    text-decoration: none;
+}
+/* 메인전체class */
+.main_title {
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* 메인 이미지 */
+  /* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
+  .main_title_img {
+    background: url("../image/p_cus_info_04/p_cus_info_04_01.jpg")
+      center/cover no-repeat;
+    margin-top: 90px;
+    width: 100vw;
+  }
+  .main_title_img img {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+  /* 메인 타이틀 */
+  .main_title_txt {
+    margin-top: 6.5rem;
+    margin-bottom: 5.5rem;
+    background: #00a138;
+    width: fit-content;
+    height: 110px;
+    opacity: 0.95;
+    padding: 0 30px;
+  }
+  /* 메인 타이틀 텍스트 */
+  .main_title_txt > h3 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffff;
+    text-align: center;
+    line-height: 110px;
+  }
+.main{
+    max-width: 1350px;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    font-size:16px;
+    margin-top:100px;
+    margin-bottom:300px;
+}
+.winter_info img{
+    max-width: 700px;
+    width: 100%;
+}
+.winter_info_notice{
+    max-width:640px;
+    width:100%;
+    text-align: center;
+    background: #EEE8AA;
+    font-size:24px;
+    font-weight: 700;
+    padding:40px 30px 40px 30px;
+    margin:30px 0 30px 0;
+}
+.winter_info_text{
+    max-width:640px;
+    width:100%;
+    text-align: center;
+    background: #fcf2e0;
+    font-size:24px;
+    padding:40px 30px 40px 30px;
+    margin:30px 0 30px 0;
+    line-height: 2.5rem;
+}
+.winter_info>a{
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    margin-top:30px;
+    margin-bottom:30px;
+    max-width: 400px;
+    width:100%;
+    background:#d01012;
+    padding:30px;
+    color:black;
+    font-size:24px;
+    font-weight:700
+}

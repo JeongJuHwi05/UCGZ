@@ -1,0 +1,185 @@
+a{
+    text-decoration: none;
+}
+/* 메인전체class */
+.main_title {
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* 메인 이미지 */
+  /* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
+  .main_title_img {
+    background: url("../image/p_cus_info_03/p_cus_info_03_01.jpg")
+      center/cover no-repeat;
+    margin-top: 90px;
+    width: 100vw;
+  }
+  .main_title_img img {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+  /* 메인 타이틀 */
+  .main_title_txt {
+    margin-top: 6.5rem;
+    margin-bottom: 5.5rem;
+    background: #00a138;
+    width: fit-content;
+    height: 110px;
+    opacity: 0.95;
+    padding: 0 30px;
+  }
+  /* 메인 타이틀 텍스트 */
+  .main_title_txt > h3 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffff;
+    text-align: center;
+    line-height: 110px;
+  }
+.page_title_align > h3{
+    width: 900px;
+    font-size: 250%;
+    font-weight: 900;
+    color: white;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+.main{
+    max-width:1350px;
+    margin:auto;
+    font-size:16px;
+    margin-top:100px;
+    margin-bottom:300px;
+}
+.main>form{
+    display: flex;
+    justify-content: center;
+}
+form legend{
+    font-weight: 700;
+}
+.ask_form_title>h4{
+    font-size:36px;
+    padding-bottom: 20px;
+}
+.ask_com_bor{
+    border:1px solid black;
+    max-width:600px;
+}
+.ask_com_bor>p{
+    padding:20px 30px 20px 30px;
+    line-height: 1.5rem;
+}
+.ask_com_bor input{
+    width:98%;
+    height:35px;
+    font-size:16px;
+    display: flex;
+    justify-content: center;
+}
+.ask_com_bor select{
+    width:98%;
+    height:35px;
+    font-size:24px
+}
+.ask_com_bor textarea{
+    width:98%;
+    height:200px
+}
+.ask_form_agree{
+    width:90%;
+    display: flex;
+    justify-content: left;
+    padding:10px 30px;
+}
+.ask_form_agree_check>input{
+    width:24px;
+    height:24px;
+    margin-right:10px
+}
+#mycheckbox {
+    display: none;
+}
+#unchecked, #checked {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked {
+    display: inline;
+}
+#checked {
+    display: none;
+}
+#mycheckbox:checked + label #unchecked {
+    display: none;
+}
+#mycheckbox:checked + label #checked {
+    display: inline;
+}
+
+#mycheckbox1 {
+    display: none;
+}
+#unchecked1, #checked1 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked1 {
+    display: inline;
+}
+#checked1 {
+    display: none;
+}
+#mycheckbox1:checked + label #unchecked1 {
+    display: none;
+}
+#mycheckbox1:checked + label #checked1 {
+    display: inline;
+}
+
+#mycheckbox2 {
+    display: none;
+}
+#unchecked2, #checked2 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+}
+#unchecked2 {
+    display: inline;
+}
+#checked2 {
+    display: none;
+}
+#mycheckbox2:checked + label #unchecked2 {
+    display: none;
+}
+#mycheckbox2:checked + label #checked2 {
+    display: inline;
+}
+.ask_form_agree_text{
+    margin-left: 10px;
+}
+.ask_form_agree_text_small{
+    font-size:14px;
+    color:#757575
+}
+.ask_form_sub{
+    margin-top:40px;
+}
+.ask_form_sub>input{
+    border:none;
+    background:#004f84;
+    width:250px;
+    height:60px;
+    font-size:36px;
+    color:#fff;
+    cursor: pointer;
+}
