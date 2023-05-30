@@ -370,7 +370,7 @@ main {
     width: 1rem;
     aspect-ratio: 1/1;
     font-size: 0px;
-    background: url("/image/close_button.png") no-repeat center/ 1rem;
+    background: url("/image/t_hotel_reser01/close_button.png") no-repeat center/ 1rem;
     box-sizing: border-box;
     position: absolute;
     left: -0.7rem;
@@ -380,7 +380,7 @@ main {
     width: 30px;
     height: 30px;
     font-size: 0px;
-    background: rgb(143, 171, 255) url("/image/plus.png") no-repeat center/20px;
+    background: rgb(143, 171, 255) url("/image/t_hotel_reser01/plus.png") no-repeat center/20px;
     border-radius: 50%;
     box-sizing: border-box;
 }
@@ -512,7 +512,7 @@ main {
     width: 100%;
     height: 100%;
     border: none;
-    background: url("/image/search.svg") no-repeat left 15% center/ 1.5rem;
+    background: url("/image/t_hotel_reser01/search.svg") no-repeat left 15% center/ 1.5rem;
     font-size: 100%;
     font-weight: bold;
     cursor: pointer;
@@ -533,9 +533,9 @@ main {
     position: absolute;
     bottom: 0px;
     right: 0px;
-    background: var(--slideBtn-bg-color) url("/image/arrow_drop_down.png") no-repeat bottom center/50px;
+    background: var(--slideBtn-bg-color) url("/image/t_hotel_reser01/arrow_drop_down.png") no-repeat bottom center/50px;
 }
 .act, .act2 {
-    background: var(--slideBtn-bg-color) url("/image/arrow_drop_up.png") no-repeat bottom center/50px;
+    background: var(--slideBtn-bg-color) url("/image/t_hotel_reser01/arrow_drop_up.png") no-repeat bottom center/50px;
 }
 
