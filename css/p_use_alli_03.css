@@ -49,8 +49,6 @@
 }
 
 body {
-  font-family: CeraPro, Noto Sans JP, Nanum Gothic, Helvetica-Light, Helvetica,
-    Arial, sans-serif;
   margin: 0;
   cursor: default;
 }
@@ -168,25 +166,51 @@ a:hover {
   text-align: center;
   line-height: 110px;
 }
+
+.tab {
+  position: relative;
+}
+
+.tab img {
+  display: block;
+  width: 15rem;
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+}
+.tab-text {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
 #gallerybox1 {
   width: 1350px;
   margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 400px;
-  margin-bottom: 100px;
+  /* display: flex;
+  align-items: flex-start; */
+  margin-top: 100px;
 }
 
-#gallerybox2 {
+/* #gallerybox2 {
   width: 1350px;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 400px;
   margin-bottom: 100px;
-}
+} */
 
 .gallery__container {
   display: flex;
@@ -195,91 +219,45 @@ a:hover {
 }
 
 .galleryborder_title {
-  width: 600px;
-  margin-left: 6%;
+  background-color: #00aaff;
+  width: 500px;
 }
 
 .galleryborder_title h2 {
   color: #000;
   font-weight: var(--weight-bold);
-  font-size: var(--font-medium);
-  line-height: 160%;
-  margin-bottom: 30px;
+  font-size: 200%;
+  margin-bottom: 1em;
 }
 .galleryborder_title p {
-  line-height: 160%;
-  font-size: var(--font-micro);
+  line-height: 180%;
+  font-size: 100%;
   word-break: break-word;
+}
+
+.galleryborder {
+  display: block;
+  margin-left: 5em;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.galleryborder.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 .text_bold {
   font-weight: var(--weight-bold);
 }
 .red__button {
   margin-top: 8%;
-  margin-left: 6%;
-  width: 255px;
+  width: 15rem;
   height: 60px;
-  font-size: var(--font-regular);
+  font-size: 120%;
   background: #d01012;
   color: white;
   flex-wrap: wrap;
-}
-
-/* 탭 */
-.tab {
-  width: 800px;
-  height: 200px;
-  display: flex;
-  margin: auto;
-  margin-top: 100px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.tab a {
-  width: 400px;
-  height: 150px;
-  margin: 0 auto;
-  color: black;
-  text-decoration: none;
-  font-size: 250%;
-  font-weight: 700;
-  display: block;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.tab a:hover {
-  color: white;
-  cursor: pointer;
-}
-#tab_01.active,
-#tab_02.active,
-#tab_03.active,
-#tab_04.active {
-  color: white;
-}
-/* 쇼핑탭 */
-.sp_a {
-  width: 400px;
-  height: 150px;
-  background-image: url(/image/p_use_alli_03/tab_red.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 0 auto;
-  border: 0;
-}
-/* 다이닝탭 */
-.di_a {
-  width: 400px;
-  height: 150px;
-  background-image: url(/image/p_use_alli_03/tab_blue.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 0 auto;
-  border: 0;
 }
 
 /* * 카드시작*/
@@ -292,14 +270,15 @@ a:hover {
   margin: auto;
   font-size: 16px;
   font-style: normal;
-  margin: 100px auto;
+  margin-top: 100px;
+  margin-bottom: 300px;
 }
 
 .card {
   border: 1.5px solid rgb(229, 229, 229);
   background: #fff;
   width: 400px;
-  height: 500px;
+  height: 600px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -334,27 +313,25 @@ a:hover {
 }
 
 /* 카드 전체 내용 묶음 */
-
+.card_title {
+  padding: 1em 2em;
+}
 .card_textbox {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
-.card_body {
-}
 /* 카드 제목_ */
 .card_body > .card_title > h4 {
-  font-size: 150%;
+  font-size: 200%;
   margin-top: 25px;
-  padding: 0px 20px;
+
   font-weight: var(--weight-bold);
   color: var(--color-black);
 }
 
 /* 카드 설명 */
 .card_body > .card_title > h5 {
-  padding: 20px 20px;
   font-size: 100%;
   font-weight: var(--weight-regular);
   line-height: 25px;
@@ -364,14 +341,15 @@ a:hover {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  cursor: pointer;
+
   margin-top: auto;
 }
 
 .redbtn {
+  cursor: pointer;
   position: absolute;
   bottom: 0;
-  width: 300px;
+  width: 15rem;
   height: 60px;
   font-size: var(--font-regular);
   background: #d01012;

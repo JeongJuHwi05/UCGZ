@@ -274,14 +274,15 @@ hr {
   margin: auto;
   font-size: 16px;
   font-style: normal;
-  margin: 100px auto;
+  margin-top: 100px;
+  margin-bottom: 300px;
 }
 
 .card {
   border: 1.5px solid rgb(229, 229, 229);
   background: #fff;
   width: 400px;
-  height: 400px;
+  height: 550px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -323,38 +324,35 @@ hr {
   justify-content: space-between;
 }
 
-.card_body {
+.card_title {
+  padding: 1em 2em;
 }
 /* 카드 제목_ */
 .card_body > .card_title > h4 {
-  font-size: 150%;
-  margin-top: 25px;
-  padding: 0px 20px;
+  font-size: 200%;
   font-weight: var(--weight-bold);
   color: var(--color-black);
 }
 
 /* 카드 설명 */
 .card_body > .card_title > h5 {
-  padding: 20px 20px;
   font-size: 100%;
   font-weight: var(--weight-regular);
 }
 
-.redbtn_box,
-.orgbtn_box,
-.greenbtn_box {
+.redbtn_box {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  cursor: pointer;
+
   margin-top: auto;
 }
 
 .redbtn {
+  cursor: pointer;
   position: absolute;
   bottom: 0;
-  width: 300px;
+  width: 15rem;
   height: 60px;
   font-size: var(--font-regular);
   background: #d01012;
@@ -372,44 +370,9 @@ hr {
 .orgbtn a,
 .greenbtn a {
   color: var(--color-white);
+  cursor: pointer;
 }
 
 .redbtn a:hover {
   text-decoration: none;
 }
-/* 
-.orgbtn {
-  position: absolute;
-  bottom: 0;
-  width: 300px;
-  height: 60px;
-  font-size: var(--font-regular);
-  background: var(--color-orange);
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.3s ease;
-}
-
-.orgbtn:hover {
-  background-color: #ca5f18;
-}
-
-.greenbtn {
-  position: absolute;
-  bottom: 0;
-  width: 300px;
-  height: 60px;
-  font-size: var(--font-regular);
-  background: var(--color-green);
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.3s ease;
-}
-
-.greenbtn:hover {
-  background-color: #10882a;
-} */

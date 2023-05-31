@@ -36,7 +36,7 @@ a{
   /* 메인 타이틀 텍스트 */
   .main_title_txt > h3 {
     margin: 0;
-    font-size: 48px;
+    font-size: 200%;
     font-weight: bold;
     color: #ffff;
     text-align: center;
@@ -45,7 +45,6 @@ a{
 .main{
     max-width: 1350px;
     margin: auto;
-    font-size: 16px;
     margin-top: 100px!important;
     margin-bottom:300px!important;
 }
@@ -65,16 +64,15 @@ a{
     width:100%;
 }
 .con_nav a{
-    font-size: 36px;
+    font-size: 200%;
     color:#fff;
     font-weight: 700;
 }
 
 .con_nav_li1>a{
     display: flex;
-    background-image: url("../image/p_cus_con_01/rectangle_green-removebg-preview.png");
-    background-repeat: no-repeat;
-    width:425px;
+    background: url("/image/p_cus_con_01/rectangle_blue-removebg-preview.png") no-repeat center/100%;
+    width: 15rem;
     height:166px;
     align-items: center;
     justify-content: center;
@@ -83,9 +81,8 @@ a{
 
 .con_nav_li2>a{
     display: flex;
-    background-image: url("../image/p_cus_con_01/rectangle_blue-removebg-preview.png");
-    background-repeat: no-repeat;
-    width:425px;
+    background: url("/image/p_cus_con_01/rectangle_green-removebg-preview.png") no-repeat center/ 100%;
+    width: 15rem;
     height:166px;
     text-align: center;
     align-items: center;
@@ -96,7 +93,7 @@ a{
 .con_img_text{
     display: flex;
     justify-content: center;
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
     margin-top: 15px;
     margin-bottom:15px
@@ -109,19 +106,19 @@ a{
 }
 .con_text{
     margin-left:30px;
-    max-width:570px;
-    width:570px;
+    max-width:700px;
+    width:700px;
     height:100%;
     background-color: #fbfafa;
     color:#006db7;
-    font-size:16px;
+    font-size:100%;
     padding:30px;
     line-height: 1.5rem;
 }
 .con_text>h4{
-    font-size:24px;
+    font-size:200%;
     font-weight: 700;
-    padding-bottom:30px;
+    padding-bottom:0px;
 }
 .con_text_hi{
     font-weight:700;
@@ -141,7 +138,7 @@ a{
     height:100%
 }
 .con_text_smoke>h4{
-    font-size:24px;
+    font-size:200%;
     font-weight: 700;
     padding-bottom:30px;
 }
@@ -152,17 +149,17 @@ a{
     height:100%;
     background-color: #fbfafa;
     color:#006db7;
-    font-size:16px;
+    font-size:100%;
     padding:30px;
     line-height: 1.5rem;
 }
 .cen_text{
-    font-size: 24px;
+    font-size: 100%;
     text-align: center;
     margin:30px
 }
 .strong_text{
-    font-size:24px;
+    font-size:100%;
     font-weight: 700;
 }
 .main{
@@ -174,7 +171,7 @@ a{
     margin:auto
 }
 .direc_wrap>h4{
-    font-size:36px;
+    font-size:200%;
     padding:30px;
     color:#006db7;
     text-align: center;
@@ -192,7 +189,7 @@ a{
     box-sizing:border-box;
     align-items: center;
     display: flex;
-    font-size:24px;
+    font-size:120%;
     padding: 20px 30px 20px 30px;
     justify-content: space-between;
 }
@@ -219,7 +216,7 @@ a{
     top:0px;
     box-sizing: border-box;
     padding: 30px;
-    font-size:16px;
+    font-size:100%;
     color:#006DB7;
     display: none;
 }
@@ -237,30 +234,29 @@ a{
         width:100%;
     }
     .con_nav a{
-        font-size: 36px;
+        font-size: 200%;
         color:#fff;
         font-weight: 700;
     }
     
     .con_nav_li1>a{
         display: flex;
-        background-image: url("../image/p_cus_con_01/rectangle_green-removebg-preview.png");
-        background-repeat: no-repeat;
-        width:450px;
-        height:176px;
+        background: url("/image/p_cus_con_01/rectangle_blue-removebg-preview.png") no-repeat center/ 100%;
+        width:15rem;
+        height:166px;
         align-items: center;
         justify-content: center;
-        margin-bottom:20px
+        margin:auto;
     }
     
     .con_nav_li2>a{
         display: flex;
-        background-image: url("../image/p_cus_con_01/rectangle_blue-removebg-preview.png");
-        background-repeat: no-repeat;
-        width:450px;
-        height:176px;
+        background: url("/image/p_cus_con_01/rectangle_green-removebg-preview.png") no-repeat center/ 100%;
+        width:15rem;
+        height:166px;
         text-align: center;
         align-items: center;
         justify-content: center;
+        margin:auto;
     }
 }

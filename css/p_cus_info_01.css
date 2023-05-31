@@ -101,6 +101,11 @@ a{
     max-width:1200px;
     line-height: 1.5rem
 }
+.main>h4{
+  font-size:200%;
+  font-weight: 700;
+  color:#006db7
+}
 .man_cal_text_wrap a{
     color:#d01012
 }
@@ -109,15 +114,22 @@ a{
     text-align: center;
     line-height: 1.5rem;
 }
-.park_map_down>h4{
-    font-size:24px;
+.park_map_view h4{
+    font-size:200%;
     font-weight:700;
-    color:#006db7
+    color:#006db7;
+    margin-bottom:20px;
 }
 .park_map_down>a{
     color:#d01012
 }
-.park_map_down>img{
+.park_map_down img{
     width:15px;
     height:21px;
+}
+.cal_map_link{
+    display:flex;
+    justify-content: center;
+    max-width:1350px;
+    margin: 50px auto 50px;
 }
