@@ -1,0 +1,719 @@
+/* COMMON */
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #777;
+  text-decoration: dashed;
+}
+a.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  background-color: #ff0000;
+  font-size: 20px;
+  color: #fff;
+}
+a.btn:hover {
+  background-color: #d01012;
+}
+.inner {
+  width: 1350px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+/* COMMON */
+
+/* HEADER */
+header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  transition: height .5s;
+}
+header.open {
+  height: 880px;
+  z-index: 2;
+  transition: height .5s;
+}
+header .top {
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffcf00;
+}
+header .top.open {
+  background-color: #ffcf00;
+}
+header .top .menu_icon {
+  font-size: 50px;
+  color: #fff;
+  margin-left: -300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+header .top .menu_icon:hover { 
+  background-color: rgba(51, 51, 51, 1);
+}
+header .top .logo {
+  width: 9%;
+  height: 100%;
+  padding-left: 188px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0 30%;
+}
+header .top .logo img {
+  width: 163px;
+  height: 70px;
+}
+header .bottom {
+  width: 100%;
+  height: 0%;
+  background-color: #fff;
+  overflow: hidden;
+  transition: height .5s;
+}
+header .bottom.open {
+  height: 100vh;
+  z-index: 3;
+  transition: height .5s;
+}
+header .bottom .category .inner {
+  display: flex;
+  justify-content: center;
+}
+header .bottom .category .select {
+  width: 40%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 20px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+header .bottom .category .select_1 {
+  background-color: transparent;
+}
+header .bottom .category .select_2 {
+  background-color:#ffcf00;
+}
+header .bottom .category .buy {
+  width: 20%;
+  margin: auto;
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+  padding: 20px 0;
+  text-align: center;
+  background-color: red;
+}
+header .bottom .category .buy:hover {
+  background-color: #d01012;
+}
+header .bottom .menu {
+  box-sizing: border-box;
+}
+header .bottom .menu .inner {
+  position: relative;
+}
+header .bottom .menu .park_menu {
+  display: flex;
+  padding: 50px 0;
+  justify-content: space-between;
+}
+header .bottom .menu .park_menu.active {
+  display: flex;
+}
+header .bottom .menu .park_menu > li {
+  width: 500px;
+  height: 550px;
+  margin: 0 10px;
+}
+header .bottom .menu .park_menu li .park_1_title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+header .bottom .menu .park_menu li .park_2 .park_2_title {
+  font-size: 21px;
+  font-weight: 900;
+  margin: 30px 0 30px 0;
+}
+header .bottom .menu .park_menu li .park_2 .park_3 {}
+header .bottom .menu .park_menu li .park_2 .park_3 li {
+  margin: 10px 0;
+}
+header .bottom .menu .park_menu li .park_2 .park_3 li a {
+  font-size: 16px;
+}
+header .bottom .menu .hotel_menu {
+  display: none;
+  width: 100%;
+  padding: 50px 0;
+  justify-content: space-between;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+header .bottom .menu .hotel_menu.active {
+  display: flex;
+}
+header .bottom .menu .hotel_menu > li {
+  width: 500px;
+  height: 550px;
+  margin: 0 10px;
+}
+header .bottom .menu .hotel_menu li .hotel_1_title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+header .bottom .menu .hotel_menu li .hotel_2 > li > .hotel_2_title {
+  display: block;
+  font-size: 21px;
+  font-weight: 900;
+  margin: 30px 0 30px 0;
+}
+header .bottom .menu .hotel_menu li .hotel_2 .hotel_3 {}
+header .bottom .menu .hotel_menu li .hotel_2 .hotel_3 li {
+  margin: 10px 0;
+}
+header .bottom .menu .hotel_menu li .hotel_2 .hotel_3 li a {
+  font-size: 16px;
+}
+/* HEADER */
+
+/* main */
+main {
+  height: 100%;
+  margin-top: 5.2%;
+  margin-bottom: 5.3%;
+  position: relative;
+}
+
+/* bg_section */
+main .bg_section {
+  width: 100%;
+  height: 500px;
+  background-image: url('../image/p_use_ext_03/bg_img/1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+main .bg_section .page_title {
+  width: 1210px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #31a1e0;
+  color: #fff;
+  font-size: 64px;
+  font-weight: 700;
+  padding-left: 10px;
+  position: absolute;
+  top: 200px;
+  left: 50px;
+}
+/* bg_section */
+
+/* cont_section */
+main .cont_section {
+  width: 100%;
+  height: 100%;
+}
+/* cont_section */
+
+/* section 1 */
+main .cont_section .inner .section_1 {
+  margin: 30px 0 0 0;
+}
+main .cont_section .inner .section_1 p {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 30px 0;
+}
+/* section 1 */
+
+/* section 2 */
+main .cont_section .inner .section_2 {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 0 0;
+}
+main .cont_section .inner .section_2 .image_price {
+  width: 650px;
+  height: 650px;
+  background-image: url('../image/p_use_ext_03/section_img/1.jpg');
+  display: flex;
+  justify-content: end;
+}
+main .cont_section .inner .section_2 .image_price .badge {
+  width: 229px;
+  height: 105px;
+  background-color: red;
+  color: #fff;
+  padding: 10px 0 0 0;
+}
+main .cont_section .inner .section_2 .image_price .badge p {
+  text-align: center;
+  margin: 5px 0;
+}
+main .cont_section .inner .section_2 .image_price .badge p:nth-child(2) {
+  font-size: 41px;
+  font-weight: 700;
+}
+main .cont_section .inner .section_2 .text {
+  width: 650px;
+  height: 650px;
+  margin: 0 0 0 30px;
+}
+main .cont_section .inner .section_2 .text h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color:#006db7;
+  margin: 0 0 30px 0;
+}
+main .cont_section .inner .section_2 .text p {
+  margin: 0 0 30px 0;
+  line-height: 1.3;
+}
+main .cont_section .inner .section_2 .text .bold {
+  font-weight: 700;
+}
+/* section 2 */
+
+/* section 3 */
+main .cont_section .inner .section_3 {
+  margin: 100px 0 0 0;
+}
+main .cont_section .inner .section_3 .buy {
+  width: 800px;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+main .cont_section .inner .section_3 .buy .title {
+  background-color: #004f84;
+  font-size: 32px;
+  color: #fff;
+  padding: 30px;
+}
+main .cont_section .inner .section_3 .buy .price {
+  display: flex;
+  justify-content: center;
+}
+main .cont_section .inner .section_3 .buy .price_1,
+main .cont_section .inner .section_3 .buy .price_2 {
+  width: 100%;
+  color:#006db7;
+  line-height: 1.2;
+  padding: 20px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+}
+main .cont_section .inner .section_3 .buy .price_2 {
+  border-right: 1px solid;
+}
+main .cont_section .inner .section_3 .buy .price_1 p:nth-child(2),
+main .cont_section .inner .section_3 .buy .price_2 p:nth-child(2) {
+  font-size: 40px;
+}
+main .cont_section .inner .section_3 .buy .notice {
+  padding: 20px;
+  color: #006db7;
+  line-height: 1.3;
+  font-weight: 700;
+  border-left: 1px solid #004f84;
+  border-right: 1px solid #004f84;
+}
+main .cont_section .inner .section_3 .buy .image {
+}
+main .cont_section .inner .section_3 .buy .image img {
+  width: 800px;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid;
+}
+main .cont_section .inner .section_3 .buy .image p {
+  background-color: green;
+  color: #fff;
+  padding: 20px;
+  border: 1px solid #004f84;
+}
+main .cont_section .inner .section_3 .buy .text_1 {
+  background-color: #fff;
+  font-size: 24px;
+  color: #006db7;
+  padding: 20px;
+  border: 1px solid #004f84;
+}
+main .cont_section .inner .section_3 .buy .text_2 {
+  text-align: start;
+  padding: 20px;
+  border-right: 1px solid #004f84;
+  border-bottom: 1px solid #004f84;
+  border-left: 1px solid #004f84;
+}
+main .cont_section .inner .section_3 .buy .text_2 ul {
+  padding: 0 0 0 20px;
+}
+main .cont_section .inner .section_3 .buy .text_2 ul li {
+  list-style:decimal-leading;
+  margin: 20px 0;
+  line-height: 1.3;
+  color: #006db7;
+}
+main .cont_section .inner .section_3 .buy a {
+  width: 100%;
+}
+/* section 3 */
+
+/* footer */
+footer {
+  width: 100%;
+  height: 10%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+footer .foot_section {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .foot_section .foot {
+  display: flex;
+  color:#555;
+  box-sizing: border-box;
+}
+footer .foot_section .foot li {
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+}
+footer .foot_section .foot li:last-child {
+  margin-right: 0;
+}
+footer .foot_section .foot li span, 
+footer .foot_section .foot li a {
+  color:#555;
+}
+footer .foot_section .foot li span:hover,
+footer .foot_section .foot li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+footer .foot_section .foot_1 {
+  width: 40%;
+  justify-content: flex-start;
+  margin-left: 35px;
+}
+footer .foot_section .foot_2 {
+  width: 20%;
+  justify-content: center;
+}
+footer .foot_section .foot_2 li {
+  width: 40px;
+  height: 40px;
+}
+footer .foot_section .foot_2 li a {
+  width: 40px;
+  height: 40px;
+}
+footer .foot_section .foot_2 li #popup_open_btn_3 { 
+  width: 40px;
+  height: 40px;
+  background-color: #ea4335;
+  border: 1px solid #ea4335;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .foot_section .foot_2 li #popup_open_btn_3 svg {
+  color: #fff;
+}
+footer .foot_section .foot_2 li .app_store,
+footer .foot_section .foot_2 li .play_store {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .foot_section .foot_2 li span img {
+  color: #fff;
+}
+footer .foot_section .foot_3 {
+  width: 40%;
+  justify-content: flex-end;
+  margin-right: 35px;
+}
+/* footer */
+
+
+/* Modal Pop-up */
+
+/* LEGOLAND® Korea Resort 모달 팝업 */
+#my_modal_1 {
+  display: none;
+  width: 1300px;
+  padding: 20px 60px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 3px;
+}
+#my_modal_1 p.logo {
+  margin: 40px 0;
+  padding-left: 28%;
+  box-sizing: border-box;
+}
+#my_modal_1 p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+#my_modal_1 .modal_close_btn_1 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+}
+#my_modal_1 .modal_close_btn_1:hover {
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+}
+/* LEGOLAND® Korea Resort 모달 팝업 */
+
+/* Other LEGOLAND® Parks 모달 팝업 */
+#my_modal_2 {
+  display: none;
+  width: 700px;
+  padding: 20px 60px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 3px;
+}
+#my_modal_2 h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+#my_modal_2 ul {
+  margin-top: 30px;
+}
+#my_modal_2 ul li {
+  margin: 10px 0 10px 20px;
+}
+#my_modal_2 ul li a {
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+#my_modal_2 ul li a:hover {
+  text-decoration: underline;
+}
+#my_modal_2 .modal_close_btn_2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+}
+#my_modal_2 .modal_close_btn_2:hover {
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+}
+/* Other LEGOLAND® Parks 모달 팝업 */
+
+/* newsletter 모달 팝업 */
+#my_modal_3 {
+  display: none;
+  width: 1000px;
+  padding: 20px 60px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 3px;
+}
+#my_modal_3 form h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+#my_modal_3 form p {
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+#my_modal_3 form p input {
+  width: 570px;
+  height: 30px;
+  padding: 5px;
+  margin: 10px 0 0 0;
+}
+#my_modal_3 form .sub_btn button {
+  display: block;
+  font-size: 20px;
+  width: 570px;
+  height: 40px;
+  padding: 0 auto;
+  text-align: center;
+  background: #006db7;
+  color: #fff;
+  border: 0;
+}
+#my_modal_3 .modal_close_btn_3 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+}
+#my_modal_3 .modal_close_btn_3:hover {
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+}
+/* newsletter 모달 팝업 */
+
+/* policy 모달 팝업 */
+#my_modal_4 {
+  display: none;
+  width: 700px;
+  padding: 20px 60px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 3px;
+}
+#my_modal_4 h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+#my_modal_4 ul {
+  margin-top: 30px;
+}
+#my_modal_4 ul li {
+  margin: 10px 0 10px 20px;
+}
+#my_modal_4 ul li a {
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+#my_modal_4 ul li a:hover {
+  text-decoration: underline;
+}
+#my_modal_4 .modal_close_btn_4 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+}
+#my_modal_4 .modal_close_btn_4:hover {
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+}
+/* policy 모달 팝업 */
+
+/* Terms & Conditions 모달 팝업 */
+#my_modal_5 {
+  display: none;
+  width: 700px;
+  padding: 20px 60px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 3px;
+}
+#my_modal_5 h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+#my_modal_5 ul {
+  margin-top: 30px;
+}
+#my_modal_5 ul li {
+  margin: 10px 0 10px 20px;
+}
+#my_modal_5 ul li a {
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+#my_modal_5 ul li a:hover {
+  text-decoration: underline;
+}
+#my_modal_5 .modal_close_btn_5 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+}
+#my_modal_5 .modal_close_btn_5:hover {
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+}
+/* Terms & Conditions 모달 팝업 */
+
+/* Our Company 모달 팝업 */
+#my_modal_6 {
+  display: none;
+  width: 700px;
+  padding: 20px 60px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 3px;
+}
+#my_modal_6 h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+#my_modal_6 ul {
+  margin-top: 30px;
+}
+#my_modal_6 ul li {
+  margin: 10px 0 10px 20px;
+}
+#my_modal_6 ul li a {
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+#my_modal_6 ul li a:hover {
+  text-decoration: underline;
+}
+#my_modal_6 .modal_close_btn_6 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+}
+#my_modal_6 .modal_close_btn_6:hover {
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+}
+/* Our Company 모달 팝업 */
+
+/* Modal Pop-up */

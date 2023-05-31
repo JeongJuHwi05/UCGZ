@@ -1,0 +1,970 @@
+/* common */
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #777;
+  text-decoration: underline;
+}
+.btn {
+  display: block;
+  color: #fff;
+  border: 1px solid red;
+  background-color: red;
+  width: 200px;
+  height: 50px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s;
+}
+.btn:hover {
+  display: block;
+  border: 1px solid rgb(130, 0, 0);
+  background-color: rgb(130, 0, 0);
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner {
+  width: 1350px;
+  height: 100%;
+  margin: 0 auto;
+}
+/* common */
+
+/* HEADER */
+header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  transition: height .5s;
+}
+header.open {
+  height: 880px;
+  z-index: 2;
+  transition: height .5s;
+}
+header .top {
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  transition: background-color .25s;
+}
+header .top.open {
+  background-color: #ffcf00;
+  transition: background-color .25s;
+}
+header .top .menu_icon {
+  font-size: 50px;
+  color: #fff;
+  margin-left: -300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+header .top .menu_icon:hover { 
+  background-color: rgba(51, 51, 51, 1);
+}
+header .top .logo {
+  width: 9%;
+  height: 100%;
+  padding-left: 188px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0 30%;
+}
+header .top .logo img {
+  width: 163px;
+  height: 70px;
+}
+header .bottom {
+  width: 100%;
+  height: 0%;
+  background-color: #fff;
+  overflow: hidden;
+  transition: height .5s;
+}
+header .bottom.open {
+  height: 95.1%;
+  z-index: 3;
+  transition: height .5s;
+}
+header .bottom .category .inner {
+  display: flex;
+  justify-content: center;
+}
+header .bottom .category .select {
+  width: 40%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 20px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+header .bottom .category .select_1 {
+  background-color: transparent;
+}
+header .bottom .category .select_2 {
+  background-color: #ffcf00;
+}
+header .bottom .category .buy {
+  width: 20%;
+  margin: auto;
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+  padding: 20px 0;
+  text-align: center;
+  background-color: red;
+}
+header .bottom .category .buy:hover {
+  background-color: #d01012;
+}
+header .bottom .menu {
+  box-sizing: border-box;
+}
+header .bottom .menu .inner {
+  position: relative;
+}
+header .bottom .menu .park_menu {
+  display: flex;
+  padding: 50px 0;
+  justify-content: space-between;
+}
+header .bottom .menu .park_menu.active {
+  display: flex;
+}
+header .bottom .menu .park_menu > li {
+  width: 500px;
+  height: 550px;
+  margin: 0 10px;
+}
+header .bottom .menu .park_menu li .park_1_title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+header .bottom .menu .park_menu li .park_2 .park_2_title {
+  font-size: 21px;
+  font-weight: 900;
+  margin: 30px 0 30px 0;
+}
+header .bottom .menu .park_menu li .park_2 .park_3 {}
+header .bottom .menu .park_menu li .park_2 .park_3 li {
+  margin: 10px 0;
+}
+header .bottom .menu .park_menu li .park_2 .park_3 li a {
+  font-size: 16px;
+}
+header .bottom .menu .hotel_menu {
+  display: none;
+  width: 100%;
+  padding: 50px 0;
+  justify-content: space-between;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+header .bottom .menu .hotel_menu.active {
+  display: flex;
+}
+header .bottom .menu .hotel_menu > li {
+  width: 500px;
+  height: 550px;
+  margin: 0 10px;
+}
+header .bottom .menu .hotel_menu li .hotel_1_title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+header .bottom .menu .hotel_menu li .hotel_2 > li > .hotel_2_title {
+  display: block;
+  font-size: 21px;
+  font-weight: 900;
+  margin: 30px 0 30px 0;
+}
+header .bottom .menu .hotel_menu li .hotel_2 .hotel_3 {}
+header .bottom .menu .hotel_menu li .hotel_2 .hotel_3 li {
+  margin: 10px 0;
+}
+header .bottom .menu .hotel_menu li .hotel_2 .hotel_3 li a {
+  font-size: 16px;
+}
+/* HEADER */
+
+/* MAIN */
+main {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: 1;
+}
+main .swiper {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* main > advance ticket */
+main .ticket {
+  position: relative;
+  background-image: url('../image/bg_image/1.png');
+  background-position: center;
+  background-size: cover;
+}
+main .ticket .ticktype {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .ticket .ticktype .type {
+  width: 100%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+main .ticket .ticktype .type .secter {
+  width: 355px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+main .ticket .ticktype .type .secter .image {
+  width: 355px;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+main .ticket .ticktype .type:hover .secter .image img {
+  transition: .2s;
+  transform: scale(1.05);
+}
+main .ticket .ticktype .type .secter .price {
+  width: 100px;
+  height: 100px;
+  font-size: 16px;
+  color: #fff;
+  padding: auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f00;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main .ticket .ticktype .type .secter .ticket_title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 15px 0 0 15px;
+  text-align: start;
+}
+main .ticket .ticktype .type .secter .ticket_sub {
+  margin: 15px 0 30px 15px;
+  text-align: start;
+  font-size: 16px;
+  line-height: 1.5;
+}
+main .ticket .ticktype .type .secter .ticket_btn {
+  display: block;
+  color: #fff;
+  margin: 0 0 0 auto;
+  border: 1px solid red;
+  background-color: red;
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s;
+}
+main .ticket .ticktype .type:hover .secter .ticket_btn {
+  border: 1px solid rgb(130, 0, 0);
+  background-color: rgb(130, 0, 0);
+}
+/* main > advance ticket */
+
+/* main > promotion */
+main .promotion {
+  position: relative;
+  background-image: url('../image/bg_image/2.png');
+  background-position: center;
+  background-size: cover;
+}
+main .promotion .promo {
+  width: 1440px;
+  height: 84%;
+  position: absolute;
+  top: 70px;
+  left: 230px;
+}
+main .promotion .promo .slider-wrap-promotion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .promotion .promo .slider-wrap-promotion .slick-arrow {
+  color: #006db7;
+  font-size: 50px;
+  margin: auto;
+  cursor: pointer;
+}
+main .promotion .promo .slider-wrap-promotion .slick-arrow:hover {
+  color: #31a1e0;
+}
+main .promotion .promo .slider-wrap-promotion .slick-dots {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: 48%;
+  margin: 0;
+  padding: 0;
+}
+main .promotion .promo .slider-wrap-promotion .slick-dots li button {
+  background-color: transparent;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  content-visibility: hidden;
+  border: 1px dotted #333;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: none;
+}
+main .promotion .promo .slider-wrap-promotion .slick-dots li.slick-active button {
+  background-color: #05c9f5;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  content-visibility: hidden;
+  box-shadow: none;
+  border-radius: 10px;
+  outline: none;
+}
+main .promotion .promo .slider-wrap-promotion .cont_promotion {
+  width: 1000px;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .promotion .promo .slider-wrap-promotion .cont_promotion .promotion__image {
+  width: 600px;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center
+  ;
+} 
+main .promotion .promo .slider-wrap-promotion .cont_promotion .promotion__description {
+  width: 550px;
+  height: 100%;
+  padding: 100px 0 0 50px;
+  text-align: start;
+}
+main .promotion .promo .slider-wrap-promotion .cont_promotion .promotion__description .pro__text1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.3;
+  display: block;
+  margin-bottom: 50px;
+  color: #fff;
+}
+main .promotion .promo .slider-wrap-promotion .cont_promotion .promotion__description .pro__text2 {
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+main .promotion .promo .slider-wrap-promotion .cont_promotion .promotion__description .pro__btn {
+  display: block;
+  color: #fff;
+  border: 1px solid red;
+  background-color: red;
+  width: 200px;
+  height: 50px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s;
+}
+main .promotion .promo .slider-wrap-promotion .cont_promotion .promotion__description .pro__btn:hover {
+  display: block;
+  border: 1px solid rgb(130, 0, 0);
+  background-color: rgb(130, 0, 0);
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main > promotion */
+
+/* main > instagram */
+main .instagram {
+  position: relative;
+  background-image: url('../image/bg_image/3.png');
+  background-position: center;
+  background-size: cover;
+}
+main .instagram .insta {
+  width: 1440px;
+  height: 84%;
+  position: absolute;
+  top: 70px;
+  left: 230px;
+  padding-top: 40px;
+}
+main .instagram .insta .slider-wrap-instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .instagram .insta .slider-wrap-instagram .slick-arrow {
+  color: #006db7;
+  font-size: 50px;
+  margin: auto;
+  cursor: pointer;
+}
+main .instagram .insta .slider-wrap-instagram .slick-arrow:hover {
+  color: #31a1e0;
+}
+main .instagram .insta .slider-wrap-instagram .slick-dots {
+  display: flex;
+  position: absolute;
+  bottom: -50px;
+  left: 46.5%;
+  margin: 0;
+  padding: 0;
+}
+main .instagram .insta .slider-wrap-instagram .slick-dots li button {
+  background-color: transparent;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  content-visibility: hidden;
+  border: 1px dotted #333;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: none;
+}
+main .instagram .insta .slider-wrap-instagram .slick-dots li.slick-active button {
+  background-color: #05c9f5;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  content-visibility: hidden;
+  box-shadow: none;
+  border-radius: 10px;
+  outline: none;
+}
+main .instagram .insta .slider-wrap-instagram .cont_instagram {
+  width: 1300px;
+  height: 650px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+main .instagram .insta .slider-wrap-instagram .cont_instagram .instagram__image img {
+  width: 1300px;
+  height: 650px;
+  box-sizing: border-box;
+}
+/* main > instagram */
+
+/* main > youtube */
+main .youtube {
+  position: relative;
+  background-image: url('../image/bg_image/4.png');
+  background-position: center;
+  background-size: cover;
+}
+main .youtube .tube {
+  width: 1440px;
+  height: 84%;
+  position: absolute;
+  top: 70px;
+  left: 230px;
+  margin-top: 40px;
+}
+main .youtube .tube .slider-wrap-youtube {
+  display: flex;
+}
+main .youtube .tube .slider-wrap-youtube .slick-arrow {
+  color: #006db7;
+  font-size: 50px;
+  margin: auto;
+  cursor: pointer;
+  flex-grow: 1;
+}
+main .youtube .tube .slider-wrap-youtube .slick-arrow:hover {
+  color: #31a1e0;
+}
+main .youtube .tube .slider-wrap-youtube .slick-dots {
+  display: flex;
+  position: absolute;
+  bottom: -50px;
+  left: 46.5%;
+  margin: 0;
+  padding: 0;
+}
+main .youtube .tube .slider-wrap-youtube .slick-dots li button {
+  background-color: transparent;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  content-visibility: hidden;
+  border: 1px dotted #333;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: none;
+}
+main .youtube .tube .slider-wrap-youtube .slick-dots li.slick-active button {
+  background-color: #05c9f5;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  content-visibility: hidden;
+  box-shadow: none;
+  border-radius: 10px;
+  outline: none;
+}
+main .youtube .tube .slider-wrap-youtube .cont_youtube {
+  flex-grow: 1;
+}
+/* main > youtube */
+
+/* MAIN */
+
+/* footer */
+footer {
+  width: 100%;
+  height: 10%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+}
+footer .foot_section {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .foot_section .foot {
+  display: flex;
+  color: #fff;
+  box-sizing: border-box;
+}
+footer .foot_section .foot li {
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+}
+footer .foot_section .foot li:last-child {
+  margin-right: 0;
+}
+footer .foot_section .foot li span, 
+footer .foot_section .foot li a {
+  color:#fff;
+  transition: all .5s;
+}
+footer.open .foot_section .foot li span, 
+footer.open .foot_section .foot li a {
+  color:#000;
+  transition: all 3s;
+}
+footer .foot_section .foot li span:hover,
+footer .foot_section .foot li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+footer .foot_section .foot_1 {
+  width: 40%;
+  justify-content: flex-start;
+  margin-left: 35px;
+}
+footer .foot_section .foot_2 {
+  width: 20%;
+  justify-content: center;
+}
+footer .foot_section .foot_2 li {
+  width: 40px;
+  height: 40px;
+}
+footer .foot_section .foot_2 li a {
+  width: 40px;
+  height: 40px;
+}
+footer .foot_section .foot_2 li #popup_open_btn_3 { 
+  width: 40px;
+  height: 40px;
+  background-color: #ea4335;
+  border: 1px solid #ea4335;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .foot_section .foot_2 li #popup_open_btn_3 svg {
+  color: #fff;
+}
+footer .foot_section .foot_2 li .app_store,
+footer .foot_section .foot_2 li .play_store {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .foot_section .foot_2 li span img {
+  color: #fff;
+}
+footer .foot_section .foot_3 {
+  width: 40%;
+  justify-content: flex-end;
+  margin-right: 35px;
+}
+/* footer */
+
+
+/* Modal Pop-up */
+
+/* LEGOLAND® Korea Resort 모달 팝업 */
+#my_modal_1 {
+  display: none;
+  width: 1300px;
+  padding: 20px 60px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 3px;
+}
+#my_modal_1 p.logo {
+  margin: 40px 0;
+  padding-left: 28%;
+  box-sizing: border-box;
+}
+#my_modal_1 p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+#my_modal_1 .modal_close_btn_1 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+}
+#my_modal_1 .modal_close_btn_1:hover {
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+}
+/* LEGOLAND® Korea Resort 모달 팝업 */
+
+/* Other LEGOLAND® Parks 모달 팝업 */
+#my_modal_2 {
+  display: none;
+  width: 700px;
+  padding: 20px 60px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 3px;
+}
+#my_modal_2 h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+#my_modal_2 ul {
+  margin-top: 30px;
+}
+#my_modal_2 ul li {
+  margin: 10px 0 10px 20px;
+}
+#my_modal_2 ul li a {
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+#my_modal_2 ul li a:hover {
+  text-decoration: underline;
+}
+#my_modal_2 .modal_close_btn_2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+}
+#my_modal_2 .modal_close_btn_2:hover {
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+}
+/* Other LEGOLAND® Parks 모달 팝업 */
+
+/* newsletter 모달 팝업 */
+#my_modal_3 {
+  display: none;
+  width: 1000px;
+  padding: 20px 60px;
+  background-color: #fefefe;
+  border-radius: 3px;
+}
+#my_modal_3 form h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+#my_modal_3 form p {
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+#my_modal_3 form p input {
+  width: 570px;
+  height: 30px;
+  border: 1px solid #333;
+}
+#my_modal_3 form .sub_btn button {
+  display: block;
+  font-size: 20px;
+  width: 570px;
+  height: 40px;
+  padding: 0 auto;
+  text-align: center;
+  background: #006db7;
+  color: #fff;
+  border: 0;
+}
+#my_modal_3 .modal_close_btn_3 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+}
+#my_modal_3 .modal_close_btn_3:hover {
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+}
+/* newsletter 모달 팝업 */
+
+/* policy 모달 팝업 */
+#my_modal_4 {
+  display: none;
+  width: 700px;
+  padding: 20px 60px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 3px;
+}
+#my_modal_4 h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+#my_modal_4 ul {
+  margin-top: 30px;
+}
+#my_modal_4 ul li {
+  margin: 10px 0 10px 20px;
+}
+#my_modal_4 ul li a {
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+#my_modal_4 ul li a:hover {
+  text-decoration: underline;
+}
+#my_modal_4 .modal_close_btn_4 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+}
+#my_modal_4 .modal_close_btn_4:hover {
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+}
+/* policy 모달 팝업 */
+
+/* Terms & Conditions 모달 팝업 */
+#my_modal_5 {
+  display: none;
+  width: 700px;
+  padding: 20px 60px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 3px;
+}
+#my_modal_5 h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+#my_modal_5 ul {
+  margin-top: 30px;
+}
+#my_modal_5 ul li {
+  margin: 10px 0 10px 20px;
+}
+#my_modal_5 ul li a {
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+#my_modal_5 ul li a:hover {
+  text-decoration: underline;
+}
+#my_modal_5 .modal_close_btn_5 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+}
+#my_modal_5 .modal_close_btn_5:hover {
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+}
+/* Terms & Conditions 모달 팝업 */
+
+/* Our Company 모달 팝업 */
+#my_modal_6 {
+  display: none;
+  width: 700px;
+  padding: 20px 60px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 3px;
+}
+#my_modal_6 h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+#my_modal_6 ul {
+  margin-top: 30px;
+}
+#my_modal_6 ul li {
+  margin: 10px 0 10px 20px;
+}
+#my_modal_6 ul li a {
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+#my_modal_6 ul li a:hover {
+  text-decoration: underline;
+}
+#my_modal_6 .modal_close_btn_6 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+}
+#my_modal_6 .modal_close_btn_6:hover {
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+}
+/* Our Company 모달 팝업 */
+
+/* Legoland App Download */
+#my_modal_7 {
+  display: none;
+  width: 1000px;
+  height: 500px;
+  padding: 50px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 3px;
+}
+#my_modal_7 h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+#my_modal_7 .store {
+  width: 950px;
+  height: 400px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#my_modal_7 .store .apple,
+#my_modal_7 .store .google {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+#my_modal_7 .store .apple {
+  margin-right: 50px;
+  background-color: #000;
+}
+#my_modal_7 .store .apple .image,
+#my_modal_7 .store .google .image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#my_modal_7 .store .apple .image img {
+  width: 350px;
+  height: 350px;
+}
+#my_modal_7 .store .google .image img {
+  width: 400px;
+  height: 300px;
+}
+#my_modal_7 .store .google {
+  background-color: #fff;
+  border: 1px solid #aaa;
+}
+#my_modal_7 .modal_close_btn_7 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+}
+#my_modal_7 .modal_close_btn_7:hover {
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+}
+/* Legoland App Download */
+
+/* Modal Pop-up */
