@@ -1,30 +1,9 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
 body,
-div,
-object,
 a,
-abbr,
 address,
-dfn,
 em,
 img,
-kbd,
-q,
-s,
 strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
 dl,
 dt,
 dd,
@@ -49,10 +28,7 @@ canvas,
 details,
 footer,
 header,
-hgroup,
-menu,
 nav,
-output,
 section,
 summary,
 audio,
@@ -60,37 +36,73 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 16px;
-  font: inherit;
-  vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("/font/Noto_Sans_KR/NotoSansKR-Black.otf") format('opentype');
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  src:
+    url('/font/Noto_Sans_KR/NotoSansKR-Bold.otf') format('opentype');
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  src:
+    url('/font/Noto_Sans_KR/NotoSansKR-Medium.otf') format('opentype');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  src:
+    url('/font/Noto_Sans_KR/NotoSansKR-Regular.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  src:
+    url('/font/Noto_Sans_KR/NotoSansKR-Light.otf') format('opentype');
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  src:
+    url('/font/Noto_Sans_KR/NotoSansKR-Thin.otf') format('opentype');
+  font-style: normal;
+  font-weight: 100;
+}
+
+body {
+  font-size: 0.8vw;
+  font-family: "Noto Sans KR", "Sans serif"
+};
+a {
+  text-decoration: none;
+  color: inherit;
+}
 article,
 aside,
 details,
+figcaption,
+figure,
 footer,
 header,
+hgroup,
 menu,
 nav,
 section {
   display: block;
 }
-body {
-  line-height: 1;
-}
 ol,
 ul {
   list-style: none;
-}
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
 }
 table {
   border-collapse: collapse;

@@ -50,6 +50,11 @@ header {
     left: 0px;
     z-index: 9999;
 }
+.loadingWrap strong {
+    font-size: 200%;
+    font-weight: bold;
+    padding-top: 3rem;
+}
 .blockWrap {
     display: flex;
 }
