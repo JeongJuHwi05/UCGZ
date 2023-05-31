@@ -58,12 +58,87 @@ a{
     margin-top:100px;
     margin-bottom:300px;
 }
+
+.con_nav{
+    max-width:900px;
+    max-height:176px;
+    margin:auto;
+    margin-bottom:0px;
+}
+.con_nav>ul{
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+.con_nav a{
+    font-size: 150%;
+    color:#fff;
+    font-weight: 700;
+    margin:10px;
+}
+
+.con_nav_li1>a{
+    display: flex;
+    background: url("/image/p_cus_con_02/red_button.png") no-repeat center/100%;
+    width: 15rem;
+    height:166px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+.con_nav_li2>a{
+    display: flex;
+    background: url("/image/p_cus_con_02/orange_button.png") no-repeat center/ 100%;
+    width: 15rem;
+    height:166px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.con_nav_li3>a{
+    display: flex;
+    background: url("/image/p_cus_con_02/yellow_button.png") no-repeat center/ 100%;
+    width: 15rem;
+    height:166px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.con_nav_li4>a{
+    display: flex;
+    background: url("/image/p_cus_con_02/green_button.png") no-repeat center/ 100%;
+    width: 15rem;
+    height:166px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.con_nav_li5>a{
+    display: flex;
+    background: url("/image/p_cus_con_02/blue_button.png") no-repeat center/ 100%;
+    width: 15rem;
+    height:166px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.con_nav_li6>a{
+    display: flex;
+    background: url("/image/p_cus_con_02/purple_button.png") no-repeat center/ 100%;
+    width: 15rem;
+    height:166px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
 .direc_wrap{
     width:80%;
     margin:auto
 }
 .direc_wrap>h4{
-    font-size:36px;
+    font-size:200%;
     padding:30px;
     color:#006db7;
     text-align: center;
@@ -81,7 +156,7 @@ a{
     box-sizing:border-box;
     align-items: center;
     display: flex;
-    font-size:24px;
+    font-size:120%;
     padding: 20px 30px 20px 30px;
     justify-content: space-between;
 }
@@ -108,7 +183,22 @@ a{
     top:0px;
     box-sizing: border-box;
     padding: 30px;
-    font-size:16px;
+    font-size:100%;
     color:#006DB7;
+    display: none;
+}
+.park{
+    display: none;
+}
+.admission{
+    display: none;
+}
+.hotel{
+    display: none;
+}
+.christmas_faq{
+    display: none;
+}
+.winter_faq{
     display: none;
 }
