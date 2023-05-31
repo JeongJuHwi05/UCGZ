@@ -1,0 +1,257 @@
+main {
+    padding-top: 100px;
+    position: relative;
+}
+.mainWrap {
+    background-color: var(--main-bg-color);
+    overflow: auto;
+}
+/* ======== title ==================== */
+.title_wrap {
+    width: 100%;
+    height: 33vh;
+    background: url('/image/t_hotel_reser01/hotel-main-2.png') no-repeat top 40% center/ cover;
+}
+.title {
+    max-width: var(--main-max-width);
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: auto;
+}
+.title_text_wrap {
+    width: fit-content;
+    height: 110px;
+    background-color: #00a138;
+    font-size: 48px;
+    margin: 6.5rem 0px 5.5rem;
+    color: white;
+    padding: 0px 30px;
+    opacity: 0.95;
+    box-sizing: border-box;
+}
+.title h3 {
+    line-height: 110px;
+}
+/* ---------------------- */
+.check_wrap {
+    max-width: var(--main-max-width);
+    margin: auto;
+    padding: 6vh 0px;
+    background-color: var(--main-bg-color);
+
+    display: flex;
+    gap: 5rem;
+    position: relative;
+}
+.check_wrap h4 {
+    font-size: 150%;
+    height: 3em;
+}
+#hotelForm {
+    padding: 10px 10%;
+}
+.form_wrap {
+    width: 60%;
+    padding: 2rem;
+    box-sizing: border-box;
+    box-shadow: 2px 1px 3px 0px rgba(0,0,0,0.4);
+    border-radius: 2rem;
+    background-color: rgba(255,255,255,0.9);
+}
+fieldset {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    border: none;
+    padding: 0px 0px 2rem 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    position: relative;
+}
+fieldset > div {
+    margin-bottom: 4rem;
+}
+
+.name_wrap_en {
+    display: none;
+    position: relative;
+    gap: 2rem;
+}
+.name_wrap_en::after {
+    content: "* 영문이름 입력 시, 반드시 여권에 기재된 이름으로 작성하세요.";
+    position: absolute;
+    bottom: -1.2rem;
+    left: 0px;
+    font-size: 80%;
+    color: #666;
+}
+.convert_check {
+    font-size: 80%;
+    white-space:nowrap;
+}
+.inputBox {
+    position: relative;
+}
+.inputBox input {
+    border: 1px solid rgb(143, 143, 143);
+    width: 15rem;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 100%;
+}
+.inputBox input::placeholder {
+    color: rgb(143,143,143);
+}
+.inputBox label {
+    position: absolute;
+    top: -1.5em;
+    left: 0px;
+    font-size: 80%;
+    font-weight: 600;
+}
+.arrive_wrap label span {
+    font-size: 80%;
+    font-weight: 400;
+}
+#hotelForm_arrive_time {
+    background:white url("/image/t_hotel_reser02/arrow_drop_down.png") no-repeat center right / 1.5rem;
+    cursor: pointer;
+}
+.inputBox label strong {
+    color: red;
+    margin-left: 2px;
+}
+.arrive_wrap {
+    position: relative;
+}
+.arrive_wrap .arrive_option {
+    background-color: white;
+    width: calc(100% - 2px);
+    position: absolute;
+    left: 1px;
+    top: 100%;
+
+    display: none;
+}
+.arrive_option a {
+    display: block;
+    height: 100%;
+    padding: 2px 1rem;
+}
+.arrive_option a:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+#hotelForm_request {
+    display: block;
+    width: 25vw;
+    aspect-ratio: 1/0.3;
+    resize: none;
+    padding: 1rem;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+/* ----------------------------- */
+.check {
+    width: 35%;
+    height: fit-content;
+    padding: 2rem 0px;
+    box-sizing: border-box;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+    position: sticky;
+    top: 10vh;
+    right: 0px;
+}
+.check > ul {
+    width: 85%;
+    margin: auto;
+    padding-bottom: 4rem;
+}
+.check_li {
+    margin-bottom: 1rem;
+}
+.check_list {
+    background-color: white;
+    box-shadow: 2px 1px 3px 0px rgba(0,0,0,0.4);
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+}
+.check_date {
+    display: flex;
+    justify-content: end;
+    font-size: 90%;
+    color: #666;
+}
+.check_theme {
+    font-size: 90%;
+    color: #666;
+}
+.check_room {
+    font-size: 100%;
+    padding-left: 1rem;
+}
+.check_price {
+    font-size: 100%;
+    font-weight: bold;
+    text-align: end;
+    padding-right: 1rem;
+}
+.check_total {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    padding: 1rem 3rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 120%;
+}
+.check_button {
+    padding: 3rem;
+}
+.check_button button {
+    float: right;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 120%;
+    font-weight: bold;
+    background-color: var(--color-orange);
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.check_button button:hover {
+    background-color: white;
+    color: var(--color-orange);
+}
+/* ------------------------------------ */
+.terms {
+    max-width: var(--main-max-width);
+    width: 100%;
+    margin: 0rem auto;
+    padding: 1rem 0px 4rem;
+    box-sizing: border-box;
+    border-top: 1px solid #666;
+}
+.terms_check {
+    text-align: end;
+    width: 80%;
+    margin: auto;
+    padding: 1.5rem 3rem;
+    box-sizing: border-box;
+}
+.terms_text {
+    width: 80%;
+    height: 20rem;
+    padding: 3rem 2rem;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: white;
+    overflow-y: auto;
+    font-size: 80%;
+}

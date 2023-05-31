@@ -10,12 +10,10 @@ $(function(){
         }, 500*i)
     })
     $(window).on("load",function(){
-        $(".mainWrap").show();
         $(".loadingWrap").remove();
     })
    $("header")
         .load("/header/header.html")
-        .show()
     $("footer").load("/footer/footer.html")
     
     localStorage.removeItem("load");
