@@ -24,62 +24,36 @@ $(function (e) {
     var d = new Date();
     var totalDay = new Date(d.getFullYear(), d.getMonth(), 0).getDate();
     var events = [
-    // 5월 개별
+    // // 5월 개별
+    //   {
+    //     date:new Date("2023-05-31"),
+    //     eventName:"10:00 ~ 18:00",
+    //     className: "badge bg-secondary",
+    //     onclick(e, data) {
+    //       console.log(data);
+    //     },
+    //     dateColor:"black",
+    //   },
+
+      //6월 개별
       {
-        date:new Date("2023-05-01"),
-        eventName:"10:00 ~ 18:00",
-        className: "badge bg-secondary",
-        onclick(e, data) {
-          console.log(data);
-        },
-        dateColor:"black",
-      },
-      {
-        date:new Date("2023-05-08"),
-        eventName:"10:00 ~ 18:00",
-        className: "badge bg-secondary",
-        onclick(e, data) {
-          console.log(data);
-        },
-        dateColor:"black",
-      },
-      {
-        date:new Date("2023-05-15"),
-        eventName:"10:00 ~ 18:00",
-        className: "badge bg-secondary",
-        onclick(e, data) {
-          console.log(data);
-        },
-        dateColor:"black",
-      },
-      {
-        date:new Date("2023-05-22"),
-        eventName:"10:00 ~ 18:00",
-        className: "badge bg-secondary",
-        onclick(e, data) {
-          console.log(data);
-        },
-        dateColor:"black",
-      },
-      {
-        date:new Date("2023-05-29"),
+        date:new Date("2023-06-04"),
         eventName:"10:00 ~ 21:00",
         className: "badge bg-primary",
         onclick(e, data) {
           console.log(data);
         },
-        dateColor:"black",
+        dateColor:"red",
       },
       {
-        date:new Date("2023-05-31"),
-        eventName:"10:00 ~ 18:00",
-        className: "badge bg-secondary",
+        date:new Date("2023-06-04"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
         onclick(e, data) {
           console.log(data);
         },
-        dateColor:"black",
+        dateColor:"red",
       },
-      //6월 개별
       {
         date:new Date("2023-06-05"),
         eventName:"10:00 ~ 21:00",
@@ -93,6 +67,69 @@ $(function (e) {
         date:new Date("2023-06-06"),
         eventName:"10:00 ~ 21:00",
         className: "badge bg-primary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-06-06"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-06-06"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-06-06"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-06-11"),
+        eventName:"10:00 ~ 21:00",
+        className: "badge bg-primary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-06-11"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-06-11"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-06-11"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
         onclick(e, data) {
           console.log(data);
         },
@@ -117,6 +154,69 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-06-13"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-06-13"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-06-13"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-06-18"),
+        eventName:"10:00 ~ 21:00",
+        className: "badge bg-primary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-06-18"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-06-18"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-06-18"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
         date:new Date("2023-06-19"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
@@ -133,6 +233,69 @@ $(function (e) {
           console.log(data);
         },
         dateColor:"black",
+      },
+      {
+        date:new Date("2023-06-20"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-06-20"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-06-20"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-06-25"),
+        eventName:"10:00 ~ 21:00",
+        className: "badge bg-primary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-06-25"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-06-25"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-06-25"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
       },
       {
         date:new Date("2023-06-26"),
@@ -152,11 +315,65 @@ $(function (e) {
         },
         dateColor:"black",
       },
+      {
+        date:new Date("2023-06-27"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-06-27"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-06-27"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
       //7월 개별
       {
         date:new Date("2023-07-31"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-07-31"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-07-31"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-07-31"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
         onclick(e, data) {
           console.log(data);
         },
@@ -173,9 +390,45 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-08-01"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-08-01"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-08-01"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-08-07"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-08-07"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
         onclick(e, data) {
           console.log(data);
         },
@@ -191,9 +444,45 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-08-08"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-08-08"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-08-08"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-08-14"),
         eventName:"10:00 ~ 21:00",
         className: "badge bg-primary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-08-14"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
         onclick(e, data) {
           console.log(data);
         },
@@ -209,9 +498,45 @@ $(function (e) {
         dateColor:"red",
       },
       {
+        date:new Date("2023-08-15"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-08-15"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-08-15"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
         date:new Date("2023-08-21"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-08-21"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
         onclick(e, data) {
           console.log(data);
         },
@@ -227,9 +552,45 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-08-22"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-08-22"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-08-22"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-08-28"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-08-28"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
         onclick(e, data) {
           console.log(data);
         },
@@ -245,9 +606,63 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-08-29"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-08-29"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-08-29"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-08-31"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-08-31"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-08-31"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-08-31"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
         onclick(e, data) {
           console.log(data);
         },
@@ -264,6 +679,24 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-9-01"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-09-01"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-9-02"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
@@ -273,9 +706,27 @@ $(function (e) {
         dateColor:"blue",
       },
       {
+        date:new Date("2023-9-02"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-9-07"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-9-07"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
         onclick(e, data) {
           console.log(data);
         },
@@ -291,6 +742,24 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-9-08"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-09-08"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-9-09"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
@@ -300,9 +769,27 @@ $(function (e) {
         dateColor:"blue",
       },
       {
+        date:new Date("2023-9-09"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-9-14"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-9-14"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
         onclick(e, data) {
           console.log(data);
         },
@@ -318,6 +805,24 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-9-15"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-09-15"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-9-16"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
@@ -327,9 +832,27 @@ $(function (e) {
         dateColor:"blue",
       },
       {
+        date:new Date("2023-9-16"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-9-21"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-9-21"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
         onclick(e, data) {
           console.log(data);
         },
@@ -345,6 +868,24 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-9-22"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-09-22"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-9-23"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
@@ -354,9 +895,27 @@ $(function (e) {
         dateColor:"blue",
       },
       {
+        date:new Date("2023-9-23"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-9-28"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-9-28"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
         onclick(e, data) {
           console.log(data);
         },
@@ -372,6 +931,15 @@ $(function (e) {
         dateColor:"red",
       },
       {
+        date:new Date("2023-9-29"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
         date:new Date("2023-9-30"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
@@ -380,11 +948,56 @@ $(function (e) {
         },
         dateColor:"red",
       },
+      {
+        date:new Date("2023-9-30"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
       //10월 개별
+      {
+        date:new Date("2023-10-01"),
+        eventName:"10:00 ~ 21:00",
+        className: "badge bg-primary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-10-01"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
       {
         date:new Date("2023-10-02"),
         eventName:"10:00 ~ 21:00",
         className: "badge bg-primary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-02"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-02"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
         onclick(e, data) {
           console.log(data);
         },
@@ -400,9 +1013,63 @@ $(function (e) {
         dateColor:"red",
       },
       {
+        date:new Date("2023-10-03"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-10-03"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-10-03"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
         date:new Date("2023-10-04"),
         eventName:"10:00 ~ 21:00",
         className: "badge bg-primary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-04"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-04"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-04"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
         onclick(e, data) {
           console.log(data);
         },
@@ -418,9 +1085,63 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-10-05"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+            {
+        date:new Date("2023-10-08"),
+        eventName:"10:00 ~ 21:00",
+        className: "badge bg-primary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-10-08"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
         date:new Date("2023-10-09"),
         eventName:"10:00 ~ 21:00",
         className: "badge bg-primary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-10-09"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-10-09"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-10-09"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
         onclick(e, data) {
           console.log(data);
         },
@@ -436,9 +1157,63 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-10-10"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-10"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-10"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-10-11"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-11"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-11"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-11"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
         onclick(e, data) {
           console.log(data);
         },
@@ -454,9 +1229,81 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-10-12"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-10-16"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-15"),
+        eventName:"10:00 ~ 21:00",
+        className: "badge bg-primary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-10-15"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-10-15"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-10-15"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-10-16"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-16"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-16"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
         onclick(e, data) {
           console.log(data);
         },
@@ -472,9 +1319,63 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-10-17"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-17"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-17"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-10-18"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-18"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-18"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-18"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
         onclick(e, data) {
           console.log(data);
         },
@@ -490,9 +1391,81 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-10-19"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-22"),
+        eventName:"10:00 ~ 21:00",
+        className: "badge bg-primary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-10-22"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-10-22"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-10-22"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
         date:new Date("2023-10-23"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-23"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-23"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-23"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
         onclick(e, data) {
           console.log(data);
         },
@@ -508,9 +1481,63 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-10-24"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-24"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-24"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-10-25"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-25"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-25"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-25"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
         onclick(e, data) {
           console.log(data);
         },
@@ -526,6 +1553,51 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-10-26"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-29"),
+        eventName:"10:00 ~ 21:00",
+        className: "badge bg-primary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-10-29"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-10-29"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-10-29"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
         date:new Date("2023-10-30"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
@@ -535,9 +1607,63 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-10-30"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-30"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-30"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-10-31"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-31"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-31"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-10-31"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
         onclick(e, data) {
           console.log(data);
         },
@@ -554,9 +1680,63 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-11-01"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-01"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-01"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-11-02"),
         eventName:"10:00 ~ 17:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-02"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-02"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-02"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
         onclick(e, data) {
           console.log(data);
         },
@@ -572,9 +1752,27 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-11-03"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-11-04"),
         eventName:"10:00 ~ 17:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"blue",
+      },
+      {
+        date:new Date("2023-11-04"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
         onclick(e, data) {
           console.log(data);
         },
@@ -590,9 +1788,27 @@ $(function (e) {
         dateColor:"red",
       },
       {
+        date:new Date("2023-11-05"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
         date:new Date("2023-11-06"),
         eventName:"10:00 ~ 17:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-06"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
         onclick(e, data) {
           console.log(data);
         },
@@ -608,9 +1824,63 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-11-07"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-07"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-07"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-11-08"),
         eventName:"10:00 ~ 17:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-08"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-08"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-08"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
         onclick(e, data) {
           console.log(data);
         },
@@ -626,9 +1896,45 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-11-09"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-09"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-09"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-11-10"),
         eventName:"10:00 ~ 17:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-10"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
         onclick(e, data) {
           console.log(data);
         },
@@ -644,9 +1950,27 @@ $(function (e) {
         dateColor:"blue",
       },
       {
+        date:new Date("2023-11-11"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"blue",
+      },
+      {
         date:new Date("2023-11-12"),
         eventName:"10:00 ~ 17:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-11-12"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
         onclick(e, data) {
           console.log(data);
         },
@@ -662,9 +1986,45 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-11-13"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-11-14"),
         eventName:"10:00 ~ 17:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-14"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-14"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-14"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
         onclick(e, data) {
           console.log(data);
         },
@@ -680,6 +2040,33 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-11-15"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-15"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-15"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-11-16"),
         eventName:"10:00 ~ 17:00",
         className: "badge bg-secondary",
@@ -688,11 +2075,46 @@ $(function (e) {
         },
         dateColor:"black",
       },
-
+      {
+        date:new Date("2023-11-16"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-16"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-16"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
       {
         date:new Date("2023-11-17"),
         eventName:"10:00 ~ 17:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-17"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
         onclick(e, data) {
           console.log(data);
         },
@@ -708,6 +2130,15 @@ $(function (e) {
         dateColor:"blue",
       },
       {
+        date:new Date("2023-11-18"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"blue",
+      },
+      {
         date:new Date("2023-11-19"),
         eventName:"10:00 ~ 17:00",
         className: "badge bg-secondary",
@@ -717,9 +2148,27 @@ $(function (e) {
         dateColor:"red",
       },
       {
+        date:new Date("2023-11-19"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
         date:new Date("2023-11-20"),
         eventName:"10:00 ~ 17:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-11-20"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
         onclick(e, data) {
           console.log(data);
         },
@@ -762,16 +2211,52 @@ $(function (e) {
         dateColor:"black",
       },
       {
-        date:new Date("2023-11-25"),
-        eventName:"10:00 ~ 18:00",
-        className: "badge bg-secondary",
+        date:new Date("2023-11-24"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
         onclick(e, data) {
           console.log(data);
         },
         dateColor:"black",
       },
       {
+        date:new Date("2023-11-25"),
+        eventName:"10:00 ~ 18:00",
+        className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"blue",
+      },
+      {
+        date:new Date("2023-11-25"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"blue",
+      },
+      {
         date:new Date("2023-11-26"),
+        eventName:"10:00 ~ 18:00",
+        className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-11-26"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-11-27"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
         onclick(e, data) {
@@ -781,8 +2266,8 @@ $(function (e) {
       },
       {
         date:new Date("2023-11-27"),
-        eventName:"10:00 ~ 18:00",
-        className: "badge bg-secondary",
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
         onclick(e, data) {
           console.log(data);
         },
@@ -826,9 +2311,63 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-12-04"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-12-04"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-12-04"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-12-11"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-12-11"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-12-11"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-12-11"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
         onclick(e, data) {
           console.log(data);
         },
@@ -844,9 +2383,63 @@ $(function (e) {
         dateColor:"black",
       },
       {
+        date:new Date("2023-12-18"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-12-18"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-12-18"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
         date:new Date("2023-12-25"),
         eventName:"10:00 ~ 18:00",
         className: "badge bg-secondary",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-12-25"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-12-25"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"red",
+      },
+      {
+        date:new Date("2023-12-25"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
         onclick(e, data) {
           console.log(data);
         },
@@ -861,7 +2454,33 @@ $(function (e) {
         },
         dateColor:"black",
       },
-
+      {
+        date:new Date("2023-12-31"),
+        eventName:"플래티넘 패스",
+        className: "badge bg-info",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-12-31"),
+        eventName:"스탠다드 패스",
+        className: "badge bg-success",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
+      {
+        date:new Date("2023-12-31"),
+        eventName:"골드 패스",
+        className: "badge bg-warning",
+        onclick(e, data) {
+          console.log(data);
+        },
+        dateColor:"black",
+      },
       // 2024년 1월
       {
         date:new Date("2024-01-01"),
@@ -1311,91 +2930,147 @@ $(function (e) {
     ];
     
 
-    // 5월
-    for (var i = 1; i <= totalDay; i++) {
-      var newDate = new Date(d.getFullYear(), d.getMonth(), i);
-      if (newDate.getDay() == 0) {   //일요일
-        events.push({
-          date: newDate,
-          eventName: "10:00 ~ 21:00",
-          className: "badge bg-primary",
-          onclick(e, data) {
-            console.log(data);
-          },
-          dateColor: "red",
-        });
-      }
-      if (newDate.getDay() == 2) {   //화요일
-        events.push({
-          date: newDate,
-          eventName: "10:00 ~ 18:00",
-          className: "badge bg-secondary",
-          onclick(e, data) {
-            console.log(data);
-          },
-          dateColor:"black"
-        });
-      }
-      if (newDate.getDay() == 3) {   //수요일
-        events.push({
-          date: newDate,
-          eventName: "10:00 ~ 18:00",
-          className: "badge bg-secondary",
-          onclick(e, data) {
-            console.log(data);
-          },
-          dateColor:"black"
-        });
-      }
-      if (newDate.getDay() == 4) {   //목요일
-        events.push({
-          date: newDate,
-          eventName: "10:00 ~ 18:00",
-          className: "badge bg-secondary",
-          onclick(e, data) {
-            console.log(data);
-          },
-          dateColor:"black"
-        });
-      }
-      if (newDate.getDay() == 5) {   //금요일
-        events.push({
-          date: newDate,
-          eventName: "10:00 ~ 21:00",
-          className: "badge bg-primary",
-          onclick(e, data) {
-            console.log(data);
-          },
-          dateColor:"black"
-        });
-      }
-      if (newDate.getDay() == 6) {   //토요일
-        events.push({
-          date: newDate,
-          eventName: "10:00 ~ 21:00",
-          className: "badge bg-primary",
-          onclick(e, data) {
-            console.log(data);
-          },
-          dateColor:"blue"
-        });
-      }
+    // // 5월
+    // for (var i = 1; i <= totalDay; i++) {
+    //   var newDate = new Date(d.getFullYear(), d.getMonth(), i);
+    //   if (newDate.getDay() == 0) {   //일요일
+    //     events.push({
+    //       date: newDate,
+    //       eventName: "10:00 ~ 21:00",
+    //       className: "badge bg-primary",
+    //       onclick(e, data) {
+    //         console.log(data);
+    //       },
+    //       dateColor: "red",
+    //     });
+    //   }
+    //   if (newDate.getDay() == 0) {   //일요일 플래
+    //     events.push({
+    //       date: newDate,
+    //       eventName: " ",
+    //       className: "badge bg-info",
+    //       onclick(e, data) {
+    //         console.log(data);
+    //       },
+    //       dateColor: "red",
+    //     });
+    //   }
+    //   if (newDate.getDay() == 1) {   //월요일 플래
+    //     events.push({
+    //       date: newDate,
+    //       eventName: " ",
+    //       className: "badge bg-info",
+    //       onclick(e, data) {
+    //         console.log(data);
+    //       },
+    //       dateColor: "black",
+    //     });
+    //   }
+    //   if (newDate.getDay() == 2) {   //화요일
+    //     events.push({
+    //       date: newDate,
+    //       eventName: "10:00 ~ 18:00",
+    //       className: "badge bg-secondary",
+    //       onclick(e, data) {
+    //         console.log(data);
+    //       },
+    //       dateColor:"black"
+    //     });
+    //   }
+    //   if (newDate.getDay() == 2) {   //화요일 플래
+    //     events.push({
+    //       date: newDate,
+    //       eventName: " ",
+    //       className: "badge bg-info",
+    //       onclick(e, data) {
+    //         console.log(data);
+    //       },
+    //       dateColor: "black",
+    //     });
+    //   }
+    //   if (newDate.getDay() == 3) {   //수요일
+    //     events.push({
+    //       date: newDate,
+    //       eventName: "10:00 ~ 18:00",
+    //       className: "badge bg-secondary",
+    //       onclick(e, data) {
+    //         console.log(data);
+    //       },
+    //       dateColor:"black"
+    //     });
+    //   }
+    //   if (newDate.getDay() == 4) {   //목요일
+    //     events.push({
+    //       date: newDate,
+    //       eventName: "10:00 ~ 18:00",
+    //       className: "badge bg-secondary",
+    //       onclick(e, data) {
+    //         console.log(data);
+    //       },
+    //       dateColor:"black"
+    //     });
+    //   }
+    //   if (newDate.getDay() == 5) {   //금요일
+    //     events.push({
+    //       date: newDate,
+    //       eventName: "10:00 ~ 21:00",
+    //       className: "badge bg-primary",
+    //       onclick(e, data) {
+    //         console.log(data);
+    //       },
+    //       dateColor:"black"
+    //     });
+    //   }
+    //   if (newDate.getDay() == 6) {   //토요일
+    //     events.push({
+    //       date: newDate,
+    //       eventName: "10:00 ~ 21:00",
+    //       className: "badge bg-primary",
+    //       onclick(e, data) {
+    //         console.log(data);
+    //       },
+    //       dateColor:"blue"
+    //     });
+    //   }
       
-    }
+    // }
     
     // 6월
     for (var i = 1; i <= totalDay; i++) {
       var newDate = new Date(d.getFullYear(), d.getMonth()+1, i);
-      if (newDate.getDay() == 0) {   //일요일
+
+      if (newDate.getDay() == 1) {   //월요일 플래
         events.push({
           date: newDate,
-          eventName: "10:00 ~ 21:00",
-          className: "badge bg-primary",
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
           onclick(e, data) {
             console.log(data);
           },
-          dateColor: "red",
-        });
+          dateColor: "black",
+          });
+      }
+      if (newDate.getDay() == 1) {   //월요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+          });
+      }
+      if (newDate.getDay() == 1) {   //월요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+          });
       }
       if (newDate.getDay() == 3) {   //수요일
         events.push({
@@ -1408,6 +3083,39 @@ $(function (e) {
           dateColor:"black"
         });
       }
+      if (newDate.getDay() == 3) {   //수요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+          });
+      }
+      if (newDate.getDay() == 3) {   //수요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+          });
+      }
+      if (newDate.getDay() == 3) {   //수요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+          });
+      }
       if (newDate.getDay() == 4) {   //목요일
         events.push({
           date: newDate,
@@ -1418,6 +3126,39 @@ $(function (e) {
           },
           dateColor:"black"
         });
+      }
+      if (newDate.getDay() == 4) {   //목요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+          });
+      }
+      if (newDate.getDay() == 4) {   //목요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+          });
+      }
+      if (newDate.getDay() == 4) {   //목요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+          });
       }
       if (newDate.getDay() == 5) {   //금요일
         events.push({
@@ -1430,6 +3171,39 @@ $(function (e) {
           dateColor:"black"
         });
       }
+      if (newDate.getDay() == 5) {   //금요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+          });
+      }
+      if (newDate.getDay() == 5) {   //금요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+          });
+      }
+      if (newDate.getDay() == 5) {   //금요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+          });
+      }
       if (newDate.getDay() == 6) {   //토요일
         events.push({
           date: newDate,
@@ -1441,7 +3215,28 @@ $(function (e) {
           dateColor:"blue"
         });
       }
-      
+      if (newDate.getDay() == 6) {   //토요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "blue",
+          });
+      }
+      if (newDate.getDay() == 6) {   //목요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+          });
+      }
     }
 
     // 7월
@@ -1452,6 +3247,39 @@ $(function (e) {
           date: newDate,
           eventName: "10:00 ~ 21:00",
           className: "badge bg-primary",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "red",
+        });
+      }
+      if (newDate.getDay() == 0) {   //일요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "red",
+          });
+      }
+      if (newDate.getDay() == 0) {   //일요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "red",
+        });
+      }
+      if (newDate.getDay() == 0) {   //일요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
           onclick(e, data) {
             console.log(data);
           },
@@ -1469,6 +3297,39 @@ $(function (e) {
           dateColor:"black",
         });
       }
+      if (newDate.getDay() == 1) {   //월요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+          });
+      }
+      if (newDate.getDay() == 1) {   //월요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 1) {   //월요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
       if (newDate.getDay() == 2) {   //화요일
         events.push({
           date: newDate,
@@ -1478,6 +3339,39 @@ $(function (e) {
             console.log(data);
           },
           dateColor:"black"
+        });
+      }
+      if (newDate.getDay() == 2) {   //화요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+          });
+      }
+      if (newDate.getDay() == 2) {   //화요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 2) {   //화요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
         });
       }
       if (newDate.getDay() == 3) {   //수요일
@@ -1491,6 +3385,39 @@ $(function (e) {
           dateColor:"black"
         });
       }
+      if (newDate.getDay() == 3) {   //수요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+          });
+      }
+      if (newDate.getDay() == 3) {   //수요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 3) {   //수요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
       if (newDate.getDay() == 4) {   //목요일
         events.push({
           date: newDate,
@@ -1500,6 +3427,39 @@ $(function (e) {
             console.log(data);
           },
           dateColor:"black"
+        });
+      }
+      if (newDate.getDay() == 4) {   //목요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+          });
+      }
+      if (newDate.getDay() == 4) {   //목요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 4) {   //목요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
         });
       }
       if (newDate.getDay() == 5) {   //금요일
@@ -1513,6 +3473,39 @@ $(function (e) {
           dateColor:"black"
         });
       }
+      if (newDate.getDay() == 5) {   //금요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+          });
+      }
+      if (newDate.getDay() == 5) {   //금요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 5) {   //금요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
       if (newDate.getDay() == 6) {   //토요일
         events.push({
           date: newDate,
@@ -1522,6 +3515,28 @@ $(function (e) {
             console.log(data);
           },
           dateColor:"blue"
+        });
+      }
+      if (newDate.getDay() == 6) {   //토요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "blue",
+          });
+      }
+      if (newDate.getDay() == 6) {   //토요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "blue",
         });
       }
       
@@ -1541,6 +3556,61 @@ $(function (e) {
           dateColor: "red",
         });
       }
+      if (newDate.getDay() == 0) {   //일요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "red",
+          });
+      }
+      if (newDate.getDay() == 0) {   //일요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "red",
+        });
+      }
+      if (newDate.getDay() == 0) {   //일요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "red",
+        });
+      }
+      if (newDate.getDay() == 1) {   //월요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 1) {   //월요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
       if (newDate.getDay() == 3) {   //수요일
         events.push({
           date: newDate,
@@ -1550,6 +3620,39 @@ $(function (e) {
             console.log(data);
           },
           dateColor:"black"
+        });
+      }
+      if (newDate.getDay() == 3) {   //수요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+          });
+      }
+      if (newDate.getDay() == 3) {   //수요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 3) {   //수요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
         });
       }
       if (newDate.getDay() == 4) {   //목요일
@@ -1563,6 +3666,39 @@ $(function (e) {
           dateColor:"black"
         });
       }
+      if (newDate.getDay() == 4) {   //목요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+          });
+      }
+      if (newDate.getDay() == 4) {   //목요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 4) {   //목요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
       if (newDate.getDay() == 5) {   //금요일
         events.push({
           date: newDate,
@@ -1572,6 +3708,39 @@ $(function (e) {
             console.log(data);
           },
           dateColor:"black"
+        });
+      }
+      if (newDate.getDay() == 5) {   //금요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+          });
+      }
+      if (newDate.getDay() == 5) {   //금요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 5) {   //금요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
         });
       }
       if (newDate.getDay() == 6) {   //토요일
@@ -1585,7 +3754,28 @@ $(function (e) {
           dateColor:"blue"
         });
       }
-      
+      if (newDate.getDay() == 6) {   //토요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "blue",
+          });
+      }
+      if (newDate.getDay() == 6) {   //토요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "blue",
+        });
+      }
     }
 
     // 9월
@@ -1596,6 +3786,39 @@ $(function (e) {
           date: newDate,
           eventName: "10:00 ~ 21:00",
           className: "badge bg-primary",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "red",
+        });
+      }
+      if (newDate.getDay() == 0) {   //일요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "red",
+        });
+      }
+      if (newDate.getDay() == 0) {   //일요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "red",
+        });
+      }
+      if (newDate.getDay() == 0) {   //일요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
           onclick(e, data) {
             console.log(data);
           },
@@ -1613,7 +3836,40 @@ $(function (e) {
           dateColor:"black",
         });
       }
-      if (newDate.getDay() == 2) {   //화요일
+      if (newDate.getDay() == 1) {   //월요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 1) {   //월요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 1) {   //월요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 2) {   //화요일 
         events.push({
           date: newDate,
           eventName: "10:00 ~ 18:00",
@@ -1622,6 +3878,39 @@ $(function (e) {
             console.log(data);
           },
           dateColor:"black"
+        });
+      }
+      if (newDate.getDay() == 2) {   //화요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 2) {   //화요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 2) {   //화요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
         });
       }
       if (newDate.getDay() == 3) {   //수요일
@@ -1635,20 +3924,109 @@ $(function (e) {
           dateColor:"black"
         });
       }
+      if (newDate.getDay() == 3) {   //수요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 3) {   //수요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 3) {   //수요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 4) {   //목요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 4) {   //목요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 5) {   //금요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+
+      if (newDate.getDay() == 6) {   //토요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "blue",
+        });
+      }
     }
 
     // 10월
     for (var i = 1; i <= totalDay; i++) {
       var newDate = new Date(d.getFullYear(), d.getMonth()+5, i);
-      if (newDate.getDay() == 0) {   //일요일
+      if (newDate.getDay() == 4) {   //목요일 스탠
         events.push({
           date: newDate,
-          eventName: "10:00 ~ 21:00",
-          className: "badge bg-primary",
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
           onclick(e, data) {
             console.log(data);
           },
-          dateColor: "red",
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 4) {   //목요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
         });
       }
       if (newDate.getDay() == 5) {   //금요일
@@ -1662,6 +4040,39 @@ $(function (e) {
           dateColor:"black"
         });
       }
+      if (newDate.getDay() == 5) {   //금요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 5) {   //금요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 5) {   //금요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
       if (newDate.getDay() == 6) {   //토요일
         events.push({
           date: newDate,
@@ -1673,9 +4084,124 @@ $(function (e) {
           dateColor:"blue"
         });
       }
+      if (newDate.getDay() == 6) {   //토요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "blue",
+        });
+      }
+      if (newDate.getDay() == 6) {   //토요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
       
     }
-  
+    
+    // 11월
+    for (var i = 1; i <= totalDay; i++) {
+      var newDate = new Date(d.getFullYear(), d.getMonth()+6, i);
+      if (newDate.getDay() == 0) {   //일요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "blue",
+        });
+      }
+      if (newDate.getDay() == 0) {   //일요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "blue",
+        });
+      }
+      if (newDate.getDay() == 1) {   //월요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 1) {   //월요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 5) {   //금요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 5) {   //금요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 6) {   //토요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 6) {   //토요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+    }
+
     // 12월
     for (var i = 1; i <= totalDay; i++) {
       var newDate = new Date(d.getFullYear(), d.getMonth()+7, i);
@@ -1684,6 +4210,39 @@ $(function (e) {
           date: newDate,
           eventName: "10:00 ~ 18:00",
           className: "badge bg-secondary",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "red",
+        });
+      }
+      if (newDate.getDay() == 0) {   //일요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "red",
+        });
+      }
+      if (newDate.getDay() == 0) {   //일요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "red",
+        });
+      }
+      if (newDate.getDay() == 0) {   //일요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
           onclick(e, data) {
             console.log(data);
           },
@@ -1734,6 +4293,39 @@ $(function (e) {
           dateColor:"black"
         });
       }
+      if (newDate.getDay() == 5) {   //금요일 플래
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 5) {   //금요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
+      if (newDate.getDay() == 5) {   //금요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "black",
+        });
+      }
       if (newDate.getDay() == 6) {   //토요일
         events.push({
           date: newDate,
@@ -1743,6 +4335,39 @@ $(function (e) {
             console.log(data);
           },
           dateColor:"blue"
+        });
+      }
+      if (newDate.getDay() == 6) {   //토요일
+        events.push({
+          date: newDate,
+          eventName: "플래티넘 패스",
+          className: "badge bg-info",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "blue",
+        });
+      }
+      if (newDate.getDay() == 6) {   //금요일 스탠
+        events.push({
+          date: newDate,
+          eventName: "스탠다드 패스",
+          className: "badge bg-success",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "blue",
+        });
+      }
+      if (newDate.getDay() == 6) {   //금요일 골드
+        events.push({
+          date: newDate,
+          eventName: "골드 패스",
+          className: "badge bg-warning",
+          onclick(e, data) {
+            console.log(data);
+          },
+          dateColor: "blue",
         });
       }
       
