@@ -49,8 +49,6 @@
 }
 
 body {
-  font-family: CeraPro, Noto Sans JP, Nanum Gothic, Helvetica-Light, Helvetica,
-    Arial, sans-serif;
   margin: 0;
   cursor: default;
 }
@@ -168,25 +166,6 @@ a:hover {
   text-align: center;
   line-height: 110px;
 }
-#gallerybox1 {
-  width: 1350px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 400px;
-  margin-bottom: 100px;
-}
-
-#gallerybox2 {
-  width: 1350px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 400px;
-  margin-bottom: 100px;
-}
 
 .tab {
   position: relative;
@@ -194,7 +173,7 @@ a:hover {
 
 .tab img {
   display: block;
-  width: 300px;
+  width: 15rem;
 }
 .tabs {
   display: flex;
@@ -216,6 +195,23 @@ a:hover {
   white-space: nowrap;
 }
 
+#gallerybox1 {
+  width: 1350px;
+  margin: auto;
+  /* display: flex;
+  align-items: flex-start; */
+  margin-top: 100px;
+}
+
+/* #gallerybox2 {
+  width: 1350px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+} */
+
 .gallery__container {
   display: flex;
   justify-content: center;
@@ -223,31 +219,42 @@ a:hover {
 }
 
 .galleryborder_title {
-  width: 600px;
-  margin-left: 6%;
+  background-color: #00aaff;
+  width: 500px;
 }
 
 .galleryborder_title h2 {
   color: #000;
   font-weight: var(--weight-bold);
-  font-size: var(--font-medium);
-  line-height: 160%;
-  margin-bottom: 30px;
+  font-size: 200%;
+  margin-bottom: 1em;
 }
 .galleryborder_title p {
-  line-height: 160%;
-  font-size: var(--font-micro);
+  line-height: 180%;
+  font-size: 100%;
   word-break: break-word;
+}
+
+.galleryborder {
+  display: block;
+  margin-left: 5em;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.galleryborder.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 .text_bold {
   font-weight: var(--weight-bold);
 }
 .red__button {
   margin-top: 8%;
-  margin-left: 6%;
-  width: 255px;
+  width: 15rem;
   height: 60px;
-  font-size: var(--font-regular);
+  font-size: 120%;
   background: #d01012;
   color: white;
   flex-wrap: wrap;
@@ -306,12 +313,13 @@ a:hover {
 }
 
 /* 카드 전체 내용 묶음 */
-
+.card_title {
+  padding: 1em 2em;
+}
 .card_textbox {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1em 2em;
 }
 /* 카드 제목_ */
 .card_body > .card_title > h4 {
@@ -333,14 +341,15 @@ a:hover {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  cursor: pointer;
+
   margin-top: auto;
 }
 
 .redbtn {
+  cursor: pointer;
   position: absolute;
   bottom: 0;
-  width: 300px;
+  width: 15rem;
   height: 60px;
   font-size: var(--font-regular);
   background: #d01012;
