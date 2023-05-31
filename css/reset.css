@@ -25,12 +25,10 @@ td,
 article,
 aside,
 canvas,
-details,
 footer,
 header,
 nav,
 section,
-summary,
 audio,
 video {
   margin: 0;
@@ -90,12 +88,8 @@ a {
 article,
 aside,
 details,
-figcaption,
-figure,
 footer,
 header,
-hgroup,
-menu,
 nav,
 section {
   display: block;
@@ -107,4 +101,7 @@ ul {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+header {
+  z-index: 5000;
 }

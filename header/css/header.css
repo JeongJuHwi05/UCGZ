@@ -20,23 +20,13 @@ header {
   height: 100px;
   position: fixed;
   top: 0;
-<<<<<<< HEAD
-  z-index: 2;
+  z-index: 5000;
   transition: height .5s;
 }
 header.open {
   height: 880px;
-  z-index: 2;
+  z-index: 5000;
   transition: height .5s;
-=======
-  z-index: 2000;
-  transition: height 0.5s;
-}
-header.open {
-  height: 880px;
-  z-index: 2000;
-  transition: height 0.5s;
->>>>>>> d25b35b66552ad07e9e679579099d25c6bbf0183
 }
 header .top {
   width: 100%;
@@ -149,7 +139,6 @@ header .bottom .menu .park_menu li .park_2 .park_2_title {
   font-weight: 900;
   margin: 30px 0 30px 0;
 }
-header .bottom .menu .park_menu li .park_2 .park_3 {}
 header .bottom .menu .park_menu li .park_2 .park_3 li {
   margin: 10px 0;
 }
@@ -185,7 +174,6 @@ header .bottom .menu .hotel_menu li .hotel_2 > li > .hotel_2_title {
   font-weight: 900;
   margin: 30px 0 30px 0;
 }
-header .bottom .menu .hotel_menu li .hotel_2 .hotel_3 {}
 header .bottom .menu .hotel_menu li .hotel_2 .hotel_3 li {
   margin: 10px 0;
 }
