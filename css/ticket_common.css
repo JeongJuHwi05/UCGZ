@@ -273,7 +273,6 @@ fieldset legend {
 }
   /* 각 페이지의 제목박스 */
 .form_title {
-  padding: 1rem 5% 0px;
   height: var(--title-height);
   border: 2px solid rgba(100,100,100,0.5);
   margin: 1rem;
@@ -281,16 +280,23 @@ fieldset legend {
   background: url("/image/t_use_reser01_0/background4.webp") no-repeat center/ cover;
 }
 .form_title > div {
-  padding-bottom: 1rem;
+  padding: 1rem 5% 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, rgba(255,255,255,0.7) 60%, transparent);
+  box-sizing: border-box;
 }
 .form_title h4 {
   font-size: 200%;
   padding-bottom: 1rem;
+  color: royalblue;
 }
-.form_title:not(.season_form_title) li {
-  padding: 5px 50px;
+.form_title li {
+  padding: 5px;
 }
-.form_title:not(.season_form_title) li::before {
+.form_title li::before {
   content: "";
   display: inline-block;
   margin-right: 0.5em;
@@ -659,8 +665,9 @@ fieldset legend {
   }
   .price {
     width: 40%;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.5);
     padding: 30px 20px;
+    border-radius: 2rem;
     box-sizing: border-box;
     position: relative;
     display: flex;
@@ -674,12 +681,13 @@ fieldset legend {
   .p_s_box {
     position: relative;
     border: 2px solid rgba(100,100,100,0.5);
+    border-radius: 2rem;
     margin-top: 1rem;
     padding: 15px 20px 15px 30px;
   }
   .p_s_box >strong {
     display: inline-block;
-    background-color: rgb(255,217,51);
+    background-color: #ffe780;
     position: absolute;
     top: -12px;
     left: 15px;

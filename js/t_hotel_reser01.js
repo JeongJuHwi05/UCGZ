@@ -40,7 +40,7 @@ fetch("/t_hotel/cs_price_text.txt").then(res => res.text()).then(res => { priceE
     // 가격 숫자 정리 //
 function comma(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}      
+}
     // 수량 체크 버튼 //
 $(".sr_numbers")
     .on('click',".decrease_btn",function(e){

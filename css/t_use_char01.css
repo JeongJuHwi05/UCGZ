@@ -12,6 +12,15 @@
     --list-bg-color02 : rgba(43, 43, 180, 0.6);
     --list-bg-color03 : rgba(22, 165, 22, 0.6);
     --list-bg-color04 : rgba(255, 255, 59, 0.6);
+    /* common colors */
+  --color-blue2: #0046b6;
+  --color-blue3: #00aaff;
+  --color-light-yellow: #f1e3b8;
+  --color-orange: #ff6f00;
+  --color-black: #000000;
+  --color-green: #00a138;
+  --color-yellow: #f9cf13;
+  --color-dark-yellow: #ffc400;
     }
 /* common elements=============================================================== */
 body {margin: 0px;padding: 0px; font-size: 0.8vw; font-family: "Noto Sans KR", "Sans serif";}
@@ -102,14 +111,14 @@ main {
     width: fit-content;
     height: 110px;
     background-color: #00a138;
-    font-size: 48px;
     margin: 6.5rem 0px 5.5rem;
     color: white;
     padding: 0px 30px;
     opacity: 0.95;
     box-sizing: border-box;
 }
-.title h3 {
+.title_text_wrap h3 {
+    font-size: 48px;
     height: 100%;
     line-height: 110px;
     position: relative;
@@ -185,8 +194,9 @@ aspect-ratio: 1 / 0.4;
 position: relative;
 background-color: var(--main-bg-color);
 }
-.list_u_li > a:hover {
-background-color: rgba(0, 128, 0, 0.3);
+.list_ul .list_u_li > a:hover,
+.t_r_list_ul .list_u_li > a:hover {
+background: rgba(0, 128, 0, 0.3);
 color: #eee;
 }
 
@@ -200,27 +210,62 @@ font-size: 120%;
 font-weight: 600;
 
 box-sizing: border-box;
+box-shadow: 2px 1px 3px 0px #66666671;
 word-break: keep-all;
 transition: .3s ease;
 background-color: white;
 }
+/* ------------------------- */
+/* .t_list_ul >li:nth-of-type(2) > a {
+    background: rgb(253, 159, 159);
+}
+.t_list_ul >li:nth-of-type(3) >a{
+    background: rgb(247, 196, 196);
+}
+.t_list_ul >li:nth-of-type(4) >a {
+    background: rgb(255, 226, 226);
+}
+.t_list_ul >li:nth-of-type(5) >a {
+    background: rgb(255, 240, 240);
+} */
+.t_list_ul >li>a {
+    background: rgb(255, 187, 187);
+}
+/* ----- */
+/* .list_ul_annual >li:nth-of-type(2) > a {
+    background: #ff9544;
+}
+.list_ul_annual >li:nth-of-type(3) >a{
+    background: #fdb57d;
+}
+.list_ul_annual >li:nth-of-type(4) >a {
+    background: #f7c9a6;
+}
+.list_ul_annual >li:nth-of-type(5) >a {
+    background: #ffe8d6;
+} */
+.list_ul_annual >li>a {
+    background: #ffb07c;
+}
+/* ----- */
+
 .list_u_li >.dated_tc {
-background-color: red;
+background: red url("/image/t_use_char01/boy-jumping.webp") no-repeat left top /60%;
 }
 .list_u_li >.daytime_tc {
-background-color: green;
+background-color: var(--color-green);
 }
 .list_u_li >.vip_tc {
-background-color: blue;
+background: var(--color-blue3) url('/image/t_use_char01/adult_lego.png') no-repeat center top -70%/ 80%;
 }
 .list_u_li >.annual_tc {
-background-color: orange;
+background-color: var(--color-orange);
 }
 .list_u_li >.season_tc {
-background-color: pink;
+background-color: rgb(224, 125, 216);
 }
 .list_u_li > .hotel_tc {
-background-color: aquamarine;
+background: rgb(5, 218, 182) url('/image/t_use_char01/llm_family.webp') no-repeat right -30% top/60%;
 }
 /* 클릭 시 팝업창 ---------------------------------------------------- */
 .list_exp {

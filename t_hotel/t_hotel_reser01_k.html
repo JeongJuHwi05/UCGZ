@@ -726,11 +726,11 @@
                 .css("display","flex");
            })
            // 설명창 닫기 --------------------------------------------
-           $(".ri_e_t_e_char > a").click(function(){
+           $(".ri_e_t_e_char > a").on("click",function(){
                 $(this).parents(".ri_e_t_e_charWrap").hide();
                 $(this).parent().hide();
             });
-            $(".ri_e_t_e_charWrap").click(function(e){
+            $(".ri_e_t_e_charWrap").on("click",function(e){
                 if (e.target == e.currentTarget) {
                     $(this).fadeOut();
                     $(this).find(".ri_e_t_e_char").fadeOut(200);

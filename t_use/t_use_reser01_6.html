@@ -2,16 +2,15 @@
 <html lang="ko">
 <head>
   <title>이용권 방문 예약</title>
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>\
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/t_use_reser01_6.css">
 </head>
 <body>
   <div class="ticket_formWrap visit_ticket_formWrap">
     <div class="form_title visit_form_title">
-      <h4>이용권 방문 예약</h4>
       <div>
-        <ul></ul>
+        <h4>이용권 방문 예약</h4>
       </div>
     </div>
 
@@ -149,9 +148,7 @@
           </div>
 
           <div class="vif01_ticketcard">
-            <div class="vif01_tc_disabled">
-              <span>사용 기간이 종료되었습니다.</span>
-            </div>
+            
             <div class="vif01_tc_img">
               <img src="/image/t_use_reser01_6/spring_season_re.jpg" alt="">
             </div>
@@ -171,8 +168,8 @@
             <div class="vif01_tc_check">
               <input type="checkbox" name="" id="">
             </div>
-            <div class="vif01_tc_disabled">
-              <span></span>
+            <div class="vif01_tc_disabled_closed">
+              <span>사용 기간이 종료되었습니다.</span>
             </div>
           </div>
 
@@ -369,6 +366,14 @@
         $(this).siblings("input").val((i,v) => +v+1);
         $(this).siblings("input").trigger("change");
       });
+      $(".numberCheck input").on("change",function(){
+        if ( $(this).val() == 0 ) {
+          $(".vif01_ticketcard").find(".vif01_tc_disabled").hide()
+        } else {
+          const box = $(this).parents(".vif01_ticketcard");
+          $(".vif01_ticketcard").not(box).find(".vif01_tc_disabled").show()
+        }
+      })
       //------------Load-------------
       const today = new Date();
       const weekArr = ["일", "월", "화", "수", "목", "금", "토"];
