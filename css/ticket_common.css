@@ -278,7 +278,7 @@ fieldset legend {
   border: 2px solid rgba(100,100,100,0.5);
   margin: 1rem;
   box-sizing: border-box;
-  background: url("/image/t_use_reser01_0background4.webp") no-repeat center/ cover;
+  background: url("/image/t_use_reser01_0/background4.webp") no-repeat center/ cover;
 }
 .form_title > div {
   padding-bottom: 1rem;

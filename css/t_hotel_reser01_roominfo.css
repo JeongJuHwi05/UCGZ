@@ -1,11 +1,13 @@
 .roomInfo {
+    max-width: var(--main-max-width);
+    min-width: var(--main-min-width);
     width: 100%;
-    min-width: 600px;
+    margin: auto;
+    padding: 5% 0px;
 }
 .roomInfo_wrap {
     width: 100%;
     margin: auto;
-    padding: 20px;
     box-sizing: border-box;
 }
 .ri_elem_info_wrap {
@@ -135,20 +137,21 @@
 }
 .ri_e_t_e_char {
     position: relative;
-
-    padding: 30px 50px;
+    padding: 2rem 0px;
+    width: 55%;
     display: none;
     justify-content: center;
+    gap: 2rem;
     align-items: start;
-    background-color: rgba(255,255,255,0.95);
+    background-color: rgba(255,255,255,0.9);
     box-shadow: 2px 2px 5px #666;
-    border-radius: 10px;
+    border-radius: 20px;
     box-sizing: border-box;
 }
 .ri_e_t_e_char > a {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 1rem;
+    right: 1rem;
     display: block;
     width: 30px;
     height: 30px;
@@ -170,7 +173,7 @@
     color: rgb(113, 150, 38);
 }
 .ri_e_t_e_char dd {
-    padding-bottom: 5px;
+    padding-bottom: 0.5rem;
     position: relative;
     font-size: 95%;
     word-break: keep-all;
@@ -292,7 +295,7 @@
     align-items: center;
     width: var(--price-btn-width);
     height: 100%;
-    background-color: orange;
+    background-color: var(--color-orange);
 
     position: absolute;
     bottom: 0px;
@@ -323,6 +326,6 @@
     right: 0px;
     width: var(--price-btn-width);
     height: 100%;
-    background-color: orange;
+    background-color: var(--color-orange);
 }
 /* ===================================================== */

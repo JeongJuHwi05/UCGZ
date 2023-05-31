@@ -7,8 +7,6 @@ main {
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: var(--main-max-width);
-    min-width: var(--main-min-width);
     margin: 0px auto;
     background-color: var(--main-bg-color);
 }
@@ -34,8 +32,7 @@ main {
     background-color: rgba(0,0,0,0.1);
 }
 .sr_date h4,
-.sr_numbers h4,
-.roomInfo_wrap h3 {
+.sr_numbers h4 {
     display: none;
 }
 .topSlide {
@@ -46,13 +43,37 @@ main {
     left: 0px;
     z-index: 500;
 }
+/* ======== title ==================== */
+.title_wrap {
+    width: 100%;
+    height: 33vh;
+    background: url('/image/t_hotel_reser01/hotel-main-2.png') no-repeat top 40% center/ cover;
+}
+.title {
+    max-width: var(--main-max-width);
+    width: 100%;
+    margin: auto;
+}
+.title_text_wrap {
+    width: fit-content;
+    height: 110px;
+    background-color: #00a138;
+    font-size: 48px;
+    margin: 6.5rem 0px 5.5rem;
+    color: white;
+    padding: 0px 30px;
+    opacity: 0.95;
+    box-sizing: border-box;
+}
+.title h3 {
+    line-height: 110px;
+}
 /* ========= 장바구니 ============== */
 .hotelBasket {
     width: 30%;
     height: var(--inputBox-height);
     box-sizing: border-box;
   
-
     display: flex;
     overflow: hidden;
     background-color: var(--reservation-bg-color);
@@ -351,6 +372,8 @@ main {
 .thead .td {
     flex-direction: column;
     justify-content: start;
+    padding-top: 1rem;
+    box-sizing: border-box;
 }
 .tfoot .th,
 .tfoot .td {
