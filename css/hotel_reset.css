@@ -9,13 +9,14 @@
   --sr-title-top: -15px;
   --sr-title-left: 3%;
   --sr-title-font-size: 16px;
-  --price-btn-width: 200px;
+  --price-btn-width: 15rem;
   --common-title-height: 33vh;
   /* color */
   --inputBox-span-border-color: rgba(4, 116, 0, 0.2);
   /* --main-bg-color: rgb(245, 214, 200); */
-  --main-bg-color: rgb(250, 203, 164);
-  --main-yellow-color: #ffcf00;
+  /* --main-bg-color: rgb(250, 203, 164); */
+  --main-bg-color: #00a138;
+  --main-yellow-color: #f9cf13;
   --button-yellow: rgb(248, 154, 91);
   --slideBtn-bg-color: rgba(0, 0, 0, 0.05);
   --reservation-bg-color: rgba(255, 255, 255, 0.8);

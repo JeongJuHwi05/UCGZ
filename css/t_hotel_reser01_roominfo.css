@@ -1,45 +1,49 @@
-.roomInfo {
+.roomInfo_wrap > div {
+    width: 100%;
+    padding: 100px 0px;
+}
+.ri_elem {
     max-width: var(--main-max-width);
     min-width: var(--main-min-width);
     width: 100%;
     margin: auto;
-    padding: 0px 0px 5%;
-}
-.roomInfo_wrap {
-    width: 100%;
-    margin: auto;
+    
+    padding: 0px 1rem;
     box-sizing: border-box;
 }
 .ri_elem_info_wrap {
     box-sizing: border-box;
-    background: linear-gradient(120deg, white, transparent);
-    padding: 30px;
     height: fit-content;
+    display: flex;
+    backdrop-filter: blur(5px);
+    background-color: rgb(240,240,240,0.8);
 }
 .ri_elem_info {
-    margin: 100px 0px;
+    padding: 2rem;
 }
 .ri_elem_info h4 {
     font-size: 200%;
-    margin: 0px;
+    padding: 2rem;
+    word-break: keep-all;
+    white-space: nowrap;
+    color: #015820;
 }
 .ri_elem_info_wrap div {
     width: 100%;
-    padding: 3% 0% 10% 10%;
-}
-.ri_elem_tag_page {
-    position: relative;
+    padding: 1rem 2rem;
+    line-height: 2;
+    font-size: 100%;
+    color: #555;
 }
 .ri_e_t_box {
     width: 100%;
-    padding: 20px 0px;
+    margin: 4rem 0px;
     box-sizing: border-box;
 
     display: flex;
     flex-wrap: wrap;
-    position: relative;
 }
-.ri_elem_tag_page > div::before {
+/* .ri_elem_tag_page > div::before {
     content: "";
     display: block;
     width: 90%;
@@ -48,7 +52,7 @@
     position: absolute;
     left: 5%;
     bottom: 0px;
-}
+} */
 /* ======================================== slide =========== */
 .ri_e_t_slide {
     width: var(--roomInfo-slide-unit);
@@ -94,17 +98,17 @@
 /* ======================================= theme info ====== */
 .ri_e_t_exp {
     box-sizing: border-box;
-    padding-left: 30px;
-
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 .ri_e_t_exp_title {
+    min-width: 20vw;
     font-size: 150%;
     font-weight: 600;
     display: block;
-    padding-bottom: 20px;
+    background: linear-gradient(to right, rgb(250, 203, 164) 90%, rgb(240,240,240));
+    padding: 1rem 3rem;
 }
 .ri_e_t_exp_open {
     display: flex;
@@ -112,6 +116,7 @@
     border: 2px solid #6666667a;
     color: #666;
     padding: 2px 10px;
+    margin: 2rem 30px;
     border-radius: 20px;
 }
 .ri_e_t_exp_open::before {
@@ -159,7 +164,7 @@
     width: 30px;
     height: 30px;
     font-size: 0px;
-    background: rgb(248, 175, 162) url("/image/t_hotel_reser01/close_button.png") no-repeat center/20px;
+    background: rgb(250, 203, 164) url("/image/t_hotel_reser01/close_button.png") no-repeat center/20px;
     border-radius: 50%;
 }
 .ri_e_t_e_char dl{
@@ -171,9 +176,9 @@
     margin: 10px;
     padding: 5px;
     width: 70%;
-    border-bottom: 2px solid rgba(153, 205, 50, 0.7);
+    border-bottom: 2px solid #00a138;
     font-size: 105%;
-    color: rgb(113, 150, 38);
+    color: #00a138;
 }
 .ri_e_t_e_char dd {
     padding-bottom: 0.5rem;
@@ -187,7 +192,7 @@
     position: absolute;
     top: 0px;
     left: -15px;
-    color: yellowgreen;
+    color: #00a138;
     opacity: 0.7;
 }
 .ri_e_t_e_room {
@@ -201,7 +206,7 @@
 
     margin: 23px 0px;
     padding: 10px;
-    border: 2px solid tomato;
+    border: 2px solid #ffcf00;
     border-radius: 20px;
     box-sizing: border-box;
 }
@@ -265,12 +270,28 @@
     display: flex;
     flex-direction: column;
     align-items: end;
+    margin-top: 2rem;
+    /* border-left: 1px solid #66666638; */
 }
 .ri_e_t_choice ul {
     width: 75%;
 }
 .ri_e_t_choice li {
-    margin: 10px 0px;
+    margin-bottom: 1rem;
+    background-color: white;
+    font-size: 100%;
+    position: relative;
+}
+.ri_e_t_choice li::before {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 0.5rem;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: -25%;
+    border-radius: 0.3rem;
 }
 .ri_e_t_choice_body {
     height: 4rem;
@@ -304,20 +325,21 @@
     bottom: 0px;
     right: 0px;
 
-    font-size: 100%;
+    font-size: 120%;
     font-weight: 600;
 }
 /* ===================================================== */
 .ri_e_t_choice_slide {
     position: relative;
-    background-color: rgba(0, 255, 0, 0.4);
+    background-color: white;
     display: none;
     overflow: hidden;
 }
 .cs_exp {
-    width: 50%;
-    padding-left: 1rem;
+    width: 60%;
+    padding: 1rem;
     font-size: 90%;
+    word-break: keep-all;
 }
 .cs_exp span {
     display: block;
@@ -327,8 +349,12 @@
     position: absolute;
     top: 0px;
     right: 0px;
+    padding: 1rem 1rem 2rem;
+    box-sizing: border-box;
+    line-height: 2;
     width: var(--price-btn-width);
-    height: 100%;
     background-color: var(--color-orange);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
 }
 /* ===================================================== */
