@@ -201,7 +201,7 @@ p {
 /* 카드 제목_ */
 .card_body > .card_title > h4 {
   word-wrap: break-word;
-  font-size: 150%;
+  font-size: 120%;
   margin-top: 25px;
   font-weight: var(--weight-bold);
   color: var(--color-red);
@@ -212,7 +212,8 @@ p {
   line-height: 140%;
   word-wrap: break-word;
   padding: 20px 0;
-  font-size: var(--font-medium);
+  /* font-size: var(--font-medium); */
+  font-size: 150%;
   font-weight: var(--weight-bold);
 }
 
@@ -230,7 +231,8 @@ p {
 }
 .icon_with_text1 span,
 .icon_with_text2 span {
-  font-size: small;
+  /* font-size: small; */
+  font-size: 100%;
 }
 .readmore svg {
   fill: red;

@@ -1,9 +1,9 @@
 /* COMMON */
-a {
+header a {
   color: #000;
   text-decoration: none;
 }
-a:hover {
+header a:hover {
   color: #777;
   text-decoration: underline;
 }
@@ -20,6 +20,7 @@ header {
   height: 100px;
   position: fixed;
   top: 0;
+<<<<<<< HEAD
   z-index: 2;
   transition: height .5s;
 }
@@ -27,6 +28,15 @@ header.open {
   height: 880px;
   z-index: 2;
   transition: height .5s;
+=======
+  z-index: 2000;
+  transition: height 0.5s;
+}
+header.open {
+  height: 880px;
+  z-index: 2000;
+  transition: height 0.5s;
+>>>>>>> d25b35b66552ad07e9e679579099d25c6bbf0183
 }
 header .top {
   width: 100%;
@@ -49,7 +59,7 @@ header .top .menu_icon {
   box-sizing: border-box;
   cursor: pointer;
 }
-header .top .menu_icon:hover { 
+header .top .menu_icon:hover {
   background-color: rgba(51, 51, 51, 1);
 }
 header .top .logo {
@@ -71,12 +81,12 @@ header .bottom {
   height: 0%;
   background-color: #fff;
   overflow: hidden;
-  transition: height .5s;
+  transition: height 0.5s;
 }
 header .bottom.open {
   height: 100vh;
   z-index: 3;
-  transition: height .5s;
+  transition: height 0.5s;
 }
 header .bottom .category .inner {
   display: flex;
@@ -95,7 +105,7 @@ header .bottom .category .select_1 {
   background-color: transparent;
 }
 header .bottom .category .select_2 {
-  background-color:#ffcf00;
+  background-color: #ffcf00;
 }
 header .bottom .category .buy {
   width: 20%;
