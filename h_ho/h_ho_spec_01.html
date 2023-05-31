@@ -24,7 +24,7 @@
     <title>LEGOLAND® Hote</title>
     <link href="/css/h_ho_spec_01.css" rel="stylesheet" />
     <link href="/css/reset.css" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/js/h_ho_spec_01.js" defer></script>
     <link
       rel="stylesheet"
@@ -33,6 +33,7 @@
     <script type="text/javascript">
       $(document).ready(function () {
         $("#header").load("/header/header.html");
+        $("#footer").load("/footer/footer.html");
       });
     </script>
   </head>
@@ -51,9 +52,27 @@
         </div>
       </div>
 
+      <div class="tabs">
+        <button class="tab" onclick="showGallery('1')">
+          <img src="/image/h_ho_spec_01/tab_red.png" alt="Tab1" />
+          <span class="tab-text">조식 패키지</span>
+        </button>
+        <button class="tab" onclick="showGallery('2')">
+          <img src="/image/h_ho_spec_01/tab_blue.png" alt="Tab2" />
+          <span class="tab-text">2일 이용권 패키지</span>
+        </button>
+        <button class="tab" onclick="showGallery('3')">
+          <img src="/image/h_ho_spec_01/tab_green.png" alt="Tab3" />
+          <span class="tab-text">얼리버드 패키지</span>
+        </button>
+        <button class="tab" onclick="showGallery('4')">
+          <img src="/image/h_ho_spec_01/tab_orange.png" alt="Tab4" />
+          <span class="tab-text">프렌즈 패키지</span>
+        </button>
+      </div>
       <section id="specialoffer_package">
         <!-- 조식 패키지 슬라이드 시작 -->
-        <div class="gallerybox1">
+        <div class="gallerybox" id="gallerybox1">
           <div class="gallery__container">
             <div class="slide">
               <img
@@ -170,7 +189,7 @@
           </div>
         </div>
         <!-- 2일 이용권 패키지 시작 -->
-        <div class="gallerybox2">
+        <div class="gallerybox" id="gallerybox2">
           <div class="gallery__container">
             <img src="/image/h_ho_spec_01/park1.jpg" alt="" width="600" />
 
@@ -254,7 +273,7 @@
           </div>
         </div>
         <!-- 얼리버드 패키지 시작 -->
-        <div class="gallerybox3">
+        <div class="gallerybox" id="gallerybox3">
           <div class="gallery__container">
             <div class="slide">
               <img
@@ -408,9 +427,8 @@
             </div>
           </div>
         </div>
-
         <!-- 뉴프렌즈 패키지 시작 -->
-        <div class="gallerybox4">
+        <div class="gallerybox" id="gallerybox4">
           <div class="gallery__container">
             <div class="slide">
               <img
@@ -543,5 +561,8 @@
         </div>
       </section>
     </main>
+    <footer>
+      <div id="footer"></div>
+    </footer>
   </body>
 </html>

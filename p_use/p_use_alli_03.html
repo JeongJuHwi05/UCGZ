@@ -34,21 +34,20 @@
           </div>
         </div>
       </div>
-      <div class="tab_page_shopping" id="tab01">
-        <div class="tab">
-          <div class="tab_sp">
-            <div class="sp_a">
-              <a href="#none" id="tab_01">혜택1</a>
-            </div>
-          </div>
 
-          <div class="di_a">
-            <a href="#none" id="tab_02">혜택2</a>
-          </div>
-        </div>
-        <div class="h2_title"><h2>*1일 이용권 10 ~ 20% 할인 제공*</h2></div>
+      <div class="tabs">
+        <button class="tab" onclick="showGallery('1')">
+          <img src="/image/h_ho_spec_01/tab_red.png" alt="Tab1" />
+          <span class="tab-text">혜택1</span>
+        </button>
+        <button class="tab" onclick="showGallery('2')">
+          <img src="/image/h_ho_spec_01/tab_blue.png" alt="Tab2" />
+          <span class="tab-text">혜택2</span>
+        </button>
       </div>
-      <div id="gallerybox1">
+      <!-- <div class="h2_title"><h2>*1일 이용권 10 ~ 20% 할인 제공*</h2></div> -->
+
+      <div class="gallerybox" id="gallerybox1">
         <div class="gallery__container">
           <img src="/image/p_use_alli_03/kb.webp" alt="" width="600" />
         </div>
@@ -150,122 +149,106 @@
         </div>
       </div>
 
-      <div class="tab_page_shopping" id="tab02">
-        <div class="tab">
-          <div class="tab_sp">
-            <div class="sp_a">
-              <a href="#none" id="tab_03">혜택1</a>
-            </div>
-          </div>
-
-          <div class="di_a">
-            <a href="#none" id="tab_04">혜택2</a>
-          </div>
+      <div class="gallerybox" id="gallerybox2">
+        <div class="gallery__container">
+          <img src="/image/p_use_alli_03/kb.webp" alt="" width="600" />
         </div>
-        <div id="gallerybox2">
-          <div class="gallery__container">
-            <img src="/image/p_use_alli_03/kb.webp" alt="" width="600" />
-          </div>
 
-          <!-- 이미지, 텍스트 박스 -->
-          <div class="galleryborder">
-            <div class="galleryborder__wrap">
-              <div class="galleryborder_title">
-                <h2>*연간이용권 (Gold Pass) 4장 이상 구매 시 10% 할인*</h2>
-                <br />
-                <p class="text_bold">✔ 기간 :<br /></p>
-                <p>2022년 5월 5일(목) ~ 2027년 5월 4일(화)<br /></p>
-                <p class="text_bold">✔ 대상:</p>
-                <p>KB국민카드 회원 (KB국민 비씨, 기업, 선불카드 제외)</p>
+        <!-- 이미지, 텍스트 박스 -->
+        <div class="galleryborder">
+          <div class="galleryborder__wrap">
+            <div class="galleryborder_title">
+              <h2>*연간이용권 (Gold Pass) 4장 이상 구매 시 10% 할인*</h2>
+              <br />
+              <p class="text_bold">✔ 기간 :<br /></p>
+              <p>2022년 5월 5일(목) ~ 2027년 5월 4일(화)<br /></p>
+              <p class="text_bold">✔ 대상:</p>
+              <p>KB국민카드 회원 (KB국민 비씨, 기업, 선불카드 제외)</p>
 
-                <p class="text_bold">✔ 내용 :</p>
-                <p>
-                  - 아래 [연간이용권 구매하기] 버튼을 통해 KB국민카드로
-                  LEGOLAND® 연간이용권(Gold Pass)를 4장 이상 구매시 1장 당 10%
-                  할인 혜택 제공
-                </p>
-                <br />
-                <p class="text_bold">✔ KB국민카드 회원 할인 혜택</p>
-                <table
-                  border="0"
-                  height="211"
-                  style="border-collapse: collapse; width: 549px"
+              <p class="text_bold">✔ 내용 :</p>
+              <p>
+                - 아래 [연간이용권 구매하기] 버튼을 통해 KB국민카드로 LEGOLAND®
+                연간이용권(Gold Pass)를 4장 이상 구매시 1장 당 10% 할인 혜택
+                제공
+              </p>
+              <br />
+              <p class="text_bold">✔ KB국민카드 회원 할인 혜택</p>
+              <table
+                border="0"
+                height="211"
+                style="border-collapse: collapse; width: 549px"
+              >
+                <tbody>
+                  <tr>
+                    <td style="width: 33.3333%; text-align: center">구분</td>
+                    <td style="width: 33.3333%; text-align: center">정상가</td>
+                    <td style="width: 33.3333%; text-align: center">
+                      KB국민카드 할인 가격
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 33.3333%; text-align: center">
+                      Gold Pass 1장 가격
+                    </td>
+                    <td style="width: 33.3333%; text-align: center">
+                      169,000원
+                    </td>
+                    <td style="width: 33.3333%; text-align: center">
+                      152,100원
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 33.3333%; text-align: center">
+                      Gold Pass 4장 가격
+                    </td>
+                    <td style="width: 33.3333%; text-align: center">
+                      676,000원
+                    </td>
+                    <td style="width: 33.3333%; text-align: center">
+                      608,400원
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="text_bold">
+                * 이용 전 확인해 주세요! <br />✔ 4장 구매시 정상가 대비 67,600원
+                할인<br />
+                ✔ 4장 부터 구매 가능하며, 4장 미만 구매는 LEGOLAND® 공식
+                홈페이지를 통해 구매 가능(4장 미만 구매는 할인 제공 불가)
+                <br /><br />
+                <a
+                  rel="noopener"
+                  href="/legoland-%ED%8C%8C%ED%81%AC-%ED%8B%B0%EC%BC%93/%EC%8B%9C%EC%A6%8C-%EC%97%B0%EA%B0%84-%EC%9D%B4%EC%9A%A9%EA%B6%8C/%EC%97%B0%EA%B0%84-%EC%9D%B4%EC%9A%A9%EA%B6%8C-%EA%B3%A8%EB%93%9C/"
+                  target="_blank"
+                  title="연간 이용권 골드"
+                  style="color: red"
+                  >연간이용권(Gold Pass) 혜택 자세히보기 (클릭)</a
                 >
-                  <tbody>
-                    <tr>
-                      <td style="width: 33.3333%; text-align: center">구분</td>
-                      <td style="width: 33.3333%; text-align: center">
-                        정상가
-                      </td>
-                      <td style="width: 33.3333%; text-align: center">
-                        KB국민카드 할인 가격
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="width: 33.3333%; text-align: center">
-                        Gold Pass 1장 가격
-                      </td>
-                      <td style="width: 33.3333%; text-align: center">
-                        169,000원
-                      </td>
-                      <td style="width: 33.3333%; text-align: center">
-                        152,100원
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="width: 33.3333%; text-align: center">
-                        Gold Pass 4장 가격
-                      </td>
-                      <td style="width: 33.3333%; text-align: center">
-                        676,000원
-                      </td>
-                      <td style="width: 33.3333%; text-align: center">
-                        608,400원
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <p class="text_bold">
-                  * 이용 전 확인해 주세요! <br />✔ 4장 구매시 정상가 대비
-                  67,600원 할인<br />
-                  ✔ 4장 부터 구매 가능하며, 4장 미만 구매는 LEGOLAND® 공식
-                  홈페이지를 통해 구매 가능(4장 미만 구매는 할인 제공 불가)
-                  <br /><br />
-                  <a
-                    rel="noopener"
-                    href="/legoland-%ED%8C%8C%ED%81%AC-%ED%8B%B0%EC%BC%93/%EC%8B%9C%EC%A6%8C-%EC%97%B0%EA%B0%84-%EC%9D%B4%EC%9A%A9%EA%B6%8C/%EC%97%B0%EA%B0%84-%EC%9D%B4%EC%9A%A9%EA%B6%8C-%EA%B3%A8%EB%93%9C/"
-                    target="_blank"
-                    title="연간 이용권 골드"
-                    style="color: red"
-                    >연간이용권(Gold Pass) 혜택 자세히보기 (클릭)</a
-                  >
-                </p>
-                <br />
-                <p class="text_bold">
-                  * 이용 전 확인해 주세요!<br />- 다른 할인권 및 우대행사와
-                  중복할인이 불가합니다.<br />- 이용권 구매 및 유의사항은
-                  레고랜드 코리아 리조트 홈페이지에서 확인 바랍니다.<br />- 본
-                  행사는 KB국민카드 영업정책 및 제휴업체 상황에 따라 변경 또는
-                  중단될 수 있습니다.<br />- 문의: KB국민카드
-                  고객센터(1588-1688)<br />- 계약을 체결하기 전에 상품설명서와
-                  약관을 확인하시기 바랍니다.<br />- 상환능력에 비해 신용카드
-                  사용액이 과도할 경우 귀하의 개인신용평점이 하락할 수
-                  있습니다.<br />- 개인신용평점 하락 시 금융거래 관련된 불이익이
-                  발생할 수 있습니다.<br />- 일정기간 원리금을 연체할 경우, 모든
-                  원리금을 변제할 의무가 발생할 수 있습니다.<br />- 신용카드
-                  발급이 부적정한 경우 (개인신용평점 낮음, 연체금 보유 등)
-                  카드발급이 제한될 수 있습니다.<br />- 카드 이용대금과 이에
-                  수반되는 모든 수수료를 지정된 대금 결제일에 상환합니다.<br />-
-                  금융소비자는 금소법 제19조 제1항에 따라 해당 상품 또는
-                  서비스에 대하여 설명을 받을 권리가 있으며, 그 설명을 듣고
-                  내용을 충분히 이해한 후 거래하시기 바랍니다.<br /><br />
-                </p>
-              </div>
+              </p>
+              <br />
+              <p class="text_bold">
+                * 이용 전 확인해 주세요!<br />- 다른 할인권 및 우대행사와
+                중복할인이 불가합니다.<br />- 이용권 구매 및 유의사항은 레고랜드
+                코리아 리조트 홈페이지에서 확인 바랍니다.<br />- 본 행사는
+                KB국민카드 영업정책 및 제휴업체 상황에 따라 변경 또는 중단될 수
+                있습니다.<br />- 문의: KB국민카드 고객센터(1588-1688)<br />-
+                계약을 체결하기 전에 상품설명서와 약관을 확인하시기 바랍니다.<br />-
+                상환능력에 비해 신용카드 사용액이 과도할 경우 귀하의
+                개인신용평점이 하락할 수 있습니다.<br />- 개인신용평점 하락 시
+                금융거래 관련된 불이익이 발생할 수 있습니다.<br />- 일정기간
+                원리금을 연체할 경우, 모든 원리금을 변제할 의무가 발생할 수
+                있습니다.<br />- 신용카드 발급이 부적정한 경우 (개인신용평점
+                낮음, 연체금 보유 등) 카드발급이 제한될 수 있습니다.<br />- 카드
+                이용대금과 이에 수반되는 모든 수수료를 지정된 대금 결제일에
+                상환합니다.<br />- 금융소비자는 금소법 제19조 제1항에 따라 해당
+                상품 또는 서비스에 대하여 설명을 받을 권리가 있으며, 그 설명을
+                듣고 내용을 충분히 이해한 후 거래하시기 바랍니다.<br /><br />
+              </p>
             </div>
-            <a href="#none"
-              ><button type="button" class="red__button">구매하기</button></a
-            >
           </div>
+          <a href="#none"
+            ><button type="button" class="red__button">구매하기</button></a
+          >
         </div>
       </div>
 
