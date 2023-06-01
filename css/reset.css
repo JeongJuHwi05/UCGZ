@@ -78,7 +78,7 @@ video {
 }
 
 body {
-  font-size: 0.8vw;
+  font-size: max(0.8vw, 12px);
   font-family: "Noto Sans KR", "Sans serif"
 };
 a {
