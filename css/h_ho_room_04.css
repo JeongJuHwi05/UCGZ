@@ -270,17 +270,17 @@ hr {
   margin: 20px 0;
   color: var(--color-blue3);
   font-weight: var(--weight-bold);
-  font-size: var(--font-large);
+  font-size: 200%;
 }
 
 .galleryborder__description {
   font-weight: var(--weight-bold);
-  font-size: var(--font-micro);
+  font-size: 120%;
   word-break: break-word;
 }
 .galleryborder__description2 {
   font-weight: var(--weight-bold);
-  font-size: var(--font-medium);
+  font-size: 150%;
 }
 
 .galleryborder__description2 > button {
