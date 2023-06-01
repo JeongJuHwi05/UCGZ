@@ -117,7 +117,7 @@ header .bottom .menu .inner {
   position: relative;
 }
 header .bottom .menu .park_menu {
-  display: flex;
+  display: none;
   padding: 50px 0;
   justify-content: space-between;
 }
