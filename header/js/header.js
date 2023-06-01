@@ -27,48 +27,24 @@ mnIcon.addEventListener("click", () => {
 // 2. PARK MENU & HOTEL MENU, 열고 닫기
 
 for (let i = 0; i < slEls.length; i++) {
-  for (let i = 0; i < mnEls.length; i++) {
-    slEls[i].addEventListener("click", () => {
-      slEls.forEach((mnLiEl) => {
-        if (mnLiEl === slEls[i]) {
-          mnLiEl.style.backgroundColor = 'transparent';
-          mnLiEl.classList.add("active");
-        } else {
-          mnLiEl.style.backgroundColor = "#ffcf00"
-          mnLiEl.classList.remove("active");
-        }
-      });
-
-      mnEls.forEach((vsLiEl) => {
-        if (vsLiEl === mnEls[i]) {
-          vsLiEl.classList.add("active");
-        } else {
-          vsLiEl.classList.remove("active");
-        }
-      });
-
+  slEls[i].addEventListener("click", () => {
+    slEls.forEach((mnLiEl) => {
+      if (mnLiEl === slEls[i]) {
+        mnLiEl.classList.add("select_1");
+        mnLiEl.classList.remove("select_2");
+      } else {
+        mnLiEl.classList.remove("select_1");
+        mnLiEl.classList.add("select_2");
+      }
     });
-  }
-}
 
-for (let i = 0; i < slEls.length; i++) {
-  for (let i = 0; i < mnEls.length; i++) {
-    mnIcon.addEventListener("click", () => {
-      
-      slEls.forEach((mnLiEl) => {
-        if (mnLiEl === slEls[i]) {
-          mnLiEl.classList.remove("active");
-        }
-      });
-
-      mnEls.forEach((vsLiEl) => {
-        if (vsLiEl === mnEls[i]) {
-          vsLiEl.classList.remove("active");
-        } 
-      });
-
+    mnEls.forEach((vsLiEl) => {
+      if (vsLiEl === mnEls[i]) {
+        vsLiEl.classList.add("active");
+      } else {
+        vsLiEl.classList.remove("active");
+      }
     });
-  }
-}
 
-// 2. PARK MENU & HOTEL MENU, 열고 닫기
+  });
+}
