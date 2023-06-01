@@ -21,6 +21,8 @@ $("footer").load("/footer/footer.html")
 const oneday = 86400000;
 const todayDate = new Date();
 const week = ['일','월','화','수','목','금','토'];
+
+// 기존 데이터 불러오기 //
 // ============================ 페이지 로드 =============================
     // 테마 페이지 로드 //
 $(".ri_load_pirate").load("/t_hotel/t_hotel_reser01_p.html");
@@ -639,39 +641,53 @@ $(document).on("click",".ri_e_t_c_title",function(){
 let c;
 $(".shortReservation_wrap_up").on("submit",function(event){
     event.preventDefault();
-    // formdata 전달 //
-    $(".hb_rooms").children().remove();
-    const q = new FormData(event.target);
-    c = Object.fromEntries(q.entries());
-    console.log(c);
-    const adt=[],ltl=[],tdl=[];
-    $(".sr_n_list").each(function(i){
-        const w = $(this).find("input");
-        adt.push(w.get(0).value);
-        ltl.push(w.get(1).value);
-        tdl.push(w.get(2).value);
-    });
-    c["adult"] = adt;
-    c["little"] = ltl;
-    c["toddler"] = tdl;
-    c["roomlength"] = $(".sr_n_list").length;
-    $(".hb_d_rn_number").text(c["roomlength"]);
+    // 필수선택 //
+    let checkNum = true;
+    $(".sr_n_list").each(function(){
+        if($(this).find(".sr_n_adult").val() == 0 && $(this).find(".sr_n_child").val() == 0) {
+            checkNum = null;
+        }
+    })
     
-    // 장바구니 입력 //
-    $(".hb_date_in").text($(".checkin span").text())
-        .data("dt",c.checkin);
-    $(".hb_date_out").text($(".checkout span").text())
-        .data("dt",c.checkout);
-    makeUnit(c);
-    if ( !$(this).hasClass("act2")) {
-        const h1 = $(".hb_date").outerHeight(true);
-        const h2 = $(".hb_rooms").outerHeight(true);
-        const h3 = $(".hb_total").outerHeight(true);
-        $(".hb_slideBtn .slideBtn").toggleClass("act2");
-        $(".hotelBasket").stop().animate({height: h1+h2+h3},300)
+    if( !$("#checkin_input").val() || !$("#checkout_input").val() ) {
+        alert("날짜를 선택해주세요.");
+    } else if ( !checkNum ) {
+        alert("인원을 선택해주세요.")
+    } else {
+        // formdata 전달 //
+        $(".hb_rooms").children().remove();
+        const q = new FormData(event.target);
+        c = Object.fromEntries(q.entries());
+        console.log(c);
+        const adt=[],ltl=[],tdl=[];
+        $(".sr_n_list").each(function(i){
+            const w = $(this).find("input");
+            adt.push(w.get(0).value);
+            ltl.push(w.get(1).value);
+            tdl.push(w.get(2).value);
+        });
+        c["adult"] = adt;
+        c["little"] = ltl;
+        c["toddler"] = tdl;
+        c["roomlength"] = $(".sr_n_list").length;
+        $(".hb_d_rn_number").text(c["roomlength"]);
+        
+        // 장바구니 입력 //
+        $(".hb_date_in").text($(".checkin span").text())
+            .data("dt",c.checkin);
+        $(".hb_date_out").text($(".checkout span").text())
+            .data("dt",c.checkout);
+        makeUnit(c);
+        if ( !$(this).hasClass("act2")) {
+            const h1 = $(".hb_date").outerHeight(true);
+            const h2 = $(".hb_rooms").outerHeight(true);
+            const h3 = $(".hb_total").outerHeight(true);
+            $(".hb_slideBtn .slideBtn").toggleClass("act2");
+            $(".hotelBasket").stop().animate({height: h1+h2+h3},300)
+        }
+        // 객실별 선택 //
+        $(".hb_unit").eq(0).trigger("click");
     }
-    // 객실별 선택 //
-    $(".hb_unit").eq(0).trigger("click");
 });
 $(".hb_rooms").on("click",".hb_unit",function(){
     $(this).toggleClass("select_hb_unit");
@@ -698,7 +714,6 @@ $(".roomInfo_wrap").on("click",".ri_e_t_c_price",function(){
 
     let r = 0;
     $(".hb_u_price").each(function(){
-        console.log($(this).data("price"));
         if( $(this).data("price") ){
             r += Math.round($(this).data("price"));
         }
@@ -708,9 +723,11 @@ $(".roomInfo_wrap").on("click",".ri_e_t_c_price",function(){
     $(".hb_total_tax span").text("￦ "+ comma(r*0.1)); 
     $(".hb_total_total span")
         .text("￦ "+ comma(r + r*0.1))
-        .data("totalPrice",r+r*0.1);
+        .data("totalPrice",r+r*0.1)
 });
+// 최종 제출 //
 $("#hb_rooms_form").on("submit",function(event){
+    event.preventDefault();
     const q = new FormData(event.target);
     const w = Object.fromEntries(q.entries());
     const titleArr = [], themeArr = [], priceArr = [], newW = {};
@@ -723,19 +740,41 @@ $("#hb_rooms_form").on("submit",function(event){
             priceArr.push(+w[key])
         }
     }
-    newW.title = titleArr;
-    newW.theme = themeArr;
-    newW.price = priceArr;
-    newW.checkin = $(".hb_date_in").data("dt");
-    newW.checkinText = $(".hb_date_in").text();
-    newW.checkout = $(".hb_date_out").data("dt");
-    newW.checkoutText = $(".hb_date_out").text();
-    newW.submitTime = Date.now();
-    const bsk = JSON.parse(localStorage.getItem("hotelBasket"));
-    bsk.push(newW);
-    localStorage.setItem("hotelBasket",JSON.stringify(bsk));
-
+    if ( priceArr.some(v => v == 0) ) {
+        alert("객실을 선택해주세요.")
+    } else {
+        newW.title = titleArr;
+        newW.theme = themeArr;
+        newW.price = priceArr;
+        newW.checkin = $(".hb_date_in").data("dt");
+        newW.checkinText = $(".hb_date_in").text();
+        newW.checkout = $(".hb_date_out").data("dt");
+        newW.checkoutText = $(".hb_date_out").text();
+        newW.submitTime = Date.now();
+        const bsk = JSON.parse(localStorage.getItem("hotelBasket"));
+        bsk.push(newW);
+        localStorage.setItem("hotelBasket",JSON.stringify(bsk));
+        location.href = "/t_hotel/t_hotel_reser02.html";
+    }
 })
-
+// 초기화 //
+$(".hb_s_resetBtn").on("click",function(){
+    const q = window.confirm("전체 예약을 초기화 하시겠습니까?");
+    if (q){
+        if ( JSON.parse(localStorage.getItem("hotelBasket")).length != 0 ) {
+            localStorage.setItem("hotelBasket","[]");
+            location.reload();
+        } else {
+            location.reload();
+        }
+    }
+})
+$(".btnBox a").on("click",function(){
+    if(JSON.parse(localStorage.getItem("hotelBasket")).length == 0) {
+        alert("주문 내역이 없습니다.")
+    } else {
+        location.href = "/t_hotel/t_hotel_reser02.html"
+    }
+})
 });
 
