@@ -170,6 +170,7 @@ a:hover {
   margin: auto;
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   margin-top: 100px;
   margin-bottom: 300px;
 }
