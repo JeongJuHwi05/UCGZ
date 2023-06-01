@@ -21,28 +21,31 @@ position: relative;
 display: flex;
 width: 100%;
 height: 100%;
-/* border-top: 2px solid #bbb;
-border-left: 2px solid #bbb; */
-background-color: white;
+/* background-color: white; */
+background-color: rgb(255,255,255,0.2);
 box-sizing: border-box;
+border-left: 1px solid #7777776e;
 }
 .tapBox li {
-width: 100%;
-height: 100%;
-box-shadow: 2px 0px 3px 0px #66666659;
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 0px 3px 0px #66666659;
+    font-size: 120%;
+    font-weight: bold;
 }
 .tapBox li a{
-/* border-right: 2px solid #bbb; */
-border-bottom: none;
+    border-bottom: 1px solid #7777776e;
+    border-right: 1px solid #7777776e;
 height: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
 box-sizing: border-box;
 }
-.active_tap {
+.tapBox li a.active_tap {
 background-color: var(--main-yellow-color);
-
+border-top: 1px solid #7777776e;
+border-bottom: none;
 }
 
 /* titleBox------------------------------------- */
