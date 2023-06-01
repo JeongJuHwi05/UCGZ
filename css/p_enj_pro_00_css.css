@@ -44,7 +44,7 @@
   width:1350px;
   display:flex;
   flex-wrap:wrap;
-  margin: 110px auto;
+  margin: 110px auto 300px auto;
   font-size: 16px;
   font-style: normal;
 }
