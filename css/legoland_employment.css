@@ -12,7 +12,7 @@ a{
   /* 메인 이미지 */
   /* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
   .main_title_img {
-    background: url("../image/legoland_employment/emp_bg.jpg")
+    background: url("/image/legoland_employment/emp_bg.jpg")
       center/cover no-repeat;
     margin-top: 90px;
     width: 100vw;
@@ -44,7 +44,7 @@ a{
 .main{
     max-width:1350px;
     margin:auto;
-    font-size:16px;
+    font-size:100%;
     margin-top: 100px;
     margin-bottom:300px;
 }
@@ -57,7 +57,7 @@ a{
     color:#fff;
     text-align: center;
     padding:40px;
-    font-size:36px;
+    font-size:200%;
     font-weight:700;
     margin:20px auto;
 }
@@ -87,7 +87,7 @@ a{
     line-height: 1.5rem;
 }
 .emp_exp_text>h4{
-    font-size:24px;
+    font-size:150%;
     font-weight:700
 }
 .emp_hi{
@@ -101,7 +101,7 @@ a{
     text-align: center;
     margin-top: 30px;
     color:#fff;
-    font-size:24px;
+    font-size:150%;
     font-weight:700
 }
 .emp_ex_img_wrap{
@@ -123,7 +123,7 @@ a{
     margin:50px;
     padding-left:50px;
     color:#006db7;
-    font-size:36px;
+    font-size:200%;
     font-weight:700
 }
 .emp_media_wrap{
@@ -150,7 +150,7 @@ a{
 }
 .emp_media>p{
     color:#006db7;
-    font-size:24px;
+    font-size:150%;
     font-weight:700;
     padding-top:20px;
 }

@@ -148,36 +148,47 @@ p {
 .textarea_title {
   margin: auto;
 }
+.textarea_text {
+  font-size: 120%;
+}
 .textarea_title h2 {
   margin-top: 50px;
   line-height: 60px;
   color: var(--color-green);
+  font-size: 200%;
   font-weight: var(--weight-bold);
-  font-size: var(--font-large);
   padding-top: 3%;
   text-align: center;
 }
 .textarea_title h3 {
   font-weight: var(--weight-bold);
-  font-size: var(--font-micro);
+  font-size: 100%;
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 80px;
-}
-.textarea_text {
-  font-size: var(--font-medium);
+  margin-bottom: 4em;
 }
 
 hr {
   background: var(--color-green);
-  width: 1200px;
+  width: 28em;
   height: 1px;
   border: 0;
+}
+
+.crad_headline h4 {
+  margin: 0px;
+}
+.crad_headline {
+  width: 1350px;
+  font-size: 200%;
+  font-weight: var(--weight-bold);
+  margin: 0px auto 20px;
 }
 
 /* * 카드 */
 .all_att {
   /* 전체 카드랑 팝업 수평으로 배치할 때 사용 */
+  margin: 0px auto 200px;
   width: 1350px;
   display: flex;
   flex-direction: row;
@@ -185,14 +196,13 @@ hr {
   margin: auto;
   font-size: 16px;
   font-style: normal;
-  margin-bottom: 200px;
 }
 
 .card {
   border: 1.5px solid rgb(229, 229, 229);
   background: #fff;
-  width: 400px;
-  height: 900px;
+  width: calc(100% / 2);
+  aspect-ratio: 2 / 6;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -205,8 +215,8 @@ hr {
 
 /* 카드 이미지 */
 .card_img {
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -235,27 +245,32 @@ hr {
 }
 
 .card_body {
+  height: 500px;
+}
+
+.card_title {
+  padding: 1em 1em;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.card_title.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* 카드 제목_ */
 .card_body > .card_title > h4 {
-  font-size: 150%;
-  margin-top: 25px;
-  padding: 0px 20px;
+  font-size: 180%;
   font-weight: var(--weight-bold);
   color: var(--color-black);
 }
 
 /* 카드 설명 */
 .card_body > .card_title > h5 {
-  padding: 20px 20px;
   font-size: 100%;
   font-weight: var(--weight-regular);
-  line-height: 25px;
-  word-break: break-word;
-}
-.card_title {
-  line-height: 20px;
 }
 
 .orgbtn_box {
@@ -267,17 +282,18 @@ hr {
 }
 
 .orgbtn {
+  cursor: pointer;
   position: absolute;
   bottom: 0;
-  width: 300px;
+  width: 15rem;
   height: 60px;
-  font-size: var(--font-regular);
+  font-size: 120%;
   background: var(--color-orange);
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .orgbtn:hover {

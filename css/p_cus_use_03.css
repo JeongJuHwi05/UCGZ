@@ -13,7 +13,7 @@ a{
   /* 메인 이미지 */
   /* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
   .main_title_img {
-    background: url("../image/p_cus_use_03/p_cus_use_bg.jpg")
+    background: url("/image/p_cus_use_03/p_cus_use_bg.jpg")
       center/cover no-repeat;
     margin-top: 90px;
     width: 100vw;
@@ -46,7 +46,7 @@ a{
     max-width:1350px;
     margin:auto;
     margin-top:100px;
-    font-size:16px;
+    font-size:100%;
     margin-bottom:300px;
 }
 .hotel_res_cancel{
@@ -55,7 +55,7 @@ a{
     line-height: 1.5rem;
 }
 .hotel_res_cancel>h4{
-    font-size:24px;
+    font-size:150%;
     color:#006db7;
     padding-bottom:20px;
     font-weight:700
@@ -87,7 +87,7 @@ a{
     margin-bottom: 10%;
 }
 .lost_pro_title{
-    font-size: 24px;
+    font-size: 150%;
     color:#006db7;
     font-weight:700;
     margin-top: 30px;
@@ -150,7 +150,7 @@ form legend{
     margin-bottom:5%
 }
 .ask_form_title>h4{
-    font-size:36px;
+    font-size:200%;
     padding-bottom: 20px;
 }
 .ask_com_bor{
@@ -164,14 +164,14 @@ form legend{
 .ask_com_bor input{
     width:98%;
     height:35px;
-    font-size:16px;
+    font-size:100%;
     display: flex;
     justify-content: center;
 }
 .ask_com_bor select{
     width:98%;
     height:35px;
-    font-size:24px
+    font-size:150%
 }
 .ask_com_bor textarea{
     width:98%;
@@ -345,7 +345,7 @@ form legend{
     margin-left: 10px;
 }
 .ask_form_agree_text_small{
-    font-size:14px;
+    font-size:100%;
     color:#757575
 }
 .ask_form_sub{
@@ -356,7 +356,7 @@ form legend{
     background:#004f84;
     width:250px;
     height:60px;
-    font-size:36px;
+    font-size:200%;
     color:#fff;
     cursor: pointer;
 }

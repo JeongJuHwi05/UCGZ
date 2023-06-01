@@ -113,6 +113,7 @@ function loadFormData() {
     }
 }
 
+
 // 폼 데이터를 로컬 스토리지에 저장
 function saveFormData(element) {
     const inputName = element.name;
@@ -164,7 +165,7 @@ function validateForm(event) {
                 const orderAmountCell = document.createElement('td');
     
                 orderNumberCell.textContent = codes;
-                orderDateCell.textContent = dates;
+                orderDateCell.textContent = formatDate(dates);
                 orderTypeCell.textContent = types;
                 orderQuantityCell.textContent = numbers;
                 orderAmountCell.textContent = prices;
@@ -183,6 +184,21 @@ function validateForm(event) {
             noOrderRow.style.display = 'none';
         }
     });
+
+    function formatDate(date) {
+  const year = date.getFullYear();
+  const month = date.getMonth();
+  const day = date.getDate();
+  const nextMonth = month + 1;
+  const nextYear = nextMonth > 11 ? year + 1 : year;
+  const nextMonthIndex = nextMonth > 11 ? 0 : nextMonth;
+  const nextMonthFirstDay = new Date(nextYear, nextMonthIndex, 1);
+  nextMonthFirstDay.setDate(1);
+
+  return (
+    nextYear + '년 ' + (nextMonthIndex + 1) + '월 ' + nextMonthFirstDay.getDate() + '일'
+  );
+}
 
     // 조회 결과가 없을 경우
     if (!foundResult) {
