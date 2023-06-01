@@ -29,7 +29,7 @@ border-left: 1px solid #7777776e;
 .tapBox li {
     width: 100%;
     height: 100%;
-    box-shadow: 2px 0px 3px 0px #66666659;
+    box-shadow: 1px 0px 3px 0px #66666659;
     font-size: 120%;
     font-weight: bold;
 }

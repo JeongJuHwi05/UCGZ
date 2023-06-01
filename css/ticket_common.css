@@ -292,10 +292,13 @@ fieldset legend {
 .form_title h4 {
   font-size: 200%;
   padding-bottom: 1rem;
+  padding-right: 2rem;
   color: royalblue;
 }
 .form_title li {
   padding: 5px;
+  font-size: 100%;
+  font-weight: 500;
 }
 .form_title li::before {
   content: "";

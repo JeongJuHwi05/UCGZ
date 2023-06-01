@@ -335,7 +335,7 @@
             </div>
             <div class="vif04_i_phone">
               <label for="vif04_i_phone_input">핸드폰 번호</label>
-              <input type="tel" name="info.전화번호" id="vif04_i_phone_input" required>
+              <input type="tel" name="info.전화번호" id="vif04_i_phone_input" required placeholder=" '-' 없이 숫자만 입력하십시오. ">
               <a href="#none" class="vif04_i_phone_cert cert_btn_inner">인증하기</a>
             </div>
             <div class="vif04_i_email">
@@ -392,7 +392,7 @@
         $(".calender_table_cell").eq($selDay + $selDate-1).children().addClass("active_cell");
         $(".df06_p_s_date").text(`${$selYear}년 ${$selMonth}월 ${$selDate}일`);
       }
-      localStorage.setItem("code_cert",'[]');
+      sessionStorage.setItem("code_cert",'[]');
       const codeArr = [1234,5678]
       localStorage.setItem("codeStorage",JSON.stringify(codeArr));
       //---------------------------- 02. 달력 생성 & 날짜 입력
@@ -534,11 +534,11 @@
             .data("classes",classes)
             .appendTo(".vif03_code");
             m.find(".vif03_c_u_title strong")
-            .text(classes)
+            .text(texts)
             m.find(".vif03_c_u_input_text")
             .prop("name",`code.${classes}_0`)
             q.push(false);
-            localStorage.setItem("code_cert", JSON.stringify(q));
+            sessionStorage.setItem("code_cert", JSON.stringify(q));
           }
           else if($(this).val() > $(`.vif03_c_unit_${classes} .vif03_c_u_input`).length){
             const len = $(`.vif03_c_unit_${classes} .vif03_c_u_input`).length;
@@ -548,23 +548,23 @@
             l.find("input")
             .prop("name",`code.${classes}_${len}`)
             
-            const q = JSON.parse(localStorage.getItem("code_cert"));
+            const q = JSON.parse(sessionStorage.getItem("code_cert"));
             q.push(false);
-            localStorage.setItem("code_cert", JSON.stringify(q));
+            sessionStorage.setItem("code_cert", JSON.stringify(q));
           }
           else if ($(this).val() < $(`.vif03_c_unit_${classes} .vif03_c_u_input`).length){
             if ($(this).val() == 0) {
               $(`.vif03_c_unit_${classes}`).remove();
-              localStorage.setItem("code_cert", "[]");              
+              sessionStorage.setItem("code_cert", "[]");
             } else {
               $(`.vif03_c_unit_${classes} .vif03_c_u_input`).last().remove();
-              const q = JSON.parse(localStorage.getItem("code_cert"));
+              const q = JSON.parse(sessionStorage.getItem("code_cert"));
               q.pop()
-              localStorage.setItem("code_cert",JSON.stringify(q));
+              sessionStorage.setItem("code_cert",JSON.stringify(q));
             }
           }
             const len = $(`.vif03_c_unit_${classes} .vif03_c_u_input`).length;
-            $(`.vif03_c_unit_${classes} .vif03_c_u_title span`).text(len);
+            $(`.vif03_c_unit_${classes} .vif03_c_u_title span`).text(`수량 : ${len}`);
         });
       });
 
@@ -577,10 +577,11 @@
 
           if (w.length >1 ) {
             w.last().remove();
-            q.find(".vif03_c_u_title span").text(w.length-1)
+            q.find(".vif03_c_u_title span").text(`수량 : ${w.length-1}`)
           } 
           else {
             q.remove();
+            $(".vif01_ticketcard").find(".vif01_tc_disabled").hide()
           }
         })
         // 바코드 인증 //
@@ -592,10 +593,10 @@
           const qi = q.children("input");
           const w = JSON.parse(localStorage.getItem("codeStorage"));
           if ( w.includes(+qi.val())) {
-            let r = JSON.parse(localStorage.getItem("code_cert"));
+            let r = JSON.parse(sessionStorage.getItem("code_cert"));
             const n = par.find("input").index(qi)
             r.splice(n,1,true);
-            localStorage.setItem('code_cert',JSON.stringify(r))
+            sessionStorage.setItem('code_cert',JSON.stringify(r))
             q.addClass("cert_pass");
             qi.prop("readonly","true");
             $(this).text("확인 완료");
@@ -604,18 +605,24 @@
       // -------------------------------------- 04. 정보 입력
       //핸드폰 번호 인증 창 열기
       $(".vif04_i_phone").on("click",".vif04_i_phone_cert",function(){
-        window.open("/t_use/t_use_reser01_6_1.html","번호 인증","width=500, height=400, top=200,left=500")
+        
+        window.open("/t_use/t_use_reser01_6_1.html","번호 인증","width=500, height=400, top=200,left=500");
+
       })
       function cert(){
         if ( localStorage.getItem("phone_cert") ){
           $(".vif04_i_phone_cert").remove()
           const span = $("<span class='vif04_i_phone_complete cert_btn_inner'>인증완료</span>");
-            $(".vif04_i_phone").append(span);
+            $(".vif04_i_phone")
+              .append(span)
+              .data("cert_com",true)
             localStorage.removeItem("phone_cert")
           } else {
             $(".vif04_i_phone_complete").remove();
             const btn = $('<a href="#none" class="vif04_i_phone_cert cert_btn_inner">인증하기</a>')
-            $(".vif04_i_phone").append(btn);
+            $(".vif04_i_phone")
+              .append(btn)
+              .data("cert_com",false);
         }
       }
       $(window).on("storage",()=> cert())
@@ -650,6 +657,8 @@
             alert("코드 인증이 필요합니다.")
           } else if ( r.some(v => v == "") ) {
             alert("정보를 정확히 입력해주세요.");
+          } else if ( !$(".vif04_i_phone").data("cert_com") ) {
+            alert(" 핸드폰 인증이 필요합니다. ")
           } else {
             w["common.type"] = "6";
             w["common.typetext"] = "파크 방문 예약"
