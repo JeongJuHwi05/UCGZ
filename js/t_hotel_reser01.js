@@ -741,7 +741,7 @@ $("#hb_rooms_form").on("submit",function(event){
         }
     }
     if ( priceArr.some(v => v == 0) ) {
-        alert("dddd")
+        alert("객실을 선택해주세요.")
     } else {
         newW.title = titleArr;
         newW.theme = themeArr;
