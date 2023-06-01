@@ -185,7 +185,9 @@ header .bottom .menu .hotel_menu li .hotel_2 .hotel_3 li a {
 /* HEADER */
 
 /* main */
-main {
+.main {
+  margin-top:100px;
+  margin-bottom:300px;
 }
 main section {
   width: 1440px;
