@@ -90,6 +90,8 @@ document.addEventListener("DOMContentLoaded", function () {
     imgs.css("left", -600 * (img_position - 1) + "px");
   }
 });
+
+// 탭
 showGallery(1);
 function showGallery(index) {
   // Hide all gallery boxes

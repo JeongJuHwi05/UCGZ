@@ -168,15 +168,26 @@ a:hover {
   width: 1350px;
   margin: auto;
   display: flex;
-  justify-content: center;
+
   align-items: center;
+  margin-top: 100px;
+}
+.galleryborder {
+  margin-left: 5em;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.galleryborder.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .gallery__container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 150px;
+  align-items: flex-start;
 }
 
 .slide {
@@ -211,20 +222,19 @@ a:hover {
 }
 
 .galleryborder_title {
-  width: 700px;
-  margin-left: 6%;
+  width: 600px;
 }
 
 .galleryborder_title h2 {
   color: var(--color-blue3);
   font-weight: var(--weight-bold);
-  font-size: var(--font-large);
-  margin-bottom: 30px;
+  font-size: 200%;
+  margin-bottom: 1em;
 }
 .textarea_title h3 {
   color: var(--color-green);
   font-weight: var(--weight-bold);
-  font-size: var(--font-large);
+  font-size: 200%;
   padding-top: 3%;
   text-align: center;
 }
@@ -239,10 +249,10 @@ hr {
 .red__button {
   /* position: absolute; */
   margin-top: 8%;
-  margin-left: 6%;
-  width: 255px;
+
+  width: 15rem;
   height: 60px;
-  font-size: var(--font-regular);
+  font-size: 100%;
   background: #d01012;
   color: white;
   flex-wrap: wrap;
@@ -262,7 +272,7 @@ hr {
 .galleryborder__description,
 .textarea_description p {
   line-height: 160%;
-  font-size: var(--font-micro);
+  font-size: 100%;
   word-break: break-word;
 }
 
@@ -270,25 +280,33 @@ hr {
   font-weight: var(--weight-bold);
   text-decoration: underline;
 }
+.crad_headline h4 {
+  margin: 0px;
+}
+.crad_headline {
+  width: 1350px;
+  font-size: 200%;
+  font-weight: var(--weight-bold);
+  margin: 0px auto 20px;
+}
 
 /* * 카드 */
 .all_att {
-  /* 전체 카드랑 팝업 수평으로 배치할 때 사용 */
+  margin: 0px auto 200px;
+
   width: 1350px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: auto;
   font-size: 16px;
   font-style: normal;
-  margin-bottom: 200px;
 }
 
 .card {
   border: 1.5px solid rgb(229, 229, 229);
   background: #fff;
-  width: 400px;
-  height: 600px;
+  width: calc(100% / 4);
+  aspect-ratio: 2 / 3;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -301,8 +319,8 @@ hr {
 
 /* 카드 이미지 */
 .card_img {
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -331,22 +349,31 @@ hr {
 }
 
 .card_body {
+  height: 350px;
+}
+/* 카드 타이틀 애니메이션 */
+.card_title {
+  padding: 1em 1em;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.card_title.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 /* 카드 제목_ */
 .card_body > .card_title > h4 {
-  font-size: 150%;
-  margin-top: 25px;
-  padding: 0px 20px;
+  font-size: 180%;
   font-weight: var(--weight-bold);
   color: var(--color-black);
 }
 
 /* 카드 설명 */
 .card_body > .card_title > h5 {
-  padding: 20px 20px;
   font-size: 100%;
   font-weight: var(--weight-regular);
-  line-height: 160%;
 }
 
 .redbtn_box,
@@ -360,11 +387,12 @@ hr {
 }
 
 .redbtn {
+  cursor: pointer;
   position: absolute;
   bottom: 0;
-  width: 300px;
+  width: 15rem;
   height: 60px;
-  font-size: var(--font-regular);
+  font-size: 120%;
   background: #d01012;
   text-align: center;
   display: flex;
@@ -382,16 +410,17 @@ hr {
   color: var(--color-white);
 }
 
-.redbtn a:hover {
+/* .redbtn a:hover {
   text-decoration: none;
-}
+} */
 
 .orgbtn {
+  cursor: pointer;
   position: absolute;
   bottom: 0;
-  width: 300px;
+  width: 15rem;
   height: 60px;
-  font-size: var(--font-regular);
+  font-size: 120%;
   background: var(--color-orange);
   text-align: center;
   display: flex;
@@ -400,16 +429,17 @@ hr {
   transition: background-color 0.3s ease;
 }
 
-.orgbtn:hover {
+/* .orgbtn:hover {
   background-color: #ca5f18;
-}
+} */
 
 .greenbtn {
+  cursor: pointer;
   position: absolute;
   bottom: 0;
-  width: 300px;
+  width: 15rem;
   height: 60px;
-  font-size: var(--font-regular);
+  font-size: 120%;
   background: var(--color-green);
   text-align: center;
   display: flex;
@@ -418,6 +448,6 @@ hr {
   transition: background-color 0.3s ease;
 }
 
-.greenbtn:hover {
+/* .greenbtn:hover {
   background-color: #10882a;
-}
+} */

@@ -168,7 +168,7 @@ a:hover {
   margin: auto;
   color: var(--color-green);
   font-weight: var(--weight-bold);
-  font-size: var(--font-large);
+  font-size: 200%;
   line-height: 130%;
   text-align: center;
   padding: 5% 0;
@@ -184,7 +184,7 @@ hr {
 }
 .crad_headline {
   width: 1350px;
-  font-size: var(--font-medium);
+  font-size: 200%;
   font-weight: var(--weight-bold);
   margin: 0px auto 20px;
 }
