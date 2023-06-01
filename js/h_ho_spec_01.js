@@ -15,26 +15,26 @@ document.addEventListener("DOMContentLoaded", function () {
   img_count4 = imgs4.children().length;
 
   // 첫 번째 슬라이드 버튼
-  $(".gallerybox1 #back1").click(function () {
+  $(".gallerybox1 #back1").on("click", function () {
     back1();
   });
-  $(".gallerybox1 #next1").click(function () {
+  $(".gallerybox1 #next1").on("click", function () {
     next1();
   });
 
   // 세 번째 슬라이드 버튼
-  $(".gallerybox3 #back3").click(function () {
+  $(".gallerybox3 #back3").on("click", function () {
     back3();
   });
-  $(".gallerybox3 #next3").click(function () {
+  $(".gallerybox3 #next3").on("click", function () {
     next3();
   });
 
   // 네 번째 슬라이드 버튼
-  $(".gallerybox4 #back4").click(function () {
+  $(".gallerybox4 #back4").on("click", function () {
     back4();
   });
-  $(".gallerybox4 #next4").click(function () {
+  $(".gallerybox4 #next4").on("click", function () {
     next4();
   });
 
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function updateSlidePosition(imgs, img_position) {
-    imgs.css("left", -600 * (img_position - 1) + "px");
+    imgs.style.left = `${-600 * (img_position - 1)}`;
   }
 });
 showGallery(1);
