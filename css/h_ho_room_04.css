@@ -49,8 +49,6 @@
 }
 
 body {
-  font-family: CeraPro, Noto Sans JP, Nanum Gothic, Helvetica-Light, Helvetica,
-    Arial, sans-serif;
   margin: 0;
   cursor: default;
 }
@@ -128,6 +126,9 @@ a:hover {
   }
 }
 
+#content {
+  padding-bottom: 200px;
+}
 .main_title {
   display: flex;
   justify-content: flex-start;
@@ -270,17 +271,17 @@ hr {
   margin: 20px 0;
   color: var(--color-blue3);
   font-weight: var(--weight-bold);
-  font-size: var(--font-large);
+  font-size: 200%;
 }
 
 .galleryborder__description {
   font-weight: var(--weight-bold);
-  font-size: var(--font-micro);
+  font-size: 120%;
   word-break: break-word;
 }
 .galleryborder__description2 {
   font-weight: var(--weight-bold);
-  font-size: var(--font-medium);
+  font-size: 150%;
 }
 
 .galleryborder__description2 > button {

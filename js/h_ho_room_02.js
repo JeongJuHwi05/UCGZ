@@ -61,3 +61,7 @@ $(document).ready(function () {
     imgs.css("left", -600 * (img_position - 1) + "px");
   }
 });
+
+$(document).ready(function () {
+  $(".galleryborder").addClass("animate");
+});
