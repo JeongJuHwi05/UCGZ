@@ -74,7 +74,7 @@ header .top .menu_icon {
   cursor: pointer;
 }
 header .top .menu_icon:hover { 
-  background-color: rgba(51, 51, 51, 1);
+  color: rgba(51, 51, 51, 1);
 }
 header .top .logo {
   width: 9%;
@@ -254,9 +254,13 @@ main .ticket .ticktype .type .secter {
 }
 main .ticket .ticktype .type .secter .image {
   width: 355px;
-  height: 100%;
+  height: 355px;
   box-sizing: border-box;
   overflow: hidden;
+}
+main .ticket .ticktype .type .secter .image img {
+  width: 355px;
+  height: 355px;
 }
 main .ticket .ticktype .type:hover .secter .image img {
   transition: .2s;
@@ -349,13 +353,13 @@ main .promotion .promo .slider-wrap-promotion .slick-dots li button {
   width: 15px;
   height: 15px;
   content-visibility: hidden;
-  border: 1px dotted #333;
+  border: 1px solid #aaa;
   border-radius: 10px;
   outline: none;
   box-shadow: none;
 }
 main .promotion .promo .slider-wrap-promotion .slick-dots li.slick-active button {
-  background-color: #05c9f5;
+  background-color: #0046b6;
   margin-right: 10px;
   width: 15px;
   height: 15px;
@@ -377,22 +381,21 @@ main .promotion .promo .slider-wrap-promotion .cont_promotion .promotion__image 
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  align-items: center
-  ;
+  align-items: center;
 } 
 main .promotion .promo .slider-wrap-promotion .cont_promotion .promotion__description {
   width: 550px;
-  height: 100%;
-  padding: 100px 0 0 50px;
+  height: 540px;
   text-align: start;
+  padding: 30px;
 }
 main .promotion .promo .slider-wrap-promotion .cont_promotion .promotion__description .pro__text1 {
   font-size: 64px;
   font-weight: 700;
-  line-height: 1.3;
+  line-height: 1.1;
   display: block;
   margin-bottom: 50px;
-  color: #fff;
+  color: #00cb6e;
 }
 main .promotion .promo .slider-wrap-promotion .cont_promotion .promotion__description .pro__text2 {
   font-size: 16px;
@@ -428,73 +431,90 @@ main .promotion .promo .slider-wrap-promotion .cont_promotion .promotion__descri
 
 /* main > instagram */
 main .instagram {
-  position: relative;
   background-image: url('../image/bg_image/3.png');
   background-position: center;
   background-size: cover;
 }
-main .instagram .insta {
-  width: 1440px;
-  height: 84%;
-  position: absolute;
-  top: 70px;
-  left: 230px;
-  padding-top: 40px;
+main .instagram .inner {
+  position: relative;
 }
-main .instagram .insta .slider-wrap-instagram {
-  display: flex;
+main .instagram .insta {
+  width: 1350px;
+  height: 700px;
+
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 
+    300px
+    300px
+  ;
+  column-gap: 7px;
+  row-gap: 7px;
   justify-content: center;
   align-items: center;
-}
-main .instagram .insta .slider-wrap-instagram .slick-arrow {
-  color: #006db7;
-  font-size: 50px;
-  margin: auto;
-  cursor: pointer;
-}
-main .instagram .insta .slider-wrap-instagram .slick-arrow:hover {
-  color: #31a1e0;
-}
-main .instagram .insta .slider-wrap-instagram .slick-dots {
-  display: flex;
+  
   position: absolute;
-  bottom: -50px;
-  left: 46.5%;
-  margin: 0;
-  padding: 0;
+  top: 150px;
 }
-main .instagram .insta .slider-wrap-instagram .slick-dots li button {
-  background-color: transparent;
-  margin-right: 10px;
-  width: 15px;
-  height: 15px;
-  content-visibility: hidden;
-  border: 1px dotted #333;
+main .instagram .insta .item {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+main .instagram .insta .item:nth-child(1) {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  width: 600px;
+  height: 600px;
+}
+main .instagram .insta .item .image {
+  width: 300px;
+  height: 300px;
   border-radius: 10px;
-  outline: none;
-  box-shadow: none;
+  position: absolute;
+  transition: all .3s;
 }
-main .instagram .insta .slider-wrap-instagram .slick-dots li.slick-active button {
-  background-color: #05c9f5;
-  margin-right: 10px;
-  width: 15px;
-  height: 15px;
-  content-visibility: hidden;
-  box-shadow: none;
+main .instagram .insta .item:hover .image {
+  width: 300px;
+  height: 300px;
   border-radius: 10px;
-  outline: none;
+  position: absolute;
+  background-color: #000;
 }
-main .instagram .insta .slider-wrap-instagram .cont_instagram {
-  width: 1300px;
-  height: 650px;
-  box-sizing: border-box;
-  display: flex;
+main .instagram .insta .item:nth-child(1) .image{ 
+  width: 600px;
+  height: 600px;
+}
+main .instagram .insta .item img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  transition: all .3s;
+}
+main .instagram .insta .item:hover img {
+  opacity: .5;
+}
+main .instagram .insta .item .text {
+  display: none;
+  color: #fff;
+  line-height: 1.5;
   justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: all .3s;
 }
-main .instagram .insta .slider-wrap-instagram .cont_instagram .instagram__image img {
-  width: 1300px;
-  height: 650px;
-  box-sizing: border-box;
+main .instagram .insta .item:hover .text {
+  display: flex;
+}
+main .instagram .insta .item:nth-child(1) img {
+  width: 600px;
+  height: 600px;
+  border-radius: 10px;
 }
 /* main > instagram */
 
@@ -540,13 +560,13 @@ main .youtube .tube .slider-wrap-youtube .slick-dots li button {
   width: 15px;
   height: 15px;
   content-visibility: hidden;
-  border: 1px dotted #333;
+  border: 1px solid #aaa;
   border-radius: 10px;
   outline: none;
   box-shadow: none;
 }
 main .youtube .tube .slider-wrap-youtube .slick-dots li.slick-active button {
-  background-color: #05c9f5;
+  background-color: #0046b6;
   margin-right: 10px;
   width: 15px;
   height: 15px;

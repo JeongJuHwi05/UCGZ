@@ -51,8 +51,6 @@ $(".list_ul, .t_r_list_ul")
             $(this).append($li);
         }
     })
-
-console.log(len)
     //구매 페이지로 이동==========================
 $(".gotoreser, .require_tc").each(function(){
     $(this).on("click",function(){
