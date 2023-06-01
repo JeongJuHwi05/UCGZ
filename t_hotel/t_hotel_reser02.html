@@ -268,7 +268,7 @@
 
                 const basket = JSON.parse(localStorage.getItem("hotelBasket"));
                 basket.push(w);
-                localStorage.setItem(`hotelReservation_${time}`, JSON.stringify(basket));
+                localStorage.setItem(`hotelReservation.${time}`, JSON.stringify(basket));
                 localStorage.removeItem("hotelBasket");
 
                 alert(`${comma(total)}원 결제하세요.`);

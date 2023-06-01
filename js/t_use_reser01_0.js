@@ -24,7 +24,7 @@ $(function(){
         $(this).click(function () {
           $(".formBox").children().remove();
           $(".formBox").load(`/t_use/t_use_reser01_${i + 1}.html`);
-          
+          localStorage.setItem("load",`{"page":${i+1}}`)
           $(".tapBox a").not($(this)).removeClass("active_tap");
           $(this).addClass("active_tap");
         });

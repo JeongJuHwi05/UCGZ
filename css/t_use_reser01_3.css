@@ -16,13 +16,17 @@
         color: white;
         margin-right: 10px;
       }
+      .af01_labelexp {
+        padding-left: 6rem;
+      }
       .af01_tcWrap {
         display: flex;
         position: relative;
         width: 100%;
         box-sizing: border-box;
-        gap: 5px;
+        gap: 1rem;
         padding-bottom: 20px;
+        padding-top: 4rem;
       }
       .af01_ticketcard {
         border-radius: 20px;

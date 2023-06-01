@@ -41,7 +41,7 @@
 
 .main{
     width:1350px;
-    font-size: 16px;
+    font-size: 100%;
     font-style: normal;
     margin: 100px auto 300px;
 }
@@ -50,9 +50,9 @@
 .cont{
     width: 100%;
     display: flex;
-    justify-content: center;
     margin-top: 110px;
     margin-bottom: 5%;
+    box-shadow: 2px 3px 5px 0px #666;
 }
 
 /* 구매하기 버튼 */
@@ -71,19 +71,17 @@
 
 /* 본문 이미지 */
 .cont01_img{
-    background: aqua;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background: url("/image/p_enj_sea_03/p_enj_sea_03_01.jpg") no-repeat center/ 100%;
 }
 
 /* 본문 내용*/
-.cont01{
-    margin: 0 auto;
-    padding-left: 2%;
-}
 .cont01 > h3{
-    width: 600px;
-    height: 140px;
+    margin: 0px;
+    width: 100%;
+    height: 3em;
     font-size: 200%;
-    margin-top: 0px;
     background: black;
     color: white;
     display: flex;
@@ -91,21 +89,22 @@
     align-items: center;
     white-space: nowrap;
     word-break: keep-all;
+    box-sizing: border-box;
+
 }
 
 /* 본문내용 노티스 */
 .cont01_notice{
     width: 100%;
-    height: 100px;
+    height: fit-content;
     background: rgb(255, 213, 0);
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    padding: 1rem 0;
     box-sizing: border-box;
-    box-shadow: 2px 3px 5px 0px black;
     margin-bottom: 50px;
     font-weight: 600;
     font-size: 120%;
@@ -117,18 +116,26 @@
 }
 
 /* 본문 내용 p 설정 통일*/
-.cont01 p{
-    line-height: 2;
-    display: flex;
-    gap: 1rem;
+.cont01 p {
+    padding-left: 3rem;
+}
+.cont01 p span{
+    display: block;
+    text-indent: 5em;
     word-break: keep-all;
+    font-size: 120%;
 }
 .cont01 p strong {
     white-space: nowrap;
     word-break: keep-all;
+    font-size: 120%;
+    color: #666;
 }
 
 /* 본문 두번째 제목 <map>*/
+.cont02 {
+    box-shadow: 2px 3px 5px 0px #666;
+}
 .cont02_title{
     width: 100%;
     display: flex;
@@ -143,31 +150,21 @@
     font-size: 150%;
     font-weight: bold;
     color: white;
+    white-space: nowrap;
 }
 
 /* 본문 두번째 내용 설명 부분 */
 .cont02_subTitle{
+    width: 100%;
     border-width: 1.5px 0px;
     border-style: solid;
     border-color: #00a138;
     padding: 0px 3rem;
 }
 .cont02_subTitle p{
-    font-size: 100%;
+    font-size: 120%;
 }
-
 /* 본문 두번째 내용 이미지*/
-.cont02_img01{
+.cont02 img {
     width: 100%;
-    height: 100%;
-    margin: 30px auto;
-}
-.cont02_img02{
-    width: fit-content;
-    margin: auto;
-}
-.cont02_img02 img{
-    margin-top: 3%;
-    width: 330px;
-    height: 330px;
 }
