@@ -107,7 +107,7 @@
     font-size: 150%;
     font-weight: 600;
     display: block;
-    background: linear-gradient(to right, rgb(250, 203, 164) 90%, rgb(240,240,240));
+    background: linear-gradient(to right, var(--main-yellow-color) 90%, rgb(240,240,240));
     padding: 1rem 3rem;
 }
 .ri_e_t_exp_open {

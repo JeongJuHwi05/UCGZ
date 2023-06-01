@@ -14,13 +14,14 @@
   /* color */
   --inputBox-span-border-color: rgba(4, 116, 0, 0.2);
   /* --main-bg-color: rgb(245, 214, 200); */
-  /* --main-bg-color: rgb(250, 203, 164); */
-  --main-bg-color: #00a138;
-  --main-yellow-color: #f9cf13;
+  --peach-color: rgb(250, 203, 164, 0.5);
+  --main-bg-color: rgb(240,240,240,0.8);
+  --main-yellow-color: #ffcf00;
   --button-yellow: rgb(248, 154, 91);
   --slideBtn-bg-color: rgba(0, 0, 0, 0.05);
   --reservation-bg-color: rgba(255, 255, 255, 0.8);
   /* common colors */
+  --color-red: #d01012;
   --color-blue2: #0046b6;
   --color-blue3: #00aaff;
   --color-light-yellow: #fefbf2;
@@ -78,7 +79,7 @@ body header .bottom .category .select_2  {
 .loadingWrap {
   width: 100vw;
   height: 100vh;
-  background-color: var(--main-bg-color);
+  background-color: var(--color-green);
   display: flex;
   flex-direction: column;
   justify-content: center;
