@@ -80,7 +80,7 @@ h2 {
   font-size: var(--font-regular);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
-  margin: 8px 0;
+  margin: 0;
 }
 h3 {
   font-size: var(--font-regular);
@@ -152,7 +152,7 @@ a:hover {
   margin-top: 6.5rem;
   margin-bottom: 5.5rem;
   background: var(--color-green);
-  width: 960px;
+  width: 500px;
   height: 110px;
   opacity: 0.95;
 }
@@ -180,7 +180,7 @@ a:hover {
   margin-left: 5em;
   opacity: 0;
   transform: translateY(100px);
-  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .galleryborder.animate {
@@ -195,17 +195,18 @@ a:hover {
 }
 
 .galleryborder_title {
-  width: 600px;
+  width: 500px;
 }
 
 .galleryborder_title h2 {
   color: #000;
   font-weight: var(--weight-bold);
   font-size: 200%;
+  margin: 0;
   margin-bottom: 1em;
 }
 .galleryborder_title p {
-  line-height: 160%;
+  line-height: 180%;
   font-size: 100%;
   word-break: break-word;
 }
@@ -214,7 +215,7 @@ a:hover {
 }
 .red__button {
   margin-top: 8%;
-  width: 17rem;
+  width: 22rem;
   height: 60px;
   font-size: 120%;
   background: #d01012;

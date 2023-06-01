@@ -72,5 +72,3 @@ for (let i = 0; i < slEls.length; i++) {
 }
 
 // 2. PARK MENU & HOTEL MENU, 열고 닫기
-
-

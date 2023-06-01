@@ -49,7 +49,7 @@ header .top .menu_icon {
   cursor: pointer;
 }
 header .top .menu_icon:hover { 
-  background-color: rgba(51, 51, 51, 1);
+  color: rgba(51, 51, 51, 1);
 }
 header .top .logo {
   width: 9%;
