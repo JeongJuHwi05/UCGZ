@@ -1,9 +1,9 @@
 /* COMMON */
-a {
+footer a {
   color: #000;
   text-decoration: none;
 }
-a:hover {
+footer a:hover {
   color: #777;
   text-decoration: dashed;
 }

@@ -190,8 +190,13 @@ function changes() {
     $(".tfoot .td div").eq(1).text(v1);
     $(".tfoot .td div").eq(2).text(v2);
 }
-const slideHeight = 430;
-const slideUpHeight = "10vh";
+let slideHeight = window.innerWidth > 1023? 430 : "40vh",
+    slideUpHeight = window.innerWidth > 1023? "10vh" : "7vh";
+
+$(window).on("resize",function(){
+    slideHeight = window.innerWidth > 1023? 430 : "40vh";
+    slideUpHeight = window.innerWidth > 1023? "10vh" : "7vh";
+})
 $(".checkin span, .checkout span, #sr_c_input").on("click",function(){
     $(".sr_slideBtn .slideBtn").addClass("act");
     changes();
