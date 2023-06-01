@@ -20,7 +20,7 @@ a {
 /* 메인 이미지 */
 /* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
 .main_title_img {
-  background: url("../image/p_enj_theme_01/p_enj_theme_01_01.jpg") center/cover
+  background: url("/image/p_enj_theme_01/p_enj_theme_01_01.jpg") center/cover
     no-repeat;
   margin-top: 90px;
   width: 100vw;
@@ -80,7 +80,9 @@ a {
   .loc_map > h4 {
     position: absolute;
     top: 20px;
-    left: 80px;
+    left: 90px;
+    margin: 0;
+    padding:0
   }
   .sel_loc {
     width: 700px;
@@ -102,7 +104,7 @@ a {
     color: #fff;
     justify-content: center;
     align-items: center;
-    background-image: url("../image/p_enj_theme_01/rectangle_green-removebg-preview.png");
+    background-image: url("/image/p_enj_theme_01/rectangle_green-removebg-preview.png");
     z-index: 100;
   }
   .sel_loc_item > a:hover {
@@ -116,7 +118,7 @@ a {
     color: #fff;
     justify-content: center;
     align-items: center;
-    background-image: url("../image/p_enj_theme_01/rectangle_red-removebg-half.png");
+    background-image: url("/image/p_enj_theme_01/rectangle_red-removebg-half.png");
     z-index: 100;
     margin: 5px;
     font-size: large;
@@ -130,6 +132,8 @@ a {
     position: absolute;
     top: 20px;
     left: 780px;
+    margin: 0;
+    padding:0
   }
   .sel_hei {
     width: 420px;
@@ -152,7 +156,7 @@ a {
     color: #fff;
     justify-content: center;
     align-items: center;
-    background-image: url("../image/p_enj_theme_01/rectangle_blue-removebg-preview.png");
+    background-image: url("/image/p_enj_theme_01/rectangle_blue-removebg-preview.png");
   }
   .sel_hei_item > a:hover {
     font-weight: 700;
@@ -172,7 +176,7 @@ a {
     font-size: 24px;
   }
   .aactive {
-    background-image: url("../image/p_enj_theme_01/rectangle_yell-removebg-preview.png") !important;
+    background-image: url("/image/p_enj_theme_01/rectangle_yell-removebg-preview.png") !important;
     color: #fff;
     font-weight: bold;
   }
@@ -224,23 +228,26 @@ a {
     position: relative;
   }
   .card_body {
-    margin-top: 10px;
+    margin-top: 0px;
     margin-left: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     position: relative;
   }
   .card_body > h5 {
     font-weight: 700;
     font-style: normal;
-    font-size: 24px;
+    font-size: 150%;
+    margin-top:10px;
+    margin-bottom: 0px;
+    padding-bottom:-1rem;
   }
   .card_body p {
-    font-size: 16px;
+    font-size: 100%;
     margin-top: 10px;
   }
   .show_text {
     color: #d01012;
-    font-size: 24px;
+    font-size: 120%;
     font-weight: 700;
     font-style: normal;
   }
@@ -248,14 +255,14 @@ a {
     margin-top: 5%;
     margin-bottom: 5%;
     position: absolute;
-    top: 60%;
-    left: 83%;
+    top: 50%;
+    left: 82%;
     border: none;
     background-color: transparent;
     transition: 0.5s ease;
     cursor: pointer;
-    max-width: 65px;
-    max-height: 50px;
+    max-width: 55px;
+    max-height: 41px;
   }
   .card_body > button > img {
     width: 100%;
@@ -301,18 +308,21 @@ a {
     width: 100%;
     height: 100%;
     padding-left: 20px;
+    margin:0;
   }
   .pop_up_text {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 30px;
+    font-size: 100%;
+    font-weight:500;
+    line-height:30px;
   }
   .pop_up_text > h5 {
     font-weight: 700;
     font-style: normal;
-    font-size: 32px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-size: 200%;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   .pop_up_can {
     transition: 0.5s ease;
@@ -324,21 +334,24 @@ a {
     filter: contrast(0.5);
   }
   .pop_up_can img {
-    width: 64px;
-    width: 64px;
+    width: 48px;
   }
   .pop_up_hei {
     display: flex;
+    margin:0;
   }
   .pop_up_hei_text {
     padding-top: 10px;
+    margin:0;
   }
   .pop_up_hei_text > p {
     padding-bottom: 15px;
+    margin:0;
   }
   .pop_up_loc {
-    font-size: 16px;
+    font-size: 100%;
     font-weight: 500;
+    margin:0;
   }
 }
 /* .pop_up_arrow{
@@ -393,7 +406,7 @@ a {
     color: #fff;
     justify-content: center;
     align-items: center;
-    background-image: url("../image/p_enj_theme_01/rectangle_green-removebg-preview.png");
+    background-image: url("/image/p_enj_theme_01/rectangle_green-removebg-preview.png");
     z-index: 100;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -410,7 +423,7 @@ a {
     color: #fff;
     justify-content: center;
     align-items: center;
-    background-image: url("../image/p_enj_theme_01/rectangle_red-removebg-half.png");
+    background-image: url("/image/p_enj_theme_01/rectangle_red-removebg-half.png");
     z-index: 100;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -444,7 +457,7 @@ a {
     color: #fff;
     justify-content: center;
     align-items: center;
-    background-image: url("../image/p_enj_theme_01/rectangle_blue-removebg-preview.png");
+    background-image: url("/image/p_enj_theme_01/rectangle_blue-removebg-preview.png");
     margin-bottom: 5px;
     margin: auto;
   }
@@ -461,7 +474,7 @@ a {
     font-size: 24px;
   }
   .aactive {
-    background-image: url("../image/p_enj_theme_01/rectangle_yell-removebg-preview.png") !important;
+    background-image: url("/image/p_enj_theme_01/rectangle_yell-removebg-preview.png") !important;
     color: #fff;
     font-weight: bold;
   }
@@ -517,29 +530,25 @@ a {
     transform: scale(1.05, 1.05);
   }
   .card_body {
-    margin-top: 10px;
+    margin-top: 0px;
     margin-left: 10px;
-    margin-bottom: 30px;
-    position: relative;
-  }
-  .card_body {
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     position: relative;
   }
   .card_body > h5 {
     font-weight: 700;
     font-style: normal;
-    font-size: 24px;
+    font-size: 150%;
+    margin-top:10px;
+    margin-bottom: 10px;
   }
   .card_body p {
-    font-size: 16px;
+    font-size: 100%;
     margin-top: 10px;
   }
   .show_text {
     color: #d01012;
-    font-size: 24px;
+    font-size: 150%;
     font-weight: 700;
     font-style: normal;
   }
@@ -547,14 +556,14 @@ a {
     margin-top: 5%;
     margin-bottom: 5%;
     position: absolute;
-    top: 60%;
+    top: 40%;
     left: 83%;
     border: none;
     background-color: transparent;
     transition: 0.5s ease;
     cursor: pointer;
-    max-width: 65px;
-    max-height: 50px;
+    max-width: 55px;
+    max-height: 41px;
   }
   .card_body > button > img {
     width: 100%;
@@ -607,7 +616,7 @@ a {
     color: #fff;
     justify-content: center;
     align-items: center;
-    background-image: url("../image/p_enj_theme_01/rectangle_green-removebg-preview.png");
+    background-image: url("/image/p_enj_theme_01/rectangle_green-removebg-preview.png");
     z-index: 100;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -619,7 +628,7 @@ a {
   .sel_loc_item_map > a {
     margin-top: 15px;
     display: flex;
-    background-image: url("../image/p_enj_theme_01/rectangle_red-removebg-half.png");
+    background-image: url("/image/p_enj_theme_01/rectangle_red-removebg-half.png");
     width: 200px;
     height: 78px;
     /* box-sizing: border-box; */
@@ -654,7 +663,7 @@ a {
     color: #fff;
     justify-content: center;
     align-items: center;
-    background-image: url("../image/p_enj_theme_01/rectangle_blue-removebg-preview.png");
+    background-image: url("/image/p_enj_theme_01/rectangle_blue-removebg-preview.png");
     margin-bottom: 5px;
     margin: auto;
   }
@@ -671,7 +680,7 @@ a {
     font-size: 24px;
   }
   .aactive {
-    background-image: url("../image/p_enj_theme_01/rectangle_yell-removebg-preview.png") !important;
+    background-image: url("/image/p_enj_theme_01/rectangle_yell-removebg-preview.png") !important;
     color: #fff;
     font-weight: bold;
   }
@@ -729,27 +738,21 @@ a {
   .card_body {
     margin-top: 10px;
     margin-left: 10px;
-    margin-bottom: 30px;
-    position: relative;
-  }
-  .card_body {
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     position: relative;
   }
   .card_body > h5 {
     font-weight: 700;
     font-style: normal;
-    font-size: 24px;
+    font-size: 150%;
   }
   .card_body p {
-    font-size: 16px;
+    font-size: 100%;
     margin-top: 10px;
   }
   .show_text {
     color: #d01012;
-    font-size: 24px;
+    font-size: 120%;
     font-weight: 700;
     font-style: normal;
   }
@@ -757,14 +760,14 @@ a {
     margin-top: 5%;
     margin-bottom: 5%;
     position: absolute;
-    top: 60%;
-    left: 83%;
+    top: 35%;
+    left: 85%;
     border: none;
     background-color: transparent;
     transition: 0.5s ease;
     cursor: pointer;
-    max-width: 65px;
-    max-height: 50px;
+    max-width: 55px;
+    max-height: 41px;
   }
   .card_body > button > img {
     width: 100%;
@@ -810,19 +813,21 @@ a {
   .pop_up_tl {
     width: 100%;
     height: 100%;
-    padding-left: 20px;
+    padding-left: 0px;
   }
   .pop_up_text {
-    font-size: 16px;
+    font-size: 100%;
     font-weight: 500;
     line-height: 30px;
   }
   .pop_up_text > h5 {
     font-weight: 700;
     font-style: normal;
-    font-size: 32px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-size: 200%;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   .pop_up_can {
     transition: 0.5s ease;
@@ -834,8 +839,7 @@ a {
     filter: contrast(0.5);
   }
   .pop_up_can img {
-    width: 64px;
-    width: 64px;
+    width: 48px;
   }
   .pop_up_hei {
     display: flex;
@@ -847,7 +851,7 @@ a {
     padding-bottom: 15px;
   }
   .pop_up_loc {
-    font-size: 16px;
+    font-size: 100%;
     font-weight: 500;
   }
 }

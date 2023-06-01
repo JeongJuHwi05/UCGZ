@@ -13,7 +13,7 @@ a{
   /* 메인 이미지 */
   /* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
   .main_title_img {
-    background: url("../image/p_cus_con_01/p_cus_con_01_01.jpg")
+    background: url("/image/p_cus_con_01/p_cus_con_01_01.jpg")
       center/cover no-repeat;
     margin-top: 90px;
     width: 100vw;
@@ -36,7 +36,7 @@ a{
   /* 메인 타이틀 텍스트 */
   .main_title_txt > h3 {
     margin: 0;
-    font-size: 200%;
+    font-size: 48px;
     font-weight: bold;
     color: #ffff;
     text-align: center;
@@ -64,7 +64,7 @@ a{
     width:100%;
 }
 .con_nav a{
-    font-size: 200%;
+    font-size: 24px;
     color:#fff;
     font-weight: 700;
 }
@@ -74,6 +74,7 @@ a{
     background: url("/image/p_cus_con_01/rectangle_blue-removebg-preview.png") no-repeat center/100%;
     width: 15rem;
     height:166px;
+    text-align: center;
     align-items: center;
     justify-content: center;
     margin-right:25px
@@ -234,7 +235,7 @@ a{
         width:100%;
     }
     .con_nav a{
-        font-size: 200%;
+        font-size: 24px;
         color:#fff;
         font-weight: 700;
     }
