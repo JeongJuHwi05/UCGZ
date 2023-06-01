@@ -167,6 +167,7 @@ a:hover {
   align-items: flex-start;
   justify-content: center;
   margin-top: 100px;
+  margin-bottom: 300px;
 }
 
 .galleryborder {
@@ -198,6 +199,7 @@ a:hover {
   margin-bottom: 1em;
 }
 .galleryborder_title p {
+  line-height: 180%;
   font-size: 100%;
   word-break: break-word;
 }
