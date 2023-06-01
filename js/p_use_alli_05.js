@@ -1,4 +1,4 @@
-// 팝업
+// 팝업;
 $(function () {
   //팝업 열기
   $(".galleryborder__description2:eq(0)>button").click(function () {
@@ -8,28 +8,33 @@ $(function () {
     );
   });
 
-  $(".galleryborder__description2:eq(1)>button").click(function () {
-    window.open("https://www.naver.com", "_blank");
+  $(".galleryborder__description2:eq(2)>button").click(function () {
+    window.open("/p_cus/p_cus_con_01.html", "_blank");
   });
 
   //버튼으로 팝업 닫기
   $(".pop_up_can>a").click(function () {
     $(".pop_up").hide();
   });
-
-  //외부 레이아웃눌러서 팝업 닫기
-  $(document).mouseup(function (e) {
-    var container = $(".pop_up");
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-      container.css("display", "none");
-    }
-  });
+});
+//외부 레이아웃눌러서 팝업 닫기
+$(document).mouseup(function (e) {
+  var container = $(".pop_up");
+  if (!container.is(e.target) && container.has(e.target).length === 0) {
+    container.css("display", "none");
+  }
 });
 
-function openWindow1() {
-  window.open("/t_hotel/t_hotel_reser01.html", "_blank");
-}
+// function openWindow1() {
+//   window.open("/p_cus/p_cus_con_01.html", "_blank");
+// }
 
 $(document).ready(function () {
   $(".galleryborder").addClass("animate");
+});
+
+const res = document.querySelector(".gotores");
+res.addEventListener("click", function () {
+  localStorage.setItem("load", JSON.stringify({ page: 6 }));
+  window.open("/t_use/t_use_reser01_0.html", "_blank");
 });

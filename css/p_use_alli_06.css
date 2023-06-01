@@ -150,7 +150,7 @@ a:hover {
   margin-top: 6.5rem;
   margin-bottom: 5.5rem;
   background: var(--color-green);
-  width: 840px;
+  width: 500px;
   height: 110px;
   opacity: 0.95;
 }
@@ -177,7 +177,7 @@ a:hover {
   margin-left: 5em;
   opacity: 0;
   transform: translateY(100px);
-  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .galleryborder.animate {
@@ -198,6 +198,7 @@ a:hover {
   color: #000;
   font-weight: var(--weight-bold);
   font-size: 200%;
+  margin: 0;
   margin-bottom: 1em;
 }
 

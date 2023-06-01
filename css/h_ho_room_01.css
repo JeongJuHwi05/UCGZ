@@ -166,33 +166,6 @@ a:hover {
   text-align: center;
   line-height: 110px;
 }
-
-#gallerybox1 {
-  width: 1350px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.gallery__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 150px;
-}
-
-.red__button {
-  /* position: absolute; */
-  margin-top: 8%;
-  margin-left: 6%;
-  width: 255px;
-  height: 60px;
-  font-size: var(--font-regular);
-  background: #d01012;
-  color: white;
-}
-
 .textarea_title h3 {
   margin: auto;
   color: var(--color-green);
@@ -202,42 +175,39 @@ a:hover {
   text-align: center;
   padding: 5% 0;
 }
-
 hr {
   background: var(--color-green);
-  width: 1200px;
+  width: 28em;
   height: 1px;
   border: 0;
 }
-.themeroom_box {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.crad_headline h4 {
+  margin: 0px;
 }
 .crad_headline {
+  width: 1350px;
   font-size: var(--font-medium);
   font-weight: var(--weight-bold);
-  margin-bottom: 20px;
+  margin: 0px auto 20px;
 }
 
 /* * 카드 */
 .all_att {
+  margin: 0px auto 200px;
   /* 전체 카드랑 팝업 수평으로 배치할 때 사용 */
   width: 1350px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: auto;
   font-size: 16px;
   font-style: normal;
-  margin-bottom: 200px;
 }
 
 .card {
   border: 1.5px solid rgb(229, 229, 229);
   background: #fff;
-  width: 400px;
-  height: 600px;
+  width: calc(100% / 4);
+  aspect-ratio: 2 / 3;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -250,8 +220,8 @@ hr {
 
 /* 카드 이미지 */
 .card_img {
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -278,24 +248,31 @@ hr {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .card_body {
+  height: 350px;
+}
+.card_title {
+  padding: 1em 1em;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.card_title.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 /* 카드 제목_ */
 .card_body > .card_title > h4 {
-  font-size: 150%;
-  margin-top: 25px;
-  padding: 0px 20px;
+  font-size: 180%;
   font-weight: var(--weight-bold);
   color: var(--color-black);
 }
 
 /* 카드 설명 */
 .card_body > .card_title > h5 {
-  padding: 20px 20px;
   font-size: 100%;
   font-weight: var(--weight-regular);
-  line-height: 25px;
 }
 
 .redbtn_box,
@@ -309,11 +286,12 @@ hr {
 }
 
 .redbtn {
+  cursor: pointer;
   position: absolute;
   bottom: 0;
-  width: 300px;
+  width: 15rem;
   height: 60px;
-  font-size: var(--font-regular);
+  font-size: 120%;
   background: #d01012;
   text-align: center;
   display: flex;
@@ -322,9 +300,9 @@ hr {
   transition: background-color 0.3s ease;
 }
 
-.redbtn:hover {
+/* .redbtn:hover {
   background-color: #b20b0d;
-}
+} */
 .redbtn a,
 .orgbtn a,
 .greenbtn a {
@@ -334,39 +312,3 @@ hr {
 .redbtn a:hover {
   text-decoration: none;
 }
-
-/* .orgbtn {
-  position: absolute;
-  bottom: 0;
-  width: 300px;
-  height: 60px;
-  font-size: var(--font-regular);
-  background: var(--color-orange);
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.3s ease;
-}
-
-.orgbtn:hover {
-  background-color: #ca5f18;
-}
-
-.greenbtn {
-  position: absolute;
-  bottom: 0;
-  width: 300px;
-  height: 60px;
-  font-size: var(--font-regular);
-  background: var(--color-green);
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.3s ease;
-}
-
-.greenbtn:hover {
-  background-color: #10882a;
-} */
