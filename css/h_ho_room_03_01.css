@@ -49,10 +49,8 @@
 }
 
 body {
-  /* font-family: "Open Sans", sans-serif; */
   margin: 0;
   cursor: default;
-  min-width: 1350px;
 }
 
 a {
@@ -153,15 +151,17 @@ p {
 .textarea_title1 {
   margin-top: 100px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .textarea_title1 h2 {
   color: #e02027;
   font-weight: var(--weight-bold);
-  font-size: var(--font-large);
+  font-size: 200%;
 }
 
 .reservation_btn {
-  width: 255px;
+  width: 10em;
   height: 60px;
   font-size: var(--font-regular);
   background: #e02027;

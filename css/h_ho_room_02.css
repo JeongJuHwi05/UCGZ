@@ -49,8 +49,6 @@
 }
 
 body {
-  font-family: CeraPro, Noto Sans JP, Nanum Gothic, Helvetica-Light, Helvetica,
-    Arial, sans-serif;
   margin: 0;
   cursor: default;
 }
@@ -82,19 +80,16 @@ h2 {
   font-size: var(--font-regular);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
-  margin: 8px 0;
 }
 h3 {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
   color: var(--color-black);
-  margin: 8px 0;
 }
 p {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
   color: var(--color-black);
-  margin: 4px 0;
 }
 /* COMMON */
 a {
@@ -170,6 +165,16 @@ a:hover {
   text-align: center;
   line-height: 110px;
 }
+.galleryborder {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.galleryborder.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* Slide */
 #gallerybox1,
@@ -239,15 +244,8 @@ a:hover {
 .galleryborder_title h2 {
   color: var(--color-blue3);
   font-weight: var(--weight-bold);
-  font-size: var(--font-large);
+  font-size: 200%;
   margin-bottom: 30px;
-}
-.textarea_title h3 {
-  color: var(--color-orange);
-  font-weight: var(--weight-bold);
-  font-size: var(--font-large);
-  padding-top: 3%;
-  text-align: center;
 }
 
 hr {
@@ -268,7 +266,6 @@ hr {
   font-weight: bold;
 }
 .galleryborder_title p {
-  line-height: 160%;
-  font-size: var(--font-micro);
+  font-size: 100%;
   word-break: break-word;
 }

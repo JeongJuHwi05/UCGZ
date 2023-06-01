@@ -49,8 +49,6 @@
 }
 
 body {
-  font-family: CeraPro, Noto Sans JP, Nanum Gothic, Helvetica-Light, Helvetica,
-    Arial, sans-serif;
   margin: 0;
   cursor: default;
 }
@@ -128,6 +126,9 @@ a:hover {
   }
 }
 
+#content {
+  padding-bottom: 200px;
+}
 .main_title {
   display: flex;
   justify-content: flex-start;

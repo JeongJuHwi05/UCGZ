@@ -49,10 +49,8 @@
 }
 
 body {
-  /* font-family: "Open Sans", sans-serif; */
   margin: 0;
   cursor: default;
-  min-width: 1350px;
 }
 
 a {
@@ -138,7 +136,7 @@ p {
 #textarea {
   width: 1350px;
   margin: auto;
-  margin-bottom: 100px;
+  margin-bottom: 300px;
 }
 
 .textarea_box {
@@ -160,18 +158,18 @@ p {
 }
 
 .textarea_title1 h2 {
-  margin: 20px 0;
   text-align: left;
   color: #57409a;
   font-weight: var(--weight-bold);
-  font-size: var(--font-large);
+  font-size: 200%;
 }
 .textarea_title1 h3 {
   line-height: 60px;
   color: #2b1a5e;
   font-weight: var(--weight-bold);
-  font-size: var(--font-micro);
+  font-size: 100%;
   text-align: left;
+  margin-bottom: 30px;
 }
 
 .restaurant_menu1 {
