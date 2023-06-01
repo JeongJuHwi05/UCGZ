@@ -254,7 +254,7 @@
         <legend>날짜 지정</legend>
         <div class="date_inputs">
           <label for="visit_date_value"></label>
-          <input type="date" name="visit_date_value" id="visit_date_value">
+          <input type="date" name="date.방문예정일" id="visit_date_value">
         </div>
         <div class="calender">
           <div class="calender_wrap_prev">
@@ -331,16 +331,16 @@
           <div class="vif04_info">
             <div class="vif04_i_name">
               <label for="vif04_i_name_input">이름</label>
-              <input type="text" name="vif04_i_name" id="vif04_i_name_input" required>
+              <input type="text" name="info.이름" id="vif04_i_name_input" required>
             </div>
             <div class="vif04_i_phone">
               <label for="vif04_i_phone_input">핸드폰 번호</label>
-              <input type="tel" name="vif04_i_phone" id="vif04_i_phone_input" required>
+              <input type="tel" name="info.전화번호" id="vif04_i_phone_input" required>
               <a href="#none" class="vif04_i_phone_cert cert_btn_inner">인증하기</a>
             </div>
             <div class="vif04_i_email">
               <label for="vif04_i_email_input">이메일</label>
-              <input type="email" name="vif04_i_email" id="vif04_i_email_input" required>
+              <input type="email" name="info.이메일" id="vif04_i_email_input" required>
             </div>
           </div>
         </div>
@@ -539,7 +539,7 @@
               m.find(".vif03_c_u_title strong")
               .text(classes)
               m.find(".vif03_c_u_input_text")
-              .prop("name",`${classes}_0`)
+              .prop("name",`code.${classes}_0`)
               q[`${classes}_cert`].push(false);
               localStorage.setItem("code_cert", JSON.stringify(q));
             }
@@ -549,7 +549,7 @@
               l
               .appendTo(`.vif03_c_unit_${classes}`);
               l.find("input")
-              .prop("name",`${classes}_${len}`)
+              .prop("name",`code.${classes}_${len}`)
               
               const q = JSON.parse(localStorage.getItem("code_cert"));
               q[`${classes}_cert`].push(false);
@@ -570,6 +570,7 @@
       });
 
       $(".vif03_code")
+        // 바코드 삭제 //
         .on("click",".deleteBtn",function(){
           const q = $(this).parents(".vif03_c_unit");
           const w = q.find(".vif03_c_u_input");
@@ -583,6 +584,7 @@
             q.remove();
           }
         })
+        // 바코드 인증 //
         .on("click",".certification",function(){
           const par = $(this).parents(".vif03_c_unit");
           const par2 = $(this).parent();
@@ -637,10 +639,20 @@
           console.log(w)
           for ( key in w ) {
             if( key.split(".")[0] == "number" ) {
-              return w[key] == 0? delete w[key] : null;
+              w[key] == 0? delete w[key] : null;
             }
           }
-          
+          w["common.type"] = "6";
+          w["common.typetext"] = "파크 방문 예약"
+          if (localStorage.getItem("visitRes")) {
+            const q = JSON.parse(localStorage.getItem("visitRes"));
+            q.push(w);
+            localStorage.setItem("visitRes", JSON.stringify(q));
+          } else {
+            const q = [];
+            q.push(w);
+            localStorage.setItem("visitRes", JSON.stringify(q));
+          }
           // 제출 시 확인
           //바코드 인증 확인
           if ( $(".vif03_c_unit").length != 0 ) {
