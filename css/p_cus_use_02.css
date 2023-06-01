@@ -13,7 +13,7 @@ a{
   /* 메인 이미지 */
   /* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
   .main_title_img {
-    background: url("../image/p_cus_use_02/cancel_bg.jpg")
+    background: url("/image/p_cus_use_02/cancel_bg.jpg")
       center/cover no-repeat;
     margin-top: 90px;
     width: 100vw;
@@ -47,7 +47,7 @@ a{
     max-width:1350px;
     margin:auto;
     margin-top:100px;
-    font-size:16px;
+    font-size:100%;
     margin-bottom:300px;
 }
 @media screen and (min-width : 901px){
@@ -63,34 +63,33 @@ a{
     width:100%;
 }
 .refund_cancel_nav a{
-    font-size: 36px;
+    font-size: 24px;
     color:#fff;
     font-weight: 700;
 }
 
 .refund_cancel_nav1>a{
     display: flex;
-    background-image: url("../image/p_cus_use_02/rectangle_yell-removebg-preview.png");
-    background-repeat: no-repeat;
-    width:300px;
-    height:117px;
+    background: url("/image/p_cus_use_02/rectangle_yell-removebg-preview.png") no-repeat center/100%;
+    width: 15rem;
+    height:166px;
+    text-align: center;
     align-items: center;
     justify-content: center;
-    margin-right:25px;
     text-decoration: none;
+    margin-right:20px;
 }
 
 .refund_cancel_nav2>a{
     display: flex;
-    background-image: url("../image/p_cus_use_02/rectangle_green-removebg-preview.png");
-    background-repeat: no-repeat;
-    width:300px;
-    height:117px;
+    background: url("/image/p_cus_use_02/rectangle_green-removebg-preview.png") no-repeat center/ 100%;
+    width: 15rem;
+    height:166px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-left:25px;
     text-decoration: none;
+    margin-left:20px
 }
 }
 form legend{
@@ -114,7 +113,7 @@ form legend{
     margin-bottom:5%
 }
 .ask_form_title>h4{
-    font-size:36px;
+    font-size:200%;
     padding-bottom: 20px;
 }
 .ask_com_bor{
@@ -128,14 +127,14 @@ form legend{
 .ask_com_bor input{
     width:98%;
     height:35px;
-    font-size:16px;
+    font-size:100%;
     display: flex;
     justify-content: center;
 }
 .ask_com_bor select{
     width:98%;
     height:35px;
-    font-size:24px
+    font-size:150%
 }
 .ask_com_bor textarea{
     width:98%;
@@ -834,7 +833,7 @@ form legend{
     margin-left: 10px;
 }
 .ask_form_agree_text_small{
-    font-size:14px;
+    font-size:100%;
     color:#757575
 }
 .ask_form_sub{
@@ -845,7 +844,7 @@ form legend{
     background:#004f84;
     width:250px;
     height:60px;
-    font-size:36px;
+    font-size:200%;
     color:#fff;
     cursor: pointer;
 }
@@ -855,7 +854,7 @@ form legend{
     line-height: 1.5rem;
 }
 .hotel_res_cancel>h4{
-    font-size:24px;
+    font-size:150%;
     color:#006db7;
     padding-bottom:20px;
     font-weight:700
@@ -877,7 +876,7 @@ form legend{
         max-height:117px;
         margin:auto;
         margin-bottom:170px;
-        margin-top:200px
+        
     }
     .refund_cancel_nav>ul{
         flex-direction: column;
@@ -886,32 +885,32 @@ form legend{
         width:100%;
     }
     .refund_cancel_nav a{
-        font-size: 36px;
+        font-size: 24px;
         color:#fff;
         font-weight: 700;
+        margin-top:-40px;
     }
     
     .refund_cancel_nav1>a{
         display: flex;
-        background-image: url("../image/p_cus_use_02/rectangle_yell-removebg-preview.png");
-        background-repeat: no-repeat;
-        width:300px;
-        height:117px;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        margin-bottom:25px
-    }
-    
-    .refund_cancel_nav2>a{
-        display: flex;
-        background-image: url("../image/p_cus_use_02/rectangle_green-removebg-preview.png");
-        background-repeat: no-repeat;
-        width:300px;
-        height:117px;
+        background: url("/image/p_cus_use_02/rectangle_yell-removebg-preview.png") no-repeat center/100%;
+        width: 15rem;
+        height:166px;
         text-align: center;
         align-items: center;
         justify-content: center;
         text-decoration: none;
+    }
+    
+    .refund_cancel_nav2>a{
+        display: flex;
+        background: url("/image/p_cus_use_02/rectangle_green-removebg-preview.png") no-repeat center/ 100%;
+        width: 15rem;
+        height:166px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+       
     }
     }

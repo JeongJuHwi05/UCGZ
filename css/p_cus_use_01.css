@@ -13,7 +13,7 @@ a{
   /* 메인 이미지 */
   /* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
   .main_title_img {
-    background: url("../image/p_cus_use_01/p_cus_use_01_bg.jpg")
+    background: url("/image/p_cus_use_01/p_cus_use_01_bg.jpg")
       center/cover no-repeat;
     margin-top: 90px;
     width: 100vw;
@@ -46,7 +46,7 @@ a{
     max-width:1350px;
     margin:auto;
     margin-top:100px;
-    font-size:16px;
+    font-size:100%;
     margin-bottom:300px;
 }
 .form_wrapping{
@@ -58,7 +58,7 @@ a{
 }
 .order_check_title{
     font-weight: 700;
-    font-size:24px;
+    font-size:150%;
     color:#006db7
 }
 form legend{
@@ -69,7 +69,7 @@ form legend{
     margin-bottom:5%
 }
 .ask_form_title>h4{
-    font-size:36px;
+    font-size:200%;
     padding-bottom: 20px;
 }
 .ask_com_bor{
@@ -97,16 +97,16 @@ form legend{
 .ask_com_bor input{
     width:98%;
     height:35px;
-    font-size:16px;
+    font-size:100%;
     display: flex;
     justify-content: center;
 }
 .check_blue_text{
-    font-size:14px;
+    font-size:100%;
     color:#006db7;
 }
 .ask_form_agree_text_small{
-    font-size:14px;
+    font-size:100%;
     color:#757575
 }
 .ask_form_sub{
@@ -118,7 +118,7 @@ form legend{
     max-width:600px;
     width: 100%;
     height:60px;
-    font-size:36px;
+    font-size:200%;
     color:#fff;
     cursor: pointer;
 }
@@ -131,7 +131,7 @@ form legend{
     margin-bottom: 10%;
 }
 .order_check_title{
-    font-size: 24px;
+    font-size: 150%;
     color:#006db7;
     font-weight:700;
     margin-top: 30px;

@@ -12,7 +12,7 @@ a{
   /* 메인 이미지 */
   /* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
   .main_title_img {
-    background: url("../image/p_cus_info_03/p_cus_info_03_01.jpg")
+    background: url("/image/p_cus_info_03/p_cus_info_03_01.jpg")
       center/cover no-repeat;
     margin-top: 90px;
     width: 100vw;
@@ -52,7 +52,7 @@ a{
 .main{
     max-width:1350px;
     margin:auto;
-    font-size:16px;
+    font-size:100%;
     margin-top:100px;
     margin-bottom:300px;
 }
@@ -64,7 +64,7 @@ form legend{
     font-weight: 700;
 }
 .ask_form_title>h4{
-    font-size:36px;
+    font-size:200%;
     padding-bottom: 20px;
 }
 .ask_com_bor{
@@ -78,14 +78,14 @@ form legend{
 .ask_com_bor input{
     width:98%;
     height:35px;
-    font-size:16px;
+    font-size:100%;
     display: flex;
     justify-content: center;
 }
 .ask_com_bor select{
     width:98%;
     height:35px;
-    font-size:24px
+    font-size:150%
 }
 .ask_com_bor textarea{
     width:98%;
@@ -168,7 +168,7 @@ form legend{
     margin-left: 10px;
 }
 .ask_form_agree_text_small{
-    font-size:14px;
+    font-size:100%;
     color:#757575
 }
 .ask_form_sub{
@@ -179,7 +179,7 @@ form legend{
     background:#004f84;
     width:250px;
     height:60px;
-    font-size:36px;
+    font-size:200%;
     color:#fff;
     cursor: pointer;
 }

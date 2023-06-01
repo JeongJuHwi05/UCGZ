@@ -12,7 +12,7 @@ a {
 /* 메인 이미지 */
 /* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
 .main_title_img {
-  background: url("../image/p_enj_theme_04/p_enj_theme_04_01.jpg") center/cover
+  background: url("/image/p_enj_theme_04/p_enj_theme_04_01.jpg") center/cover
     no-repeat;
   margin-top: 90px;
   width: 100vw;
@@ -42,6 +42,7 @@ a {
   line-height: 110px;
 }
 .main {
+  font-size: 100%;
   margin-top: 100px;
   margin-bottom: 300px;
 }
@@ -82,38 +83,40 @@ a {
     transform: scale(1.05, 1.05);
   }
   .card_body {
-    margin-top: 10px;
+    margin-top: 0px;
     margin-left: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     position: relative;
   }
   .card_body > h5 {
     font-weight: 700;
     font-style: normal;
-    font-size: 24px;
+    font-size: 150%;
+    margin-top:10px;
+    margin-bottom: 10px;
   }
   .show_text {
     color: #d01012;
-    font-size: 24px;
+    font-size: 120%;
     font-weight: 700;
     font-style: normal;
   }
   .card_body p {
-    font-size: 16px;
+    font-size: 100%;
     margin-top: 10px;
   }
   .card_body > button {
     margin-top: 5%;
     margin-bottom: 5%;
     position: absolute;
-    top: 60%;
-    left: 85%;
+    top: 50%;
+    left: 82%;
     border: none;
     background-color: transparent;
     transition: 0.5s ease;
     cursor: pointer;
-    max-width: 65px;
-    max-height: 50px;
+    max-width: 55px;
+    max-height: 41px;
   }
   .card_body > button > img {
     width: 100%;
@@ -154,7 +157,7 @@ a {
     padding-left: 20px;
   }
   .pop_up_text {
-    font-size: 16px;
+    font-size: 100%;
     font-weight: 500;
     line-height: 30px;
   }
@@ -162,8 +165,8 @@ a {
     font-weight: 700;
     font-style: normal;
     font-size: 150%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .pop_up_can {
     transition: 0.5s ease;
@@ -188,7 +191,7 @@ a {
     padding-bottom: 15px;
   }
   .pop_up_loc {
-    font-size: 16px;
+    font-size: 100%;
     font-weight: 500;
   }
 }
@@ -203,7 +206,7 @@ a {
   padding: 3%;
 }
 .ent_mobile_text_plan {
-  font-size: 32px;
+  font-size: 200%;
   font-weight: 700;
   color: #006db7;
 }
@@ -248,29 +251,25 @@ a {
     transform: scale(1.05, 1.05);
   }
   .card_body {
-    margin-top: 10px;
+    margin-top: 0px;
     margin-left: 10px;
-    margin-bottom: 30px;
-    position: relative;
-  }
-  .card_body {
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     position: relative;
   }
   .card_body > h5 {
     font-weight: 700;
     font-style: normal;
-    font-size: 24px;
+    font-size: 150%;
+    margin-top:10px;
+    margin-bottom: 10px;
   }
   .card_body p {
-    font-size: 16px;
+    font-size: 100%;
     margin-top: 10px;
   }
   .show_text {
     color: #d01012;
-    font-size: 24px;
+    font-size: 150%;
     font-weight: 700;
     font-style: normal;
   }
@@ -278,14 +277,14 @@ a {
     margin-top: 5%;
     margin-bottom: 5%;
     position: absolute;
-    top: 60%;
+    top: 35%;
     left: 83%;
     border: none;
     background-color: transparent;
     transition: 0.5s ease;
     cursor: pointer;
-    max-width: 65px;
-    max-height: 50px;
+    max-width: 55px;
+    max-height: 41px;
   }
   .card_body > button > img {
     width: 100%;
@@ -341,7 +340,7 @@ a {
     transform: scale(1.05, 1.05);
   }
   .card_body {
-    margin-top: 10px;
+    margin-top: 0px;
     margin-left: 10px;
     margin-bottom: 30px;
     position: relative;
@@ -349,21 +348,23 @@ a {
   .card_body {
     margin-top: 10px;
     margin-left: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     position: relative;
   }
   .card_body > h5 {
     font-weight: 700;
     font-style: normal;
-    font-size: 24px;
+    font-size: 150%;
+    margin-top:10px;
+    margin-bottom: 10px;
   }
   .card_body p {
-    font-size: 16px;
+    font-size: 100%;
     margin-top: 10px;
   }
   .show_text {
     color: #d01012;
-    font-size: 24px;
+    font-size: 150%;
     font-weight: 700;
     font-style: normal;
   }
@@ -371,14 +372,14 @@ a {
     margin-top: 5%;
     margin-bottom: 5%;
     position: absolute;
-    top: 60%;
+    top: 35%;
     left: 83%;
     border: none;
     background-color: transparent;
     transition: 0.5s ease;
     cursor: pointer;
-    max-width: 65px;
-    max-height: 50px;
+    max-width: 55px;
+    max-height: 41px;
   }
   .card_body > button > img {
     width: 100%;
@@ -424,19 +425,21 @@ a {
   .pop_up_tl {
     width: 100%;
     height: 100%;
-    padding-left: 20px;
+    
   }
   .pop_up_text {
-    font-size: 16px;
+    font-size: 100%;
     font-weight: 500;
     line-height: 30px;
   }
   .pop_up_text > h5 {
     font-weight: 700;
     font-style: normal;
-    font-size: 32px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-size: 200%;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   .pop_up_can {
     transition: 0.5s ease;
@@ -448,8 +451,7 @@ a {
     filter: contrast(0.5);
   }
   .pop_up_can img {
-    width: 64px;
-    width: 64px;
+    width: 48px;
   }
   .pop_up_hei {
     display: flex;
@@ -461,7 +463,7 @@ a {
     padding-bottom: 15px;
   }
   .pop_up_loc {
-    font-size: 16px;
+    font-size: 100%;
     font-weight: 500;
   }
 }

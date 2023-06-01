@@ -12,7 +12,7 @@ a{
   /* 메인 이미지 */
   /* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
   .main_title_img {
-    background: url("../image/p_cus_info_03/p_cus_info_03_sub_bg.jpg")
+    background: url("/image/p_cus_info_03/p_cus_info_03_sub_bg.jpg")
       center/cover no-repeat;
     margin-top: 90px;
     width: 100vw;
@@ -44,7 +44,7 @@ a{
 .main{
     max-width:1350px;
     margin:auto;
-    font-size:16px;
+    font-size:100%;
     margin-top:100px;
     margin-bottom:300px;
 }
@@ -62,45 +62,41 @@ a{
     height:115px;
 }
 .ask_nav a{
-    font-size: 36px;
+    font-size: 200%;
     color:#fff;
     font-weight: 700;
 }
 
 .ask_nav1>a{
     display: flex;
-    background-image: url("../image/p_cus_info_03/rectangle_yell-removebg-preview.png");
-    background-repeat: no-repeat;
-    width:400px;
-    height:156px;
+    background: url("/image/p_cus_info_03/rectangle_yell-removebg-preview.png") no-repeat center/100%;
+    width: 15rem;
+    height:166px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-right:37.5px;
+    margin:25px
 }
 
 .ask_nav2>a{
     display: flex;
-    background-image: url("../image/p_cus_info_03/rectangle_green-removebg-preview.png");
-    background-repeat: no-repeat;
-    width:400px;
-    height:156px;
+    background: url("/image/p_cus_info_03/rectangle_green-removebg-preview.png") no-repeat center/100%;
+    width: 15rem;
+    height:166px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-left:37.5px;
-    margin-right:37.5px;
+    margin:25px
 }
 .ask_nav3>a{
     display: flex;
-    background-image: url("../image/p_cus_info_03/rectangle_blue-removebg-preview.png");
-    background-repeat: no-repeat;
-    width:400px;
-    height:156px;
+    background: url("/image/p_cus_info_03/rectangle_blue-removebg-preview.png") no-repeat center/100%;
+    width: 15rem;
+    height:166px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-left:37.5px;
+    margin:25px
 }
 }
 form legend{
@@ -111,7 +107,7 @@ form legend{
     justify-content: center;
 }
 .ask_form_title>h4{
-    font-size:36px;
+    font-size:200%;
     padding-bottom: 20px;
 }
 .ask_com_bor{
@@ -125,12 +121,12 @@ form legend{
 .ask_com_bor input{
     width:98%;
     height:35px;
-    font-size:16px;
+    font-size:100%;
 }
 .ask_com_bor select{
     width:98%;;
     height:35px;
-    font-size:24px
+    font-size:150%
 }
 .ask_com_bor textarea{
     width:98%;
@@ -171,7 +167,7 @@ form legend{
     margin-left: 10px;
 }
 .ask_form_agree_text_small{
-    font-size:14px;
+    font-size:100%;
     color:#757575
 }
 .ask_form_sub{
@@ -182,7 +178,7 @@ form legend{
     background:#004f84;
     width:250px;
     height:60px;
-    font-size:36px;
+    font-size:200%;
     color:#fff;
     cursor: pointer;
 }
@@ -213,7 +209,7 @@ form legend{
 }
 .ask_img_tag1_text>h4{
     font-weight:700;
-    font-size:24px;
+    font-size:150%;
     color:#006db7;
     padding-top:20px;
     padding-bottom:20px;
@@ -237,7 +233,7 @@ form legend{
 }
 .ask_img_tag2_text>h4{
     font-weight:700;
-    font-size:24px;
+    font-size:150%;
     color:#006db7;
     padding-top:20px;
     padding-bottom:20px;
@@ -264,7 +260,7 @@ form legend{
 }
 .ask_stu_character_text>h4{
     font-weight:700;
-    font-size:24px;
+    font-size:150%;
     color:#006db7;
     padding-top:20px;
     padding-bottom:20px;
@@ -311,7 +307,7 @@ form legend{
     height:100%
 }
 .ask_stu_gui_book_text{
-    font-size:24px;
+    font-size:150%;
     font-weight:700;
     padding:20px;
 }
@@ -323,7 +319,7 @@ form legend{
     display: block;
     color:#fff;
     background: #d01012;
-    font-size:16px;
+    font-size:100%;
     padding:20px;
     text-align: center;
     max-width: 200px;
@@ -351,7 +347,7 @@ form legend{
     line-height: 2rem;
 }
 .ask_pac_text>h4{
-    font-size:24px;
+    font-size:150%;
     padding-bottom:20px;
     color:#006db7;
     font-weight:700;
@@ -387,42 +383,42 @@ form legend{
         width:100%;
     }
     .ask_nav a{
-        font-size: 36px;
+        font-size: 200%;
         color:#fff;
         font-weight: 700;
+        margin: auto;
+        margin-bottom: -50px;
     }
     
     .ask_nav1>a{
         display: flex;
-        background-image: url("../image/p_cus_info_03/rectangle_yell-removebg-preview.png");
-        background-repeat: no-repeat;
-        width:400px;
-        height:156px;
+        background: url("/image/p_cus_info_03/rectangle_yell-removebg-preview.png") no-repeat center/100%;
+        width: 15rem;
+        height:166px;
         text-align: center;
         align-items: center;
         justify-content: center;
-        margin-bottom:15px;
+        
     }
     
     .ask_nav2>a{
         display: flex;
-        background-image: url("../image/p_cus_info_03/rectangle_green-removebg-preview.png");
-        background-repeat: no-repeat;
-        width:400px;
-        height:156px;
+        background: url("/image/p_cus_info_03/rectangle_green-removebg-preview.png") no-repeat center/100%;
+        width: 15rem;
+        height:166px;
         text-align: center;
         align-items: center;
         justify-content: center;
-        margin-bottom:15px;
+        
     }
     .ask_nav3>a{
         display: flex;
-        background-image: url("../image/p_cus_info_03/rectangle_blue-removebg-preview.png");
-        background-repeat: no-repeat;
-        width:400px;
-        height:156px;
+        background: url("/image/p_cus_info_03/rectangle_blue-removebg-preview.png") no-repeat center/100%;
+        width: 15rem;
+        height:166px;
         text-align: center;
         align-items: center;
         justify-content: center;
+        
     }
 }

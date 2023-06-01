@@ -12,7 +12,7 @@ a {
   /* 메인 이미지 */
   /* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
   .main_title_img {
-    background: url("../image/p_cus_con_04/p_cus_con_04_01.jpg")
+    background: url("/image/p_cus_con_04/p_cus_con_04_01.jpg")
       center/cover no-repeat;
     margin-top: 90px;
     width: 100vw;
@@ -45,7 +45,7 @@ a {
     max-width:1350px;
     position: relative;
     margin:auto;
-    font-size:16px;
+    font-size:100%;
     margin-top:100px;
     margin-bottom:300px;
 }
@@ -81,12 +81,12 @@ a {
 }
 .secu_noti_1_text{
     padding:120px 40px 40px 40px;
-    font-size:16px;
+    font-size:100%;
     line-height: 1.5rem;
     max-width:600px;
 }
 .secu_noti_1_text>h4{
-    font-size:24px;
+    font-size:150%;
     padding-bottom:24px;
     color:#006db7;
     font-weight:700
@@ -107,11 +107,11 @@ a {
 }
 .secu_noti_2_text{
     padding:40px;
-    font-size:16px;
+    font-size:100%;
     line-height: 1.5rem;
 }
 .secu_noti_2_text>h4{
-    font-size:24px;
+    font-size:150%;
     padding-bottom:24px;
     color:#006db7;
     font-weight:700

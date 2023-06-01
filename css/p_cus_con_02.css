@@ -3,12 +3,12 @@ a{
     color:#d01012;
 }
 .cen_text{
-    font-size: 24px;
+    font-size: 150%;
     text-align: center;
     margin:30px
 }
 .strong_text{
-    font-size:24px;
+    font-size:150%;
     font-weight: 700;
 }
 /* 메인전체class */
@@ -22,7 +22,7 @@ a{
   /* 메인 이미지 */
   /* 이미지는 본인 폴더에 있는 메인 이미지쓰시면 됩니동 */
   .main_title_img {
-    background: url("../image/p_cus_con_02/p_cus_con_02_01.jpg")
+    background: url("/image/p_cus_con_02/p_cus_con_02_01.jpg")
       center/cover no-repeat;
     margin-top: 90px;
     width: 100vw;
@@ -54,7 +54,7 @@ a{
 .main{
     max-width: 1350px;
     margin: auto;
-    font-size:16px;
+    font-size:100%;
     margin-top:100px;
     margin-bottom:300px;
 }
@@ -71,7 +71,7 @@ a{
     width:100%;
 }
 .con_nav a{
-    font-size: 150%;
+    font-size: 24px;
     color:#fff;
     font-weight: 700;
     margin:10px;
