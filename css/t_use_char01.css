@@ -122,6 +122,8 @@ main {
     height: 100%;
     line-height: 110px;
     position: relative;
+    word-break: keep-all;
+    white-space:nowrap;
 }
 /* 구매하기 버튼들 --------------------------------------------------------- */
 .tickets {
