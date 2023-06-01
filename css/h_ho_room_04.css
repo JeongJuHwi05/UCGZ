@@ -128,10 +128,6 @@ a:hover {
   }
 }
 
-#content {
-  margin-bottom: 100px;
-}
-
 .main_title {
   display: flex;
   justify-content: flex-start;
@@ -187,8 +183,8 @@ a:hover {
   align-items: center;
   border: 1px solid var(--color-light-grey);
   border-radius: var(--size-border-radius);
-  margin: 60px 0px;
   cursor: pointer;
+  margin-bottom: 100px;
 }
 
 .gallery__container:hover {
@@ -227,27 +223,22 @@ a:hover {
   cursor: pointer;
   z-index: 1;
 }
-/* .red__button {
-  margin-top: 8%;
-  width: 255px;
-  height: 60px;
-  font-size: var(--font-regular);
-  background: #d01012;
-  color: white;
-} */
 
-.textarea_title h2 {
-  line-height: 30px;
+.textarea_title {
+  line-height: 40px;
   color: var(--color-black);
   font-weight: var(--weight-bold);
-  font-size: var(--font-micro);
-  margin-top: 100px;
+  margin: 100px 0;
   text-align: start;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-
+.text_up {
+  font-size: 150%;
+}
+.textarea_title > h2 {
+  font-size: 100%;
+}
 hr {
   background: var(--color-orange);
   width: 1200px;
@@ -269,8 +260,6 @@ hr {
   text-align: center;
 }
 
-.galleryborder__wrap {
-}
 .galleryborder_title {
   width: 700px;
   height: 100%;
@@ -340,48 +329,14 @@ hr {
   width: 100%;
   height: 100%;
 }
-/* 팝업 전체 텍스트 */
-.pop_up_tl {
-  width: 100%;
-  height: 100%;
-  padding-left: 20px;
-}
-/* 팝업 제목+설명 */
-.pop_up_text {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 30px;
-}
-/* 팝업 제목 */
-.pop_up_text > h5 {
-  font-weight: 700;
-  font-style: normal;
-  font-size: 32px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+
 /* 닫기 버튼 */
 .pop_up_can {
   position: absolute;
-  top: -3%;
-  left: 105%;
+  top: 1%;
+  left: 93%;
 }
 .pop_up_can img {
   width: 64px;
   width: 64px;
-}
-/* 키 제한 텍스트 */
-.pop_up_hei {
-  display: flex;
-}
-.pop_up_hei_text {
-  padding-top: 10px;
-}
-.pop_up_hei_text > p {
-  padding-bottom: 15px;
-}
-/* 위치 텍스트 */
-.pop_up_loc {
-  font-size: 16px;
-  font-weight: 500;
 }
