@@ -9,3 +9,7 @@ function openWindow2() {
 function openWindow3() {
   window.open("/p_use/p_use_alli_04.html", "_blank");
 }
+
+$(document).ready(function () {
+  $(".card_title").addClass("animate");
+});

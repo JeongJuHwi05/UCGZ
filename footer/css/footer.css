@@ -35,7 +35,7 @@ footer .foot_section {
 }
 footer .foot_section .foot {
   display: flex;
-  color: #555;
+  color:#555;
   box-sizing: border-box;
 }
 footer .foot_section .foot li {
@@ -46,9 +46,9 @@ footer .foot_section .foot li {
 footer .foot_section .foot li:last-child {
   margin-right: 0;
 }
-footer .foot_section .foot li span,
+footer .foot_section .foot li span, 
 footer .foot_section .foot li a {
-  color: #555;
+  color:#555;
 }
 footer .foot_section .foot li span:hover,
 footer .foot_section .foot li a:hover {
@@ -73,7 +73,7 @@ footer .foot_section .foot_2 li a {
   width: 40px;
   height: 40px;
 }
-footer .foot_section .foot_2 li #popup_open_btn_3 {
+footer .foot_section .foot_2 li #popup_open_btn_3 { 
   width: 40px;
   height: 40px;
   background-color: #ea4335;
@@ -100,6 +100,7 @@ footer .foot_section .foot_3 {
   margin-right: 35px;
 }
 /* footer */
+
 
 /* Modal Pop-up */
 
@@ -341,74 +342,5 @@ footer .foot_section .foot_3 {
   font-weight: 700;
 }
 /* Our Company 모달 팝업 */
-
-/* Legoland App Download */
-#my_modal_7 {
-  display: none;
-  width: 1000px;
-  height: 500px;
-  padding: 50px;
-  background-color: #fefefe;
-  border: 1px solid #888;
-  border-radius: 3px;
-}
-#my_modal_7 h2 {
-  font-size: 40px;
-  font-weight: 700;
-}
-#my_modal_7 .store {
-  width: 950px;
-  height: 400px;
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#my_modal_7 .store .apple,
-#my_modal_7 .store .google {
-  width: 500px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-#my_modal_7 .store .apple {
-  margin-right: 50px;
-  background-color: #000;
-}
-#my_modal_7 .store .apple .image,
-#my_modal_7 .store .google .image {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#my_modal_7 .store .apple .image img {
-  width: 350px;
-  height: 350px;
-}
-#my_modal_7 .store .google .image img {
-  width: 400px;
-  height: 300px;
-}
-#my_modal_7 .store .google {
-  background-color: #fff;
-  border: 1px solid #aaa;
-}
-#my_modal_7 .modal_close_btn_7 {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 30px;
-}
-#my_modal_7 .modal_close_btn_7:hover {
-  cursor: pointer;
-  font-size: 30px;
-  font-weight: 700;
-}
-/* Legoland App Download */
 
 /* Modal Pop-up */
