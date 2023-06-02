@@ -56,7 +56,6 @@ main .cont_section .inner .fastrack__price {
 main .cont_section .inner .fastrack__price .fastrack__price__virtual {
   width: 400px;
   height: 627px;
-  background-color: red;
   margin-left: 10px;
 }
 main .cont_section .inner .fastrack__price .fastrack__price__virtual .virtual__title {
@@ -112,7 +111,6 @@ main .cont_section .inner .fastrack__price .fastrack__price__virtual .virtual__n
 main .cont_section .inner .fastrack__price .fastrack__price__express {
   width: 400px;
   height: 627px;
-  background-color: blue;
   margin-left: 10px;
 }
 main .cont_section .inner .fastrack__price .fastrack__price__express .virtual__title {
@@ -168,7 +166,6 @@ main .cont_section .inner .fastrack__price .fastrack__price__express .virtual__n
 main .cont_section .inner .fastrack__price .fastrack__price__ultimate {
   width: 400px;
   height: 627px;
-  background-color: yellow;
   margin-left: 10px;
 }
 main .cont_section .inner .fastrack__price .fastrack__price__ultimate .virtual__title {

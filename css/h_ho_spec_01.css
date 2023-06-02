@@ -321,7 +321,7 @@ hr {
   margin-top: 8%;
   width: 15rem;
   height: 60px;
-  font-size: var(--font-regular);
+  font-size: 100%;
   background: #d01012;
   color: white;
   flex-wrap: wrap;
