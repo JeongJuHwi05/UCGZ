@@ -547,7 +547,9 @@ function loadRoom(index,obj){
                         .addClass("birthday_li")
                         .appendTo($(this));
                     $birthdayLi.find("a strong").text("레고랜드® 브릭타스틱 생일 패키지");
-                    $birthdayLi.find(".ri_e_t_c_price").text("￦" + comma(+m[r]+100000));
+                    $birthdayLi.find(".ri_e_t_c_price")
+                        .text("￦" + comma(+m[r]+100000))
+                        .data("price", +m[r]+100000);
                 
                     const $birthdayAnnualLi = originLi.clone(true);
                     $birthdayAnnualLi
@@ -556,7 +558,9 @@ function loadRoom(index,obj){
                         .addClass("birthdayAnnual_li")
                         .appendTo($(this));
                     $birthdayAnnualLi.find("a strong").text("[연간회원권 할인]레고랜드® 브릭타스틱 생일 패키지");
-                    $birthdayAnnualLi.find(".ri_e_t_c_price").text("￦" + comma(+m[r]+90000));
+                    $birthdayAnnualLi.find(".ri_e_t_c_price")
+                        .text("￦" + comma(+m[r]+90000))
+                        .data("price", +m[r]+90000);
                     roomm[r].forEach((v,idx) => {
                         const val = v+100000;
                         const val2 = v+90000;
@@ -697,7 +701,7 @@ $(".hb_rooms").on("click",".hb_unit",function(){
     loadRoom(idx,c);
 });
     // 상품 선택 //
-$(".roomInfo_wrap").on("click",".ri_e_t_c_price",function(){
+$(".roomInfo").on("click",".ri_e_t_c_price",function(){
     const p = $(this).text();
     const w = $(this).siblings("a").children("strong").text();
     const t = $(this).parents(".ri_e_t_box").find(".ri_e_t_exp_title").text();

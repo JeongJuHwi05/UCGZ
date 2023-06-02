@@ -104,52 +104,30 @@
 
 /* 내용 타이틀 */
 .main_body h2{
-    width: 600px;
-    height: 100px;
-    color: rgb(0, 88, 146);
-    font-size: 300%;
+    width: 100%;
+    color: white;
+    font-size: 200%;
     font-weight: 700px;
-    margin: 0 auto;
 }
 /* 본문의 내용 flex 공통 */
 .cont{
     display: flex;
     margin-top: 10%;
 }
-
-/* 이미지 왼쪽일 때 이미지+내용 */
-/* 이미지 사이즈 700 px */
-.page_img700{
-    width: 700px;
-    height: 700px;
-    margin-left: 30px;
+.cont > img {
+    width: 45%;
 }
-.page_img700 img{
-    width: 700px;
-    height: 700px;
+.cont h2 {
+    background-color: rgb(0, 88, 146);
+    height: 3em;
+    text-indent: 3em;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
 }
-.page_cont01{
-    width: 600px;
-    margin-left: 20px;
-}
-
-/* 이미지 오른쪽일 때 이미지+내용 */
-/* 이미지 사이즈 480px */
-.page_img480{
-    width: 480px;
-    height: 480px;
-}
-.page_img480 img{
-    width: 480px;
-    height: 480px;
-    margin-left: 0px;
-}
-.page_cont02 > h2{
-    height: 200px;
-}
-.page_cont02{
-    width: 600px;
-    margin-left: 170px;
+.cont > div{
+    width: 55%;
 }
 
 /* 테이블 */
