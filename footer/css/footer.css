@@ -17,12 +17,12 @@ footer a:hover {
 /* footer */
 footer {
   width: 100%;
-  height: 10%;
+  height: 9.5vh;
   padding: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f9f9f9;
+  background-color: #0046b6;
   box-sizing: border-box;
 }
 footer > div:not(.foot_section) {
@@ -51,7 +51,7 @@ footer .foot_section .foot li:last-child {
 }
 footer .foot_section .foot li span,
 footer .foot_section .foot li a {
-  color: #555;
+  color: #fff;
 }
 footer .foot_section .foot li span:hover,
 footer .foot_section .foot li a:hover {
