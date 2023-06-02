@@ -46,21 +46,20 @@
     line-height: 1.5;
     margin: 100px auto 300px;
 }
-
+.main_cont_title {
+    display: flex;
+}
 /* 페이지 설명 부분 */
 .page_subTitle{
     width: 650px;
     height: 112px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.page_subTitle p{
     border-width: 1.5px 0px;
     border-style: solid;
     border-color: rgb(229, 229, 229);
-    margin: 0 auto;
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.page_subTitle p{
     text-align: center;
     font-size: 150%;
     font-weight: 500;
