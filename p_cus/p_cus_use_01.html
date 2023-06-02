@@ -186,18 +186,12 @@ function validateForm(event) {
     });
 
     function formatDate(date) {
-  const year = date.getFullYear();
-  const month = date.getMonth();
-  const day = date.getDate();
-  const nextMonth = month + 1;
-  const nextYear = nextMonth > 11 ? year + 1 : year;
-  const nextMonthIndex = nextMonth > 11 ? 0 : nextMonth;
-  const nextMonthFirstDay = new Date(nextYear, nextMonthIndex, 1);
-  nextMonthFirstDay.setDate(1);
-
-  return (
-    nextYear + '년 ' + (nextMonthIndex + 1) + '월 ' + nextMonthFirstDay.getDate() + '일'
-  );
+        const q = new Date(date);
+        const year = q.getFullYear();
+        const month = q.getMonth()+1;
+        const day = q.getDate();
+ 
+  return (`${year}년 ${month}월 ${day}일`);
 }
 
     // 조회 결과가 없을 경우
