@@ -236,7 +236,14 @@
                     $(".name_wrap_en").css("display","none");
                 }
             });
-
+            $("#hotelForm_arrive_time")
+                .on("click",function(){$(".arrive_option").slideToggle();})
+            $(".arrive_option").on("click","a",function(){
+                const t = $(this).text();
+                $("#hotelForm_arrive_time").val((i,v) => t);
+                $(".arrive_option").slideUp();
+            })
+            
             // 예약 목록 생성 //
             let total=0;
             for( let j = 0; j < dataLen; j++) {

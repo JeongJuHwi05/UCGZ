@@ -82,7 +82,8 @@ header .bottom .category .inner {
   display: flex;
   justify-content: center;
 }
-header .bottom .category .select {
+header .bottom .category .select_1,
+header .bottom .category .select_2 {
   width: 40%;
   text-align: center;
   font-size: 32px;
@@ -98,17 +99,34 @@ header .bottom .category .select_2 {
   background-color:#ffcf00;
 }
 header .bottom .category .buy {
-  width: 20%;
-  margin: auto;
-  font-size: 32px;
+  box-shadow: 4px 3px 5px 1px #666666b4;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  border-radius: 3rem;
+  width: 6rem;
+  height: 6rem;
+  overflow: hidden;
+  display: block;
   color: #fff;
   font-weight: 700;
-  padding: 20px 0;
-  text-align: center;
+  transition: .5s ease;
   background-color: red;
+}
+header .bottom .category .buy span {
+  font-size: 200%;
+  display: block;
+  height: 100%;
+  width: 100%;
+  word-break: keep-all;
+  display: flex;
+  align-items: center;
+  padding-left: 7rem;
+  background: url("/header/image/ticket_icon.png") no-repeat left 0.5rem top 0.5rem/ 4.5rem 4.5rem;
 }
 header .bottom .category .buy:hover {
   background-color: #d01012;
+  width: calc(10vw + 6rem);
 }
 header .bottom .menu {
   box-sizing: border-box;
