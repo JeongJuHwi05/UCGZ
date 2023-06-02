@@ -18,6 +18,7 @@
       }
       .sf01_labelexp{
         width: 100%;
+        margin-bottom: 2rem;
         background: linear-gradient(to right, transparent,rgba(255,255,255,0.3),transparent);
       }
       .sf01_labelexp >ul {
@@ -105,9 +106,11 @@
         margin: auto;
 
         padding: 10px 20px 20px;
+        color: var(--color-green);
       }
       .sf01_tc_exp {
         font-size: 120%;
+        font-weight: 600;
       }
       .sf01_tc_disabled{
         width: 100%;
@@ -120,8 +123,8 @@
         position: absolute;
         top: 0px;
         left: 0px;
-        background-color: rgba(255, 255, 255, 0.6);
-        backdrop-filter: blur(2px);
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(3px);
       }
       .sf01_tc_disabled strong:first-child{
         font-size: 150%;
@@ -136,6 +139,7 @@
         width: fit-content;
         margin: auto;
         border: 1px solid rgb(102, 102, 102,0.3);
+        background-color: rgb(230,230,230,0.3);
       }
       .sf01_exp dt {
         font-size: 150%;

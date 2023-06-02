@@ -195,32 +195,24 @@ a:hover {
   white-space: nowrap;
 }
 
-#gallerybox1 {
+.gallerybox {
   width: 1350px;
   margin: auto;
-  /* display: flex;
-  align-items: flex-start; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   margin-top: 100px;
 }
 
-/* #gallerybox2 {
-  width: 1350px;
-  margin: auto;
+.gallerybox__wrap {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 100px;
-} */
-
-.gallery__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .galleryborder_title {
-  background-color: #00aaff;
   width: 500px;
+  margin: auto;
 }
 
 .galleryborder_title h2 {
@@ -234,18 +226,49 @@ a:hover {
   font-size: 100%;
   word-break: break-word;
 }
-
-.galleryborder {
-  display: block;
-  margin-left: 5em;
-  opacity: 0;
-  transform: translateY(100px);
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+.lost_pro_table {
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  /* margin: auto; */
+  /* margin-top: 10%; */
+  margin-bottom: 10%;
 }
-
-.galleryborder.animate {
-  opacity: 1;
-  transform: translateY(0);
+.lost_pro_title {
+  font-size: 150%;
+  color: #006db7;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.lost_pro_text {
+  width: 100%;
+  text-align: center;
+  color: #006db7;
+}
+.lost_pro_table_title {
+  font-weight: 700;
+}
+.lost_pro_table a {
+  color: #d01012;
+  text-decoration: underline;
+}
+.lost_pro_table th {
+  width: 200px;
+  border: 5px solid #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 700;
+}
+.lost_pro_table td {
+  padding: 30px;
+  border: 5px solid #ffffff;
+}
+.ask_loc_table_1 {
+  background: #f2f7fc;
+}
+.ask_loc_table_2 {
+  background: #ffffff;
 }
 .text_bold {
   font-weight: var(--weight-bold);
@@ -324,8 +347,6 @@ a:hover {
 /* 카드 제목_ */
 .card_body > .card_title > h4 {
   font-size: 200%;
-  margin-top: 25px;
-
   font-weight: var(--weight-bold);
   color: var(--color-black);
 }
@@ -334,7 +355,6 @@ a:hover {
 .card_body > .card_title > h5 {
   font-size: 100%;
   font-weight: var(--weight-regular);
-  line-height: 25px;
 }
 
 .redbtn_box {

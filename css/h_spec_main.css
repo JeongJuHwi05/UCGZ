@@ -49,7 +49,6 @@
 }
 
 body {
-  /* font-family: "Open Sans", sans-serif; */
   margin: 0;
   cursor: default;
   min-width: 1350px;
@@ -136,23 +135,23 @@ p {
 
 /* 카드 전체 배열 */
 .all_att {
+  padding-top: 100px;
+  margin: 0px auto 200px;
   width: 1350px;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 100px;
-  margin: auto;
+  justify-content: center;
   font-size: 16px;
   font-style: normal;
-  margin-bottom: 100px;
 }
 /* * 카드 */
 
 .card {
   border: 1.5px solid rgb(229, 229, 229);
   background: #fff;
-  width: 400px;
-  height: 600px;
+  width: calc(100% / 4);
+  aspect-ratio: 2 / 3;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -165,8 +164,8 @@ p {
 
 /* 카드 이미지 */
 .card_img {
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -189,21 +188,23 @@ p {
 /* 카드 전체 내용 묶음 */
 
 .card_body {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-left: 30px;
+  height: 400px;
+  padding: 1em 1em;
+}
+.card_title {
 }
 
 .card_textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* 카드 제목_ */
 .card_body > .card_title > h4 {
-  word-wrap: break-word;
   font-size: 120%;
-  margin-top: 25px;
   font-weight: var(--weight-bold);
+  color: var(--color-black);
   color: var(--color-red);
 }
 
@@ -211,8 +212,7 @@ p {
 .card_body > .card_title > h5 {
   line-height: 140%;
   word-wrap: break-word;
-  padding: 20px 0;
-  /* font-size: var(--font-medium); */
+  /* padding: 20px 0; */
   font-size: 150%;
   font-weight: var(--weight-bold);
 }
@@ -222,7 +222,7 @@ p {
   justify-content: flex-end;
   align-items: flex-end;
   cursor: pointer;
-  margin-top: 100px;
+  margin-top: auto;
 }
 .readmore {
   position: absolute;
@@ -231,7 +231,6 @@ p {
 }
 .icon_with_text1 span,
 .icon_with_text2 span {
-  /* font-size: small; */
   font-size: 100%;
 }
 .readmore svg {
@@ -249,15 +248,25 @@ p {
   width: 1350px;
   margin: auto;
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin-top: 100px;
+}
+.galleryborder {
+  margin-left: 5em;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.galleryborder.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .gallery__container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* margin-top: 150px; */
+  align-items: flex-start;
 }
 
 .slide {
@@ -290,27 +299,16 @@ p {
   cursor: pointer;
   z-index: 1;
 }
-.red__button {
-  /* position: absolute; */
-  margin-top: 8%;
-  margin-left: 6%;
-  width: 255px;
-  height: 60px;
-  font-size: var(--font-regular);
-  background: #d01012;
-  color: white;
-}
 
 .galleryborder_title {
-  width: 700px;
-  margin-left: 6%;
+  width: 600px;
 }
 
 .galleryborder_title h2 {
   color: var(--color-blue3);
   font-weight: var(--weight-bold);
-  font-size: var(--font-large);
-  margin-bottom: 30px;
+  font-size: 200%;
+  margin-bottom: 1em;
 }
 .textarea_title h3 {
   color: var(--color-green);
@@ -327,9 +325,21 @@ hr {
   border: 0;
 }
 
+.red__button {
+  /* position: absolute; */
+  margin-top: 8%;
+
+  width: 255px;
+  height: 60px;
+  font-size: var(--font-regular);
+  background: #d01012;
+  color: white;
+  flex-wrap: wrap;
+}
+
 #textarea {
   margin-top: 2px;
-  margin-bottom: 100px;
+  margin-bottom: 300px;
 }
 .textarea_description_box {
   display: flex;

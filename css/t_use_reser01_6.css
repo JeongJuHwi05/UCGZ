@@ -20,7 +20,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid rgb(238, 238, 238,0.7);
 }
 .vif01_ticketcard {
   width: 50%;
@@ -32,11 +32,11 @@
   display: flex;
   justify-content: center;
   gap: 20px;
-  border-bottom: 1px solid #eee;
-  border-right: 1px solid #eee;
+  border-bottom: 1px solid rgb(238, 238, 238,0.7);
+  border-right: 1px solid rgb(238, 238, 238,0.7);
 }
 .vif01_ticketcard:nth-child(odd) {
-  border-left: 1px solid #eee;
+  border-left: 1px solid rgb(238, 238, 238,0.7);
 }
 .vif01_ticketcard:hover {
   background-color: rgba(255,255,255,0.3);
@@ -79,11 +79,12 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.6);
+  backdrop-filter: blur(2px);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 150%;
+  font-size: 120%;
   font-weight: 600;
 }
 .vif01_tc_check {
@@ -144,10 +145,17 @@
   padding-left: 60px;
   height: 50px;
   background-color: green;
-
+  color: white;
+  font-size: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
+.vif03_c_u_title span {
+  display: block;
+  padding-right: 10%;
+}
+
 .vif03_c_u_input {
   display: flex;
   align-items: center;
@@ -255,7 +263,10 @@
   font-size: 120%;
   outline-color:rgb(2, 172, 2);
   transition: .5s ease;
-  
+}
+#vif04_i_phone_input::placeholder {
+  font-size: 80%;
+  opacity: 0.8;
 }
 .vif04_info label {
   display: inline-block;

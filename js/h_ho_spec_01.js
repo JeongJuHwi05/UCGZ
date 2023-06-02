@@ -7,34 +7,34 @@ document.addEventListener("DOMContentLoaded", function () {
     img_position3 = 1,
     img_position4 = 1;
 
-  imgs1 = $(".gallerybox1 .slide ul");
-  imgs3 = $(".gallerybox3 .slide ul");
-  imgs4 = $(".gallerybox4 .slide ul");
+  imgs1 = $("#gallerybox1 .slide ul");
+  imgs3 = $("#gallerybox3 .slide ul");
+  imgs4 = $("#gallerybox4 .slide ul");
   img_count1 = imgs1.children().length;
   img_count3 = imgs3.children().length;
   img_count4 = imgs4.children().length;
 
   // 첫 번째 슬라이드 버튼
-  $(".gallerybox1 #back1").on("click", function () {
+  $("#gallerybox1 #back1").click(function () {
     back1();
   });
-  $(".gallerybox1 #next1").on("click", function () {
+  $("#gallerybox1 #next1").click(function () {
     next1();
   });
 
   // 세 번째 슬라이드 버튼
-  $(".gallerybox3 #back3").on("click", function () {
+  $("#gallerybox3 #back3").click(function () {
     back3();
   });
-  $(".gallerybox3 #next3").on("click", function () {
+  $("#gallerybox3 #next3").click(function () {
     next3();
   });
 
   // 네 번째 슬라이드 버튼
-  $(".gallerybox4 #back4").on("click", function () {
+  $("#gallerybox4 #back4").click(function () {
     back4();
   });
-  $(".gallerybox4 #next4").on("click", function () {
+  $("#gallerybox4 #next4").click(function () {
     next4();
   });
 
@@ -87,9 +87,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function updateSlidePosition(imgs, img_position) {
-    imgs.style.left = `${-600 * (img_position - 1)}`;
+    imgs.css("left", -600 * (img_position - 1) + "px");
   }
 });
+
+// 탭
 showGallery(1);
 function showGallery(index) {
   // Hide all gallery boxes
