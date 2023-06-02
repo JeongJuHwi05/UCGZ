@@ -1,6 +1,6 @@
 /* COMMON */
 * div:not(.menu_icon) {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 header a {
   color: #000;
@@ -24,12 +24,12 @@ header {
   position: fixed;
   top: 0;
   z-index: 2;
-  transition: height .5s;
+  transition: height 0.5s;
 }
 header.open {
   height: 880px;
   z-index: 2;
-  transition: height .5s;
+  transition: height 0.5s;
 }
 header .top {
   width: 100%;
@@ -56,7 +56,7 @@ header .top .menu_icon {
   position: absolute;
   left: 50px;
 }
-header .top .menu_icon:hover { 
+header .top .menu_icon:hover {
   color: rgba(51, 51, 51, 1);
 }
 header .top .logo {
@@ -80,12 +80,12 @@ header .bottom {
   height: 0;
   background-color: #fff5ca;
   overflow: hidden;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 header .bottom.open {
   height: 100vh;
   z-index: 3;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 header .bottom .category {
   background-color: #ffc400;
@@ -113,15 +113,16 @@ header .bottom .category .select_2 {
   background-color: #00a138;
 }
 header .bottom .category .buy span {
-display: flex;
-align-items: center;
-padding-left: 7rem;
-font-size: 200%;
-color: white;
-font-weight: 600;
-width: 14vw;
-height: 100%;
-background: url("/image/ticket_icon.png") no-repeat top 0.7rem left 1rem/ 5rem 5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 7rem;
+  font-size: 200%;
+  color: white;
+  font-weight: 600;
+  width: 14vw;
+  height: 100%;
+  background: url("/image/ticket_icon.png") no-repeat top 0.7rem left 1rem/ 5rem
+    5rem;
 }
 header .bottom .category .buy {
   position: fixed;
@@ -132,7 +133,7 @@ header .bottom .category .buy {
   height: 7rem;
   border-radius: 3.5rem;
   background-color: red;
-  transition: .5s ease;
+  transition: 0.5s ease;
   overflow: hidden;
 }
 header .bottom .category .buy:hover {
@@ -162,7 +163,7 @@ header .bottom .menu .park_menu > li {
   width: 500px;
   height: 550px;
   padding: 0 100px;
-  box-sizing: border-box;  
+  box-sizing: border-box;
   border-right: 1px solid #aaa;
 }
 header .bottom .menu .park_menu > li:last-child {
@@ -194,7 +195,6 @@ header .bottom .menu .hotel_menu {
   height: 100vh;
   padding: 100px 0 50px 0;
   background-color: #fff5ca;
-  justify-content: start;
   position: absolute;
   top: 0;
   z-index: 3;
@@ -203,10 +203,11 @@ header .bottom .menu .hotel_menu.active {
   display: flex;
 }
 header .bottom .menu .hotel_menu > li {
-  width: 250px;
   height: 550px;
   padding: 0 100px;
   border-right: 1px solid #aaa;
+  word-break: keep-all;
+  white-space: nowrap;
 }
 header .bottom .menu .hotel_menu > li:last-child {
   width: 350px;
