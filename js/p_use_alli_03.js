@@ -12,3 +12,14 @@ function showGallery(index) {
     selectedGallery.style.display = "block";
   }
 }
+
+$(document).ready(function () {
+  $(".card_title").addClass("animate");
+});
+
+function openWindow1() {
+  window.open("/t_use/t_use_char01.html", "_blank");
+}
+function openWindow2() {
+  window.open("/t_use/t_use_char01.html", "_blank");
+}
