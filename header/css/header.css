@@ -99,7 +99,7 @@ header .bottom .category .select_2 {
   background-color:#ffcf00;
 }
 header .bottom .category .buy {
-  box-shadow: 4px 3px 5px 1px #666;
+  box-shadow: 4px 3px 5px 1px #666666b4;
   position: fixed;
   bottom: 100px;
   right: 100px;
@@ -108,23 +108,21 @@ header .bottom .category .buy {
   height: 6rem;
   overflow: hidden;
   display: block;
-  /* width: 20%; */
-  /* margin: auto; */
-  /* font-size: 32px; */
   color: #fff;
   font-weight: 700;
-  /* padding: 0rem 2rem; */
   transition: .5s ease;
   background-color: red;
 }
 header .bottom .category .buy span {
+  font-size: 200%;
   display: block;
   height: 100%;
   width: 100%;
   word-break: keep-all;
-  display: block;
-  padding-left: 4rem;
-  background: url("/header/image/ticket_icon.png") no-repeat left center / 5rem 5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 7rem;
+  background: url("/header/image/ticket_icon.png") no-repeat left 0.5rem top 0.5rem/ 4.5rem 4.5rem;
 }
 header .bottom .category .buy:hover {
   background-color: #d01012;

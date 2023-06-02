@@ -134,6 +134,9 @@ fieldset > div {
 
     display: none;
 }
+.arrive_option {
+    z-index: 3000;
+}
 .arrive_option a {
     display: block;
     height: 100%;
@@ -180,7 +183,6 @@ fieldset > div {
 }
 .check_date {
     display: flex;
-    justify-content: end;
     font-size: 90%;
     color: #666;
 }
