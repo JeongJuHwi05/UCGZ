@@ -6,19 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Header | LEGOLAND Korea Resort</title>
-
-  <!-- Reset.css -->
-  <link rel="stylesheet" href="css/reset.css" />
-  <!-- /Reset.css -->
-
-  <!-- material-icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <!-- /material-icons -->
+  <script defer src="/header/js/header.js"></script>
 
-  <!-- Main css & js -->
-  <link rel="stylesheet" href="css/header.css" /> 
-  <script defer src="js/header.js"></script>
-  <!-- /Main css & js --> 
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/header/css/header.css" /> 
 </head>
 
 <body>
@@ -27,8 +19,8 @@
   <header>
     <div class="top">
       <div class="menu_icon material-symbols-outlined">menu</div>
-      <a href="/main_page/main_page.html" class="logo">
-        <img src="image/sns_logo/0_legoland-korea-logo.webp" alt="legoland logo">
+      <a href="/index.html" class="logo">
+        <img src="/header/image/sns_logo/0_legoland-korea-logo.webp" alt="legoland logo">
       </a>
     </div>
     <nav class="bottom">
@@ -36,12 +28,14 @@
         <div class="inner">
           <div class="select select_1">LEGOLAND® 파크</div>
           <div class="select select_2">LEGOLAND® 호텔</div>
-          <a href="/t_use/t_use_char01.html" class="select buy">구매하기</a>
+          <a href="/t_use/t_use_char01.html" class="buy">
+            <span>구매하기</span>
+          </a>
         </div>
       </div>
       <div class="menu">
         <div class="inner">
-          <ul class="menus park_menu park_1">
+          <ul class="menus park_menu park_1 active">
             <li>
               <div class="park_1_title">LEGOLAND® 파크 이용</div>
               <ul class="park_2">
@@ -96,7 +90,7 @@
                       <a href="/p_enj/p_enj_theme_02.html">쇼핑 & 다이닝</a>
                     </li>
                     <li>
-                      <a href="/p_enj/p_enj_theme_04.html">엔터테인먼트</a>
+                      <a href="/p_enj/p_enj_theme_03.html">엔터테인먼트</a>
                     </li>
                   </ul>
                 </li>

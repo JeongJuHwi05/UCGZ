@@ -50,7 +50,7 @@ header .top .menu_icon {
   cursor: pointer;
 }
 header .top .menu_icon:hover { 
-  background-color: rgba(51, 51, 51, 1);
+  color: rgba(51, 51, 51, 1);
 }
 header .top .logo {
   width: 9%;
@@ -185,6 +185,10 @@ header .bottom .menu .hotel_menu li .hotel_2 .hotel_3 li a {
 /* HEADER */
 
 /* main */
+.main{
+  margin-top:100px;
+  margin-bottom:300px;
+}
 main section {
   width: 1440px;
   height: 100%;

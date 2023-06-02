@@ -1,10 +1,13 @@
 /* COMMON */
-a {
+* div:not(.menu_icon) {
+  font-family: "Noto Sans KR", sans-serif;
+}
+header a {
   color: #000;
   text-decoration: none;
 }
-a:hover {
-  color: #777;
+header a:not(.buy):hover {
+  color: #000;
   text-decoration: underline;
 }
 .inner {
@@ -21,20 +24,23 @@ header {
   position: fixed;
   top: 0;
   z-index: 2;
-  transition: height .5s;
+  transition: height 0.5s;
 }
 header.open {
   height: 880px;
   z-index: 2;
-  transition: height .5s;
+  transition: height 0.5s;
 }
 header .top {
   width: 100%;
+  height: 101px;
   padding: 15px 0;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #ffcf00;
+  position: relative;
 }
 header .top.open {
   background-color: #ffcf00;
@@ -42,25 +48,28 @@ header .top.open {
 header .top .menu_icon {
   font-size: 50px;
   color: #fff;
-  margin-left: -300px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   cursor: pointer;
+  position: absolute;
+  left: 50px;
 }
-header .top .menu_icon:hover { 
+header .top .menu_icon:hover {
   color: rgba(51, 51, 51, 1);
 }
 header .top .logo {
-  width: 9%;
-  height: 100%;
-  padding-left: 188px;
+  width: 163px;
+  height: 70px;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
   justify-content: center;
-  box-sizing: border-box;
-  margin: 0 30%;
+  position: absolute;
+  top: 15px;
+  bottom: 0;
+  left: -33px;
+  right: 0;
 }
 header .top .logo img {
   width: 163px;
@@ -68,22 +77,26 @@ header .top .logo img {
 }
 header .bottom {
   width: 100%;
-  height: 0%;
-  background-color: #fff;
+  height: 0;
+  background-color: #fff5ca;
   overflow: hidden;
-  transition: height .5s;
+  transition: all 0.5s;
 }
 header .bottom.open {
   height: 100vh;
   z-index: 3;
-  transition: height .5s;
+  transition: all 0.5s;
+}
+header .bottom .category {
+  background-color: #ffc400;
 }
 header .bottom .category .inner {
   display: flex;
   justify-content: center;
 }
-header .bottom .category .select {
-  width: 40%;
+header .bottom .category .select_1,
+header .bottom .category .select_2 {
+  width: 100%;
   text-align: center;
   font-size: 32px;
   font-weight: 700;
@@ -92,25 +105,41 @@ header .bottom .category .select {
   cursor: pointer;
 }
 header .bottom .category .select_1 {
-  background-color: transparent;
+  text-decoration: underline;
+  color: #fff;
+  background-color: #ff6f00;
 }
 header .bottom .category .select_2 {
-  background-color:#ffcf00;
+  background-color: #00a138;
+}
+header .bottom .category .buy span {
+  display: flex;
+  align-items: center;
+  padding-left: 7rem;
+  font-size: 200%;
+  color: white;
+  font-weight: 600;
+  width: 14vw;
+  height: 100%;
+  background: url("/image/ticket_icon.png") no-repeat top 0.7rem left 1rem/ 5rem
+    5rem;
 }
 header .bottom .category .buy {
-  width: 20%;
-  margin: auto;
-  font-size: 32px;
-  color: #fff;
-  font-weight: 700;
-  padding: 20px 0;
-  text-align: center;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  display: block;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 3.5rem;
   background-color: red;
+  transition: 0.5s ease;
+  overflow: hidden;
 }
 header .bottom .category .buy:hover {
-  background-color: #d01012;
+  width: 14vw;
 }
-header .bottom .menu {
+header .bottom .menus {
   box-sizing: border-box;
 }
 header .bottom .menu .inner {
@@ -118,8 +147,14 @@ header .bottom .menu .inner {
 }
 header .bottom .menu .park_menu {
   display: flex;
-  padding: 50px 0;
-  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  padding: 100px 0 50px 0;
+  justify-content: center;
+  color: #000;
+  position: absolute;
+  top: 0;
+  z-index: 3;
 }
 header .bottom .menu .park_menu.active {
   display: flex;
@@ -127,57 +162,77 @@ header .bottom .menu .park_menu.active {
 header .bottom .menu .park_menu > li {
   width: 500px;
   height: 550px;
-  margin: 0 10px;
+  padding: 0 100px;
+  box-sizing: border-box;
+  border-right: 1px solid #aaa;
+}
+header .bottom .menu .park_menu > li:last-child {
+  border-right: none;
 }
 header .bottom .menu .park_menu li .park_1_title {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 30px;
+  /* margin: 50px 0; */
 }
 header .bottom .menu .park_menu li .park_2 .park_2_title {
-  font-size: 21px;
-  font-weight: 900;
+  font-size: 24px;
+  font-weight: 400;
   margin: 30px 0 30px 0;
+  color: #000;
 }
-header .bottom .menu .park_menu li .park_2 .park_3 {}
 header .bottom .menu .park_menu li .park_2 .park_3 li {
-  margin: 10px 0;
+  margin: 15px 0;
+  padding-left: 1rem;
+  color: #000;
 }
 header .bottom .menu .park_menu li .park_2 .park_3 li a {
   font-size: 16px;
+  color: #000;
 }
 header .bottom .menu .hotel_menu {
   display: none;
   width: 100%;
-  padding: 50px 0;
-  justify-content: space-between;
-  background-color: #fff;
+  height: 100vh;
+  padding: 100px 0 50px 0;
+  background-color: #fff5ca;
   position: absolute;
   top: 0;
-  z-index: 2;
+  z-index: 3;
 }
 header .bottom .menu .hotel_menu.active {
   display: flex;
 }
 header .bottom .menu .hotel_menu > li {
-  width: 500px;
   height: 550px;
-  margin: 0 10px;
+  padding: 0 100px;
+  border-right: 1px solid #aaa;
+  word-break: keep-all;
+  white-space: nowrap;
+}
+header .bottom .menu .hotel_menu > li:last-child {
+  width: 350px;
+  border-right: none;
 }
 header .bottom .menu .hotel_menu li .hotel_1_title {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
 }
 header .bottom .menu .hotel_menu li .hotel_2 > li > .hotel_2_title {
   display: block;
-  font-size: 21px;
-  font-weight: 900;
-  margin: 30px 0 30px 0;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 0 30px 0;
 }
-header .bottom .menu .hotel_menu li .hotel_2 .hotel_3 {}
+header .bottom .menu .hotel_menu li .hotel_2 > li > .hotel_2_title.partner {
+  margin-top: 50px;
+}
+header .bottom .menu .hotel_menu li .hotel_2 .hotel_3 {
+  margin: 60px 0 0 0;
+}
 header .bottom .menu .hotel_menu li .hotel_2 .hotel_3 li {
-  margin: 10px 0;
+  margin: 15px 0;
+  padding-left: 1rem;
 }
 header .bottom .menu .hotel_menu li .hotel_2 .hotel_3 li a {
   font-size: 16px;

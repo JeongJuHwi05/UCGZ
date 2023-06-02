@@ -1,9 +1,9 @@
 /* COMMON */
-a {
+footer a {
   color: #000;
   text-decoration: none;
 }
-a:hover {
+footer a:hover {
   color: #777;
   text-decoration: dashed;
 }
@@ -17,13 +17,16 @@ a:hover {
 /* footer */
 footer {
   width: 100%;
-  height: 10%;
+  height: 9.5vh;
   padding: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f9f9f9;
+  background-color: #0046b6;
   box-sizing: border-box;
+}
+footer > div:not(.foot_section) {
+  width: 100vw;
 }
 footer .foot_section {
   width: 100%;
@@ -35,7 +38,7 @@ footer .foot_section {
 }
 footer .foot_section .foot {
   display: flex;
-  color:#555;
+  color: #555;
   box-sizing: border-box;
 }
 footer .foot_section .foot li {
@@ -46,9 +49,9 @@ footer .foot_section .foot li {
 footer .foot_section .foot li:last-child {
   margin-right: 0;
 }
-footer .foot_section .foot li span, 
+footer .foot_section .foot li span,
 footer .foot_section .foot li a {
-  color:#555;
+  color: #fff;
 }
 footer .foot_section .foot li span:hover,
 footer .foot_section .foot li a:hover {
@@ -73,7 +76,7 @@ footer .foot_section .foot_2 li a {
   width: 40px;
   height: 40px;
 }
-footer .foot_section .foot_2 li #popup_open_btn_3 { 
+footer .foot_section .foot_2 li #popup_open_btn_3 {
   width: 40px;
   height: 40px;
   background-color: #ea4335;
@@ -100,7 +103,6 @@ footer .foot_section .foot_3 {
   margin-right: 35px;
 }
 /* footer */
-
 
 /* Modal Pop-up */
 
