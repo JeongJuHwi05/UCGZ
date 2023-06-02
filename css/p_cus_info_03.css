@@ -219,6 +219,7 @@ form legend{
     justify-content: center;
 }
 .ask_img_tag2_img{
+    margin-top: 40px;
     max-width:204px;
     max-height:368px;
 }
