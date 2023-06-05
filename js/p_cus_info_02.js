@@ -1,9 +1,26 @@
 $(function(){
+    var preSlideId = "";
+    var slideId = "";
     // 슬라이드
     $('.direc_title').click(function() {
-      var slideId = $(this).data('slide-id');
-      $('#' + slideId).stop().slideToggle();
+      slideId = $(this).data('slide-id');
+
+      if(preSlideId != slideId){
+        $('#' + slideId).stop().slideToggle();
+
+        if(preSlideId != ""){
+          $('#' + preSlideId).stop().slideToggle();
+        }
+        preSlideId = slideId;
+      }else{
+        $('#' + slideId).stop().slideToggle();
+        preSlideId = slideId;
+      }
     });
+    
+    
+    
+    $('#' + slideId).stop().slideToggle();
     
     // 벡터 이미지 회전
 
