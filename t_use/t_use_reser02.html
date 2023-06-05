@@ -97,6 +97,11 @@
     <script>
         $("header").load("/header/header.html");
         $("footer").load("/footer/footer.html");
+
+        $(".cb_back").on("click",function(){
+            const q = {page : 1}
+            localStorage.setItem("load", JSON.stringify(q));
+        })
     </script>
 </body>
 </html>

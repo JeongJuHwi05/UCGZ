@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/ticket_common.css">
     <style>
         .mainWrap {
+            padding-top: 10vh;
             position: relative;
             background-color: var(--main-bg-color);
             padding-bottom: 8rem;
@@ -32,9 +33,11 @@
         }
         .title h2 {
             padding: 20px 200px 20px 20px;
-            background-color: var(--title-text-bg-color);
+            background-color: var(--color-green);
+            color: white;
+            opacity: 0.95;
             box-sizing: border-box;
-            font-size: 200%;
+            font-size: 300%;
         }
         /* ========================================================= */
         .pageBtn_wrap {
@@ -195,7 +198,7 @@
             padding: 20px;
             box-sizing: border-box;
             border-radius: 20px;
-            background-color: green;
+            background-color: var(--color-green);
             box-shadow: 3px 2px 5px 0px rgba(102, 102, 102, 0.8);
         }
         .basket_l_u_t_number >span{
@@ -353,6 +356,10 @@
             function comma(x) {
               return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             }
+            $(".pageBtn a").on("click",function(){
+                const q = {page : 1};
+                localStorage.setItem("load", JSON.stringify(q));
+            })
             //이용약관
             $(".terms_list_frame").load(`/t_use/t_use_reser03_terms_1.html`);
             $(".terms_list a:eq(0)").css("background-color","rgba(200,200,200,0.5)");
