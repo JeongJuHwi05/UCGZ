@@ -1,3 +1,8 @@
+$(function(){
+  $("header").load("/header/header.html");
+  $("footer").load("/footer/footer.html");
+})
+
 // promotion section slide
 $(document).ready(function(){
   $('.slider-wrap-promotion').slick({

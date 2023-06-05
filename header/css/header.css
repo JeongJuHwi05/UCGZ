@@ -1,5 +1,5 @@
 /* COMMON */
-* div:not(.menu_icon) {
+header div:not(.menu_icon) {
   font-family: "Noto Sans KR", sans-serif;
 }
 header a {
@@ -20,21 +20,20 @@ header a:not(.buy):hover {
 /* HEADER */
 header {
   width: 100%;
-  height: 100px;
+  height: 10vh;
   position: fixed;
   top: 0;
   z-index: 8000;
   transition: height 0.5s;
 }
 header.open {
-  height: 880px;
+  height: 90vh;
   z-index: 8000;
   transition: height 0.5s;
 }
 header .top {
   width: 100%;
-  height: 101px;
-  padding: 15px 0;
+  height: 10vh;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -83,7 +82,7 @@ header .bottom {
   transition: all 0.5s;
 }
 header .bottom.open {
-  height: 100vh;
+  height: 90vh;
   z-index: 8500;
   transition: all 0.5s;
 }
@@ -149,7 +148,7 @@ header .bottom .menu .park_menu {
   display: flex;
   width: 100%;
   height: 100vh;
-  padding: 100px 0 50px 0;
+  padding: 50px 0px;
   justify-content: center;
   color: #000;
   position: absolute;
@@ -193,7 +192,7 @@ header .bottom .menu .hotel_menu {
   display: none;
   width: 100%;
   height: 100vh;
-  padding: 100px 0 50px 0;
+  padding: 50px 0px;
   background-color: #fff5ca;
   position: absolute;
   top: 0;
