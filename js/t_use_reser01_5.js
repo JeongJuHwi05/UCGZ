@@ -15,137 +15,18 @@
           return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
         }
         //------------Load-------------
-        const today = new Date();
+        
         const oneday = 86400000;
-          const weekArr = ["일", "월", "화", "수", "목", "금", "토"];
-          let $selYear = today.getFullYear();
-          let $selMonth = today.getMonth() +1;
-            const $selMonthText = $selMonth < 10? "0"+($selMonth) : $selMonth;
-          let $selDate = today.getDate();
-            const $selDateText = $selDate < 10? "0"+$selDate : $selDate;
-          let $selDay = today.getDay();
-          $("#vip_date_value")
-            .val((i,v) => `${$selYear}-${$selMonthText}-${$selDateText}`)
-            .data("value",`${$selYear}${$selMonthText}${$selDateText}`);
-          $(".date_inputs label").text(`${$selYear}년 ${$selMonth}월 ${$selDate}일 (${weekArr[$selDay]})`);
-          
-          if ( !$(".calender_table_cell").eq($selDay + $selDate-1).hasClass("disabled_cell") ) {
-            $(".calender_table_cell").eq($selDay + $selDate-1).children().addClass("active_cell");
-            $(".df06_p_s_date").text(`${$selYear}년 ${$selMonth}월 ${$selDate}일`);
+        $(".vip_fieldset01").on("click",".able_cell",function(){
+          const q = new Date($(this).prop("id"));
+          if( +q < +new Date() + 14*oneday ) {
+            $(".vf02_tc_disabled").removeClass("vf02_cover");
+            $(".vf02_tc_input_gold, .vf02_tc_input_platinum").val((i,v) => 0);
+            $(".i_info[class*='gold'], .i_info[class*='platinum']").remove();
+          } else {
+            $(".vf02_tc_disabled").addClass("vf02_cover");
           }
-        // upload calender , input date value -------------------------        
-        $.fn.extend({
-            week : function() {
-              for (let i = 0; i < 7; i++) {
-                const newDay = $("<div></div>");
-                newDay.addClass("weekCell");
-                $(this).find(".cdt_week").append(newDay);
-                newDay.text(weekArr[i]);
-              }
-            },
-            calender: function(years,months){
-              if ( months < 0) {
-                years -= 1;
-                months = 11;
-              } else if (months > 11) {
-                years += 1;
-                months = 0;
-              }
-              let monthStart = new Date(years, months, 1);
-              let monthEnd = new Date(years, months + 1, 0);
-              $(this).find(".cm_sb_span1").eq(0).text(years);
-              $(this).find(".cm_sb_span1").eq(1).text(months+1);
-
-              $(this).find(".cdt_date").children().remove();
-              const i = monthStart.getDay() + monthEnd.getDate();
-
-              for (let j = 1; j <= i; j++) {
-                const n = j - monthStart.getDay();
-                const cur = new Date(years,months,n);
-                if (n > 0) {
-                  if ( new Date(years, months, n) < today ) {
-                    const disabled_cell = $("<div class='disabled_cell dataCell'></div>");
-                    disabled_cell.text(n);
-                    $(this).find(".cdt_date").append(disabled_cell);
-                  }
-                  else if ( cur >= new Date(2023,10,20) && new Date(2024,0,1) > cur && ([1,2,3]).some(e => e == cur.getDay()) ){
-                    //휴장일
-                    const disabled_cell = $("<div class='disabled_cell dataCell'></div>");
-                    const exp = $("<span class='notOpen'>휴관</span>")
-                    disabled_cell
-                      .text(n)
-                      .append(exp);
-                    $(this).find(".cdt_date").append(disabled_cell);
-                  }
-                  else {
-                    const able_cell = $("<a href='#none' class='able_cell dataCell'></a>");
-                    able_cell.text(n);
-                    able_cell.data(
-                      "value",
-                      `${years}${months + 1 < 10 ?  "0" + (months + 1) : months + 1 }${n < 10 ? "0"+n : n}`
-                    ).prop(
-                      "id",
-                      `${years}-${months + 1 < 10 ? "0" + (months + 1) : months + 1 }-${n < 10 ? "0"+n : n}`
-                    );
-                    if ( able_cell.data("value") == $("#vip_date_value").data("value") ) {
-                      able_cell.addClass("active_cell");
-                    }
-                    $(this).find(".cdt_date").append(able_cell);
-                  }
-                } else {
-                  const newDateBox = $("<div class='dataCell'></div>");
-                  $(this).find(".cdt_date").append(newDateBox);
-                } 
-              }
-            }
-          });
-          $(".calender_wrap_prev").week();
-          $(".calender_wrap").week();
-          $(".calender_wrap_next").week();
-          $(".calender_wrap_prev").calender($selYear,$selMonth-2);
-          $(".calender_wrap").calender($selYear,$selMonth-1);
-          $(".calender_wrap_next").calender($selYear,$selMonth);
-
-            $(".calender_month .gotoback").click(function(){
-              if (!($selYear == today.getFullYear() && $selMonth-1 == today.getMonth())) {
-                if ( $selMonth == 1 ) {
-                  $selMonth = 12;
-                  $selYear -= 1;
-                } else {
-                  $selMonth -= 1;
-                }
-              }
-              $(".calender_wrap_prev").calender($selYear,$selMonth-2);
-              $(".calender_wrap").calender($selYear,$selMonth-1);
-              $(".calender_wrap_next").calender($selYear,$selMonth);
-            });
-            $(".calender_month .gotonext").click(function(){
-              if ( $selMonth == 12 ) {
-                $selMonth = 1;
-                $selYear += 1;
-              } else {
-                $selMonth += 1;
-              }
-              $(".calender_wrap_prev").calender($selYear,$selMonth-2);
-              $(".calender_wrap").calender($selYear,$selMonth-1);
-              $(".calender_wrap_next").calender($selYear,$selMonth);
-            });
-          
-          $(".vip_fieldset01").on("click",".able_cell",function(){
-            $(this).addClass("active_cell");
-            $(".able_cell").not($(this)).removeClass("active_cell");
-            $("#vip_date_value")
-              .val((i,v) => $(this).prop("id"))
-              .data("value",$(this).data("value"));
-            const q = new Date($(this).prop("id"));
-            $(".date_inputs label").text(`${q.getFullYear()} 년 ${q.getMonth()+1} 월 ${q.getDate()} 일 (${weekArr[q.getDay()]})`);
-            $(".p_s_date").text(`${q.getFullYear()} 년 ${q.getMonth()+1} 월 ${q.getDate()} 일 (${weekArr[q.getDay()]})`);
-            if( +q < +new Date() + 14*oneday ) {
-              $(".vf02_tc_disabled").removeClass("vf02_cover");
-            } else {
-              $(".vf02_tc_disabled").addClass("vf02_cover");
-            }
-          })
+        })
 
         //--- 02. 이용권 선택 ------------------------------------------------------------------- 
           // 2-1. 혜택 보기 슬라이드
@@ -159,7 +40,7 @@
             if( $(`.vf02_tc_input_${classes}`).hasClass(`vf02_tc_input_${ages}`)){
               if( $(`.i_info_${classes}_${ages}`).length < $(`.vf02_tc_input_${classes}.vf02_tc_input_${ages}`).val()) {
                 const $makeInfo = $(`.i_info_origin`).clone(true);
-
+                $makeInfo.prop("data-classes", classes);
                 $makeInfo.addClass([`i_info_${classes}_${ages}`, "i_info"]);
                 $makeInfo.removeClass("i_info_origin");
                 $makeInfo.find(".i_i_t_ticket").text(`VIP ${classes.toUpperCase()} EXPERIENCES`);
