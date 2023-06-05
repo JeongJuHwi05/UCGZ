@@ -19,6 +19,9 @@ function openWindow1() {
 function openWindow2() {
   window.open("/t_use/t_use_char01.html", "_blank");
 }
+function openWindow3() {
+  window.open("/p_use/p_use_ext_02.html", "_blank");
+}
 
 $(document).ready(function () {
   $(".card_title").addClass("animate");

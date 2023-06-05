@@ -6,7 +6,10 @@ const bottomEl = document.querySelector("nav.bottom");
 const slEls = document.querySelectorAll("div.select");
 const slEl_1 = document.querySelectorAll("div.select_1");
 const mnEls = document.querySelectorAll("ul.menus");
-const park_menuEl = document.querySelectorAll(".park_menu");
+const park_menuEl = document.querySelector(".park_menu");
+const hotel_menuEl = document.querySelector(".hotel_menu");
+
+
 
 // 1. CLASS : BOTTOM 열고 닫기
 mnIcon.addEventListener("click", () => {
@@ -33,13 +36,9 @@ for (let i = 0; i < slEls.length; i++) {
     slEls[i].addEventListener("click", () => {
       slEls.forEach((mnLiEl) => {
         if (mnLiEl === slEls[i]) {
-          mnLiEl.style.textDecoration = 'underline';
-          mnLiEl.style.color = '#555';
-          mnLiEl.classList.add("active");
+          mnLiEl.classList.add("activeSel");
         } else {
-          mnLiEl.style.textDecoration = 'none';
-          mnLiEl.style.color = '#000';
-          mnLiEl.classList.remove("active");
+          mnLiEl.classList.remove("activeSel");
         }
       });
 
@@ -54,4 +53,29 @@ for (let i = 0; i < slEls.length; i++) {
   }
 }
 
-// 2. PARK MENU & HOTEL MENU, 열고 닫기
+const hotelA = document.querySelectorAll(".hotel_menu a");
+const parkA = document.querySelectorAll(".park_menu a");
+hotelA.forEach(v => v.addEventListener("click",function(){
+  sessionStorage.setItem("menu","hotel");
+}));
+parkA.forEach(v => v.addEventListener("click",function(){
+  sessionStorage.setItem("menu","park");
+}));
+
+
+  if( sessionStorage.getItem("menu") == "hotel" ) {
+    hotel_menuEl.classList.add("active");
+    document.querySelector(".select_2").classList.add("activeSel");
+    park_menuEl.classList.remove("active");
+    document.querySelector(".select_1").classList.remove("activeSel");
+  } else {
+    hotel_menuEl.classList.remove("active");
+    document.querySelector(".select_2").classList.remove("activeSel");
+    park_menuEl.classList.add("active");
+    document.querySelector(".select_1").classList.add("activeSel");
+  }
+  document.querySelector(".logo").addEventListener("click",function(){
+    sessionStorage.removeItem("menu");
+    park_menuEl.classList.add("active");
+    document.querySelector(".select_1").classList.add("activeSel");
+})

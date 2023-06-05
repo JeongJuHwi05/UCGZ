@@ -178,6 +178,10 @@
                       const da = can.get(0).toDataURL("image/png");
                       can.data("replaceUrl",da);
                       $makeInfo.find(".user_photo_submitOnly").val((i,v) => da);
+
+                      $makeInfo.find(".user_photo_cut").hide();
+                      $makeInfo.find(".user_photo_sliceBtn").hide();
+
                     }
                     
                   })                

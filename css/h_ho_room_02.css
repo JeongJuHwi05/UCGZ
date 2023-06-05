@@ -189,7 +189,7 @@ a:hover {
 .gallery__container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 150px;
 }
 
@@ -267,5 +267,6 @@ hr {
 }
 .galleryborder_title p {
   font-size: 100%;
+  line-height: 200%;
   word-break: break-word;
 }
