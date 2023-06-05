@@ -249,8 +249,9 @@ hr {
 .card_body {
   height: 350px;
 }
+/* 카드 타이틀 애니메이션 */
 .card_title {
-  padding: 1em 1em;
+  padding: 1em 2em;
   opacity: 0;
   transform: translateY(100px);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
@@ -263,6 +264,7 @@ hr {
 /* 카드 제목_ */
 .card_body > .card_title > h4 {
   font-size: 180%;
+  line-height: 200%;
   font-weight: var(--weight-bold);
   color: var(--color-black);
 }
@@ -270,9 +272,9 @@ hr {
 /* 카드 설명 */
 .card_body > .card_title > h5 {
   font-size: 100%;
+  line-height: 200%;
   font-weight: var(--weight-regular);
 }
-
 .redbtn_box,
 .orgbtn_box,
 .greenbtn_box {
@@ -297,10 +299,10 @@ hr {
   align-items: center;
   transition: background-color 0.3s ease;
 }
+.redbtn:hover {
+  background-color: var(--color-blue2);
+}
 
-/* .redbtn:hover {
-  background-color: #b20b0d;
-} */
 .redbtn a,
 .orgbtn a,
 .greenbtn a {

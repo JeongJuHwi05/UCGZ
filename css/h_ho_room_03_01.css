@@ -161,13 +161,14 @@ p {
 }
 
 .reservation_btn {
-  width: 10em;
+  width: 15rem;
   height: 60px;
-  font-size: var(--font-regular);
+  font-size: 100%;
   background: #e02027;
   color: white;
   margin-left: 30px;
 }
+
 .textarea_title2 {
   margin-top: 20px;
   text-align: left;
