@@ -57,7 +57,7 @@
                                 </div>
                             </div>
                             <div class="convert_check">
-                                <input type="checkbox" name="name_for_eng" id="hotelForm_name_for_eng">
+                                <input type="checkbox" name="" id="hotelForm_name_for_eng">
                                 <label for="hotelForm_name_for_eng">영문으로 입력</label>
                             </div>
                         </fieldset>
@@ -219,8 +219,6 @@
             })
             $("header").load("/header/header.html")
             $("footer").load("/footer/footer.html")
-            const data = JSON.parse(localStorage.getItem("hotelBasket"));
-            const dataLen = data.length;
        
             // 가격 숫자 //
             function comma(x) {
@@ -246,28 +244,57 @@
             
             // 예약 목록 생성 //
             let total=0;
-            for( let j = 0; j < dataLen; j++) {
-                const len = data[j]["price"].length;
-                for(let i = 0; i < len; i++) {
-                    total += +data[j].price[i];
-                    const $li = $(`
-                        <li class="check_li">
-                            <div class="check_list">
-                                <div class="check_date">${data[j].checkinText} → ${data[j].checkoutText}</div>
-                                <div class="check_theme">${data[j].theme[i]}</div>
-                                <div class="check_room">${data[j].title[i]}</div>
-                                <div class="check_price">￦ ${comma(data[j].price[i])}</div>
-                            </div>
-                        </li>
-                    `);
-                    $(".check ul").append($li);
+            function listUp() {
+                $(".check > ul").children().remove();
+                total = 0;
+                const data = JSON.parse(localStorage.getItem("hotelBasket"));
+                const dataLen = data.length;
+                for( let j = 0; j < dataLen; j++) {
+                    const len = data[j]["price"].length;
+                    for(let i = 0; i < len; i++) {
+                        total += +data[j].price[i];
+                        const $li = $(`
+                            <li class="check_li">
+                                <a href='#none' class='check_delete'>목록에서 삭제</a>
+                                <div class="check_list">
+                                    <div class="check_date">${data[j].checkinText} → ${data[j].checkoutText}</div>
+                                    <div class="check_theme">${data[j].theme[i]}</div>
+                                    <div class="check_room">${data[j].title[i]}</div>
+                                    <div class="check_price">￦ ${comma(data[j].price[i])}</div>
+                                </div>
+                            </li>
+                        `);
+                        $(".check ul").append($li);
+                        $li.on("click",".check_delete",function(){
+                            total -= +data[j].price[i];
+                            if (data[j].price.length == 1) {
+                                data.splice(j,1);
+                            } else {
+                                data[j].price.splice(i,1);
+                                data[j].theme.splice(i,1);
+                                data[j].title.splice(i,1);
+                            }
+                            $li.remove();
+                            localStorage.setItem("hotelBasket", JSON.stringify(data));
+                            listUp();
+                            if ( $(".check_li").length == 0) {
+                                alert("예약 목록이 없습니다. 예약페이지로 이동합니다.");
+                                location.href = "/t_hotel/t_hotel_reser01.html"
+                            }
+                        })
+                    }
                 }
+                $("#hotelForm_total_price").val((i,v) => total);
+                $(".check_total span").text(`￦ ${comma(total)}`);
             }
-            $("#hotelForm_total_price").val((i,v) => total);
-            $(".check_total span").text(`￦ ${comma(total)}`);
-
+            listUp();
             $("#hotelForm").on("submit",function(event){
                 event.preventDefault();
+                if( ($("#hotelForm_name").val()||($("#hotelForm_family_name").val()&&$("#hotelForm_last_name").val()))
+                   && $("#hotelForm_phone").val() && $("#hotelForm_email").val()) {
+                if ( $("#terms_check_input").is(":checked")) {
+
+                
                 const q = new FormData(event.target);
                 const w = Object.fromEntries(q.entries());
                 const time = Date.now();
@@ -281,6 +308,12 @@
                 alert(`${comma(total)}원 결제하세요.`);
                 $.post("example.html",{ price : total, codeNumber : time});
                 location.href = '/t_use/t_use_char01.html';
+                } else {
+                    alert("결제를 위해 약관 동의가 필요합니다.")
+                }
+                   } else {
+                    alert("정보를 정확히 입력하여주십시오.")
+                   }
             })
         });
     </script>
