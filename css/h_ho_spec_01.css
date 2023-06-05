@@ -177,12 +177,18 @@ a:hover {
   margin-bottom: 200px;
 }
 .tabs {
+  margin-top: 100px;
+  position: sticky;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  top: 0;
+  left: 0;
   width: 100%;
+  background-color: #ffffff;
+  z-index: 2; /* 다른 요소 위에 위치하도록 z-index 설정 */
 }
+
 .tab {
   position: relative;
 }

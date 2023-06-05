@@ -13,15 +13,14 @@
 // });
 
 document.addEventListener("DOMContentLoaded", function () {
-  // 폼 제출 이벤트 처리
   var form = document.querySelector(".reservation-form");
   form.addEventListener("submit", function (event) {
-    event.preventDefault(); // 폼 기본 동작 방지
+    event.preventDefault();
   });
 
   var consentForm = document.querySelector(".consent-form");
   consentForm.addEventListener("submit", function (event) {
-    event.preventDefault(); // 폼 기본 동작 방지
+    event.preventDefault();
 
     alert("예약이 완료되었습니다!");
   });
