@@ -350,12 +350,12 @@ function loadRoom(index,obj){
                 <a href="#none" class="ri_e_t_c_price"></a>
             </div>
             <div class="ri_e_t_choice_slide">
+                <div class="cs_price"></div>
                 <div class="cs_exp">
                     <div class="cs_e_title"></div>
                     <div class="cs_e_pre"></div>
                     <div class="cs_e_notice"></div>
                 </div>
-                <div class="cs_price"></div>
             </div>
         </li>                        
     `);
@@ -638,8 +638,14 @@ function makeUnit(data) {
 }
 $(document).on("click",".ri_e_t_c_title",function(){
     const $s = $(this).parent().siblings(".ri_e_t_choice_slide");
-    $s.slideToggle();
-    $(".ri_e_t_choice_slide").not($s).slideUp();
+    if ( $s.css("display") == "none" ) {
+        $s
+        .slideDown()
+        .css("display","flex")
+        $(".ri_e_t_choice_slide").not($s).slideUp();
+    } else {
+        $s.slideUp();
+    }
 })
     // 구매목록 생성 //
 let c;

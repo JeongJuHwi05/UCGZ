@@ -1,8 +1,8 @@
         $(function(){
-            $(document).on("selectstart dragstart",function(){ return false})
+            
             // for Total Price ----------
             var discountRate = 1;
-            var af01_price = [0,0,0];
+            var sf01_price = [0,0,0];
             var af04_price = [0,0,0];
             function comma(x) {
               return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -18,30 +18,14 @@
             $(this).siblings("input").val((i,v) => +v+1);
             $(this).siblings("input").trigger("change");
           });
-          //---------------------------- 01. 이용권 선택 
-            $(".af01_e_list dt a").each(function(i){
-              $(this).click(function(){
-                $(this).toggleClass("slidedowned");
-                $(".af01_e_list dt a").not($(this)).removeClass("slidedowned");
-                $(".af01_e_l_detail").eq(i).slideToggle();
-                $(".af01_e_l_detail").not(`:eq(${i})`).slideUp();
-              })
-            });
-            $(".af01_exp > a").click(function(){
-              if ( $(this).hasClass("a_toClose")) {
-                $(".af01_e_listWrap").slideToggle();
-                $(this)
-                  .removeClass("a_toClose")
-                  .addClass("a_toOpen");
-              } else {
-                $(".af01_e_listWrap").slideToggle();
-                $(this)
-                  .removeClass("a_toOpen")
-                  .addClass("a_toClose");
-              }
-            });
+          //---------------------------- 01. 이용권 선택
+          $(".sf01_ticketcard").on("mouseover",function(){
+            const idx = $(".sf01_ticketcard").index($(this));
+             $(".sf01_labelexp >ul>li").eq(idx).css("display","flex");
+             $(".sf01_labelexp >ul>li").not(`:eq(${idx})`).css("display","none");
+          })
 
-            $(".af01_tc_number input").each(function(i){
+            $(".sf01_tc_number input").each(function(i){
               const $newDiv = $("<div><p class='p_s_n_title'></p><p class='p_s_n_number'></p><p class='p_s_n_price'></p></div>");
               $(".p_s_numbers").append($newDiv);
 
@@ -51,31 +35,25 @@
                 } else {
                   $newDiv.show()
                   if ( i == 0 ) {
-                    const price = 119000;
-                    $(".p_s_n_title").eq(i).text("STANDARD PASS");
+                    const price = 89000;
+                    $(".p_s_n_title").eq(i).text("SUMMER PASS");
                     $(".p_s_n_number").eq(i).text($(this).val());
                     $(".p_s_n_price").eq(i).text("￦" + $(this).val() * price);
-                    af01_price[i] = $(this).val() * price;
+                    sf01_price[i] = $(this).val() * price;
                   }
                   if ( i == 1 ) {
-                    const price = 169000;
-                    $(".p_s_n_title").eq(i).text("GOLD PASS");
+                    const price = 89000;
+                    $(".p_s_n_title").eq(i).text("SPRING PASS");
                     $(".p_s_n_number").eq(i).text($(this).val());
                     $(".p_s_n_price").eq(i).text("￦" + $(this).val() * price);
-                    af01_price[i] = $(this).val() * price;
-                  }
-                  if ( i == 2 ) {
-                    const price = 249000;
-                    $(".p_s_n_title").eq(i).text("PLATINUM PASS");
-                    $(".p_s_n_number").eq(i).text($(this).val());
-                    $(".p_s_n_price").eq(i).text("￦" + $(this).val() * price);
-                    af01_price[i] = $(this).val() * price;
+                    sf01_price[i] = $(this).val() * price;
                   }
                 }
                 total();
               })
             })
           // ------------------------------------- 02. 정보입력
+          
           //photo
           let $w = $(".user_photo_cut").width()/2;
           let $h = $(".user_photo_cut").height()/2;
@@ -128,22 +106,20 @@
             });
           })
           // 입력창 생성
-          function makeInfo(classes,typeNum) {
-              if( $(`.i_info_${classes}`).length < $(`#annual_${classes}_number`).val()) {
+          function makeInfo(classes) {
+              if( $(`.i_info_${classes}`).length < $(`#season_${classes}_number`).val()) {
                 const $makeInfo = $(`.i_info_origin`).clone(true);
-
+                
                 $makeInfo.addClass([`i_info_${classes}`, "i_info"]);
                 $makeInfo.removeClass("i_info_origin");
-                $makeInfo.find(".i_i_t_ticket").text(`${classes.toUpperCase()} PASS`);
-                $makeInfo.find(".i_i_tab input")
-                  .val((i,v) => classes)
-                  .data("passtype",typeNum);
-                $(".af02_inputBox").append($makeInfo);
+                $makeInfo.find(".i_i_t_ticket").text(`${classes.toUpperCase()} SEASON PASS`);
+                $makeInfo.find(".i_i_tab input").val((i,v) => classes);
+                $(".sf02_inputBox").append($makeInfo);
 
                 //제거버튼
                 $makeInfo.find(".i_i_tab a").click(function(){
                   $makeInfo.remove();
-                  $(`#annual_${classes}_number`).val((i,v) => +v-1);
+                  $(`#season_${classes}_number`).val((i,v) => +v-1);
                 });
               
                 //국가 선택
@@ -168,7 +144,6 @@
                   })
                   .on("change",".user_photo",function(event){
                     $makeInfo.find(".user_photo_cut").show();
-                    $makeInfo.find(".user_photo_sliceBtn").show();
                     const loader = event.target.files[0];
                     const reader = new FileReader();
                     reader.readAsDataURL(loader);
@@ -183,7 +158,6 @@
                         can.prop("width", tw).prop("height",th);
                         const ctx = can.get(0).getContext("2d");
                         ctx.drawImage(img, 0, 0,tw, th );
-                        
                       }
                     }
                   })
@@ -207,54 +181,52 @@
 
                       $makeInfo.find(".user_photo_cut").hide();
                       $makeInfo.find(".user_photo_sliceBtn").hide();
+
                     }
-                  })
-                  
+                    
+                  })                
+                
               }
               // ------------------------------------------
-              else if ($(`.i_info_${classes}`).length > $(`#annual_${classes}_number`).val()) {
+              else if ($(`.i_info_${classes}`).length > $(`#season_${classes}_number`).val()) {
                 $(`.i_info_${classes}`).last().remove();
               }
           }
-          $("#annual_standard_number").on("change",function(){
-            const price = 119000;
+          $("#season_summer_number").on("change",function(){
+            const price = 89000;
             let n = $(this).val();
-            makeInfo("standard",1);
-            $(".p_s_n_number").eq(0).text(`수량 : ${n}`);
+              //생성
+            makeInfo("summer");
+              //각 pass 갯수 입력
+            const q = $("form").data("pass");
+            q.summer = n;
+            $("form").data("pass",q);
+              // 가격 수정
+            $(".p_s_n_number").eq(0).text(`￦ ${n}`);
             $(".p_s_n_price").eq(0).text(`￦ ${comma(n*price)}`);
             if(n==0) {
-              $(".p_s_n_standard").hide();
+              $(".p_s_n_summer").hide();
             } else {
-              $(".p_s_n_standard").show();
+              $(".p_s_n_summer").show();
             }
 
           })
-          $("#annual_gold_number").on("change",function(){
-            const price = 169000;
-            makeInfo("gold",2);
+          $("#season_spring_number").on("change",function(){
+            const price = 89000;
+            makeInfo("spring");
+              //각 pass 갯수 입력
+            const q = $("form").data("pass");
+            q.spring = n;
+            $("form").data("pass",q);
             let n = $(this).val();
-            $(".p_s_n_number").eq(1).text(`수량 : ${n}`);
+            $(".p_s_n_number").eq(1).text(`￦ ${n}`);
             $(".p_s_n_price").eq(1).text(`￦ ${comma(n*price)}`);
             if(n==0) {
-              $(".p_s_n_gold").hide();
+              $(".p_s_n_spring").hide();
             } else {
-              $(".p_s_n_gold").show();
+              $(".p_s_n_spring").show();
             }
           })
-          $("#annual_platinum_number").on("change",function(){
-            const price = 249000;
-            makeInfo("platinum",3)
-            let n = $(this).val();
-            $(".p_s_n_number").eq(2).text(`수량 : ${n}`);
-            $(".p_s_n_price").eq(2).text(`￦ ${comma(n*price)}`);
-            if(n==0) {
-              $(".p_s_n_platinum").hide();
-            } else {
-              $(".p_s_n_platinum").show();
-            }
-          })
-
-
           // ------------------------------------- 06-1. 할인적용
           $(".d_list li").each(function(i){
             $(this).find(".d_l_listopen").click(function(){
@@ -274,26 +246,11 @@
                 $(".d_list li input:checkbox").not($(this)).prop("checked",false);
                 return !$(this).prop("checked");
               });
-
               if ( $(".d_list li input:checkbox").eq(i).is(":checked")) {
-
                 $(".p_s_discount > div").show();
-                if ( i==0 ) {
-                  if ($(".af01_tc_number input").eq(1).val() >= 4 ) {
-                    $(".p_s_e_title06").text("KB국민카드 제휴 할인");
-                    $(".p_s_e_number06").text("GOLD PASS 4장 이상 구매 시 10% 할인")
-                    discountRate = 1 - 0.1;
-                  } else {
-                    alert("GOLD PASS 4장 이상 구매 시 적용 가능합니다.");
-                    $(".d_list li").eq(i).removeClass("active_discount");
-                    $(".d_list li input:checkbox").eq(i).prop("checked",false);
-                    discountRate = 1;
-                  }
-                }    
               } else if (!$(".d_list li input:checkbox").is(":checked")) {
                 $(".p_s_discount > div").hide();
               }
-              
               total();
             });
           });
@@ -302,21 +259,23 @@
           // ------------------------------------- 06-2. 가격 합산
           
           const total = function() {
-            $("#annual_total_price").val(function(i,v) {
-              if ($(".af01_tc_number input").eq(1).val() >= 4) {
-                af01_price[1] *= discountRate;
+
+            
+
+            $("#season_total_price").val(function(i,v) {
+              if ($(".sf01_tc_number input").eq(1).val() >= 4) {
+                sf01_price[1] *= discountRate;
               }
-              const t_1 = af01_price.reduce((a,b) => a+b);
+              const t_1 = sf01_price.reduce((a,b) => a+b);
               const t_2 = af04_price.reduce((a,b) => a+b);
               $(".p_t_text").text("￦"+comma(t_1+t_2));
               
               return t_1 + t_2
             })
             
-          }
-          
-            //페이지 리셋
-          $(".reset_btn").click(function(){
-            $(".formBox").load("/t_use/t_use_reser01_1.html");
-          })
+          } 
+          //페이지 리셋
+        $(".reset_btn").click(function(){
+          $(".formBox").load("/t_use/t_use_reser01_1.html");
+        })
         });

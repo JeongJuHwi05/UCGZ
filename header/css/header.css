@@ -111,6 +111,10 @@ header .bottom .category .select_1 {
 header .bottom .category .select_2 {
   background-color: #00a138;
 }
+body header .bottom .category .select.activeSel {
+  text-decoration: underline;
+  color: #555;
+}
 header .bottom .category .buy span {
   display: flex;
   align-items: center;
@@ -118,7 +122,7 @@ header .bottom .category .buy span {
   font-size: 200%;
   color: white;
   font-weight: 600;
-  width: 14vw;
+  width: max(14vw,270px);
   height: 100%;
   background: url("/image/ticket_icon.png") no-repeat top 0.7rem left 1rem/ 5rem
     5rem;
@@ -128,8 +132,8 @@ header .bottom .category .buy {
   bottom: 10%;
   right: 5%;
   display: block;
-  width: 7rem;
-  height: 7rem;
+  width: max(7rem,112px);
+  height: max(7rem,112px);
   border-radius: 3.5rem;
   background-color: red;
   transition: 0.5s ease;
