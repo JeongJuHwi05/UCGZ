@@ -518,8 +518,8 @@ fieldset legend {
   }
   .user_photo_img_wrap {
     width: 100%;
-    aspect-ratio: 1 / 1;
-    margin: 5px auto 0px;
+    aspect-ratio: 1 / 0.9;
+    margin: 1rem auto 0px;
     box-sizing: border-box;
     position: relative;
     display: flex;
