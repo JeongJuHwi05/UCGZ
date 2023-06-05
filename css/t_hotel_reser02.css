@@ -174,6 +174,17 @@ fieldset > div {
 }
 .check_li {
     margin-bottom: 1rem;
+    position: relative;
+}
+.check_delete {
+    display: block;
+    font-size: 0px;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 0px;
+    left: -2rem;
+    background: url("/image/t_hotel_reser02/close_button.png") no-repeat center/100%;
 }
 .check_list {
     background-color: white;
