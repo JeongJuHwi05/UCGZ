@@ -23,6 +23,8 @@
             $(".vf02_tc_disabled").removeClass("vf02_cover");
             $(".vf02_tc_input_gold, .vf02_tc_input_platinum").val((i,v) => 0);
             $(".i_info[class*='gold'], .i_info[class*='platinum']").remove();
+            $(".p_s_n_g dl *, .p_s_n_p dl *").text("");
+            $(".p_s_n_g, .p_s_n_p").hide();
           } else {
             $(".vf02_tc_disabled").addClass("vf02_cover");
           }
