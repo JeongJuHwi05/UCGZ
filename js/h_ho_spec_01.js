@@ -106,3 +106,12 @@ function showGallery(index) {
     selectedGallery.style.display = "block";
   }
 }
+
+function showGallery(tabId) {
+  // 탭 클릭 시 해당 패키지로 스크롤 애니메이션 적용
+  const packageElement = document.getElementById(`gallerybox${tabId}`);
+  packageElement.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+}

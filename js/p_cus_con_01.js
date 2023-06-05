@@ -12,7 +12,7 @@ $(function(){
     $('.direc_title').click(function() {
         var slideId = $(this).data('slide-id');
         $('#' + slideId).stop().slideToggle();
-      });
+    });
       
     // 벡터 이미지 회전
     $(".direc_title").click(function(){

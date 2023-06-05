@@ -1,26 +1,33 @@
 $(function(){
-    var preSlideId = "";
-    var slideId = "";
     // 슬라이드
-    $('.direc_title').click(function() {
-      slideId = $(this).data('slide-id');
+    //23.06.05 뭔가 해보려다 포기함 (정주휘)
+    // var preSlideId = "";
+    // var preAnswer = "";
+    // $('.direc_title').click(function() {
+    //   var slideId = $(this).data('slide-id');
+    //   var answer = $(this).find("svg");
 
-      if(preSlideId != slideId){
-        $('#' + slideId).stop().slideToggle();
+    //   if(preSlideId != slideId){
+    //     $('#' + slideId).stop().slideToggle();
+    //     answer.css("transform", "rotate(-180deg)")
+    //     if(preSlideId != ""){
+    //       $('#' + preSlideId).stop().slideToggle();
+    //       preAnswer = $('#' + preSlideId).find("svg");
+    //       preAnswer.css("transform", "rotate(0deg)")
+    //       console.loog("preAnswer 값 : " + preAnswer);
+    //     }
+    //     preSlideId = slideId;
+    //     preAnswer = slideId;
+    //   }else{
+    //     $('#' + slideId).stop().slideToggle();
+    //     answer.css("transform", "rotate(-180deg)")
+    //     preSlideId = "";
+    //   }
 
-        if(preSlideId != ""){
-          $('#' + preSlideId).stop().slideToggle();
-        }
-        preSlideId = slideId;
-      }else{
+      $('.direc_title').click(function() {
+        var slideId = $(this).data('slide-id');
         $('#' + slideId).stop().slideToggle();
-        preSlideId = slideId;
-      }
-    });
-    
-    
-    
-    $('#' + slideId).stop().slideToggle();
+      });
     
     // 벡터 이미지 회전
 
