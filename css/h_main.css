@@ -235,7 +235,7 @@ a:hover {
   color: var(--color-green);
   font-weight: var(--weight-bold);
   font-size: 200%;
-  padding-top: 3%;
+  padding-top: 5%;
   text-align: center;
 }
 
@@ -353,7 +353,7 @@ hr {
 }
 /* 카드 타이틀 애니메이션 */
 .card_title {
-  padding: 1em 1em;
+  padding: 1em 2em;
   opacity: 0;
   transform: translateY(100px);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
@@ -366,6 +366,7 @@ hr {
 /* 카드 제목_ */
 .card_body > .card_title > h4 {
   font-size: 180%;
+  line-height: 200%;
   font-weight: var(--weight-bold);
   color: var(--color-black);
 }
@@ -373,6 +374,7 @@ hr {
 /* 카드 설명 */
 .card_body > .card_title > h5 {
   font-size: 100%;
+  line-height: 200%;
   font-weight: var(--weight-regular);
 }
 
@@ -392,7 +394,7 @@ hr {
   bottom: 0;
   width: 15rem;
   height: 60px;
-  font-size: 120%;
+  font-size: 100%;
   background: #d01012;
   text-align: center;
   display: flex;
@@ -402,7 +404,7 @@ hr {
 }
 
 .redbtn:hover {
-  background-color: #b20b0d;
+  background-color: var(--color-blue2);
 }
 .redbtn a,
 .orgbtn a,
@@ -420,7 +422,7 @@ hr {
   bottom: 0;
   width: 15rem;
   height: 60px;
-  font-size: 120%;
+  font-size: 100%;
   background: var(--color-orange);
   text-align: center;
   display: flex;
@@ -429,9 +431,9 @@ hr {
   transition: background-color 0.3s ease;
 }
 
-/* .orgbtn:hover {
-  background-color: #ca5f18;
-} */
+.orgbtn:hover {
+  background-color: #20b46a;
+}
 
 .greenbtn {
   cursor: pointer;
@@ -439,7 +441,7 @@ hr {
   bottom: 0;
   width: 15rem;
   height: 60px;
-  font-size: 120%;
+  font-size: 100%;
   background: var(--color-green);
   text-align: center;
   display: flex;
@@ -448,6 +450,6 @@ hr {
   transition: background-color 0.3s ease;
 }
 
-/* .greenbtn:hover {
-  background-color: #10882a;
-} */
+.greenbtn:hover {
+  background-color: #d65aa7;
+}

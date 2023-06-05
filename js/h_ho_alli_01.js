@@ -90,3 +90,12 @@ document.addEventListener("DOMContentLoaded", function () {
     imgs.css("left", -600 * (img_position - 1) + "px");
   }
 });
+
+$(document).ready(function () {
+  $(".banner__list").each(function (index) {
+    var element = $(this);
+    setTimeout(function () {
+      element.addClass("bannerFadeIn");
+    }, 400 * index); // 각 요소를 200ms 간격으로 애니메이션화
+  });
+});
