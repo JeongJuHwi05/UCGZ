@@ -159,6 +159,9 @@ a{
     text-align: center;
     margin:30px
 }
+.dis_text{
+    margin-top: 30px;
+}
 .strong_text{
     font-size:100%;
     font-weight: 700;
