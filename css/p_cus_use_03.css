@@ -162,7 +162,7 @@ form legend{
     line-height: 1.5rem;
 }
 .ask_com_bor input{
-    width:98%;
+    width:93%;
     height:35px;
     font-size:100%;
     display: flex;
@@ -174,7 +174,7 @@ form legend{
     font-size:150%
 }
 .ask_com_bor textarea{
-    width:98%;
+    width:96.5%;
     height:200px
 }
 .ask_radio{
@@ -359,4 +359,10 @@ form legend{
     font-size:200%;
     color:#fff;
     cursor: pointer;
+}
+input[type="text"]{
+    padding:5px 15px;
+}
+textarea{
+    padding:7.5px;
 }

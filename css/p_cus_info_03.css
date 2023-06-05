@@ -119,7 +119,7 @@ form legend{
     line-height: 1.5rem;
 }
 .ask_com_bor input{
-    width:98%;
+    width:93.5%;
     height:35px;
     font-size:100%;
 }
@@ -129,7 +129,7 @@ form legend{
     font-size:150%
 }
 .ask_com_bor textarea{
-    width:98%;
+    width:97%;
     height:200px
 }
 .ask_form_agree{
@@ -422,4 +422,10 @@ form legend{
         justify-content: center;
         
     }
+}
+input[type="text"]{
+    padding:5px 15px;
+}
+textarea{
+    padding:7.5px
 }

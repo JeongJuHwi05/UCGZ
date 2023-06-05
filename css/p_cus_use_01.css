@@ -95,7 +95,7 @@ form legend{
     height:10px
 }
 .ask_com_bor input{
-    width:98%;
+    width:91%;
     height:35px;
     font-size:100%;
     display: flex;
@@ -170,4 +170,7 @@ form legend{
 }
 .ask_loc_table_2{
     background:#ffffff
+}
+input[type="text"]{
+    padding:5px 15px;
 }
