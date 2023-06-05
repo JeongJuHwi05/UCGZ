@@ -177,7 +177,8 @@ $(function(){
      $(".ticket_form").not("#visit_ticket_form").on("submit",function(e){
         e.preventDefault();
           if( !$(".numberCheck input[name*='number.']").get().every(v => v.value==0) ) {
-            if( JSON.parse(localStorage.getItem("load")).page == 3 || JSON.parse(localStorage.getItem("load")).page == 4){
+            const qq = JSON.parse(localStorage.getItem("load")).page;
+            if( qq == 3 || qq == 4 || qq == 5){
               if (!$(".i_info input[name!='']").get().some(v => v.value=='') ){
                 submits(e);
               } else {
