@@ -43,4 +43,11 @@ $(function(){
         
         //불러오기
       }
+
+      $(".formBox form").on("submit",function(event){
+        event.preventDefault();
+        if( !$(".date_inputs input").val() ) {
+          alert("날짜를 선택해주세요.")
+        }
+      })
 });
