@@ -220,6 +220,9 @@ a:hover {
   align-items: center;
 }
 
+.galleryborder__description {
+  text-align: start;
+}
 .galleryborder__description2 {
   font-weight: var(--weight-bold);
   font-size: var(--font-small);

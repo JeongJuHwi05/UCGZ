@@ -342,17 +342,26 @@ a:hover {
 }
 
 /* 카드 전체 내용 묶음 */
-.card_title {
-  padding: 1em 2em;
-}
 .card_textbox {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+.card_title {
+  padding: 2em 2em;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.card_title.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* 카드 제목_ */
 .card_body > .card_title > h4 {
   font-size: 200%;
+  line-height: 200%;
   font-weight: var(--weight-bold);
   color: var(--color-black);
 }
@@ -360,8 +369,8 @@ a:hover {
 /* 카드 설명 */
 .card_body > .card_title > h5 {
   font-size: 100%;
+  line-height: 200%;
   font-weight: var(--weight-regular);
-  line-height: 180%;
 }
 
 .redbtn_box {
@@ -395,4 +404,8 @@ a:hover {
 
 .redbtn a:hover {
   text-decoration: none;
+}
+
+.text_bold {
+  font-weight: var(--weight-bold);
 }

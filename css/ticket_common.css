@@ -517,8 +517,8 @@ fieldset legend {
     color: #666;
   }
   .user_photo_img_wrap {
-    width: 100%;
-    aspect-ratio: 1 / 0.9;
+    width: 90%;
+    aspect-ratio: 1 / 1;
     margin: 1rem auto 0px;
     box-sizing: border-box;
     position: relative;

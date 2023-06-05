@@ -111,6 +111,10 @@ header .bottom .category .select_1 {
 header .bottom .category .select_2 {
   background-color: #00a138;
 }
+body header .bottom .category .select.activeSel {
+  text-decoration: underline;
+  color: #555;
+}
 header .bottom .category .buy span {
   display: flex;
   align-items: center;
