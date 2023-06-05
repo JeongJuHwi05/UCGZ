@@ -50,4 +50,13 @@ $(function(){
           alert("날짜를 선택해주세요.")
         }
       })
+      // 결제페이지 이동 클릭 시 확인 //
+      $(".pageBtn_next").on("click",function(){
+        const q = JSON.parse(localStorage.getItem("ticketBasket"));
+        if( q.length == 0 ) {
+          alert("구매내역이 없습니다.");
+        } else {
+          location.href = "/t_use/t_use_reser03.html";
+        }
+      })
 });

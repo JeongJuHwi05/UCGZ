@@ -340,15 +340,17 @@
     padding: 1rem;
     font-size: 90%;
     word-break: keep-all;
+    background-color: aqua;
 }
 .cs_exp span {
     display: block;
     padding: 3px 1rem;
 }
 .cs_price {
-    position: absolute;
+    /* position: absolute;
     top: 0px;
-    right: 0px;
+    right: 0px; */float: right;
+    width: 40%;
     padding: 1rem 1rem 2rem;
     box-sizing: border-box;
     line-height: 2;
