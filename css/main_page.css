@@ -63,7 +63,7 @@ main .swiper {
 /* main > advance ticket */
 main .ticket {
   position: relative;
-  background-image: url('../../image/bg_image/1.png');
+  background-image: url('../image/bg_image/1.png');
   background-position: center;
   background-size: cover;
 }
@@ -150,7 +150,7 @@ main .ticket .ticktype .type:hover .secter .ticket_btn {
 /* main > promotion */
 main .promotion {
   position: relative;
-  background-image: url('../../image/bg_image/2.png');
+  background-image: url('../image/bg_image/2.png');
   background-position: center;
   background-size: cover;
 }
@@ -267,7 +267,7 @@ main .promotion .promo .slider-wrap-promotion .cont_promotion .promotion__descri
 
 /* main > instagram */
 main .instagram {
-  background-image: url('../../image/bg_image/3.png');
+  background-image: url('../image/bg_image/3.png');
   background-position: center;
   background-size: cover;
 }
@@ -357,7 +357,7 @@ main .instagram .insta .item:nth-child(1) img {
 /* main > youtube */
 main .youtube {
   position: relative;
-  background-image: url('../../image/bg_image/4.png');
+  background-image: url('../image/bg_image/4.png');
   background-position: center;
   background-size: cover;
 }
