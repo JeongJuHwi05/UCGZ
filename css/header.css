@@ -37,8 +37,8 @@
   box-sizing: border-box;
   display: flex;
   justify-content: center;
+  background-color: #ffcf00;
   align-items: center;
-  /* background-color: #ffcf00; */
   position: relative;
 }
 #headerMain .top.open {
