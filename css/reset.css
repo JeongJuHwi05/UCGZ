@@ -38,42 +38,42 @@ video {
 }
 @font-face {
   font-family: 'Noto Sans KR';
-  src: url("/font/Noto_Sans_KR/NotoSansKR-Black.otf") format('opentype');
+  src: url("../font/Noto_Sans_KR/NotoSansKR-Black.otf") format('opentype');
   font-style: normal;
   font-weight: 900;
 }
 @font-face {
   font-family: 'Noto Sans KR';
   src:
-    url('/font/Noto_Sans_KR/NotoSansKR-Bold.otf') format('opentype');
+    url('./font/Noto_Sans_KR/NotoSansKR-Bold.otf') format('opentype');
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: 'Noto Sans KR';
   src:
-    url('/font/Noto_Sans_KR/NotoSansKR-Medium.otf') format('opentype');
+    url('./font/Noto_Sans_KR/NotoSansKR-Medium.otf') format('opentype');
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: 'Noto Sans KR';
   src:
-    url('/font/Noto_Sans_KR/NotoSansKR-Regular.otf') format('opentype');
+    url('./font/Noto_Sans_KR/NotoSansKR-Regular.otf') format('opentype');
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: 'Noto Sans KR';
   src:
-    url('/font/Noto_Sans_KR/NotoSansKR-Light.otf') format('opentype');
+    url('./font/Noto_Sans_KR/NotoSansKR-Light.otf') format('opentype');
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: 'Noto Sans KR';
   src:
-    url('/font/Noto_Sans_KR/NotoSansKR-Thin.otf') format('opentype');
+    url('./font/Noto_Sans_KR/NotoSansKR-Thin.otf') format('opentype');
   font-style: normal;
   font-weight: 100;
 }
