@@ -14,9 +14,9 @@ $(window).on("load",function(){
     $(".loadingWrap").remove();
 })
 $("header")
-    .load("./header/header.html")
+    .load("/header/header.html")
     .show()
-$("footer").load("./footer/footer.html")
+$("footer").load("/footer/footer.html")
 
 const oneday = 86400000;
 const todayDate = new Date();
