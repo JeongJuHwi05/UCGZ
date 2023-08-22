@@ -3,18 +3,18 @@ $(function(){
     if(JSON.parse(localStorage.getItem("load"))) {
         let obj = JSON.parse(localStorage.getItem("load"));
         let num = obj["page"], char = obj["char"], name = obj["name"];
-        $(".formBox").load(`/t_use/t_use_reser01_${num}.html`);
+        $(".formBox").load(`../t_use/t_use_reser01_${num}.html`);
         $(".tapBox a").not(`:eq(${num-1})`).removeClass("active_tap");
         $(".tapBox a").eq(num-1).addClass("active_tap");
     } else {
-      $(".formBox").load("/t_use/t_use_reser01_1.html");
+      $(".formBox").load("../t_use/t_use_reser01_1.html");
       localStorage.setItem("load",JSON.stringify({page:1}))
     }
     $("header")
       .hide()
-      .load("/header/header.html")
+      .load("../header/header.html")
       .ready(function(){ $("header").show() })
-    $("footer").load("/footer/footer.html");
+    $("footer").load("../footer/footer.html");
       //localStorage setting
       localStorage.setItem("payment_list","[]");
       if ( !localStorage.getItem("ticketBasket") ) {
@@ -24,7 +24,7 @@ $(function(){
       $(".tapBox_btn").each(function (i) {
         $(this).click(function () {
           $(".formBox").children().remove();
-          $(".formBox").load(`/t_use/t_use_reser01_${i + 1}.html`);
+          $(".formBox").load(`../t_use/t_use_reser01_${i + 1}.html`);
           localStorage.setItem("load",`{"page":${i+1}}`)
           $(".tapBox a").not($(this)).removeClass("active_tap");
           $(this).addClass("active_tap");

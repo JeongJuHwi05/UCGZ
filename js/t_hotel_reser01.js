@@ -14,9 +14,9 @@ $(window).on("load",function(){
     $(".loadingWrap").remove();
 })
 $("header")
-    .load("/header/header.html")
+    .load("../header/header.html")
     .show()
-$("footer").load("/footer/footer.html")
+$("footer").load("../footer/footer.html")
 
 const oneday = 86400000;
 const todayDate = new Date();
@@ -25,10 +25,10 @@ const week = ['일','월','화','수','목','금','토'];
 // 기존 데이터 불러오기 //
 // ============================ 페이지 로드 =============================
     // 테마 페이지 로드 //
-$(".ri_load_pirate").load("/t_hotel/t_hotel_reser01_p.html");
-$(".ri_load_kingdom").load("/t_hotel/t_hotel_reser01_k.html");
-$(".ri_load_friends").load("/t_hotel/t_hotel_reser01_f.html");
-$(".ri_load_ninja").load("/t_hotel/t_hotel_reser01_n.html");
+$(".ri_load_pirate").load("../t_hotel/t_hotel_reser01_p.html");
+$(".ri_load_kingdom").load("../t_hotel/t_hotel_reser01_k.html");
+$(".ri_load_friends").load("../t_hotel/t_hotel_reser01_f.html");
+$(".ri_load_ninja").load("../t_hotel/t_hotel_reser01_n.html");
     // 달력 로드 //
 $(".sr_date_calender").load("/t_hotel/multi_calender_hotel_side.html");
     // 저장소 생성 //

@@ -13,8 +13,8 @@ $(function(){
         $(".loadingWrap").remove();
     })
    $("header")
-        .load("/header/header.html")
-    $("footer").load("/footer/footer.html")
+        .load("../header/header.html")
+    $("footer").load("../footer/footer.html")
     
     localStorage.removeItem("load");
     //설명창 열기/닫기============================
