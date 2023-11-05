@@ -30,7 +30,7 @@ $(".ri_load_kingdom").load("../t_hotel/t_hotel_reser01_k.html");
 $(".ri_load_friends").load("../t_hotel/t_hotel_reser01_f.html");
 $(".ri_load_ninja").load("../t_hotel/t_hotel_reser01_n.html");
     // 달력 로드 //
-$(".sr_date_calender").load("/t_hotel/multi_calender_hotel_side.html");
+$(".sr_date_calender").load("../t_hotel/multi_calender_hotel_side.html");
     // 저장소 생성 //
 if ( !localStorage.getItem("hotelBasket")) {
     localStorage.setItem("hotelBasket", JSON.stringify([]));
