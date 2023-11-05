@@ -37,7 +37,7 @@ if ( !localStorage.getItem("hotelBasket")) {
 }
     // 객실 설명 로드 //
 let priceExp;
-fetch("/t_hotel/cs_price_text.txt").then(res => res.text()).then(res => { priceExp = JSON.parse(res) });
+fetch("../t_hotel/cs_price_text.txt").then(res => res.text()).then(res => { priceExp = JSON.parse(res) });
 // ============================ 공통요소 ==============================
     // 가격 숫자 정리 //
 function comma(x) {
@@ -95,22 +95,22 @@ const originTd = $(`
         <div class="td">
             <div class="numberCheck">
                 <input type="number" data-age="adult" name="adult" class="sr_n_adult" id="sr_n_adult" value="0" max="3" disabled readonly/>
-                <a href="#none" class="decrease_btn">수량 제외<img src="/image/t_hotel_reser02/minus.png" alt=""></a>
-                <a href="#none" class="increase_btn">수량 추가<img src="/image/t_hotel_reser02/plus.png" alt=""></a>
+                <a href="#none" class="decrease_btn">수량 제외<img src="../image/t_hotel_reser02/minus.png" alt=""></a>
+                <a href="#none" class="increase_btn">수량 추가<img src="../image/t_hotel_reser02/plus.png" alt=""></a>
             </div>
         </div>
         <div class="td">
             <div class="numberCheck">
                 <input type="number" data-age="child" name="child" class="sr_n_child" id="sr_n_child" value="0" max="3" disabled readonly/>
-                <a href="#none" class="decrease_btn">수량 제외<img src="/image/t_hotel_reser02/minus.png" alt=""></a>
-                <a href="#none" class="increase_btn">수량 추가<img src="/image/t_hotel_reser02/plus.png" alt=""></a>
+                <a href="#none" class="decrease_btn">수량 제외<img src="../image/t_hotel_reser02/minus.png" alt=""></a>
+                <a href="#none" class="increase_btn">수량 추가<img src="../image/t_hotel_reser02/plus.png" alt=""></a>
             </div>
         </div>
         <div class="td">
             <div class="numberCheck">
                 <input type="number" data-age="toddler" name="toddler" class="sr_n_toddler" id="sr_n_toddler" value="0" max="2" disabled readonly/>
-                <a href="#none" class="decrease_btn">수량 제외<img src="/image/t_hotel_reser02/minus.png" alt=""></a>
-                <a href="#none" class="increase_btn">수량 추가<img src="/image/t_hotel_reser02/plus.png" alt=""></a>
+                <a href="#none" class="decrease_btn">수량 제외<img src="../image/t_hotel_reser02/minus.png" alt=""></a>
+                <a href="#none" class="increase_btn">수량 추가<img src="../image/t_hotel_reser02/plus.png" alt=""></a>
             </div>
         </div>
     </div>
